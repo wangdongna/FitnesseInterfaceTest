@@ -1,0 +1,46 @@
+package fitnesse.slim.test;
+import gat.common.generator.Converter;
+import java.util.Map;
+import gat.common.jsonhelper.jsonservice;
+import gat.http.helper.httpService;
+
+import gat.common.dbservice.Sqlserver;
+
+
+public class CreateUser {
+	private String path;
+	private String username;
+	private String password;
+	private String requestbody;
+	public void setPath(String path){
+		 this.path = Converter.convert(path);
+	}
+ 
+
+	public void setUsername(String username){
+		 this.username = Converter.convert(username);
+	}
+ 
+
+	public void setPassword(String password){
+		 this.password = Converter.convert(password);
+	}
+ 
+
+	public void setRequestbody(String requestbody){
+		 this.requestbody = Converter.convert(requestbody);
+	}
+ 
+	public static void main(String[] args) {
+		String responseStr = "{\"Error\":\"0\",\"Message\":[\"\"],\"RequestId\":null,\"Result\":{\"Id\":301331,\"RealName\":\"add.usera\",\"UserType\":303262,\"UserTypeName\":\"单项目能源经理(购买咨询服务)\",\"Password\":\"AF6435A5F200D4F2F9EF1356F5504ADC\",\"Customers\":[],\"Title\":\"能源工程顾问\",\"Telephone\":\"12530236205\",\"Email\":\"d@q.com\",\"Comment\":\"com\",\"Name\":\"add.usera\",\"DemoStatus\":0,\"SpId\":316,\"Status\":1,\"SpStatus\":0,\"SpDomain\":null,\"FedLoginUrl\":null,\"Version\":9744038,\"HasWholeCustomer\":false,\"PrivilegeCodes\":[],\"SpFullName\":null,\"SpName\":null}}";
+		String responseString = responseStr.replaceAll(",\"Version\":\\d{7}","").replaceAll("\"Id\":\\d{6}","\"Id\":").replaceAll(",\"Password\":\\w{34}",",\"Password\":");
+		System.out.println(responseString);  
+	}
+	
+	public String responsebody(){
+		httpService newHttp = new httpService(username, password);
+		String requestBody = this.requestbody;
+		String responseStr = newHttp.newHttpPost(path, requestBody);
+		return responseStr.replaceAll(",\"Version\":\\d{7}","").replaceAll(",\"Id\":\\d{6}",",\"Id\":").replaceAll(",\"Password\":\"\\w{34}\"",",\"Password\":");
+	}
+}

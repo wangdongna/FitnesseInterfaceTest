@@ -1,0 +1,653 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopGetTestProject.TicketApi.GetTicketId</rootPath>
+    <result>
+    <counts>
+      <right>10</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-10T15:59:44+08:00</date>
+    <runTimeInMillis>7064</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;get ticket id&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;responsebody?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;获取报警工单的信息&lt;/td&gt;
+		&lt;td&gt;api/tickets/2499&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2499,"TicketNum":"GatewayCustomer-BJ170301001","SeqNum":1,"TicketType":2,"CustomerId":320359,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:40:03;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 564.123A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateTime":"2017-03-01T11:31:46.633","CreateUserName":"ServiceProviderAdmin","AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"],"TicketStatus":1,"Assets":[{"Id":9901,"TicketId":2499,"HierarchyId":320373,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"机柜-新建设备1*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9162,"TicketId":2499,"UserId":301315,"UserName":"b"}],"Logs":[]}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;获取计划工单的信息&lt;/td&gt;
+		&lt;td&gt;api/tickets/2498&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"CustomerId":320359,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateTime":"2017-03-01T11:31:11.78","CreateUserName":"ServiceProviderAdmin","AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"],"TicketStatus":1,"Assets":[{"Id":9900,"TicketId":2498,"HierarchyId":320394,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"变压器柜-新建设备2*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9161,"TicketId":2498,"UserId":301312,"UserName":"ServiceProviderAdmin"}],"Logs":[]}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;获取随工工单的信息&lt;/td&gt;
+		&lt;td&gt;api/tickets/2500&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2500,"TicketNum":"GatewayCustomer-SG170301001","SeqNum":1,"TicketType":3,"CustomerId":320359,"StartTime":"2017-03-01T00:00:00","EndTime":"2017-12-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"随工","CreateUser":301312,"CreateTime":"2017-03-01T11:32:39.163","CreateUserName":"ServiceProviderAdmin","AssetNames":["系统装置*1"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"],"TicketStatus":1,"Assets":[{"Id":9902,"TicketId":2500,"HierarchyId":320395,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置*1","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9163,"TicketId":2500,"UserId":301315,"UserName":"b"}],"Logs":[]}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;获取现场工单的信息&lt;/td&gt;
+		&lt;td&gt;api/tickets/2501&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2501,"TicketNum":"GatewayCustomer-XC170316001","SeqNum":1,"TicketType":4,"CustomerId":320359,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-31T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":null,"Content":"change to in executing","CreateUser":301312,"CreateTime":"2017-03-16T09:45:42.897","CreateUserName":"ServiceProviderAdmin","AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin","b"],"TicketStatus":2,"Assets":[{"Id":9903,"TicketId":2501,"HierarchyId":320396,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置-新建设备2*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9164,"TicketId":2501,"UserId":301312,"UserName":"ServiceProviderAdmin"},{"Id":9165,"TicketId":2501,"UserId":301315,"UserName":"b"}],"Logs":[{"Id":1371,"TicketId":2501,"Content":"test for ticket api without picture","CreateUser":301312,"CreateTime":"2017-03-16T10:21:20.49","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:21:20.49","Pictures":[]},{"Id":1370,"TicketId":2501,"Content":"测试日志工单接口","CreateUser":301312,"CreateTime":"2017-03-16T10:20:18.697","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:20:18.697","Pictures":[{"PictureId":"file-ticket-log-2501-636252564160874247","FileName":"Penguins.jpg","Content":null}]}]}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;获取已完成工单的信息&lt;/td&gt;
+		&lt;td&gt;api/tickets/2503&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2503,"TicketNum":"GatewayCustomer-BJ170316001","SeqNum":1,"TicketType":2,"CustomerId":320359,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-05T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":"2017-03-16T10:00:00","Content":"finished\n时间: 2017年1月20日 12:32:18;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 572.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateTime":"2017-03-16T10:09:35.947","CreateUserName":"ServiceProviderAdmin","AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"],"TicketStatus":3,"Assets":[{"Id":9906,"TicketId":2503,"HierarchyId":320373,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"机柜-新建设备1*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9170,"TicketId":2503,"UserId":301315,"UserName":"b"},{"Id":9171,"TicketId":2503,"UserId":301312,"UserName":"ServiceProviderAdmin"}],"Logs":[{"Id":1374,"TicketId":2503,"Content":"for test ticket log api finished","CreateUser":301312,"CreateTime":"2017-03-16T10:27:06.523","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:27:06.523","Pictures":[]}]}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;获取进行中工单的信息&lt;/td&gt;
+		&lt;td&gt;api/tickets/2501&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2501,"TicketNum":"GatewayCustomer-XC170316001","SeqNum":1,"TicketType":4,"CustomerId":320359,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-31T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":null,"Content":"change to in executing","CreateUser":301312,"CreateTime":"2017-03-16T09:45:42.897","CreateUserName":"ServiceProviderAdmin","AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin","b"],"TicketStatus":2,"Assets":[{"Id":9903,"TicketId":2501,"HierarchyId":320396,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置-新建设备2*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9164,"TicketId":2501,"UserId":301312,"UserName":"ServiceProviderAdmin"},{"Id":9165,"TicketId":2501,"UserId":301315,"UserName":"b"}],"Logs":[{"Id":1371,"TicketId":2501,"Content":"test for ticket api without picture","CreateUser":301312,"CreateTime":"2017-03-16T10:21:20.49","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:21:20.49","Pictures":[]},{"Id":1370,"TicketId":2501,"Content":"测试日志工单接口","CreateUser":301312,"CreateTime":"2017-03-16T10:20:18.697","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:20:18.697","Pictures":[{"PictureId":"file-ticket-log-2501-636252564160874247","FileName":"Penguins.jpg","Content":null}]}]}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;获取有日志工单的信息&lt;/td&gt;
+		&lt;td&gt;api/tickets/2501&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2501,"TicketNum":"GatewayCustomer-XC170316001","SeqNum":1,"TicketType":4,"CustomerId":320359,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-31T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":null,"Content":"change to in executing","CreateUser":301312,"CreateTime":"2017-03-16T09:45:42.897","CreateUserName":"ServiceProviderAdmin","AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin","b"],"TicketStatus":2,"Assets":[{"Id":9903,"TicketId":2501,"HierarchyId":320396,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置-新建设备2*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9164,"TicketId":2501,"UserId":301312,"UserName":"ServiceProviderAdmin"},{"Id":9165,"TicketId":2501,"UserId":301315,"UserName":"b"}],"Logs":[{"Id":1371,"TicketId":2501,"Content":"test for ticket api without picture","CreateUser":301312,"CreateTime":"2017-03-16T10:21:20.49","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:21:20.49","Pictures":[]},{"Id":1370,"TicketId":2501,"Content":"测试日志工单接口","CreateUser":301312,"CreateTime":"2017-03-16T10:20:18.697","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:20:18.697","Pictures":[{"PictureId":"file-ticket-log-2501-636252564160874247","FileName":"Penguins.jpg","Content":null}]}]}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;获取有附件工单的信息&lt;/td&gt;
+		&lt;td&gt;api/tickets/2502&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2502,"TicketNum":"GatewayCustomer-JH170316001","SeqNum":1,"TicketType":1,"CustomerId":320359,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-11-09T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":"2017-03-16T10:00:00","Content":"change to finished","CreateUser":301312,"CreateTime":"2017-03-16T09:46:40.16","CreateUserName":"ServiceProviderAdmin","AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"],"TicketStatus":3,"Assets":[{"Id":9904,"TicketId":2502,"HierarchyId":320396,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置-新建设备2*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9166,"TicketId":2502,"UserId":301315,"UserName":"b"},{"Id":9167,"TicketId":2502,"UserId":301312,"UserName":"ServiceProviderAdmin"}],"Logs":[{"Id":1373,"TicketId":2502,"Content":"for test api without pic after this is completed","CreateUser":301312,"CreateTime":"2017-03-16T10:24:10.867","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:24:10.867","Pictures":[]},{"Id":1372,"TicketId":2502,"Content":"this log is added when it;s executing","CreateUser":301312,"CreateTime":"2017-03-16T10:22:11.413","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:22:11.413","Pictures":[{"PictureId":"file-ticket-log-2502-636252565121937790","FileName":"Penguins.jpg","Content":null},{"PictureId":"file-ticket-log-2502-636252565297479169","FileName":"GatewayCustomer.png","Content":null}]}]}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;工单ID不存在&lt;/td&gt;
+		&lt;td&gt;api/tickets/1000&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"050001251500","Message":null,"RequestId":null,"Result":null}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;工单ID无效&lt;/td&gt;
+		&lt;td&gt;api/tickets/12&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"050001251500","Message":null,"RequestId":null,"Result":null}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>GetTicketId</relativePageName>
+        <tags>get, ticket</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='GetTicketId', args=[]}</instruction>
+        <slimResult>pass(get ticket id)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>get ticket id</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/2499]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2499,"TicketNum":"GatewayCustomer-BJ170301001","SeqNum":1,"TicketType":2,"CustomerId":320359,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:40:03;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 564.123A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateTime":"2017-03-01T11:31:46.633","CreateUserName":"ServiceProviderAdmin","AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"],"TicketStatus":1,"Assets":[{"Id":9901,"TicketId":2499,"HierarchyId":320373,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"机柜-新建设备1*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9162,"TicketId":2499,"UserId":301315,"UserName":"b"}],"Logs":[]}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2499,"TicketNum":"GatewayCustomer-BJ170301001","SeqNum":1,"TicketType":2,"CustomerId":320359,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:40:03;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 564.123A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateTime":"2017-03-01T11:31:46.633","CreateUserName":"ServiceProviderAdmin","AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"],"TicketStatus":1,"Assets":[{"Id":9901,"TicketId":2499,"HierarchyId":320373,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"机柜-新建设备1*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9162,"TicketId":2499,"UserId":301315,"UserName":"b"}],"Logs":[]}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_10', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/2498]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_10</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_12</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"CustomerId":320359,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateTime":"2017-03-01T11:31:11.78","CreateUserName":"ServiceProviderAdmin","AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"],"TicketStatus":1,"Assets":[{"Id":9900,"TicketId":2498,"HierarchyId":320394,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"变压器柜-新建设备2*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9161,"TicketId":2498,"UserId":301312,"UserName":"ServiceProviderAdmin"}],"Logs":[]}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_14</instructionId>
+                    <col>4</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"CustomerId":320359,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateTime":"2017-03-01T11:31:11.78","CreateUserName":"ServiceProviderAdmin","AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"],"TicketStatus":1,"Assets":[{"Id":9900,"TicketId":2498,"HierarchyId":320394,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"变压器柜-新建设备2*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9161,"TicketId":2498,"UserId":301312,"UserName":"ServiceProviderAdmin"}],"Logs":[]}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/2500]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_17', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_17</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_18</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2500,"TicketNum":"GatewayCustomer-SG170301001","SeqNum":1,"TicketType":3,"CustomerId":320359,"StartTime":"2017-03-01T00:00:00","EndTime":"2017-12-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"随工","CreateUser":301312,"CreateTime":"2017-03-01T11:32:39.163","CreateUserName":"ServiceProviderAdmin","AssetNames":["系统装置*1"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"],"TicketStatus":1,"Assets":[{"Id":9902,"TicketId":2500,"HierarchyId":320395,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置*1","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9163,"TicketId":2500,"UserId":301315,"UserName":"b"}],"Logs":[]}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_20</instructionId>
+                    <col>4</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2500,"TicketNum":"GatewayCustomer-SG170301001","SeqNum":1,"TicketType":3,"CustomerId":320359,"StartTime":"2017-03-01T00:00:00","EndTime":"2017-12-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"随工","CreateUser":301312,"CreateTime":"2017-03-01T11:32:39.163","CreateUserName":"ServiceProviderAdmin","AssetNames":["系统装置*1"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"],"TicketStatus":1,"Assets":[{"Id":9902,"TicketId":2500,"HierarchyId":320395,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置*1","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9163,"TicketId":2500,"UserId":301315,"UserName":"b"}],"Logs":[]}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_22', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/2501]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_22</instructionId>
+                    <col>1</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_23', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_23</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_24', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_24</instructionId>
+                    <col>3</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_26', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2501,"TicketNum":"GatewayCustomer-XC170316001","SeqNum":1,"TicketType":4,"CustomerId":320359,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-31T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":null,"Content":"change to in executing","CreateUser":301312,"CreateTime":"2017-03-16T09:45:42.897","CreateUserName":"ServiceProviderAdmin","AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin","b"],"TicketStatus":2,"Assets":[{"Id":9903,"TicketId":2501,"HierarchyId":320396,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置-新建设备2*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9164,"TicketId":2501,"UserId":301312,"UserName":"ServiceProviderAdmin"},{"Id":9165,"TicketId":2501,"UserId":301315,"UserName":"b"}],"Logs":[{"Id":1371,"TicketId":2501,"Content":"test for ticket api without picture","CreateUser":301312,"CreateTime":"2017-03-16T10:21:20.49","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:21:20.49","Pictures":[]},{"Id":1370,"TicketId":2501,"Content":"测试日志工单接口","CreateUser":301312,"CreateTime":"2017-03-16T10:20:18.697","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:20:18.697","Pictures":[{"PictureId":"file-ticket-log-2501-636252564160874247","FileName":"Penguins.jpg","Content":null}]}]}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_26</instructionId>
+                    <col>4</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2501,"TicketNum":"GatewayCustomer-XC170316001","SeqNum":1,"TicketType":4,"CustomerId":320359,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-31T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":null,"Content":"change to in executing","CreateUser":301312,"CreateTime":"2017-03-16T09:45:42.897","CreateUserName":"ServiceProviderAdmin","AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin","b"],"TicketStatus":2,"Assets":[{"Id":9903,"TicketId":2501,"HierarchyId":320396,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置-新建设备2*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9164,"TicketId":2501,"UserId":301312,"UserName":"ServiceProviderAdmin"},{"Id":9165,"TicketId":2501,"UserId":301315,"UserName":"b"}],"Logs":[{"Id":1371,"TicketId":2501,"Content":"test for ticket api without picture","CreateUser":301312,"CreateTime":"2017-03-16T10:21:20.49","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:21:20.49","Pictures":[]},{"Id":1370,"TicketId":2501,"Content":"测试日志工单接口","CreateUser":301312,"CreateTime":"2017-03-16T10:20:18.697","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:20:18.697","Pictures":[{"PictureId":"file-ticket-log-2501-636252564160874247","FileName":"Penguins.jpg","Content":null}]}]}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_28', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/2503]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_28</instructionId>
+                    <col>1</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_29', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_29</instructionId>
+                    <col>2</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_30', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_30</instructionId>
+                    <col>3</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_32', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2503,"TicketNum":"GatewayCustomer-BJ170316001","SeqNum":1,"TicketType":2,"CustomerId":320359,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-05T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":"2017-03-16T10:00:00","Content":"finished\n时间: 2017年1月20日 12:32:18;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 572.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateTime":"2017-03-16T10:09:35.947","CreateUserName":"ServiceProviderAdmin","AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"],"TicketStatus":3,"Assets":[{"Id":9906,"TicketId":2503,"HierarchyId":320373,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"机柜-新建设备1*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9170,"TicketId":2503,"UserId":301315,"UserName":"b"},{"Id":9171,"TicketId":2503,"UserId":301312,"UserName":"ServiceProviderAdmin"}],"Logs":[{"Id":1374,"TicketId":2503,"Content":"for test ticket log api finished","CreateUser":301312,"CreateTime":"2017-03-16T10:27:06.523","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:27:06.523","Pictures":[]}]}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_32</instructionId>
+                    <col>4</col>
+                              <row>6</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2503,"TicketNum":"GatewayCustomer-BJ170316001","SeqNum":1,"TicketType":2,"CustomerId":320359,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-05T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":"2017-03-16T10:00:00","Content":"finished\n时间: 2017年1月20日 12:32:18;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 572.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateTime":"2017-03-16T10:09:35.947","CreateUserName":"ServiceProviderAdmin","AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"],"TicketStatus":3,"Assets":[{"Id":9906,"TicketId":2503,"HierarchyId":320373,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"机柜-新建设备1*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9170,"TicketId":2503,"UserId":301315,"UserName":"b"},{"Id":9171,"TicketId":2503,"UserId":301312,"UserName":"ServiceProviderAdmin"}],"Logs":[{"Id":1374,"TicketId":2503,"Content":"for test ticket log api finished","CreateUser":301312,"CreateTime":"2017-03-16T10:27:06.523","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:27:06.523","Pictures":[]}]}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_34', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/2501]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_34</instructionId>
+                    <col>1</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_35', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_35</instructionId>
+                    <col>2</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_36', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_36</instructionId>
+                    <col>3</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_38', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2501,"TicketNum":"GatewayCustomer-XC170316001","SeqNum":1,"TicketType":4,"CustomerId":320359,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-31T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":null,"Content":"change to in executing","CreateUser":301312,"CreateTime":"2017-03-16T09:45:42.897","CreateUserName":"ServiceProviderAdmin","AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin","b"],"TicketStatus":2,"Assets":[{"Id":9903,"TicketId":2501,"HierarchyId":320396,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置-新建设备2*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9164,"TicketId":2501,"UserId":301312,"UserName":"ServiceProviderAdmin"},{"Id":9165,"TicketId":2501,"UserId":301315,"UserName":"b"}],"Logs":[{"Id":1371,"TicketId":2501,"Content":"test for ticket api without picture","CreateUser":301312,"CreateTime":"2017-03-16T10:21:20.49","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:21:20.49","Pictures":[]},{"Id":1370,"TicketId":2501,"Content":"测试日志工单接口","CreateUser":301312,"CreateTime":"2017-03-16T10:20:18.697","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:20:18.697","Pictures":[{"PictureId":"file-ticket-log-2501-636252564160874247","FileName":"Penguins.jpg","Content":null}]}]}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_38</instructionId>
+                    <col>4</col>
+                              <row>7</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2501,"TicketNum":"GatewayCustomer-XC170316001","SeqNum":1,"TicketType":4,"CustomerId":320359,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-31T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":null,"Content":"change to in executing","CreateUser":301312,"CreateTime":"2017-03-16T09:45:42.897","CreateUserName":"ServiceProviderAdmin","AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin","b"],"TicketStatus":2,"Assets":[{"Id":9903,"TicketId":2501,"HierarchyId":320396,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置-新建设备2*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9164,"TicketId":2501,"UserId":301312,"UserName":"ServiceProviderAdmin"},{"Id":9165,"TicketId":2501,"UserId":301315,"UserName":"b"}],"Logs":[{"Id":1371,"TicketId":2501,"Content":"test for ticket api without picture","CreateUser":301312,"CreateTime":"2017-03-16T10:21:20.49","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:21:20.49","Pictures":[]},{"Id":1370,"TicketId":2501,"Content":"测试日志工单接口","CreateUser":301312,"CreateTime":"2017-03-16T10:20:18.697","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:20:18.697","Pictures":[{"PictureId":"file-ticket-log-2501-636252564160874247","FileName":"Penguins.jpg","Content":null}]}]}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_40', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/2501]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_40</instructionId>
+                    <col>1</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_41', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_41</instructionId>
+                    <col>2</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_42', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_42</instructionId>
+                    <col>3</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_44', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2501,"TicketNum":"GatewayCustomer-XC170316001","SeqNum":1,"TicketType":4,"CustomerId":320359,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-31T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":null,"Content":"change to in executing","CreateUser":301312,"CreateTime":"2017-03-16T09:45:42.897","CreateUserName":"ServiceProviderAdmin","AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin","b"],"TicketStatus":2,"Assets":[{"Id":9903,"TicketId":2501,"HierarchyId":320396,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置-新建设备2*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9164,"TicketId":2501,"UserId":301312,"UserName":"ServiceProviderAdmin"},{"Id":9165,"TicketId":2501,"UserId":301315,"UserName":"b"}],"Logs":[{"Id":1371,"TicketId":2501,"Content":"test for ticket api without picture","CreateUser":301312,"CreateTime":"2017-03-16T10:21:20.49","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:21:20.49","Pictures":[]},{"Id":1370,"TicketId":2501,"Content":"测试日志工单接口","CreateUser":301312,"CreateTime":"2017-03-16T10:20:18.697","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:20:18.697","Pictures":[{"PictureId":"file-ticket-log-2501-636252564160874247","FileName":"Penguins.jpg","Content":null}]}]}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_44</instructionId>
+                    <col>4</col>
+                              <row>8</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2501,"TicketNum":"GatewayCustomer-XC170316001","SeqNum":1,"TicketType":4,"CustomerId":320359,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-31T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":null,"Content":"change to in executing","CreateUser":301312,"CreateTime":"2017-03-16T09:45:42.897","CreateUserName":"ServiceProviderAdmin","AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin","b"],"TicketStatus":2,"Assets":[{"Id":9903,"TicketId":2501,"HierarchyId":320396,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置-新建设备2*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9164,"TicketId":2501,"UserId":301312,"UserName":"ServiceProviderAdmin"},{"Id":9165,"TicketId":2501,"UserId":301315,"UserName":"b"}],"Logs":[{"Id":1371,"TicketId":2501,"Content":"test for ticket api without picture","CreateUser":301312,"CreateTime":"2017-03-16T10:21:20.49","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:21:20.49","Pictures":[]},{"Id":1370,"TicketId":2501,"Content":"测试日志工单接口","CreateUser":301312,"CreateTime":"2017-03-16T10:20:18.697","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:20:18.697","Pictures":[{"PictureId":"file-ticket-log-2501-636252564160874247","FileName":"Penguins.jpg","Content":null}]}]}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_46', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/2502]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_46</instructionId>
+                    <col>1</col>
+                              <row>9</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_47', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_47</instructionId>
+                    <col>2</col>
+                              <row>9</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_48', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_48</instructionId>
+                    <col>3</col>
+                              <row>9</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_50', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2502,"TicketNum":"GatewayCustomer-JH170316001","SeqNum":1,"TicketType":1,"CustomerId":320359,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-11-09T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":"2017-03-16T10:00:00","Content":"change to finished","CreateUser":301312,"CreateTime":"2017-03-16T09:46:40.16","CreateUserName":"ServiceProviderAdmin","AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"],"TicketStatus":3,"Assets":[{"Id":9904,"TicketId":2502,"HierarchyId":320396,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置-新建设备2*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9166,"TicketId":2502,"UserId":301315,"UserName":"b"},{"Id":9167,"TicketId":2502,"UserId":301312,"UserName":"ServiceProviderAdmin"}],"Logs":[{"Id":1373,"TicketId":2502,"Content":"for test api without pic after this is completed","CreateUser":301312,"CreateTime":"2017-03-16T10:24:10.867","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:24:10.867","Pictures":[]},{"Id":1372,"TicketId":2502,"Content":"this log is added when it;s executing","CreateUser":301312,"CreateTime":"2017-03-16T10:22:11.413","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:22:11.413","Pictures":[{"PictureId":"file-ticket-log-2502-636252565121937790","FileName":"Penguins.jpg","Content":null},{"PictureId":"file-ticket-log-2502-636252565297479169","FileName":"GatewayCustomer.png","Content":null}]}]}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_50</instructionId>
+                    <col>4</col>
+                              <row>9</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":2502,"TicketNum":"GatewayCustomer-JH170316001","SeqNum":1,"TicketType":1,"CustomerId":320359,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-11-09T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":"2017-03-16T10:00:00","Content":"change to finished","CreateUser":301312,"CreateTime":"2017-03-16T09:46:40.16","CreateUserName":"ServiceProviderAdmin","AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"],"TicketStatus":3,"Assets":[{"Id":9904,"TicketId":2502,"HierarchyId":320396,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置-新建设备2*","BuildingPictureKey":"img-cover-0"}],"Documents":[],"Executors":[{"Id":9166,"TicketId":2502,"UserId":301315,"UserName":"b"},{"Id":9167,"TicketId":2502,"UserId":301312,"UserName":"ServiceProviderAdmin"}],"Logs":[{"Id":1373,"TicketId":2502,"Content":"for test api without pic after this is completed","CreateUser":301312,"CreateTime":"2017-03-16T10:24:10.867","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:24:10.867","Pictures":[]},{"Id":1372,"TicketId":2502,"Content":"this log is added when it;s executing","CreateUser":301312,"CreateTime":"2017-03-16T10:22:11.413","CreateUserName":"ServiceProviderAdmin","UpdateUser":null,"UpdateTime":"2017-03-16T10:22:11.413","Pictures":[{"PictureId":"file-ticket-log-2502-636252565121937790","FileName":"Penguins.jpg","Content":null},{"PictureId":"file-ticket-log-2502-636252565297479169","FileName":"GatewayCustomer.png","Content":null}]}]}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_52', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/1000]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_52</instructionId>
+                    <col>1</col>
+                              <row>10</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_53', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_53</instructionId>
+                    <col>2</col>
+                              <row>10</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_54', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_54</instructionId>
+                    <col>3</col>
+                              <row>10</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_56', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"050001251500","Message":null,"RequestId":null,"Result":null})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_56</instructionId>
+                    <col>4</col>
+                              <row>10</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"050001251500","Message":null,"RequestId":null,"Result":null}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_58', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/12]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_58</instructionId>
+                    <col>1</col>
+                              <row>11</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_59', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_59</instructionId>
+                    <col>2</col>
+                              <row>11</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_60', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_60</instructionId>
+                    <col>3</col>
+                              <row>11</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_62', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"050001251500","Message":null,"RequestId":null,"Result":null})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_62</instructionId>
+                    <col>4</col>
+                              <row>11</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"050001251500","Message":null,"RequestId":null,"Result":null}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>7064</totalRunTimeInMillis>
+</testResults>
+

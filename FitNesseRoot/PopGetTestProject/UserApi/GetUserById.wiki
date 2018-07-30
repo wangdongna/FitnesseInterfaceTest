@@ -1,0 +1,34 @@
+---
+Help: get user by id
+Suites: get, user
+Test
+---
+
+!define TEST_SYSTEM {slim} 
+!path D:\Emma\fitnesse\FitnessTest\bin 
+!path D:\Emma\fitnesse\GatCommon\bin 
+!path D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar 
+
+|import| 
+|fitnesse.slim.test| 
+|import| 
+|gat.http.helper| 
+|import| 
+|gat.common.jsonhelper| 
+|import| 
+|gat.common.excelservice| 
+
+|get user by id|
+|#comment|path|username|password|responsebody?|
+|返回用户信息，权限为客户管理员，部分客户权限|api/user/301315|api.shareuserc|123456Qq|{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":301315,"RealName":"b","UserType":303247,"UserTypeName":"客户管理员","Password":"6373DDF3790C9B95E095583CA5C76C8C","Customers":[{"CustomerId":320359,"CustomerName":"GatewayCustomer","CustomerCode":"GatewayCustomer","CustomerImageId":"img-logo-300833","SysType":1},{"CustomerId":320366,"CustomerName":"api.cutomer1","CustomerCode":"api.cutomer1","CustomerImageId":"img-logo-300834","SysType":1},{"CustomerId":320367,"CustomerName":"api.customer2","CustomerCode":"api.customer2","CustomerImageId":"img-logo-300835","SysType":1},{"CustomerId":320368,"CustomerName":"api.customer3","CustomerCode":"api.customer3","CustomerImageId":"img-logo-300836","SysType":1}],"Title":"客户管理员","Telephone":"18358623256","Email":"d","Comment":null,"Name":"api.shareuserc","DemoStatus":0,"SpId":316,"Status":1,"SpStatus":0,"SpDomain":null,"FedLoginUrl":null,"HasWholeCustomer":false,"PrivilegeCodes":["1104","1205","1207","1208","1210","1217","1218","1219","1221","1222","1223","1313","1327","2100","2101","2102","2104","2106","2108","2114","2117","2119","2128","2130","2132","2134","2136","2139"],"SpFullName":null,"SpName":"apiauto"}}|
+|返回用户信息，权限为服务商管理员，全部客户权限|api/user/301316|api.shareuserd|123456Qq|{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":301316,"RealName":"api.shareuserd","UserType":303246,"UserTypeName":"服务商管理员","Password":"6373DDF3790C9B95E095583CA5C76C8C","Customers":[{"CustomerId":320366,"CustomerName":"api.cutomer1","CustomerCode":"api.cutomer1","CustomerImageId":"img-logo-300834","SysType":1},{"CustomerId":320367,"CustomerName":"api.customer2","CustomerCode":"api.customer2","CustomerImageId":"img-logo-300835","SysType":1},{"CustomerId":320368,"CustomerName":"api.customer3","CustomerCode":"api.customer3","CustomerImageId":"img-logo-300836","SysType":1}],"Title":"能源工程顾问","Telephone":"12032568789","Email":"dongna-emma.wang@schneider-electric.com","Comment":null,"Name":"api.shareuserd","DemoStatus":0,"SpId":316,"Status":1,"SpStatus":0,"SpDomain":null,"FedLoginUrl":null,"HasWholeCustomer":false,"PrivilegeCodes":["1104","1205","1206","1207","1208","1210","1217","1218","1219","1221","1222","1223","1313","1327","2100","2101","2102","2103","2105","2107","2110","2112","2114","2117","2119","2127","2129","2131","2133","2135","2136","2137","2138","2140","2141"],"SpFullName":null,"SpName":"apiauto"}}|

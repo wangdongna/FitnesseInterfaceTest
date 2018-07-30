@@ -1,0 +1,1005 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopPostTestProject.TicketApi.TicketSearchme</rootPath>
+    <result>
+    <counts>
+      <right>8</right>
+      <wrong>1</wrong>
+      <ignores>5</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-10T13:47:03+08:00</date>
+    <runTimeInMillis>14583</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;&lt;span class="pass"&gt;ticket searchme&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;requestbody&lt;/td&gt;
+		&lt;td&gt;responsebody?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;只按工单ID筛选&lt;/td&gt;
+		&lt;td&gt;api/tickets/searchme&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"TicketID":"170301"}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":3,"Items":[{"Id":2499,"TicketNum":"GatewayCustomer-BJ170301001","SeqNum":1,"TicketType":2,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:40:03;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 564.123A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:46.633","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2500,"TicketNum":"GatewayCustomer-SG170301001","SeqNum":1,"TicketType":3,"StartTime":"2017-03-01T00:00:00","EndTime":"2017-12-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"随工","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:32:39.163","TicketStatus":1,"AssetNames":["系统装置*1"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]}],"RequestId":null}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;开始时间等于结束时间&lt;/td&gt;
+		&lt;td&gt;api/tickets/searchme&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"EndTime":"2017-08-01","StartTime":"2017-08-01"}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[],"RequestId":null}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;开始时间小于结束时间，无结果&lt;/td&gt;
+		&lt;td&gt;api/tickets/searchme&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"EndTime":"2016-08-04","StartTime":"2016-08-01"}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[],"RequestId":null}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;开始时间小于结束时间，有结果&lt;/td&gt;
+		&lt;td&gt;api/tickets/searchme&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"EndTime":"2017-08-02","StartTime":"2017-08-01"}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[],"RequestId":null}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;开始时间大于结束时间&lt;/td&gt;
+		&lt;td&gt;api/tickets/searchme&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"EndTime":"2017-07-01","StartTime":"2017-08-01"}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[],"RequestId":null}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;工单状态为逾期&lt;/td&gt;
+		&lt;td&gt;api/tickets/searchme&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"TicketStatus":["1","2"]}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":6,"Items":[{"Id":2507,"TicketNum":"GatewayCustomer-BJ170728001","SeqNum":1,"TicketType":2,"StartTime":"2017-07-28T00:00:00","EndTime":"2018-07-06T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:38:39;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 597.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:47:52.49","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2513,"TicketNum":"GatewayCustomer-SG170728003","SeqNum":3,"TicketType":3,"StartTime":"2017-07-28T00:00:00","EndTime":"2017-09-29T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gegnixn","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:57:39.533","TicketStatus":1,"AssetNames":["新建机柜1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2506,"TicketNum":"GatewayCustomer-SG170728001","SeqNum":1,"TicketType":3,"StartTime":"2017-07-01T00:00:00","EndTime":"2017-07-27T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"search all","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:39:38.947","TicketStatus":1,"AssetNames":["有虚拟盒子的配电室"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2499,"TicketNum":"GatewayCustomer-BJ170301001","SeqNum":1,"TicketType":2,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:40:03;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 564.123A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:46.633","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2500,"TicketNum":"GatewayCustomer-SG170301001","SeqNum":1,"TicketType":3,"StartTime":"2017-03-01T00:00:00","EndTime":"2017-12-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"随工","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:32:39.163","TicketStatus":1,"AssetNames":["系统装置*1"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]}],"RequestId":null}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;工单状态为未开始&lt;/td&gt;
+		&lt;td&gt;api/tickets/searchme&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"TicketStatus":["3"]}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="ignore"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":13,"Items":[{"Id":2541,"TicketNum":"GatewayCustomer-BJ170810001","SeqNum":1,"TicketType":2,"StartTime":"2020-12-01T00:00:00","EndTime":"2020-12-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"create","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-10T13:46:35.217","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2516,"TicketNum":"GatewayCustomer-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-11-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"跟新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:00:49.717","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2512,"TicketNum":"GatewayCustomer-JH170728002","SeqNum":2,"TicketType":1,"StartTime":"2017-10-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gengxin","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:56:49.47","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2508,"TicketNum":"GatewayCustomer-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-09-01T00:00:00","EndTime":"2017-09-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"shanchu","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:48:27.973","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2514,"TicketNum":"GatewayCustomer-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-25T00:00:00","EndTime":"2017-08-25T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"更新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:58:55.277","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2511,"TicketNum":"GatewayCustomer-BJ170728002","SeqNum":2,"TicketType":2,"StartTime":"2017-08-18T00:00:00","EndTime":"2017-08-18T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:33:57;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 586.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:50:50.02","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.useremailempty.proupdate"]},{"Id":2515,"TicketNum":"GatewayCustomer-BJ170728003","SeqNum":3,"TicketType":2,"StartTime":"2017-08-16T00:00:00","EndTime":"2017-08-16T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:27:02;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 590.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:59:43.117","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2507,"TicketNum":"GatewayCustomer-BJ170728001","SeqNum":1,"TicketType":2,"StartTime":"2017-07-28T00:00:00","EndTime":"2018-07-06T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:38:39;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 597.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:47:52.49","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2513,"TicketNum":"GatewayCustomer-SG170728003","SeqNum":3,"TicketType":3,"StartTime":"2017-07-28T00:00:00","EndTime":"2017-09-29T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gegnixn","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:57:39.533","TicketStatus":1,"AssetNames":["新建机柜1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2506,"TicketNum":"GatewayCustomer-SG170728001","SeqNum":1,"TicketType":3,"StartTime":"2017-07-01T00:00:00","EndTime":"2017-07-27T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"search all","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:39:38.947","TicketStatus":1,"AssetNames":["有虚拟盒子的配电室"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2499,"TicketNum":"GatewayCustomer-BJ170301001","SeqNum":1,"TicketType":2,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:40:03;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 564.123A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:46.633","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2500,"TicketNum":"GatewayCustomer-SG170301001","SeqNum":1,"TicketType":3,"StartTime":"2017-03-01T00:00:00","EndTime":"2017-12-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"随工","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:32:39.163","TicketStatus":1,"AssetNames":["系统装置*1"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]}],"RequestId":null}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;工单状态为逾期+未开始&lt;/td&gt;
+		&lt;td&gt;api/tickets/searchme&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"TicketStatus":["1","2","3"]}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="ignore"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":13,"Items":[{"Id":2541,"TicketNum":"GatewayCustomer-BJ170810001","SeqNum":1,"TicketType":2,"StartTime":"2020-12-01T00:00:00","EndTime":"2020-12-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"create","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-10T13:46:35.217","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2516,"TicketNum":"GatewayCustomer-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-11-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"跟新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:00:49.717","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2512,"TicketNum":"GatewayCustomer-JH170728002","SeqNum":2,"TicketType":1,"StartTime":"2017-10-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gengxin","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:56:49.47","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2508,"TicketNum":"GatewayCustomer-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-09-01T00:00:00","EndTime":"2017-09-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"shanchu","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:48:27.973","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2514,"TicketNum":"GatewayCustomer-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-25T00:00:00","EndTime":"2017-08-25T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"更新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:58:55.277","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2511,"TicketNum":"GatewayCustomer-BJ170728002","SeqNum":2,"TicketType":2,"StartTime":"2017-08-18T00:00:00","EndTime":"2017-08-18T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:33:57;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 586.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:50:50.02","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.useremailempty.proupdate"]},{"Id":2515,"TicketNum":"GatewayCustomer-BJ170728003","SeqNum":3,"TicketType":2,"StartTime":"2017-08-16T00:00:00","EndTime":"2017-08-16T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:27:02;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 590.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:59:43.117","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2507,"TicketNum":"GatewayCustomer-BJ170728001","SeqNum":1,"TicketType":2,"StartTime":"2017-07-28T00:00:00","EndTime":"2018-07-06T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:38:39;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 597.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:47:52.49","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2513,"TicketNum":"GatewayCustomer-SG170728003","SeqNum":3,"TicketType":3,"StartTime":"2017-07-28T00:00:00","EndTime":"2017-09-29T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gegnixn","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:57:39.533","TicketStatus":1,"AssetNames":["新建机柜1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2506,"TicketNum":"GatewayCustomer-SG170728001","SeqNum":1,"TicketType":3,"StartTime":"2017-07-01T00:00:00","EndTime":"2017-07-27T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"search all","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:39:38.947","TicketStatus":1,"AssetNames":["有虚拟盒子的配电室"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2499,"TicketNum":"GatewayCustomer-BJ170301001","SeqNum":1,"TicketType":2,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:40:03;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 564.123A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:46.633","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2500,"TicketNum":"GatewayCustomer-SG170301001","SeqNum":1,"TicketType":3,"StartTime":"2017-03-01T00:00:00","EndTime":"2017-12-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"随工","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:32:39.163","TicketStatus":1,"AssetNames":["系统装置*1"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]}],"RequestId":null}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;工单类型为计划工单&lt;/td&gt;
+		&lt;td&gt;api/tickets/searchme&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"TicketTypes":["1"]}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":5,"Items":[{"Id":2516,"TicketNum":"GatewayCustomer-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-11-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"跟新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:00:49.717","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2512,"TicketNum":"GatewayCustomer-JH170728002","SeqNum":2,"TicketType":1,"StartTime":"2017-10-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gengxin","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:56:49.47","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2508,"TicketNum":"GatewayCustomer-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-09-01T00:00:00","EndTime":"2017-09-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"shanchu","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:48:27.973","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2502,"TicketNum":"GatewayCustomer-JH170316001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-11-09T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":"2017-03-16T00:00:00","Content":"change to finished","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-16T09:46:40.16","TicketStatus":5,"AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"]}],"RequestId":null}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;工单类型为计划工单+现场工单&lt;/td&gt;
+		&lt;td&gt;api/tickets/searchme&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"TicketTypes":["1","4"]}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="ignore"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":7,"Items":[{"Id":2516,"TicketNum":"GatewayCustomer-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-11-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"跟新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:00:49.717","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2512,"TicketNum":"GatewayCustomer-JH170728002","SeqNum":2,"TicketType":1,"StartTime":"2017-10-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gengxin","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:56:49.47","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2508,"TicketNum":"GatewayCustomer-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-09-01T00:00:00","EndTime":"2017-09-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"shanchu","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:48:27.973","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2514,"TicketNum":"GatewayCustomer-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-25T00:00:00","EndTime":"2017-08-25T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"更新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:58:55.277","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2501,"TicketNum":"GatewayCustomer-XC170316001","SeqNum":1,"TicketType":4,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-31T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":null,"Content":"change to in executing","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-16T09:45:42.897","TicketStatus":4,"AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"]},{"Id":2502,"TicketNum":"GatewayCustomer-JH170316001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-11-09T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":"2017-03-16T00:00:00","Content":"change to finished","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-16T09:46:40.16","TicketStatus":5,"AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"]}],"RequestId":null}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;资产位置下没有工单&lt;/td&gt;
+		&lt;td&gt;api/tickets/searchme&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320367,"CurrentPage":"1","ItemsPerPage":20,"Hierarchies":["320459"]}&lt;/td&gt;
+		&lt;td&gt;[{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":&lt;span class="diff"&gt;0&lt;/span&gt;,"TotalItemsCount":0,"Items":[],"RequestId":null}}] &lt;span class="fail"&gt;expected [{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":&lt;/span&gt;&lt;span class="diff"&gt;1&lt;/span&gt;&lt;span class="fail"&gt;,"TotalItemsCount":&lt;/span&gt;&lt;span class="diff"&gt;2,"Items":[{"Id":254&lt;/span&gt;&lt;span class="fail"&gt;0,"&lt;/span&gt;&lt;span class="diff"&gt;TicketNum":"api.customer2-SG170809001","SeqNum":1,"TicketType":3,"StartTime":"2018-08-01T00:00:00","EndTime":"2018-08-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"SG","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-09T15:23:34.53","TicketStatus":3,"AssetNames":["api2-build-1"],"BuildingNames":["api2-build-1"],"ExecutorNames":["b"]},{"&lt;/span&gt;&lt;span class="fail"&gt;I&lt;/span&gt;&lt;span class="diff"&gt;d":2541,"Ticke&lt;/span&gt;&lt;span class="fail"&gt;t&lt;/span&gt;&lt;span class="diff"&gt;Num":"api.custom&lt;/span&gt;&lt;span class="fail"&gt;e&lt;/span&gt;&lt;span class="diff"&gt;r2-XC170809001","SeqNu&lt;/span&gt;&lt;span class="fail"&gt;m&lt;/span&gt;&lt;span class="diff"&gt;":1,"TicketType":4,"StartTime":"2017-10-07T00:00:00","EndTime":"2017-12-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"XC","CreateU&lt;/span&gt;&lt;span class="fail"&gt;s&lt;/span&gt;&lt;span class="diff"&gt;er&lt;/span&gt;&lt;span class="fail"&gt;":&lt;/span&gt;&lt;span class="diff"&gt;301312,"CreateUserName":"apiauto","CreateTime":"2017-08-09T15:23:35.187","TicketStatus":3,"AssetNames":&lt;/span&gt;&lt;span class="fail"&gt;[&lt;/span&gt;&lt;span class="diff"&gt;"api2-build-1"&lt;/span&gt;&lt;span class="fail"&gt;],"&lt;/span&gt;&lt;span class="diff"&gt;BuildingNames":["api2-build-1"],"ExecutorNames":["api.shareuserd"]}],"&lt;/span&gt;&lt;span class="fail"&gt;RequestId":null}}]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;资产位置下有工单&lt;/td&gt;
+		&lt;td&gt;api/tickets/searchme&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"Hierarchies":["320536"]}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":2,"Items":[{"Id":2516,"TicketNum":"GatewayCustomer-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-11-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"跟新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:00:49.717","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2514,"TicketNum":"GatewayCustomer-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-25T00:00:00","EndTime":"2017-08-25T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"更新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:58:55.277","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["ServiceProviderAdmin"]}],"RequestId":null}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;工单ID+时间范围+工单状态&lt;/td&gt;
+		&lt;td&gt;api/tickets/searchme&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"EndTime":"2017-09-01","StartTime":"2017-08-01","TicketID":"28","TicketStatus":["3"]}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="ignore"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":4,"Items":[{"Id":2508,"TicketNum":"GatewayCustomer-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-09-01T00:00:00","EndTime":"2017-09-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"shanchu","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:48:27.973","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2514,"TicketNum":"GatewayCustomer-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-25T00:00:00","EndTime":"2017-08-25T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"更新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:58:55.277","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2511,"TicketNum":"GatewayCustomer-BJ170728002","SeqNum":2,"TicketType":2,"StartTime":"2017-08-18T00:00:00","EndTime":"2017-08-18T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:33:57;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 586.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:50:50.02","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.useremailempty.proupdate"]},{"Id":2515,"TicketNum":"GatewayCustomer-BJ170728003","SeqNum":3,"TicketType":2,"StartTime":"2017-08-16T00:00:00","EndTime":"2017-08-16T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:27:02;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 590.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:59:43.117","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]}],"RequestId":null}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;条件全部选上&lt;/td&gt;
+		&lt;td&gt;api/tickets/searchme&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320366,"CurrentPage":"1","ItemsPerPage":20,"TicketStatus":["1","2","3","4","5"]}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="ignore"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":2,"TotalItemsCount":21,"Items":[{"Id":2531,"TicketNum":"api.cutomer1-JH170728006","SeqNum":6,"TicketType":1,"StartTime":"2017-10-07T00:00:00","EndTime":"2017-11-10T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"d","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:13:34.417","TicketStatus":3,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["b","oneallcuscomter","ServiceProviderAdmin"]},{"Id":2528,"TicketNum":"api.cutomer1-JH170728005","SeqNum":5,"TicketType":1,"StartTime":"2017-10-02T00:00:00","EndTime":"2017-11-18T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"r","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:11:59.263","TicketStatus":3,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2527,"TicketNum":"api.cutomer1-JH170728004","SeqNum":4,"TicketType":1,"StartTime":"2017-09-09T00:00:00","EndTime":"2017-09-09T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":";","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:11:43.28","TicketStatus":3,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["oneallcuscomter"]},{"Id":2530,"TicketNum":"api.cutomer1-XC170728004","SeqNum":4,"TicketType":4,"StartTime":"2017-09-01T00:00:00","EndTime":"2018-02-09T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"i","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:13:05.81","TicketStatus":3,"AssetNames":["SECI Build","SECI Device","SECI Panel","SECI Room"],"BuildingNames":["SECI Build"],"ExecutorNames":["b"]},{"Id":2526,"TicketNum":"api.cutomer1-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-08-26T00:00:00","EndTime":"2017-08-26T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"l","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:11:28.853","TicketStatus":3,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["b"]},{"Id":2529,"TicketNum":"api.cutomer1-SG170728005","SeqNum":5,"TicketType":3,"StartTime":"2017-08-11T00:00:00","EndTime":"2017-11-16T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"o","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:12:37.96","TicketStatus":3,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd","api.usernicknamempty.proupdate","b","oneallcuscomter"]},{"Id":2522,"TicketNum":"api.cutomer1-JH170728002","SeqNum":2,"TicketType":1,"StartTime":"2017-08-01T00:00:00","EndTime":"2017-11-16T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"你thing","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:05:46.24","TicketStatus":1,"AssetNames":["SECI Build","SECI Room"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.usernicknamempty.proupdate"]},{"Id":2520,"TicketNum":"api.cutomer1-SG170728002","SeqNum":2,"TicketType":3,"StartTime":"2017-08-01T00:00:00","EndTime":"2017-08-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"的","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:04:53.05","TicketStatus":1,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["b"]},{"Id":2532,"TicketNum":"api.cutomer1-SG170808001","SeqNum":1,"TicketType":3,"StartTime":"2017-07-01T00:00:00","EndTime":"2019-08-09T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"log update","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-08T17:07:36.757","TicketStatus":1,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2525,"TicketNum":"api.cutomer1-XC170728003","SeqNum":3,"TicketType":4,"StartTime":"2017-08-11T00:00:00","EndTime":"2018-03-23T00:00:00","ActualStartTime":"2017-08-06T00:00:00","ActualEndTime":null,"Content":"lok","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:10:03.117","TicketStatus":4,"AssetNames":["SECI Device"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2534,"TicketNum":"api.cutomer1-JH170808001","SeqNum":1,"TicketType":1,"StartTime":"2017-08-04T00:00:00","EndTime":"2018-08-03T00:00:00","ActualStartTime":"2017-08-05T00:00:00","ActualEndTime":null,"Content":"log update","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-08T17:08:15.137","TicketStatus":4,"AssetNames":["SECI Panel"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2518,"TicketNum":"api.cutomer1-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-08-03T00:00:00","EndTime":"2018-07-06T00:00:00","ActualStartTime":"2017-08-06T00:00:00","ActualEndTime":null,"Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:03:27.87","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["oneallcuscomter"]},{"Id":2517,"TicketNum":"api.cutomer1-SG170728001","SeqNum":1,"TicketType":3,"StartTime":"2017-08-01T00:00:00","EndTime":"2020-07-03T00:00:00","ActualStartTime":"2017-08-01T00:00:00","ActualEndTime":null,"Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:02:48.46","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["oneallcuscomter"]},{"Id":2533,"TicketNum":"api.cutomer1-XC170808001","SeqNum":1,"TicketType":4,"StartTime":"2017-08-01T00:00:00","EndTime":"2019-08-01T00:00:00","ActualStartTime":"2017-08-05T00:00:00","ActualEndTime":null,"Content":"log update","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-08T17:07:55.5","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2536,"TicketNum":"api.cutomer1-SG170808002","SeqNum":2,"TicketType":3,"StartTime":"2017-08-01T00:00:00","EndTime":"2018-08-03T00:00:00","ActualStartTime":"2017-08-05T00:00:00","ActualEndTime":null,"Content":"log delete","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-08T17:09:15.563","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["b"]},{"Id":2535,"TicketNum":"api.cutomer1-JH170808002","SeqNum":2,"TicketType":1,"StartTime":"2017-08-01T00:00:00","EndTime":"2017-10-24T00:00:00","ActualStartTime":"2017-08-05T00:00:00","ActualEndTime":null,"Content":"log update","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-08T17:08:44.687","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2521,"TicketNum":"api.cutomer1-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-01T00:00:00","EndTime":"2017-09-21T00:00:00","ActualStartTime":"2017-08-07T00:00:00","ActualEndTime":null,"Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:05:19.76","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["oneallcuscomter"]},{"Id":2524,"TicketNum":"api.cutomer1-SG170728004","SeqNum":4,"TicketType":3,"StartTime":"2017-07-31T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":"2017-08-07T00:00:00","ActualEndTime":null,"Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:09:35.53","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2519,"TicketNum":"api.cutomer1-XC170728001","SeqNum":1,"TicketType":4,"StartTime":"2017-07-01T00:00:00","EndTime":"2019-07-04T00:00:00","ActualStartTime":"2017-08-07T00:00:00","ActualEndTime":null,"Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:04:01.397","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2523,"TicketNum":"api.cutomer1-SG170728003","SeqNum":3,"TicketType":3,"StartTime":"2017-07-31T00:00:00","EndTime":"2017-09-08T00:00:00","ActualStartTime":"2017-08-01T00:00:00","ActualEndTime":"2017-08-07T00:00:00","Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:09:14.573","TicketStatus":5,"AssetNames":["SECI Room"],"BuildingNames":["SECI Build"],"ExecutorNames":["b"]}],"RequestId":null}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>TicketSearchme</relativePageName>
+        <tags>ticket, searchme</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='TicketSearchme', args=[]}</instruction>
+        <slimResult>pass(ticket searchme)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>ticket searchme</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/searchme]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"TicketID":"170301"}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_7</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_9', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":3,"Items":[{"Id":2499,"TicketNum":"GatewayCustomer-BJ170301001","SeqNum":1,"TicketType":2,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:40:03;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 564.123A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:46.633","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2500,"TicketNum":"GatewayCustomer-SG170301001","SeqNum":1,"TicketType":3,"StartTime":"2017-03-01T00:00:00","EndTime":"2017-12-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"随工","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:32:39.163","TicketStatus":1,"AssetNames":["系统装置*1"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]}],"RequestId":null}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_9</instructionId>
+                    <col>5</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":3,"Items":[{"Id":2499,"TicketNum":"GatewayCustomer-BJ170301001","SeqNum":1,"TicketType":2,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:40:03;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 564.123A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:46.633","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2500,"TicketNum":"GatewayCustomer-SG170301001","SeqNum":1,"TicketType":3,"StartTime":"2017-03-01T00:00:00","EndTime":"2017-12-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"随工","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:32:39.163","TicketStatus":1,"AssetNames":["系统装置*1"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]}],"RequestId":null}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/searchme]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_12</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_13', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_13</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"EndTime":"2017-08-01","StartTime":"2017-08-01"}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_14</instructionId>
+                    <col>4</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[],"RequestId":null}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>5</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[],"RequestId":null}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/searchme]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_18</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_19', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_19</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_20</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_21', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"EndTime":"2016-08-04","StartTime":"2016-08-01"}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_21</instructionId>
+                    <col>4</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_23', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[],"RequestId":null}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_23</instructionId>
+                    <col>5</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[],"RequestId":null}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_25', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/searchme]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_25</instructionId>
+                    <col>1</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_26', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_26</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_27', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_27</instructionId>
+                    <col>3</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_28', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"EndTime":"2017-08-02","StartTime":"2017-08-01"}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_28</instructionId>
+                    <col>4</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_30', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[],"RequestId":null}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_30</instructionId>
+                    <col>5</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[],"RequestId":null}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_32', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/searchme]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_32</instructionId>
+                    <col>1</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_33', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_33</instructionId>
+                    <col>2</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_34', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_34</instructionId>
+                    <col>3</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_35', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"EndTime":"2017-07-01","StartTime":"2017-08-01"}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_35</instructionId>
+                    <col>4</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_37', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[],"RequestId":null}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_37</instructionId>
+                    <col>5</col>
+                              <row>6</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[],"RequestId":null}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_39', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/searchme]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_39</instructionId>
+                    <col>1</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_40', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_40</instructionId>
+                    <col>2</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_41', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_41</instructionId>
+                    <col>3</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_42', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"TicketStatus":["1","2"]}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_42</instructionId>
+                    <col>4</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_44', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":6,"Items":[{"Id":2507,"TicketNum":"GatewayCustomer-BJ170728001","SeqNum":1,"TicketType":2,"StartTime":"2017-07-28T00:00:00","EndTime":"2018-07-06T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:38:39;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 597.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:47:52.49","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2513,"TicketNum":"GatewayCustomer-SG170728003","SeqNum":3,"TicketType":3,"StartTime":"2017-07-28T00:00:00","EndTime":"2017-09-29T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gegnixn","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:57:39.533","TicketStatus":1,"AssetNames":["新建机柜1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2506,"TicketNum":"GatewayCustomer-SG170728001","SeqNum":1,"TicketType":3,"StartTime":"2017-07-01T00:00:00","EndTime":"2017-07-27T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"search all","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:39:38.947","TicketStatus":1,"AssetNames":["有虚拟盒子的配电室"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2499,"TicketNum":"GatewayCustomer-BJ170301001","SeqNum":1,"TicketType":2,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:40:03;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 564.123A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:46.633","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2500,"TicketNum":"GatewayCustomer-SG170301001","SeqNum":1,"TicketType":3,"StartTime":"2017-03-01T00:00:00","EndTime":"2017-12-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"随工","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:32:39.163","TicketStatus":1,"AssetNames":["系统装置*1"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]}],"RequestId":null}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_44</instructionId>
+                    <col>5</col>
+                              <row>7</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":6,"Items":[{"Id":2507,"TicketNum":"GatewayCustomer-BJ170728001","SeqNum":1,"TicketType":2,"StartTime":"2017-07-28T00:00:00","EndTime":"2018-07-06T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:38:39;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 597.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:47:52.49","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2513,"TicketNum":"GatewayCustomer-SG170728003","SeqNum":3,"TicketType":3,"StartTime":"2017-07-28T00:00:00","EndTime":"2017-09-29T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gegnixn","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:57:39.533","TicketStatus":1,"AssetNames":["新建机柜1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2506,"TicketNum":"GatewayCustomer-SG170728001","SeqNum":1,"TicketType":3,"StartTime":"2017-07-01T00:00:00","EndTime":"2017-07-27T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"search all","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:39:38.947","TicketStatus":1,"AssetNames":["有虚拟盒子的配电室"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2499,"TicketNum":"GatewayCustomer-BJ170301001","SeqNum":1,"TicketType":2,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:40:03;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 564.123A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:46.633","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2500,"TicketNum":"GatewayCustomer-SG170301001","SeqNum":1,"TicketType":3,"StartTime":"2017-03-01T00:00:00","EndTime":"2017-12-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"随工","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:32:39.163","TicketStatus":1,"AssetNames":["系统装置*1"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]}],"RequestId":null}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_46', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/searchme]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_46</instructionId>
+                    <col>1</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_47', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_47</instructionId>
+                    <col>2</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_48', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_48</instructionId>
+                    <col>3</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_49', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"TicketStatus":["3"]}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_49</instructionId>
+                    <col>4</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_51', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>ignore({"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":13,"Items":[{"Id":2541,"TicketNum":"GatewayCustomer-BJ170810001","SeqNum":1,"TicketType":2,"StartTime":"2020-12-01T00:00:00","EndTime":"2020-12-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"create","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-10T13:46:35.217","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2516,"TicketNum":"GatewayCustomer-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-11-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"跟新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:00:49.717","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2512,"TicketNum":"GatewayCustomer-JH170728002","SeqNum":2,"TicketType":1,"StartTime":"2017-10-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gengxin","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:56:49.47","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2508,"TicketNum":"GatewayCustomer-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-09-01T00:00:00","EndTime":"2017-09-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"shanchu","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:48:27.973","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2514,"TicketNum":"GatewayCustomer-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-25T00:00:00","EndTime":"2017-08-25T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"更新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:58:55.277","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2511,"TicketNum":"GatewayCustomer-BJ170728002","SeqNum":2,"TicketType":2,"StartTime":"2017-08-18T00:00:00","EndTime":"2017-08-18T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:33:57;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 586.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:50:50.02","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.useremailempty.proupdate"]},{"Id":2515,"TicketNum":"GatewayCustomer-BJ170728003","SeqNum":3,"TicketType":2,"StartTime":"2017-08-16T00:00:00","EndTime":"2017-08-16T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:27:02;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 590.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:59:43.117","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2507,"TicketNum":"GatewayCustomer-BJ170728001","SeqNum":1,"TicketType":2,"StartTime":"2017-07-28T00:00:00","EndTime":"2018-07-06T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:38:39;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 597.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:47:52.49","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2513,"TicketNum":"GatewayCustomer-SG170728003","SeqNum":3,"TicketType":3,"StartTime":"2017-07-28T00:00:00","EndTime":"2017-09-29T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gegnixn","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:57:39.533","TicketStatus":1,"AssetNames":["新建机柜1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2506,"TicketNum":"GatewayCustomer-SG170728001","SeqNum":1,"TicketType":3,"StartTime":"2017-07-01T00:00:00","EndTime":"2017-07-27T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"search all","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:39:38.947","TicketStatus":1,"AssetNames":["有虚拟盒子的配电室"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2499,"TicketNum":"GatewayCustomer-BJ170301001","SeqNum":1,"TicketType":2,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:40:03;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 564.123A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:46.633","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2500,"TicketNum":"GatewayCustomer-SG170301001","SeqNum":1,"TicketType":3,"StartTime":"2017-03-01T00:00:00","EndTime":"2017-12-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"随工","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:32:39.163","TicketStatus":1,"AssetNames":["系统装置*1"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]}],"RequestId":null}})</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>decisionTable_1_51</instructionId>
+                    <col>5</col>
+                              <row>8</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":13,"Items":[{"Id":2541,"TicketNum":"GatewayCustomer-BJ170810001","SeqNum":1,"TicketType":2,"StartTime":"2020-12-01T00:00:00","EndTime":"2020-12-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"create","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-10T13:46:35.217","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2516,"TicketNum":"GatewayCustomer-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-11-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"跟新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:00:49.717","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2512,"TicketNum":"GatewayCustomer-JH170728002","SeqNum":2,"TicketType":1,"StartTime":"2017-10-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gengxin","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:56:49.47","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2508,"TicketNum":"GatewayCustomer-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-09-01T00:00:00","EndTime":"2017-09-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"shanchu","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:48:27.973","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2514,"TicketNum":"GatewayCustomer-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-25T00:00:00","EndTime":"2017-08-25T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"更新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:58:55.277","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2511,"TicketNum":"GatewayCustomer-BJ170728002","SeqNum":2,"TicketType":2,"StartTime":"2017-08-18T00:00:00","EndTime":"2017-08-18T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:33:57;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 586.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:50:50.02","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.useremailempty.proupdate"]},{"Id":2515,"TicketNum":"GatewayCustomer-BJ170728003","SeqNum":3,"TicketType":2,"StartTime":"2017-08-16T00:00:00","EndTime":"2017-08-16T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:27:02;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 590.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:59:43.117","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2507,"TicketNum":"GatewayCustomer-BJ170728001","SeqNum":1,"TicketType":2,"StartTime":"2017-07-28T00:00:00","EndTime":"2018-07-06T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:38:39;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 597.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:47:52.49","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2513,"TicketNum":"GatewayCustomer-SG170728003","SeqNum":3,"TicketType":3,"StartTime":"2017-07-28T00:00:00","EndTime":"2017-09-29T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gegnixn","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:57:39.533","TicketStatus":1,"AssetNames":["新建机柜1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2506,"TicketNum":"GatewayCustomer-SG170728001","SeqNum":1,"TicketType":3,"StartTime":"2017-07-01T00:00:00","EndTime":"2017-07-27T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"search all","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:39:38.947","TicketStatus":1,"AssetNames":["有虚拟盒子的配电室"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2499,"TicketNum":"GatewayCustomer-BJ170301001","SeqNum":1,"TicketType":2,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:40:03;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 564.123A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:46.633","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2500,"TicketNum":"GatewayCustomer-SG170301001","SeqNum":1,"TicketType":3,"StartTime":"2017-03-01T00:00:00","EndTime":"2017-12-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"随工","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:32:39.163","TicketStatus":1,"AssetNames":["系统装置*1"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]}],"RequestId":null}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_53', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/searchme]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_53</instructionId>
+                    <col>1</col>
+                              <row>9</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_54', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_54</instructionId>
+                    <col>2</col>
+                              <row>9</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_55', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_55</instructionId>
+                    <col>3</col>
+                              <row>9</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_56', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"TicketStatus":["1","2","3"]}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_56</instructionId>
+                    <col>4</col>
+                              <row>9</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_58', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>ignore({"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":13,"Items":[{"Id":2541,"TicketNum":"GatewayCustomer-BJ170810001","SeqNum":1,"TicketType":2,"StartTime":"2020-12-01T00:00:00","EndTime":"2020-12-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"create","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-10T13:46:35.217","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2516,"TicketNum":"GatewayCustomer-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-11-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"跟新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:00:49.717","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2512,"TicketNum":"GatewayCustomer-JH170728002","SeqNum":2,"TicketType":1,"StartTime":"2017-10-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gengxin","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:56:49.47","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2508,"TicketNum":"GatewayCustomer-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-09-01T00:00:00","EndTime":"2017-09-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"shanchu","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:48:27.973","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2514,"TicketNum":"GatewayCustomer-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-25T00:00:00","EndTime":"2017-08-25T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"更新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:58:55.277","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2511,"TicketNum":"GatewayCustomer-BJ170728002","SeqNum":2,"TicketType":2,"StartTime":"2017-08-18T00:00:00","EndTime":"2017-08-18T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:33:57;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 586.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:50:50.02","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.useremailempty.proupdate"]},{"Id":2515,"TicketNum":"GatewayCustomer-BJ170728003","SeqNum":3,"TicketType":2,"StartTime":"2017-08-16T00:00:00","EndTime":"2017-08-16T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:27:02;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 590.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:59:43.117","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2507,"TicketNum":"GatewayCustomer-BJ170728001","SeqNum":1,"TicketType":2,"StartTime":"2017-07-28T00:00:00","EndTime":"2018-07-06T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:38:39;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 597.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:47:52.49","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2513,"TicketNum":"GatewayCustomer-SG170728003","SeqNum":3,"TicketType":3,"StartTime":"2017-07-28T00:00:00","EndTime":"2017-09-29T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gegnixn","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:57:39.533","TicketStatus":1,"AssetNames":["新建机柜1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2506,"TicketNum":"GatewayCustomer-SG170728001","SeqNum":1,"TicketType":3,"StartTime":"2017-07-01T00:00:00","EndTime":"2017-07-27T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"search all","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:39:38.947","TicketStatus":1,"AssetNames":["有虚拟盒子的配电室"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2499,"TicketNum":"GatewayCustomer-BJ170301001","SeqNum":1,"TicketType":2,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:40:03;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 564.123A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:46.633","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2500,"TicketNum":"GatewayCustomer-SG170301001","SeqNum":1,"TicketType":3,"StartTime":"2017-03-01T00:00:00","EndTime":"2017-12-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"随工","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:32:39.163","TicketStatus":1,"AssetNames":["系统装置*1"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]}],"RequestId":null}})</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>decisionTable_1_58</instructionId>
+                    <col>5</col>
+                              <row>9</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":13,"Items":[{"Id":2541,"TicketNum":"GatewayCustomer-BJ170810001","SeqNum":1,"TicketType":2,"StartTime":"2020-12-01T00:00:00","EndTime":"2020-12-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"create","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-10T13:46:35.217","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2516,"TicketNum":"GatewayCustomer-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-11-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"跟新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:00:49.717","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2512,"TicketNum":"GatewayCustomer-JH170728002","SeqNum":2,"TicketType":1,"StartTime":"2017-10-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gengxin","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:56:49.47","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2508,"TicketNum":"GatewayCustomer-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-09-01T00:00:00","EndTime":"2017-09-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"shanchu","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:48:27.973","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2514,"TicketNum":"GatewayCustomer-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-25T00:00:00","EndTime":"2017-08-25T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"更新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:58:55.277","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2511,"TicketNum":"GatewayCustomer-BJ170728002","SeqNum":2,"TicketType":2,"StartTime":"2017-08-18T00:00:00","EndTime":"2017-08-18T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:33:57;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 586.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:50:50.02","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.useremailempty.proupdate"]},{"Id":2515,"TicketNum":"GatewayCustomer-BJ170728003","SeqNum":3,"TicketType":2,"StartTime":"2017-08-16T00:00:00","EndTime":"2017-08-16T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:27:02;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 590.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:59:43.117","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2507,"TicketNum":"GatewayCustomer-BJ170728001","SeqNum":1,"TicketType":2,"StartTime":"2017-07-28T00:00:00","EndTime":"2018-07-06T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:38:39;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 597.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:47:52.49","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2513,"TicketNum":"GatewayCustomer-SG170728003","SeqNum":3,"TicketType":3,"StartTime":"2017-07-28T00:00:00","EndTime":"2017-09-29T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gegnixn","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:57:39.533","TicketStatus":1,"AssetNames":["新建机柜1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2506,"TicketNum":"GatewayCustomer-SG170728001","SeqNum":1,"TicketType":3,"StartTime":"2017-07-01T00:00:00","EndTime":"2017-07-27T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"search all","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:39:38.947","TicketStatus":1,"AssetNames":["有虚拟盒子的配电室"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2499,"TicketNum":"GatewayCustomer-BJ170301001","SeqNum":1,"TicketType":2,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:40:03;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 564.123A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:46.633","TicketStatus":1,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2500,"TicketNum":"GatewayCustomer-SG170301001","SeqNum":1,"TicketType":3,"StartTime":"2017-03-01T00:00:00","EndTime":"2017-12-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"随工","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:32:39.163","TicketStatus":1,"AssetNames":["系统装置*1"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]}],"RequestId":null}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_60', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/searchme]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_60</instructionId>
+                    <col>1</col>
+                              <row>10</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_61', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_61</instructionId>
+                    <col>2</col>
+                              <row>10</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_62', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_62</instructionId>
+                    <col>3</col>
+                              <row>10</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_63', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"TicketTypes":["1"]}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_63</instructionId>
+                    <col>4</col>
+                              <row>10</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_65', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":5,"Items":[{"Id":2516,"TicketNum":"GatewayCustomer-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-11-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"跟新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:00:49.717","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2512,"TicketNum":"GatewayCustomer-JH170728002","SeqNum":2,"TicketType":1,"StartTime":"2017-10-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gengxin","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:56:49.47","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2508,"TicketNum":"GatewayCustomer-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-09-01T00:00:00","EndTime":"2017-09-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"shanchu","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:48:27.973","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2502,"TicketNum":"GatewayCustomer-JH170316001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-11-09T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":"2017-03-16T00:00:00","Content":"change to finished","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-16T09:46:40.16","TicketStatus":5,"AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"]}],"RequestId":null}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_65</instructionId>
+                    <col>5</col>
+                              <row>10</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":5,"Items":[{"Id":2516,"TicketNum":"GatewayCustomer-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-11-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"跟新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:00:49.717","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2512,"TicketNum":"GatewayCustomer-JH170728002","SeqNum":2,"TicketType":1,"StartTime":"2017-10-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gengxin","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:56:49.47","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2508,"TicketNum":"GatewayCustomer-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-09-01T00:00:00","EndTime":"2017-09-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"shanchu","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:48:27.973","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2502,"TicketNum":"GatewayCustomer-JH170316001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-11-09T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":"2017-03-16T00:00:00","Content":"change to finished","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-16T09:46:40.16","TicketStatus":5,"AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"]}],"RequestId":null}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_67', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/searchme]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_67</instructionId>
+                    <col>1</col>
+                              <row>11</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_68', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_68</instructionId>
+                    <col>2</col>
+                              <row>11</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_69', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_69</instructionId>
+                    <col>3</col>
+                              <row>11</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_70', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"TicketTypes":["1","4"]}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_70</instructionId>
+                    <col>4</col>
+                              <row>11</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_72', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>ignore({"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":7,"Items":[{"Id":2516,"TicketNum":"GatewayCustomer-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-11-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"跟新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:00:49.717","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2512,"TicketNum":"GatewayCustomer-JH170728002","SeqNum":2,"TicketType":1,"StartTime":"2017-10-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gengxin","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:56:49.47","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2508,"TicketNum":"GatewayCustomer-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-09-01T00:00:00","EndTime":"2017-09-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"shanchu","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:48:27.973","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2514,"TicketNum":"GatewayCustomer-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-25T00:00:00","EndTime":"2017-08-25T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"更新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:58:55.277","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2501,"TicketNum":"GatewayCustomer-XC170316001","SeqNum":1,"TicketType":4,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-31T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":null,"Content":"change to in executing","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-16T09:45:42.897","TicketStatus":4,"AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"]},{"Id":2502,"TicketNum":"GatewayCustomer-JH170316001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-11-09T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":"2017-03-16T00:00:00","Content":"change to finished","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-16T09:46:40.16","TicketStatus":5,"AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"]}],"RequestId":null}})</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>decisionTable_1_72</instructionId>
+                    <col>5</col>
+                              <row>11</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":7,"Items":[{"Id":2516,"TicketNum":"GatewayCustomer-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-11-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"跟新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:00:49.717","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2512,"TicketNum":"GatewayCustomer-JH170728002","SeqNum":2,"TicketType":1,"StartTime":"2017-10-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"gengxin","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:56:49.47","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2508,"TicketNum":"GatewayCustomer-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-09-01T00:00:00","EndTime":"2017-09-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"shanchu","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:48:27.973","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2514,"TicketNum":"GatewayCustomer-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-25T00:00:00","EndTime":"2017-08-25T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"更新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:58:55.277","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2498,"TicketNum":"GatewayCustomer-JH170301001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-03-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"for api ticket test","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-01T11:31:11.78","TicketStatus":1,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2501,"TicketNum":"GatewayCustomer-XC170316001","SeqNum":1,"TicketType":4,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-31T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":null,"Content":"change to in executing","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-16T09:45:42.897","TicketStatus":4,"AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"]},{"Id":2502,"TicketNum":"GatewayCustomer-JH170316001","SeqNum":1,"TicketType":1,"StartTime":"2017-03-01T00:00:00","EndTime":"2018-11-09T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":"2017-03-16T00:00:00","Content":"change to finished","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-16T09:46:40.16","TicketStatus":5,"AssetNames":["系统装置-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"]}],"RequestId":null}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_74', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/searchme]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_74</instructionId>
+                    <col>1</col>
+                              <row>12</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_75', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_75</instructionId>
+                    <col>2</col>
+                              <row>12</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_76', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_76</instructionId>
+                    <col>3</col>
+                              <row>12</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_77', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320367,"CurrentPage":"1","ItemsPerPage":20,"Hierarchies":["320459"]}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_77</instructionId>
+                    <col>4</col>
+                              <row>12</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_79', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>fail(a={"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[],"RequestId":null}};e={"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":2,"Items":[{"Id":2540,"TicketNum":"api.customer2-SG170809001","SeqNum":1,"TicketType":3,"StartTime":"2018-08-01T00:00:00","EndTime":"2018-08-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"SG","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-09T15:23:34.53","TicketStatus":3,"AssetNames":["api2-build-1"],"BuildingNames":["api2-build-1"],"ExecutorNames":["b"]},{"Id":2541,"TicketNum":"api.customer2-XC170809001","SeqNum":1,"TicketType":4,"StartTime":"2017-10-07T00:00:00","EndTime":"2017-12-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"XC","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-09T15:23:35.187","TicketStatus":3,"AssetNames":["api2-build-1"],"BuildingNames":["api2-build-1"],"ExecutorNames":["api.shareuserd"]}],"RequestId":null}})</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_1_79</instructionId>
+                    <col>5</col>
+                              <row>12</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[],"RequestId":null}}</actual>
+                              <expected>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":2,"Items":[{"Id":2540,"TicketNum":"api.customer2-SG170809001","SeqNum":1,"TicketType":3,"StartTime":"2018-08-01T00:00:00","EndTime":"2018-08-02T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"SG","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-09T15:23:34.53","TicketStatus":3,"AssetNames":["api2-build-1"],"BuildingNames":["api2-build-1"],"ExecutorNames":["b"]},{"Id":2541,"TicketNum":"api.customer2-XC170809001","SeqNum":1,"TicketType":4,"StartTime":"2017-10-07T00:00:00","EndTime":"2017-12-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"XC","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-09T15:23:35.187","TicketStatus":3,"AssetNames":["api2-build-1"],"BuildingNames":["api2-build-1"],"ExecutorNames":["api.shareuserd"]}],"RequestId":null}}</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_81', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/searchme]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_81</instructionId>
+                    <col>1</col>
+                              <row>13</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_82', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_82</instructionId>
+                    <col>2</col>
+                              <row>13</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_83', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_83</instructionId>
+                    <col>3</col>
+                              <row>13</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_84', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"Hierarchies":["320536"]}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_84</instructionId>
+                    <col>4</col>
+                              <row>13</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_86', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":2,"Items":[{"Id":2516,"TicketNum":"GatewayCustomer-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-11-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"跟新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:00:49.717","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2514,"TicketNum":"GatewayCustomer-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-25T00:00:00","EndTime":"2017-08-25T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"更新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:58:55.277","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["ServiceProviderAdmin"]}],"RequestId":null}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_86</instructionId>
+                    <col>5</col>
+                              <row>13</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":2,"Items":[{"Id":2516,"TicketNum":"GatewayCustomer-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-11-01T00:00:00","EndTime":"2017-11-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"跟新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:00:49.717","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2514,"TicketNum":"GatewayCustomer-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-25T00:00:00","EndTime":"2017-08-25T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"更新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:58:55.277","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["ServiceProviderAdmin"]}],"RequestId":null}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_88', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/searchme]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_88</instructionId>
+                    <col>1</col>
+                              <row>14</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_89', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_89</instructionId>
+                    <col>2</col>
+                              <row>14</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_90', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_90</instructionId>
+                    <col>3</col>
+                              <row>14</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_91', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320359,"CurrentPage":"1","ItemsPerPage":20,"EndTime":"2017-09-01","StartTime":"2017-08-01","TicketID":"28","TicketStatus":["3"]}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_91</instructionId>
+                    <col>4</col>
+                              <row>14</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_93', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>ignore({"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":4,"Items":[{"Id":2508,"TicketNum":"GatewayCustomer-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-09-01T00:00:00","EndTime":"2017-09-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"shanchu","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:48:27.973","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2514,"TicketNum":"GatewayCustomer-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-25T00:00:00","EndTime":"2017-08-25T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"更新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:58:55.277","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2511,"TicketNum":"GatewayCustomer-BJ170728002","SeqNum":2,"TicketType":2,"StartTime":"2017-08-18T00:00:00","EndTime":"2017-08-18T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:33:57;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 586.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:50:50.02","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.useremailempty.proupdate"]},{"Id":2515,"TicketNum":"GatewayCustomer-BJ170728003","SeqNum":3,"TicketType":2,"StartTime":"2017-08-16T00:00:00","EndTime":"2017-08-16T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:27:02;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 590.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:59:43.117","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]}],"RequestId":null}})</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>decisionTable_1_93</instructionId>
+                    <col>5</col>
+                              <row>14</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":1,"TotalItemsCount":4,"Items":[{"Id":2508,"TicketNum":"GatewayCustomer-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-09-01T00:00:00","EndTime":"2017-09-01T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"shanchu","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:48:27.973","TicketStatus":3,"AssetNames":["变压器柜-新建设备2*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.alarm"]},{"Id":2514,"TicketNum":"GatewayCustomer-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-25T00:00:00","EndTime":"2017-08-25T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"更新","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:58:55.277","TicketStatus":3,"AssetNames":["工单建筑"],"BuildingNames":["工单建筑"],"ExecutorNames":["ServiceProviderAdmin"]},{"Id":2511,"TicketNum":"GatewayCustomer-BJ170728002","SeqNum":2,"TicketType":2,"StartTime":"2017-08-18T00:00:00","EndTime":"2017-08-18T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:33:57;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 586.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:50:50.02","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["api.useremailempty.proupdate"]},{"Id":2515,"TicketNum":"GatewayCustomer-BJ170728003","SeqNum":3,"TicketType":2,"StartTime":"2017-08-16T00:00:00","EndTime":"2017-08-16T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"时间: 2017年1月20日 12:27:02;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 590.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T15:59:43.117","TicketStatus":3,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b"]}],"RequestId":null}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_95', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/tickets/searchme]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_95</instructionId>
+                    <col>1</col>
+                              <row>15</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_96', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_96</instructionId>
+                    <col>2</col>
+                              <row>15</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_97', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_97</instructionId>
+                    <col>3</col>
+                              <row>15</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_98', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320366,"CurrentPage":"1","ItemsPerPage":20,"TicketStatus":["1","2","3","4","5"]}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_98</instructionId>
+                    <col>4</col>
+                              <row>15</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_100', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>ignore({"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":2,"TotalItemsCount":21,"Items":[{"Id":2531,"TicketNum":"api.cutomer1-JH170728006","SeqNum":6,"TicketType":1,"StartTime":"2017-10-07T00:00:00","EndTime":"2017-11-10T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"d","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:13:34.417","TicketStatus":3,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["b","oneallcuscomter","ServiceProviderAdmin"]},{"Id":2528,"TicketNum":"api.cutomer1-JH170728005","SeqNum":5,"TicketType":1,"StartTime":"2017-10-02T00:00:00","EndTime":"2017-11-18T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"r","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:11:59.263","TicketStatus":3,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2527,"TicketNum":"api.cutomer1-JH170728004","SeqNum":4,"TicketType":1,"StartTime":"2017-09-09T00:00:00","EndTime":"2017-09-09T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":";","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:11:43.28","TicketStatus":3,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["oneallcuscomter"]},{"Id":2530,"TicketNum":"api.cutomer1-XC170728004","SeqNum":4,"TicketType":4,"StartTime":"2017-09-01T00:00:00","EndTime":"2018-02-09T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"i","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:13:05.81","TicketStatus":3,"AssetNames":["SECI Build","SECI Device","SECI Panel","SECI Room"],"BuildingNames":["SECI Build"],"ExecutorNames":["b"]},{"Id":2526,"TicketNum":"api.cutomer1-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-08-26T00:00:00","EndTime":"2017-08-26T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"l","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:11:28.853","TicketStatus":3,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["b"]},{"Id":2529,"TicketNum":"api.cutomer1-SG170728005","SeqNum":5,"TicketType":3,"StartTime":"2017-08-11T00:00:00","EndTime":"2017-11-16T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"o","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:12:37.96","TicketStatus":3,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd","api.usernicknamempty.proupdate","b","oneallcuscomter"]},{"Id":2522,"TicketNum":"api.cutomer1-JH170728002","SeqNum":2,"TicketType":1,"StartTime":"2017-08-01T00:00:00","EndTime":"2017-11-16T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"你thing","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:05:46.24","TicketStatus":1,"AssetNames":["SECI Build","SECI Room"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.usernicknamempty.proupdate"]},{"Id":2520,"TicketNum":"api.cutomer1-SG170728002","SeqNum":2,"TicketType":3,"StartTime":"2017-08-01T00:00:00","EndTime":"2017-08-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"的","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:04:53.05","TicketStatus":1,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["b"]},{"Id":2532,"TicketNum":"api.cutomer1-SG170808001","SeqNum":1,"TicketType":3,"StartTime":"2017-07-01T00:00:00","EndTime":"2019-08-09T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"log update","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-08T17:07:36.757","TicketStatus":1,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2525,"TicketNum":"api.cutomer1-XC170728003","SeqNum":3,"TicketType":4,"StartTime":"2017-08-11T00:00:00","EndTime":"2018-03-23T00:00:00","ActualStartTime":"2017-08-06T00:00:00","ActualEndTime":null,"Content":"lok","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:10:03.117","TicketStatus":4,"AssetNames":["SECI Device"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2534,"TicketNum":"api.cutomer1-JH170808001","SeqNum":1,"TicketType":1,"StartTime":"2017-08-04T00:00:00","EndTime":"2018-08-03T00:00:00","ActualStartTime":"2017-08-05T00:00:00","ActualEndTime":null,"Content":"log update","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-08T17:08:15.137","TicketStatus":4,"AssetNames":["SECI Panel"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2518,"TicketNum":"api.cutomer1-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-08-03T00:00:00","EndTime":"2018-07-06T00:00:00","ActualStartTime":"2017-08-06T00:00:00","ActualEndTime":null,"Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:03:27.87","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["oneallcuscomter"]},{"Id":2517,"TicketNum":"api.cutomer1-SG170728001","SeqNum":1,"TicketType":3,"StartTime":"2017-08-01T00:00:00","EndTime":"2020-07-03T00:00:00","ActualStartTime":"2017-08-01T00:00:00","ActualEndTime":null,"Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:02:48.46","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["oneallcuscomter"]},{"Id":2533,"TicketNum":"api.cutomer1-XC170808001","SeqNum":1,"TicketType":4,"StartTime":"2017-08-01T00:00:00","EndTime":"2019-08-01T00:00:00","ActualStartTime":"2017-08-05T00:00:00","ActualEndTime":null,"Content":"log update","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-08T17:07:55.5","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2536,"TicketNum":"api.cutomer1-SG170808002","SeqNum":2,"TicketType":3,"StartTime":"2017-08-01T00:00:00","EndTime":"2018-08-03T00:00:00","ActualStartTime":"2017-08-05T00:00:00","ActualEndTime":null,"Content":"log delete","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-08T17:09:15.563","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["b"]},{"Id":2535,"TicketNum":"api.cutomer1-JH170808002","SeqNum":2,"TicketType":1,"StartTime":"2017-08-01T00:00:00","EndTime":"2017-10-24T00:00:00","ActualStartTime":"2017-08-05T00:00:00","ActualEndTime":null,"Content":"log update","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-08T17:08:44.687","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2521,"TicketNum":"api.cutomer1-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-01T00:00:00","EndTime":"2017-09-21T00:00:00","ActualStartTime":"2017-08-07T00:00:00","ActualEndTime":null,"Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:05:19.76","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["oneallcuscomter"]},{"Id":2524,"TicketNum":"api.cutomer1-SG170728004","SeqNum":4,"TicketType":3,"StartTime":"2017-07-31T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":"2017-08-07T00:00:00","ActualEndTime":null,"Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:09:35.53","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2519,"TicketNum":"api.cutomer1-XC170728001","SeqNum":1,"TicketType":4,"StartTime":"2017-07-01T00:00:00","EndTime":"2019-07-04T00:00:00","ActualStartTime":"2017-08-07T00:00:00","ActualEndTime":null,"Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:04:01.397","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2523,"TicketNum":"api.cutomer1-SG170728003","SeqNum":3,"TicketType":3,"StartTime":"2017-07-31T00:00:00","EndTime":"2017-09-08T00:00:00","ActualStartTime":"2017-08-01T00:00:00","ActualEndTime":"2017-08-07T00:00:00","Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:09:14.573","TicketStatus":5,"AssetNames":["SECI Room"],"BuildingNames":["SECI Build"],"ExecutorNames":["b"]}],"RequestId":null}})</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>decisionTable_1_100</instructionId>
+                    <col>5</col>
+                              <row>15</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":2,"TotalItemsCount":21,"Items":[{"Id":2531,"TicketNum":"api.cutomer1-JH170728006","SeqNum":6,"TicketType":1,"StartTime":"2017-10-07T00:00:00","EndTime":"2017-11-10T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"d","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:13:34.417","TicketStatus":3,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["b","oneallcuscomter","ServiceProviderAdmin"]},{"Id":2528,"TicketNum":"api.cutomer1-JH170728005","SeqNum":5,"TicketType":1,"StartTime":"2017-10-02T00:00:00","EndTime":"2017-11-18T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"r","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:11:59.263","TicketStatus":3,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2527,"TicketNum":"api.cutomer1-JH170728004","SeqNum":4,"TicketType":1,"StartTime":"2017-09-09T00:00:00","EndTime":"2017-09-09T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":";","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:11:43.28","TicketStatus":3,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["oneallcuscomter"]},{"Id":2530,"TicketNum":"api.cutomer1-XC170728004","SeqNum":4,"TicketType":4,"StartTime":"2017-09-01T00:00:00","EndTime":"2018-02-09T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"i","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:13:05.81","TicketStatus":3,"AssetNames":["SECI Build","SECI Device","SECI Panel","SECI Room"],"BuildingNames":["SECI Build"],"ExecutorNames":["b"]},{"Id":2526,"TicketNum":"api.cutomer1-JH170728003","SeqNum":3,"TicketType":1,"StartTime":"2017-08-26T00:00:00","EndTime":"2017-08-26T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"l","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:11:28.853","TicketStatus":3,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["b"]},{"Id":2529,"TicketNum":"api.cutomer1-SG170728005","SeqNum":5,"TicketType":3,"StartTime":"2017-08-11T00:00:00","EndTime":"2017-11-16T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"o","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:12:37.96","TicketStatus":3,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd","api.usernicknamempty.proupdate","b","oneallcuscomter"]},{"Id":2522,"TicketNum":"api.cutomer1-JH170728002","SeqNum":2,"TicketType":1,"StartTime":"2017-08-01T00:00:00","EndTime":"2017-11-16T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"你thing","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:05:46.24","TicketStatus":1,"AssetNames":["SECI Build","SECI Room"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.usernicknamempty.proupdate"]},{"Id":2520,"TicketNum":"api.cutomer1-SG170728002","SeqNum":2,"TicketType":3,"StartTime":"2017-08-01T00:00:00","EndTime":"2017-08-31T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"的","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:04:53.05","TicketStatus":1,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["b"]},{"Id":2532,"TicketNum":"api.cutomer1-SG170808001","SeqNum":1,"TicketType":3,"StartTime":"2017-07-01T00:00:00","EndTime":"2019-08-09T00:00:00","ActualStartTime":null,"ActualEndTime":null,"Content":"log update","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-08T17:07:36.757","TicketStatus":1,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2525,"TicketNum":"api.cutomer1-XC170728003","SeqNum":3,"TicketType":4,"StartTime":"2017-08-11T00:00:00","EndTime":"2018-03-23T00:00:00","ActualStartTime":"2017-08-06T00:00:00","ActualEndTime":null,"Content":"lok","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:10:03.117","TicketStatus":4,"AssetNames":["SECI Device"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.userposition.proupdate"]},{"Id":2534,"TicketNum":"api.cutomer1-JH170808001","SeqNum":1,"TicketType":1,"StartTime":"2017-08-04T00:00:00","EndTime":"2018-08-03T00:00:00","ActualStartTime":"2017-08-05T00:00:00","ActualEndTime":null,"Content":"log update","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-08T17:08:15.137","TicketStatus":4,"AssetNames":["SECI Panel"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2518,"TicketNum":"api.cutomer1-JH170728001","SeqNum":1,"TicketType":1,"StartTime":"2017-08-03T00:00:00","EndTime":"2018-07-06T00:00:00","ActualStartTime":"2017-08-06T00:00:00","ActualEndTime":null,"Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:03:27.87","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["oneallcuscomter"]},{"Id":2517,"TicketNum":"api.cutomer1-SG170728001","SeqNum":1,"TicketType":3,"StartTime":"2017-08-01T00:00:00","EndTime":"2020-07-03T00:00:00","ActualStartTime":"2017-08-01T00:00:00","ActualEndTime":null,"Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:02:48.46","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["oneallcuscomter"]},{"Id":2533,"TicketNum":"api.cutomer1-XC170808001","SeqNum":1,"TicketType":4,"StartTime":"2017-08-01T00:00:00","EndTime":"2019-08-01T00:00:00","ActualStartTime":"2017-08-05T00:00:00","ActualEndTime":null,"Content":"log update","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-08T17:07:55.5","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2536,"TicketNum":"api.cutomer1-SG170808002","SeqNum":2,"TicketType":3,"StartTime":"2017-08-01T00:00:00","EndTime":"2018-08-03T00:00:00","ActualStartTime":"2017-08-05T00:00:00","ActualEndTime":null,"Content":"log delete","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-08T17:09:15.563","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["b"]},{"Id":2535,"TicketNum":"api.cutomer1-JH170808002","SeqNum":2,"TicketType":1,"StartTime":"2017-08-01T00:00:00","EndTime":"2017-10-24T00:00:00","ActualStartTime":"2017-08-05T00:00:00","ActualEndTime":null,"Content":"log update","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-08-08T17:08:44.687","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2521,"TicketNum":"api.cutomer1-XC170728002","SeqNum":2,"TicketType":4,"StartTime":"2017-08-01T00:00:00","EndTime":"2017-09-21T00:00:00","ActualStartTime":"2017-08-07T00:00:00","ActualEndTime":null,"Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:05:19.76","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["oneallcuscomter"]},{"Id":2524,"TicketNum":"api.cutomer1-SG170728004","SeqNum":4,"TicketType":3,"StartTime":"2017-07-31T00:00:00","EndTime":"2018-03-02T00:00:00","ActualStartTime":"2017-08-07T00:00:00","ActualEndTime":null,"Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:09:35.53","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2519,"TicketNum":"api.cutomer1-XC170728001","SeqNum":1,"TicketType":4,"StartTime":"2017-07-01T00:00:00","EndTime":"2019-07-04T00:00:00","ActualStartTime":"2017-08-07T00:00:00","ActualEndTime":null,"Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:04:01.397","TicketStatus":4,"AssetNames":["SECI Build"],"BuildingNames":["SECI Build"],"ExecutorNames":["api.shareuserd"]},{"Id":2523,"TicketNum":"api.cutomer1-SG170728003","SeqNum":3,"TicketType":3,"StartTime":"2017-07-31T00:00:00","EndTime":"2017-09-08T00:00:00","ActualStartTime":"2017-08-01T00:00:00","ActualEndTime":"2017-08-07T00:00:00","Content":"log","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-07-28T16:09:14.573","TicketStatus":5,"AssetNames":["SECI Room"],"BuildingNames":["SECI Build"],"ExecutorNames":["b"]}],"RequestId":null}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>14583</totalRunTimeInMillis>
+</testResults>
+

@@ -1,0 +1,404 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopPostTestProject.BuildingApi.BuildlingUpdate</rootPath>
+    <result>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-10T09:44:55+08:00</date>
+    <runTimeInMillis>3154</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;&lt;span class="pass"&gt;buildling update&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;requestbody&lt;/td&gt;
+		&lt;td&gt;responsebody?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;修改建筑名称&lt;/td&gt;
+		&lt;td&gt;api/building/update&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"BuildingArea":1200,"ParentId":320524,"Administrators":[],"Tickets":[],"Logo":null,"Name":"build.update.name.QA#","Code":"50f819be-4bb0-4c02-95c3-2709549b69f8","Gateways":[],"Location":null,"CustomerId":320523,"IndustryId":0,"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"能耗统计","Value":"0","Unit":"kWh"},{"Key":"电气系统容量统计数据","Value":"0","Unit":"kVA"}]},"SubType":1,"Type":2,"Id":320525,"SingleLineDiagrams":[],"FinishingDate":"2017-07-04"}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"BuildingArea":1200.0,"IndustryId":0,"FinishingDate":"2017-07-04T00:00:00","SubType":1,"Logo":null,"Location":null,"Gateways":[],"SingleLineDiagrams":[],"Administrators":[],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"},{"Key":"??????????","Value":"0","Unit":"kVA"}]},"Tickets":[],"Id":320525,"ParentId":320524,"CustomerId":320523,"Name":"build.update.name.QA#","Code":"50f819be-4bb0-4c02-95c3-2709549b69f8","Type":2}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;修改建筑其他信息&lt;/td&gt;
+		&lt;td&gt;api/building/update&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"BuildingArea":"5000","ParentId":320524,"Administrators":[],"Tickets":[],"Logo":null,"Name":"build.update.other","Code":"4b05d7db-d834-44d6-9d41-1e42a5016786","Gateways":[],"Location":null,"CustomerId":320523,"IndustryId":51,"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"能耗统计","Value":"0","Unit":"kWh"},{"Key":"电气系统容量统计数据","Value":"0","Unit":"kVA"}]},"SubType":1,"Type":2,"Id":320526,"SingleLineDiagrams":[],"FinishingDate":"2017-07-21"}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"BuildingArea":5000.0,"IndustryId":51,"FinishingDate":"2017-07-21T00:00:00","SubType":1,"Logo":null,"Location":null,"Gateways":[],"SingleLineDiagrams":[],"Administrators":[],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"},{"Key":"??????????","Value":"0","Unit":"kVA"}]},"Tickets":[],"Id":320526,"ParentId":320524,"CustomerId":320523,"Name":"build.update.other","Code":"4b05d7db-d834-44d6-9d41-1e42a5016786","Type":2}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;除建筑名称外，其他为空&lt;/td&gt;
+		&lt;td&gt;api/building/update&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"BuildingArea":"","ParentId":320524,"Administrators":[],"Tickets":[],"Logo":null,"Name":"build.update.otherempty","Code":"b158e533-fadb-46bf-8335-44314a1a36f7","Gateways":[],"Location":null,"CustomerId":320523,"IndustryId":0,"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"能耗统计","Value":"0","Unit":"kWh"},{"Key":"电气系统容量统计数据","Value":"0","Unit":"kVA"}]},"SubType":1,"Type":2,"Id":320527,"SingleLineDiagrams":[],"FinishingDate":""}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"BuildingArea":null,"IndustryId":0,"FinishingDate":null,"SubType":1,"Logo":null,"Location":null,"Gateways":[],"SingleLineDiagrams":[],"Administrators":[],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"},{"Key":"??????????","Value":"0","Unit":"kVA"}]},"Tickets":[],"Id":320527,"ParentId":320524,"CustomerId":320523,"Name":"build.update.otherempty","Code":"b158e533-fadb-46bf-8335-44314a1a36f7","Type":2}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;建筑名称也为空&lt;/td&gt;
+		&lt;td&gt;api/building/update&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"BuildingArea":1000000,"ParentId":320524,"Administrators":[],"Tickets":[],"Logo":null,"Name":"","Code":"73ee11a1-b615-41b2-8165-8080d1dbfb5f","Gateways":[],"Location":null,"CustomerId":320523,"IndustryId":64,"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"能耗统计","Value":"0","Unit":"kWh"},{"Key":"电气系统容量统计数据","Value":"0","Unit":"kVA"}]},"SubType":1,"Type":2,"Id":320528,"SingleLineDiagrams":[],"FinishingDate":"2017-07-26"}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"BuildingArea":1000000.0,"IndustryId":64,"FinishingDate":"2017-07-26T00:00:00","SubType":1,"Logo":null,"Location":null,"Gateways":[],"SingleLineDiagrams":[],"Administrators":[],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"},{"Key":"??????????","Value":"0","Unit":"kVA"}]},"Tickets":[],"Id":320528,"ParentId":320524,"CustomerId":320523,"Name":"","Code":"73ee11a1-b615-41b2-8165-8080d1dbfb5f","Type":2}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>BuildlingUpdate</relativePageName>
+        <tags>buildling, update</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='BuildlingUpdate', args=[]}</instruction>
+        <slimResult>pass(buildling update)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>buildling update</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/building/update]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"BuildingArea":1200,"ParentId":320524,"Administrators":[],"Tickets":[],"Logo":null,"Name":"build.update.name.QA#","Code":"50f819be-4bb0-4c02-95c3-2709549b69f8","Gateways":[],"Location":null,"CustomerId":320523,"IndustryId":0,"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"能耗统计","Value":"0","Unit":"kWh"},{"Key":"电气系统容量统计数据","Value":"0","Unit":"kVA"}]},"SubType":1,"Type":2,"Id":320525,"SingleLineDiagrams":[],"FinishingDate":"2017-07-04"}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_7</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_9', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"BuildingArea":1200.0,"IndustryId":0,"FinishingDate":"2017-07-04T00:00:00","SubType":1,"Logo":null,"Location":null,"Gateways":[],"SingleLineDiagrams":[],"Administrators":[],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"},{"Key":"??????????","Value":"0","Unit":"kVA"}]},"Tickets":[],"Id":320525,"ParentId":320524,"CustomerId":320523,"Name":"build.update.name.QA#","Code":"50f819be-4bb0-4c02-95c3-2709549b69f8","Type":2}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_9</instructionId>
+                    <col>5</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"BuildingArea":1200.0,"IndustryId":0,"FinishingDate":"2017-07-04T00:00:00","SubType":1,"Logo":null,"Location":null,"Gateways":[],"SingleLineDiagrams":[],"Administrators":[],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"},{"Key":"??????????","Value":"0","Unit":"kVA"}]},"Tickets":[],"Id":320525,"ParentId":320524,"CustomerId":320523,"Name":"build.update.name.QA#","Code":"50f819be-4bb0-4c02-95c3-2709549b69f8","Type":2}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/building/update]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_12</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_13', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_13</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"BuildingArea":"5000","ParentId":320524,"Administrators":[],"Tickets":[],"Logo":null,"Name":"build.update.other","Code":"4b05d7db-d834-44d6-9d41-1e42a5016786","Gateways":[],"Location":null,"CustomerId":320523,"IndustryId":51,"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"能耗统计","Value":"0","Unit":"kWh"},{"Key":"电气系统容量统计数据","Value":"0","Unit":"kVA"}]},"SubType":1,"Type":2,"Id":320526,"SingleLineDiagrams":[],"FinishingDate":"2017-07-21"}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_14</instructionId>
+                    <col>4</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"BuildingArea":5000.0,"IndustryId":51,"FinishingDate":"2017-07-21T00:00:00","SubType":1,"Logo":null,"Location":null,"Gateways":[],"SingleLineDiagrams":[],"Administrators":[],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"},{"Key":"??????????","Value":"0","Unit":"kVA"}]},"Tickets":[],"Id":320526,"ParentId":320524,"CustomerId":320523,"Name":"build.update.other","Code":"4b05d7db-d834-44d6-9d41-1e42a5016786","Type":2}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>5</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"BuildingArea":5000.0,"IndustryId":51,"FinishingDate":"2017-07-21T00:00:00","SubType":1,"Logo":null,"Location":null,"Gateways":[],"SingleLineDiagrams":[],"Administrators":[],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"},{"Key":"??????????","Value":"0","Unit":"kVA"}]},"Tickets":[],"Id":320526,"ParentId":320524,"CustomerId":320523,"Name":"build.update.other","Code":"4b05d7db-d834-44d6-9d41-1e42a5016786","Type":2}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/building/update]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_18</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_19', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_19</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_20</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_21', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"BuildingArea":"","ParentId":320524,"Administrators":[],"Tickets":[],"Logo":null,"Name":"build.update.otherempty","Code":"b158e533-fadb-46bf-8335-44314a1a36f7","Gateways":[],"Location":null,"CustomerId":320523,"IndustryId":0,"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"能耗统计","Value":"0","Unit":"kWh"},{"Key":"电气系统容量统计数据","Value":"0","Unit":"kVA"}]},"SubType":1,"Type":2,"Id":320527,"SingleLineDiagrams":[],"FinishingDate":""}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_21</instructionId>
+                    <col>4</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_23', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"BuildingArea":null,"IndustryId":0,"FinishingDate":null,"SubType":1,"Logo":null,"Location":null,"Gateways":[],"SingleLineDiagrams":[],"Administrators":[],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"},{"Key":"??????????","Value":"0","Unit":"kVA"}]},"Tickets":[],"Id":320527,"ParentId":320524,"CustomerId":320523,"Name":"build.update.otherempty","Code":"b158e533-fadb-46bf-8335-44314a1a36f7","Type":2}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_23</instructionId>
+                    <col>5</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"BuildingArea":null,"IndustryId":0,"FinishingDate":null,"SubType":1,"Logo":null,"Location":null,"Gateways":[],"SingleLineDiagrams":[],"Administrators":[],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"},{"Key":"??????????","Value":"0","Unit":"kVA"}]},"Tickets":[],"Id":320527,"ParentId":320524,"CustomerId":320523,"Name":"build.update.otherempty","Code":"b158e533-fadb-46bf-8335-44314a1a36f7","Type":2}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_25', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/building/update]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_25</instructionId>
+                    <col>1</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_26', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_26</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_27', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_27</instructionId>
+                    <col>3</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_28', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"BuildingArea":1000000,"ParentId":320524,"Administrators":[],"Tickets":[],"Logo":null,"Name":"","Code":"73ee11a1-b615-41b2-8165-8080d1dbfb5f","Gateways":[],"Location":null,"CustomerId":320523,"IndustryId":64,"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"能耗统计","Value":"0","Unit":"kWh"},{"Key":"电气系统容量统计数据","Value":"0","Unit":"kVA"}]},"SubType":1,"Type":2,"Id":320528,"SingleLineDiagrams":[],"FinishingDate":"2017-07-26"}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_28</instructionId>
+                    <col>4</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_30', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"BuildingArea":1000000.0,"IndustryId":64,"FinishingDate":"2017-07-26T00:00:00","SubType":1,"Logo":null,"Location":null,"Gateways":[],"SingleLineDiagrams":[],"Administrators":[],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"},{"Key":"??????????","Value":"0","Unit":"kVA"}]},"Tickets":[],"Id":320528,"ParentId":320524,"CustomerId":320523,"Name":"","Code":"73ee11a1-b615-41b2-8165-8080d1dbfb5f","Type":2}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_30</instructionId>
+                    <col>5</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"BuildingArea":1000000.0,"IndustryId":64,"FinishingDate":"2017-07-26T00:00:00","SubType":1,"Logo":null,"Location":null,"Gateways":[],"SingleLineDiagrams":[],"Administrators":[],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"},{"Key":"??????????","Value":"0","Unit":"kVA"}]},"Tickets":[],"Id":320528,"ParentId":320524,"CustomerId":320523,"Name":"","Code":"73ee11a1-b615-41b2-8165-8080d1dbfb5f","Type":2}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>3154</totalRunTimeInMillis>
+</testResults>
+

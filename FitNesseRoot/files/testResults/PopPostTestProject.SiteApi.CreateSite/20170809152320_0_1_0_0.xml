@@ -1,0 +1,407 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopPostTestProject.SiteApi.CreateSite</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>3</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-09T15:23:20+08:00</date>
+    <runTimeInMillis>2952</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;&lt;span class="pass"&gt;create site&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;requestbody&lt;/td&gt;
+		&lt;td&gt;responsebody-id?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;园区只有名称&lt;/td&gt;
+		&lt;td&gt;api/site/create&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"BuildingArea":"","ParentId":320497,"Administrators":[],"Logo":null,"Name":"site.create.name","Code":"","CustomerId":320497,"FloorSpace":"","Type":1}&lt;/td&gt;
+		&lt;td&gt;[{"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":null,"BuildingArea":null,"Logo":null,"Location":null,"Administrators":[],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"site.create.name","Code":"&lt;span class="diff"&gt;68595b&lt;/span&gt;72-&lt;span class="diff"&gt;de&lt;/span&gt;8&lt;span class="diff"&gt;9&lt;/span&gt;-4a&lt;span class="diff"&gt;f&lt;/span&gt;a-&lt;span class="diff"&gt;813f-b&lt;/span&gt;64&lt;span class="diff"&gt;d4&lt;/span&gt;e&lt;span class="diff"&gt;4c&lt;/span&gt;a&lt;span class="diff"&gt;14&lt;/span&gt;8","Type":1}}] &lt;span class="fail"&gt;expected [{"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":null,"BuildingArea":null,"Logo":null,"Location":null,"Administrators":[],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"site.create.name","Code":"7&lt;/span&gt;&lt;span class="diff"&gt;34&lt;/span&gt;&lt;span class="fail"&gt;2&lt;/span&gt;&lt;span class="diff"&gt;0170&lt;/span&gt;&lt;span class="fail"&gt;-&lt;/span&gt;&lt;span class="diff"&gt;1&lt;/span&gt;&lt;span class="fail"&gt;8&lt;/span&gt;&lt;span class="diff"&gt;1f&lt;/span&gt;&lt;span class="fail"&gt;-4&lt;/span&gt;&lt;span class="diff"&gt;079-&lt;/span&gt;&lt;span class="fail"&gt;a&lt;/span&gt;&lt;span class="diff"&gt;8&lt;/span&gt;&lt;span class="fail"&gt;a&lt;/span&gt;&lt;span class="diff"&gt;e&lt;/span&gt;&lt;span class="fail"&gt;-&lt;/span&gt;&lt;span class="diff"&gt;4&lt;/span&gt;&lt;span class="fail"&gt;6&lt;/span&gt;&lt;span class="diff"&gt;a&lt;/span&gt;&lt;span class="fail"&gt;4ea&lt;/span&gt;&lt;span class="diff"&gt;acc25&lt;/span&gt;&lt;span class="fail"&gt;8","Type":1}}]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;园区有所有信息&lt;/td&gt;
+		&lt;td&gt;api/site/create&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"BuildingArea":"8000","ParentId":320497,"Administrators":[{"Name":"Doc","Title":"qa","Telephone":"18945201000","Email":"18945201000@qq.com"}],"Logo":null,"Name":"site.create.all","Code":"","CustomerId":320497,"FloorSpace":"10000","Type":1}&lt;/td&gt;
+		&lt;td&gt;[{"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":10000.0,"BuildingArea":8000.0,"Logo":null,"Location":null,"Administrators":[{"Id":,"HierarchyId":320553,"Name":"Doc","Title":"qa","Telephone":"18945201000","Email":"18945201000@qq.com"}],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"site.create.all","Code":"a&lt;span class="diff"&gt;8&lt;/span&gt;2&lt;span class="diff"&gt;c&lt;/span&gt;2&lt;span class="diff"&gt;39&lt;/span&gt;5-&lt;span class="diff"&gt;848d-4&lt;/span&gt;58&lt;span class="diff"&gt;4&lt;/span&gt;-b&lt;span class="diff"&gt;33d&lt;/span&gt;-&lt;span class="diff"&gt;f&lt;/span&gt;8&lt;span class="diff"&gt;fe&lt;/span&gt;24&lt;span class="diff"&gt;0&lt;/span&gt;c33&lt;span class="diff"&gt;d3&lt;/span&gt;","Type":1}}] &lt;span class="fail"&gt;expected [{"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":10000.0,"BuildingArea":8000.0,"Logo":null,"Location":null,"Administrators":[{"Id":,"HierarchyId":320553,"Name":"Doc","Title":"qa","Telephone":"18945201000","Email":"18945201000@qq.com"}],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"site.create.all","Code":"&lt;/span&gt;&lt;span class="diff"&gt;f&lt;/span&gt;&lt;span class="fail"&gt;a&lt;/span&gt;&lt;span class="diff"&gt;a&lt;/span&gt;&lt;span class="fail"&gt;22&lt;/span&gt;&lt;span class="diff"&gt;16&lt;/span&gt;&lt;span class="fail"&gt;5-&lt;/span&gt;&lt;span class="diff"&gt;17&lt;/span&gt;&lt;span class="fail"&gt;58-&lt;/span&gt;&lt;span class="diff"&gt;4&lt;/span&gt;&lt;span class="fail"&gt;b&lt;/span&gt;&lt;span class="diff"&gt;12&lt;/span&gt;&lt;span class="fail"&gt;-82&lt;/span&gt;&lt;span class="diff"&gt;ea-ed3&lt;/span&gt;&lt;span class="fail"&gt;4&lt;/span&gt;&lt;span class="diff"&gt;4&lt;/span&gt;&lt;span class="fail"&gt;c3&lt;/span&gt;&lt;span class="diff"&gt;bb&lt;/span&gt;&lt;span class="fail"&gt;3&lt;/span&gt;&lt;span class="diff"&gt;a1&lt;/span&gt;&lt;span class="fail"&gt;","Type":1}}]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;园区名称为空&lt;/td&gt;
+		&lt;td&gt;api/site/create&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"BuildingArea":"","ParentId":320497,"Administrators":[],"Logo":null,"Name":"","Code":"","CustomerId":320497,"FloorSpace":"","Type":1}&lt;/td&gt;
+		&lt;td&gt;[{"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":null,"BuildingArea":null,"Logo":null,"Location":null,"Administrators":[],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"","Code":"&lt;span class="diff"&gt;e&lt;/span&gt;c9&lt;span class="diff"&gt;513&lt;/span&gt;70-&lt;span class="diff"&gt;9a7c-&lt;/span&gt;4b&lt;span class="diff"&gt;9&lt;/span&gt;0-&lt;span class="diff"&gt;ac4e&lt;/span&gt;-d&lt;span class="diff"&gt;b&lt;/span&gt;e&lt;span class="diff"&gt;744&lt;/span&gt;5&lt;span class="diff"&gt;1&lt;/span&gt;3&lt;span class="diff"&gt;4&lt;/span&gt;f&lt;span class="diff"&gt;2&lt;/span&gt;","Type":1}}] &lt;span class="fail"&gt;expected [{"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":null,"BuildingArea":null,"Logo":null,"Location":null,"Administrators":[],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"","Code":"&lt;/span&gt;&lt;span class="diff"&gt;4&lt;/span&gt;&lt;span class="fail"&gt;c97&lt;/span&gt;&lt;span class="diff"&gt;b65b-&lt;/span&gt;&lt;span class="fail"&gt;0&lt;/span&gt;&lt;span class="diff"&gt;62e&lt;/span&gt;&lt;span class="fail"&gt;-4b0&lt;/span&gt;&lt;span class="diff"&gt;d&lt;/span&gt;&lt;span class="fail"&gt;-&lt;/span&gt;&lt;span class="diff"&gt;b6d5&lt;/span&gt;&lt;span class="fail"&gt;-de53f&lt;/span&gt;&lt;span class="diff"&gt;a153ac3&lt;/span&gt;&lt;span class="fail"&gt;","Type":1}}]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;园区名称重复&lt;/td&gt;
+		&lt;td&gt;api/site/create&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"BuildingArea":"8000","ParentId":320497,"Administrators":[{"Name":"Doc","Title":"qa","Telephone":"18945201000","Email":"18945201000@qq.com"}],"Logo":null,"Name":"site.create.all","Code":"","CustomerId":320497,"FloorSpace":"10000","Type":1}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"050001201005","Message":null,"RequestId":null,"Result":null}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>CreateSite</relativePageName>
+        <tags>create, site</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='CreateSite', args=[]}</instruction>
+        <slimResult>pass(create site)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>create site</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/site/create]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"BuildingArea":"","ParentId":320497,"Administrators":[],"Logo":null,"Name":"site.create.name","Code":"","CustomerId":320497,"FloorSpace":"","Type":1}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_7</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_9', instruction='call', instanceName='decisionTable_1', methodName='responsebodyId', args=[]}</instruction>
+        <slimResult>fail(a={"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":null,"BuildingArea":null,"Logo":null,"Location":null,"Administrators":[],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"site.create.name","Code":"68595b72-de89-4afa-813f-b64d4e4ca148","Type":1}};e={"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":null,"BuildingArea":null,"Logo":null,"Location":null,"Administrators":[],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"site.create.name","Code":"73420170-181f-4079-a8ae-46a4eaacc258","Type":1}})</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_1_9</instructionId>
+                    <col>5</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>{"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":null,"BuildingArea":null,"Logo":null,"Location":null,"Administrators":[],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"site.create.name","Code":"68595b72-de89-4afa-813f-b64d4e4ca148","Type":1}}</actual>
+                              <expected>{"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":null,"BuildingArea":null,"Logo":null,"Location":null,"Administrators":[],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"site.create.name","Code":"73420170-181f-4079-a8ae-46a4eaacc258","Type":1}}</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/site/create]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_12</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_13', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_13</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"BuildingArea":"8000","ParentId":320497,"Administrators":[{"Name":"Doc","Title":"qa","Telephone":"18945201000","Email":"18945201000@qq.com"}],"Logo":null,"Name":"site.create.all","Code":"","CustomerId":320497,"FloorSpace":"10000","Type":1}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_14</instructionId>
+                    <col>4</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='responsebodyId', args=[]}</instruction>
+        <slimResult>fail(a={"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":10000.0,"BuildingArea":8000.0,"Logo":null,"Location":null,"Administrators":[{"Id":,"HierarchyId":320553,"Name":"Doc","Title":"qa","Telephone":"18945201000","Email":"18945201000@qq.com"}],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"site.create.all","Code":"a82c2395-848d-4584-b33d-f8fe240c33d3","Type":1}};e={"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":10000.0,"BuildingArea":8000.0,"Logo":null,"Location":null,"Administrators":[{"Id":,"HierarchyId":320553,"Name":"Doc","Title":"qa","Telephone":"18945201000","Email":"18945201000@qq.com"}],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"site.create.all","Code":"faa22165-1758-4b12-82ea-ed344c3bb3a1","Type":1}})</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>5</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>{"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":10000.0,"BuildingArea":8000.0,"Logo":null,"Location":null,"Administrators":[{"Id":,"HierarchyId":320553,"Name":"Doc","Title":"qa","Telephone":"18945201000","Email":"18945201000@qq.com"}],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"site.create.all","Code":"a82c2395-848d-4584-b33d-f8fe240c33d3","Type":1}}</actual>
+                              <expected>{"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":10000.0,"BuildingArea":8000.0,"Logo":null,"Location":null,"Administrators":[{"Id":,"HierarchyId":320553,"Name":"Doc","Title":"qa","Telephone":"18945201000","Email":"18945201000@qq.com"}],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"site.create.all","Code":"faa22165-1758-4b12-82ea-ed344c3bb3a1","Type":1}}</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/site/create]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_18</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_19', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_19</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_20</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_21', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"BuildingArea":"","ParentId":320497,"Administrators":[],"Logo":null,"Name":"","Code":"","CustomerId":320497,"FloorSpace":"","Type":1}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_21</instructionId>
+                    <col>4</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_23', instruction='call', instanceName='decisionTable_1', methodName='responsebodyId', args=[]}</instruction>
+        <slimResult>fail(a={"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":null,"BuildingArea":null,"Logo":null,"Location":null,"Administrators":[],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"","Code":"ec951370-9a7c-4b90-ac4e-dbe7445134f2","Type":1}};e={"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":null,"BuildingArea":null,"Logo":null,"Location":null,"Administrators":[],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"","Code":"4c97b65b-062e-4b0d-b6d5-de53fa153ac3","Type":1}})</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_1_23</instructionId>
+                    <col>5</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>{"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":null,"BuildingArea":null,"Logo":null,"Location":null,"Administrators":[],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"","Code":"ec951370-9a7c-4b90-ac4e-dbe7445134f2","Type":1}}</actual>
+                              <expected>{"Error":"0","Message":[""],"RequestId":null,"Result":{"FloorSpace":null,"BuildingArea":null,"Logo":null,"Location":null,"Administrators":[],"Gateways":[],"StatisticData":null,"Id":,"ParentId":320497,"CustomerId":320497,"Name":"","Code":"4c97b65b-062e-4b0d-b6d5-de53fa153ac3","Type":1}}</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_25', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/site/create]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_25</instructionId>
+                    <col>1</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_26', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_26</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_27', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_27</instructionId>
+                    <col>3</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_28', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"BuildingArea":"8000","ParentId":320497,"Administrators":[{"Name":"Doc","Title":"qa","Telephone":"18945201000","Email":"18945201000@qq.com"}],"Logo":null,"Name":"site.create.all","Code":"","CustomerId":320497,"FloorSpace":"10000","Type":1}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_28</instructionId>
+                    <col>4</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_30', instruction='call', instanceName='decisionTable_1', methodName='responsebodyId', args=[]}</instruction>
+        <slimResult>pass({"Error":"050001201005","Message":null,"RequestId":null,"Result":null})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_30</instructionId>
+                    <col>5</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"050001201005","Message":null,"RequestId":null,"Result":null}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>2952</totalRunTimeInMillis>
+</testResults>
+

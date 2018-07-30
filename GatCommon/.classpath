@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Emma/fitnesse/FitnessTest/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Emma/fitnesse/FitnessTest/lib/httpclient-4.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Emma/fitnesse/FitnessTest/lib/httpcore-4.3.jar"/>
+	<classpathentry kind="lib" path="D:/Emma/fitnesse/FitnessTest/lib/jackson-databind-2.6.7.jar"/>
+	<classpathentry kind="lib" path="D:/Emma/fitnesse/FitnessTest/lib/jackson-core-2.8.1.jar"/>
+	<classpathentry kind="lib" path="D:/Emma/fitnesse/FitnessTest/lib/jackson-annotations-2.8.0.jar"/>
+	<classpathentry kind="lib" path="D:/Emma/fitnesse/FitnessTest/lib/jackson-all-1.9.5.jar"/>
+	<classpathentry kind="lib" path="D:/Emma/fitnesse/FitnessTest/lib/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/Emma/fitnesse/FitnessTest/lib/poi-ooxml-3.12.jar"/>
+	<classpathentry kind="lib" path="D:/Emma/fitnesse/FitnessTest/lib/poi-ooxml-schemas-3.12.jar"/>
+	<classpathentry kind="lib" path="D:/Emma/fitnesse/FitnessTest/lib/poi-3.12.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

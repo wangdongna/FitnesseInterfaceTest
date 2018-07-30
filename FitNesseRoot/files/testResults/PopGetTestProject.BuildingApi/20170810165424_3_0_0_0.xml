@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopGetTestProject.BuildingApi</rootPath>
+  <pageHistoryReference>
+    <name>PopGetTestProject.BuildingApi.GetBuildingDirectories</name>
+    <date>2017-08-10T16:54:24+08:00</date>
+    <pageHistoryLink>PopGetTestProject.BuildingApi.GetBuildingDirectories?pageHistory&amp;resultDate=20170810165424</pageHistoryLink>
+    <counts>
+      <right>6</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>4512</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>PopGetTestProject.BuildingApi.GetBuildingHierarchy</name>
+    <date>2017-08-10T16:54:29+08:00</date>
+    <pageHistoryLink>PopGetTestProject.BuildingApi.GetBuildingHierarchy?pageHistory&amp;resultDate=20170810165429</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>3760</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>PopGetTestProject.BuildingApi.GetBuildingIndustries</name>
+    <date>2017-08-10T16:54:33+08:00</date>
+    <pageHistoryLink>PopGetTestProject.BuildingApi.GetBuildingIndustries?pageHistory&amp;resultDate=20170810165433</pageHistoryLink>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>619</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>"C:\Program Files\Java\jdk1.8.0_111\bin\java" -cp "D:\Emma\fitnesse\fitnesse-standalone.jar;D:\Emma\fitnesse\FitnessTest\bin ;D:\Emma\fitnesse\GatCommon\bin ;D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar ;D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar ;D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar ;D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar ;D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar ;D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar ;D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar ;D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar ;D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar ;D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar ;D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar " fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>3</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>9203</totalRunTimeInMillis>
+</suiteResults>
+

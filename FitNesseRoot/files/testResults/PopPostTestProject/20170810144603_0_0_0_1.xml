@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopPostTestProject</rootPath>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>"C:\Program Files\Java\jdk1.8.0_111\bin\java" -cp "D:\Emma\fitnesse\fitnesse-standalone.jar;D:\Emma\fitnesse\FitnessTest\bin ;D:\Emma\fitnesse\GatCommon\bin ;D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar ;D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar ;D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar ;D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar ;D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar ;D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar ;D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar ;D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar ;D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar ;D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar ;D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar " fitnesse.slim.SlimService 1</command>
+    <exitCode>1</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+    <exception>Could not send/receive data with SUT</exception>
+    <exception>fitnesse.testsystems.slim.SlimCommunicationException: Could not send/receive data with SUT</exception>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>2359</totalRunTimeInMillis>
+</suiteResults>
+

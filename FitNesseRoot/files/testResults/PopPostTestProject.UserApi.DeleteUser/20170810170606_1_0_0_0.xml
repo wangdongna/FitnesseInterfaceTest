@@ -1,0 +1,593 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopPostTestProject.UserApi.DeleteUser</rootPath>
+    <result>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-10T17:06:06+08:00</date>
+    <runTimeInMillis>5336</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="8"&gt;&lt;span class="pass"&gt;delete user&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;id&lt;/td&gt;
+		&lt;td&gt;table&lt;/td&gt;
+		&lt;td&gt;requestbody&lt;/td&gt;
+		&lt;td&gt;responsebody?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;删除用户名为特殊字符的用户&lt;/td&gt;
+		&lt;td&gt;api/user/delete&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;301340&lt;/td&gt;
+		&lt;td&gt;User&lt;/td&gt;
+		&lt;td&gt;{"SpDomain":null,"Telephone":"12343321221","UserType":303263,"SpName":null,"RealName":"api.user&amp;(#).delete","Name":"api.user&amp;(#).delete","FedLoginUrl":null,"SpStatus":0,"UserTypeName":"无报警短信权限","Status":1,"PrivilegeCodes":[],"Customers":[{"CustomerId":320474,"CustomerName":"api.customer4","CustomerCode":"api.customer4","CustomerImageId":"img-logo-300839","SysType":1}],"DemoStatus":0,"SpFullName":null,"SpId":316,"Version":9764007,"Title":"能源工程顾问","Id":301340,"HasWholeCustomer":false,"Password":"363CA035EAAA77DA97FEE014389683D7","Email":"12343321221@qq.com","Comment":null}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;$NULL&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;删除服务商管理员&lt;/td&gt;
+		&lt;td&gt;api/user/delete&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;301341&lt;/td&gt;
+		&lt;td&gt;User&lt;/td&gt;
+		&lt;td&gt;{"SpDomain":null,"Telephone":"17827383733","UserType":303246,"SpName":null,"RealName":"api.admin.delete","Name":"api.admin.delete","FedLoginUrl":null,"SpStatus":0,"UserTypeName":"服务商管理员","Status":1,"PrivilegeCodes":[],"Customers":[{"CustomerId":320359,"CustomerName":"GatewayCustomer","CustomerCode":"GatewayCustomer","CustomerImageId":"img-logo-300833","SysType":1},{"CustomerId":320366,"CustomerName":"api.cutomer1","CustomerCode":"api.cutomer1","CustomerImageId":"img-logo-300834","SysType":1},{"CustomerId":320367,"CustomerName":"api.customer2","CustomerCode":"api.customer2","CustomerImageId":"img-logo-300835","SysType":1},{"CustomerId":320368,"CustomerName":"api.customer3","CustomerCode":"api.customer3","CustomerImageId":"img-logo-300836","SysType":1},{"CustomerId":320474,"CustomerName":"api.customer4","CustomerCode":"api.customer4","CustomerImageId":"img-logo-300839","SysType":1},{"CustomerId":320482,"CustomerName":"api.customer5","CustomerCode":"api.customer5","CustomerImageId":"img-logo-300840","SysType":1},{"CustomerId":320483,"CustomerName":"api.customer5.update","CustomerCode":"api.customer5.update","CustomerImageId":"img-logo-300841","SysType":1},{"CustomerId":320484,"CustomerName":"api.customer6.delete","CustomerCode":"api.customer6.delete","CustomerImageId":"img-logo-300842","SysType":1},{"CustomerId":320485,"CustomerName":"api.customer7.delete","CustomerCode":"api.customer7.delete","CustomerImageId":"img-logo-300843","SysType":1},{"CustomerId":320486,"CustomerName":"api.customer5.update.contact","CustomerCode":"api.customer5.update.contact","CustomerImageId":"img-logo-300844","SysType":1},{"CustomerId":320487,"CustomerName":"api.customer5.update.all","CustomerCode":"api.customer5.update.all","CustomerImageId":"img-logo-300845","SysType":1},{"CustomerId":320488,"CustomerName":"api.customer5.update.single","CustomerCode":"api.customer5.update.single","CustomerImageId":"img-logo-300846","SysType":1},{"CustomerId":320489,"CustomerName":"api.customer5.update.empty","CustomerCode":"api.customer5.update.empty","CustomerImageId":"img-logo-300847","SysType":1},{"CustomerId":320490,"CustomerName":"api.customerorg","CustomerCode":"api.customerorg","CustomerImageId":"img-logo-300848","SysType":1},{"CustomerId":320497,"CustomerName":"api.customersite","CustomerCode":"api.customersite","CustomerImageId":"img-logo-300849","SysType":1},{"CustomerId":320523,"CustomerName":"api.customerbuilding","CustomerCode":"api.customerbuilding","CustomerImageId":"img-logo-300850","SysType":1}],"DemoStatus":0,"SpFullName":null,"SpId":316,"Version":9764008,"Title":"服务商管理员","Id":301341,"HasWholeCustomer":true,"Password":"ED18B9F689FE86916820F101D01BDA3C","Email":"17827383733@qq.com","Comment":"r"}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;$NULL&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;删除有全部客户数据权限的用户&lt;/td&gt;
+		&lt;td&gt;api/user/delete&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;301342&lt;/td&gt;
+		&lt;td&gt;User&lt;/td&gt;
+		&lt;td&gt;{"SpDomain":null,"Telephone":"17829383922","UserType":303256,"SpName":null,"RealName":"api.user.allcustomer.delete","Name":"api.user.allcustomer.delete","FedLoginUrl":null,"SpStatus":0,"UserTypeName":"集团能源经理(无列表)","Status":1,"PrivilegeCodes":[],"Customers":[{"CustomerId":320359,"CustomerName":"GatewayCustomer","CustomerCode":"GatewayCustomer","CustomerImageId":"img-logo-300833","SysType":1},{"CustomerId":320366,"CustomerName":"api.cutomer1","CustomerCode":"api.cutomer1","CustomerImageId":"img-logo-300834","SysType":1},{"CustomerId":320367,"CustomerName":"api.customer2","CustomerCode":"api.customer2","CustomerImageId":"img-logo-300835","SysType":1},{"CustomerId":320368,"CustomerName":"api.customer3","CustomerCode":"api.customer3","CustomerImageId":"img-logo-300836","SysType":1},{"CustomerId":320474,"CustomerName":"api.customer4","CustomerCode":"api.customer4","CustomerImageId":"img-logo-300839","SysType":1},{"CustomerId":320482,"CustomerName":"api.customer5","CustomerCode":"api.customer5","CustomerImageId":"img-logo-300840","SysType":1},{"CustomerId":320483,"CustomerName":"api.customer5.update","CustomerCode":"api.customer5.update","CustomerImageId":"img-logo-300841","SysType":1},{"CustomerId":320484,"CustomerName":"api.customer6.delete","CustomerCode":"api.customer6.delete","CustomerImageId":"img-logo-300842","SysType":1},{"CustomerId":320485,"CustomerName":"api.customer7.delete","CustomerCode":"api.customer7.delete","CustomerImageId":"img-logo-300843","SysType":1},{"CustomerId":320486,"CustomerName":"api.customer5.update.contact","CustomerCode":"api.customer5.update.contact","CustomerImageId":"img-logo-300844","SysType":1},{"CustomerId":320487,"CustomerName":"api.customer5.update.all","CustomerCode":"api.customer5.update.all","CustomerImageId":"img-logo-300845","SysType":1},{"CustomerId":320488,"CustomerName":"api.customer5.update.single","CustomerCode":"api.customer5.update.single","CustomerImageId":"img-logo-300846","SysType":1},{"CustomerId":320489,"CustomerName":"api.customer5.update.empty","CustomerCode":"api.customer5.update.empty","CustomerImageId":"img-logo-300847","SysType":1},{"CustomerId":320490,"CustomerName":"api.customerorg","CustomerCode":"api.customerorg","CustomerImageId":"img-logo-300848","SysType":1},{"CustomerId":320497,"CustomerName":"api.customersite","CustomerCode":"api.customersite","CustomerImageId":"img-logo-300849","SysType":1},{"CustomerId":320523,"CustomerName":"api.customerbuilding","CustomerCode":"api.customerbuilding","CustomerImageId":"img-logo-300850","SysType":1}],"DemoStatus":0,"SpFullName":null,"SpId":316,"Version":9764009,"Title":"能源工程师","Id":301342,"HasWholeCustomer":true,"Password":"90D5D3937C68D7030F04DE0F863738DE","Email":"17829383922@qq.com","Comment":"43"}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;$NULL&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;删除只有一个客户数据权限的用户&lt;/td&gt;
+		&lt;td&gt;api/user/delete&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;301343&lt;/td&gt;
+		&lt;td&gt;User&lt;/td&gt;
+		&lt;td&gt;{"SpDomain":null,"Telephone":"18384398484","UserType":303262,"SpName":null,"RealName":"api.user.onecustomer.delete","Name":"api.user.onecustomer.delete","FedLoginUrl":null,"SpStatus":0,"UserTypeName":"建筑能源经理(购买咨询服务)","Status":1,"PrivilegeCodes":[],"Customers":[{"CustomerId":320368,"CustomerName":"api.customer3","CustomerCode":"api.customer3","CustomerImageId":"img-logo-300836","SysType":1}],"DemoStatus":0,"SpFullName":null,"SpId":316,"Version":9764011,"Title":"能源工程顾问","Id":301343,"HasWholeCustomer":false,"Password":"0315569C83D72BA824DD092E35A6F9FC","Email":"18384398484@qq.com","Comment":null}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;$NULL&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;删除没有客户数据权限的用户&lt;/td&gt;
+		&lt;td&gt;api/user/delete&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;301344&lt;/td&gt;
+		&lt;td&gt;User&lt;/td&gt;
+		&lt;td&gt;{"SpDomain":null,"Telephone":"19839843343","UserType":303262,"SpName":null,"RealName":"api.user.nonecustomer.delete","Name":"api.user.nonecustomer.delete","FedLoginUrl":null,"SpStatus":0,"UserTypeName":"建筑能源经理(购买咨询服务)","Status":1,"PrivilegeCodes":[],"Customers":[],"DemoStatus":0,"SpFullName":null,"SpId":316,"Version":9764023,"Title":"业务人员","Id":301344,"HasWholeCustomer":false,"Password":"60C9530648C7BFA85FAA4B27E10356EE","Email":"19839843343@qq.com","Comment":null}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;$NULL&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>DeleteUser</relativePageName>
+        <tags>delete, user</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='DeleteUser', args=[]}</instruction>
+        <slimResult>pass(delete user)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>delete user</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/user/delete]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='setId', args=[301340]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_7</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='setTable', args=[User]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>5</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_9', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"SpDomain":null,"Telephone":"12343321221","UserType":303263,"SpName":null,"RealName":"api.user&amp;(#).delete","Name":"api.user&amp;(#).delete","FedLoginUrl":null,"SpStatus":0,"UserTypeName":"无报警短信权限","Status":1,"PrivilegeCodes":[],"Customers":[{"CustomerId":320474,"CustomerName":"api.customer4","CustomerCode":"api.customer4","CustomerImageId":"img-logo-300839","SysType":1}],"DemoStatus":0,"SpFullName":null,"SpId":316,"Version":9764007,"Title":"能源工程顾问","Id":301340,"HasWholeCustomer":false,"Password":"363CA035EAAA77DA97FEE014389683D7","Email":"12343321221@qq.com","Comment":null}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_9</instructionId>
+                    <col>6</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass($NULL)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>7</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>$NULL</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_13', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/user/delete]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_13</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_14</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_15', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_15</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='setId', args=[301341]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>4</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_17', instruction='call', instanceName='decisionTable_1', methodName='setTable', args=[User]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_17</instructionId>
+                    <col>5</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"SpDomain":null,"Telephone":"17827383733","UserType":303246,"SpName":null,"RealName":"api.admin.delete","Name":"api.admin.delete","FedLoginUrl":null,"SpStatus":0,"UserTypeName":"服务商管理员","Status":1,"PrivilegeCodes":[],"Customers":[{"CustomerId":320359,"CustomerName":"GatewayCustomer","CustomerCode":"GatewayCustomer","CustomerImageId":"img-logo-300833","SysType":1},{"CustomerId":320366,"CustomerName":"api.cutomer1","CustomerCode":"api.cutomer1","CustomerImageId":"img-logo-300834","SysType":1},{"CustomerId":320367,"CustomerName":"api.customer2","CustomerCode":"api.customer2","CustomerImageId":"img-logo-300835","SysType":1},{"CustomerId":320368,"CustomerName":"api.customer3","CustomerCode":"api.customer3","CustomerImageId":"img-logo-300836","SysType":1},{"CustomerId":320474,"CustomerName":"api.customer4","CustomerCode":"api.customer4","CustomerImageId":"img-logo-300839","SysType":1},{"CustomerId":320482,"CustomerName":"api.customer5","CustomerCode":"api.customer5","CustomerImageId":"img-logo-300840","SysType":1},{"CustomerId":320483,"CustomerName":"api.customer5.update","CustomerCode":"api.customer5.update","CustomerImageId":"img-logo-300841","SysType":1},{"CustomerId":320484,"CustomerName":"api.customer6.delete","CustomerCode":"api.customer6.delete","CustomerImageId":"img-logo-300842","SysType":1},{"CustomerId":320485,"CustomerName":"api.customer7.delete","CustomerCode":"api.customer7.delete","CustomerImageId":"img-logo-300843","SysType":1},{"CustomerId":320486,"CustomerName":"api.customer5.update.contact","CustomerCode":"api.customer5.update.contact","CustomerImageId":"img-logo-300844","SysType":1},{"CustomerId":320487,"CustomerName":"api.customer5.update.all","CustomerCode":"api.customer5.update.all","CustomerImageId":"img-logo-300845","SysType":1},{"CustomerId":320488,"CustomerName":"api.customer5.update.single","CustomerCode":"api.customer5.update.single","CustomerImageId":"img-logo-300846","SysType":1},{"CustomerId":320489,"CustomerName":"api.customer5.update.empty","CustomerCode":"api.customer5.update.empty","CustomerImageId":"img-logo-300847","SysType":1},{"CustomerId":320490,"CustomerName":"api.customerorg","CustomerCode":"api.customerorg","CustomerImageId":"img-logo-300848","SysType":1},{"CustomerId":320497,"CustomerName":"api.customersite","CustomerCode":"api.customersite","CustomerImageId":"img-logo-300849","SysType":1},{"CustomerId":320523,"CustomerName":"api.customerbuilding","CustomerCode":"api.customerbuilding","CustomerImageId":"img-logo-300850","SysType":1}],"DemoStatus":0,"SpFullName":null,"SpId":316,"Version":9764008,"Title":"服务商管理员","Id":301341,"HasWholeCustomer":true,"Password":"ED18B9F689FE86916820F101D01BDA3C","Email":"17827383733@qq.com","Comment":"r"}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_18</instructionId>
+                    <col>6</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass($NULL)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_20</instructionId>
+                    <col>7</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>$NULL</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_22', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/user/delete]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_22</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_23', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_23</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_24', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_24</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_25', instruction='call', instanceName='decisionTable_1', methodName='setId', args=[301342]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_25</instructionId>
+                    <col>4</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_26', instruction='call', instanceName='decisionTable_1', methodName='setTable', args=[User]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_26</instructionId>
+                    <col>5</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_27', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"SpDomain":null,"Telephone":"17829383922","UserType":303256,"SpName":null,"RealName":"api.user.allcustomer.delete","Name":"api.user.allcustomer.delete","FedLoginUrl":null,"SpStatus":0,"UserTypeName":"集团能源经理(无列表)","Status":1,"PrivilegeCodes":[],"Customers":[{"CustomerId":320359,"CustomerName":"GatewayCustomer","CustomerCode":"GatewayCustomer","CustomerImageId":"img-logo-300833","SysType":1},{"CustomerId":320366,"CustomerName":"api.cutomer1","CustomerCode":"api.cutomer1","CustomerImageId":"img-logo-300834","SysType":1},{"CustomerId":320367,"CustomerName":"api.customer2","CustomerCode":"api.customer2","CustomerImageId":"img-logo-300835","SysType":1},{"CustomerId":320368,"CustomerName":"api.customer3","CustomerCode":"api.customer3","CustomerImageId":"img-logo-300836","SysType":1},{"CustomerId":320474,"CustomerName":"api.customer4","CustomerCode":"api.customer4","CustomerImageId":"img-logo-300839","SysType":1},{"CustomerId":320482,"CustomerName":"api.customer5","CustomerCode":"api.customer5","CustomerImageId":"img-logo-300840","SysType":1},{"CustomerId":320483,"CustomerName":"api.customer5.update","CustomerCode":"api.customer5.update","CustomerImageId":"img-logo-300841","SysType":1},{"CustomerId":320484,"CustomerName":"api.customer6.delete","CustomerCode":"api.customer6.delete","CustomerImageId":"img-logo-300842","SysType":1},{"CustomerId":320485,"CustomerName":"api.customer7.delete","CustomerCode":"api.customer7.delete","CustomerImageId":"img-logo-300843","SysType":1},{"CustomerId":320486,"CustomerName":"api.customer5.update.contact","CustomerCode":"api.customer5.update.contact","CustomerImageId":"img-logo-300844","SysType":1},{"CustomerId":320487,"CustomerName":"api.customer5.update.all","CustomerCode":"api.customer5.update.all","CustomerImageId":"img-logo-300845","SysType":1},{"CustomerId":320488,"CustomerName":"api.customer5.update.single","CustomerCode":"api.customer5.update.single","CustomerImageId":"img-logo-300846","SysType":1},{"CustomerId":320489,"CustomerName":"api.customer5.update.empty","CustomerCode":"api.customer5.update.empty","CustomerImageId":"img-logo-300847","SysType":1},{"CustomerId":320490,"CustomerName":"api.customerorg","CustomerCode":"api.customerorg","CustomerImageId":"img-logo-300848","SysType":1},{"CustomerId":320497,"CustomerName":"api.customersite","CustomerCode":"api.customersite","CustomerImageId":"img-logo-300849","SysType":1},{"CustomerId":320523,"CustomerName":"api.customerbuilding","CustomerCode":"api.customerbuilding","CustomerImageId":"img-logo-300850","SysType":1}],"DemoStatus":0,"SpFullName":null,"SpId":316,"Version":9764009,"Title":"能源工程师","Id":301342,"HasWholeCustomer":true,"Password":"90D5D3937C68D7030F04DE0F863738DE","Email":"17829383922@qq.com","Comment":"43"}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_27</instructionId>
+                    <col>6</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_29', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass($NULL)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_29</instructionId>
+                    <col>7</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>$NULL</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_31', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/user/delete]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_31</instructionId>
+                    <col>1</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_32', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_32</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_33', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_33</instructionId>
+                    <col>3</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_34', instruction='call', instanceName='decisionTable_1', methodName='setId', args=[301343]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_34</instructionId>
+                    <col>4</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_35', instruction='call', instanceName='decisionTable_1', methodName='setTable', args=[User]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_35</instructionId>
+                    <col>5</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_36', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"SpDomain":null,"Telephone":"18384398484","UserType":303262,"SpName":null,"RealName":"api.user.onecustomer.delete","Name":"api.user.onecustomer.delete","FedLoginUrl":null,"SpStatus":0,"UserTypeName":"建筑能源经理(购买咨询服务)","Status":1,"PrivilegeCodes":[],"Customers":[{"CustomerId":320368,"CustomerName":"api.customer3","CustomerCode":"api.customer3","CustomerImageId":"img-logo-300836","SysType":1}],"DemoStatus":0,"SpFullName":null,"SpId":316,"Version":9764011,"Title":"能源工程顾问","Id":301343,"HasWholeCustomer":false,"Password":"0315569C83D72BA824DD092E35A6F9FC","Email":"18384398484@qq.com","Comment":null}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_36</instructionId>
+                    <col>6</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_38', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass($NULL)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_38</instructionId>
+                    <col>7</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>$NULL</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_40', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/user/delete]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_40</instructionId>
+                    <col>1</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_41', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_41</instructionId>
+                    <col>2</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_42', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_42</instructionId>
+                    <col>3</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_43', instruction='call', instanceName='decisionTable_1', methodName='setId', args=[301344]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_43</instructionId>
+                    <col>4</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_44', instruction='call', instanceName='decisionTable_1', methodName='setTable', args=[User]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_44</instructionId>
+                    <col>5</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_45', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"SpDomain":null,"Telephone":"19839843343","UserType":303262,"SpName":null,"RealName":"api.user.nonecustomer.delete","Name":"api.user.nonecustomer.delete","FedLoginUrl":null,"SpStatus":0,"UserTypeName":"建筑能源经理(购买咨询服务)","Status":1,"PrivilegeCodes":[],"Customers":[],"DemoStatus":0,"SpFullName":null,"SpId":316,"Version":9764023,"Title":"业务人员","Id":301344,"HasWholeCustomer":false,"Password":"60C9530648C7BFA85FAA4B27E10356EE","Email":"19839843343@qq.com","Comment":null}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_45</instructionId>
+                    <col>6</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_47', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass($NULL)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_47</instructionId>
+                    <col>7</col>
+                              <row>6</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>$NULL</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem></testSystem>
+    <command></command>
+    <exitCode>0</exitCode>
+    <stdOut>begin.
+end.
+begin.
+end.
+begin.
+end.
+begin.
+end.
+begin.
+end.
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>5336</totalRunTimeInMillis>
+</testResults>
+

@@ -1,0 +1,404 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopPostTestProject.RoomApi.UpdateRoom</rootPath>
+    <result>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-10T17:04:55+08:00</date>
+    <runTimeInMillis>2613</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;&lt;span class="pass"&gt;update room&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;requestbody&lt;/td&gt;
+		&lt;td&gt;responsebody?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;修改自定义配电室名称&lt;/td&gt;
+		&lt;td&gt;api/room/update&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"Level":1,"TransformerVoltage":"5000","ParentId":320506,"Administrators":[],"Tickets":[],"PropertyGroups":[],"Logo":null,"Name":"room.update.name.new","Code":"9ddf75ab-318b-410f-b730-e059162cb32e","Gateways":[],"Location":"8","EnvData":null,"CustomerId":320367,"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"能耗统计","Value":"0","Unit":"kWh"}]},"SubType":1,"Type":3,"SceneLogs":[],"Id":320508,"SingleLineDiagrams":[],"Description":null}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":1,"Location":"8","Level":1,"TransformerVoltage":"5000","Description":null,"Logo":null,"EnvData":null,"Administrators":[],"SingleLineDiagrams":[],"Gateways":[],"SceneLogs":[],"PropertyGroups":[],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"}]},"Tickets":[],"Id":320508,"ParentId":320506,"CustomerId":320367,"Name":"room.update.name.new","Code":"9ddf75ab-318b-410f-b730-e059162cb32e","Type":3}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;修改自定义配电室其他信息&lt;/td&gt;
+		&lt;td&gt;api/room/update&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"Level":null,"TransformerVoltage":null,"ParentId":320506,"Administrators":[],"Tickets":[],"PropertyGroups":[{"Id":1,"HierarchyId":"","Order":1,"Name":"安装信息","Properties":[{"Id":14227,"GroupId":4641,"Order":1,"Name":"安装公司","Value":"da"},{"Id":14228,"GroupId":4641,"Order":2,"Name":"安装日期","Value":"2017-07-01","DataInvalid":false},{"Id":14229,"GroupId":4641,"Order":3,"Name":"运行日期","Value":""},{"Id":14230,"GroupId":4641,"Order":4,"Name":"改造日期","Value":""}]},{"Id":2,"HierarchyId":"","Order":2,"Name":"归属信息","Properties":[{"Id":14231,"GroupId":4642,"Order":1,"Name":"所属部门","Value":"ds"},{"Id":14232,"GroupId":4642,"Order":2,"Name":"负责人","Value":"zy"}]}],"Logo":null,"Name":"room.update.other","Code":"c7dd2a7d-dcd9-4a39-95ca-c024fe9f0676","Gateways":[],"Location":"12","EnvData":null,"CustomerId":320367,"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"能耗统计","Value":"0","Unit":"kWh"}]},"SubType":2,"Type":3,"SceneLogs":[],"Id":320509,"SingleLineDiagrams":[],"Description":null}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":2,"Location":"12","Level":null,"TransformerVoltage":null,"Description":null,"Logo":null,"EnvData":null,"Administrators":[],"SingleLineDiagrams":[],"Gateways":[],"SceneLogs":[],"PropertyGroups":[{"Id":4663,"HierarchyId":320509,"Order":1,"Name":"????","Properties":[{"Id":14305,"GroupId":4663,"Order":1,"Name":"????","Value":"da"},{"Id":14306,"GroupId":4663,"Order":2,"Name":"????","Value":"2017-07-01"},{"Id":14307,"GroupId":4663,"Order":3,"Name":"????","Value":""},{"Id":14308,"GroupId":4663,"Order":4,"Name":"????","Value":""}]},{"Id":4664,"HierarchyId":320509,"Order":2,"Name":"????","Properties":[{"Id":14309,"GroupId":4664,"Order":1,"Name":"????","Value":"ds"},{"Id":14310,"GroupId":4664,"Order":2,"Name":"???","Value":"zy"}]}],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"}]},"Tickets":[],"Id":320509,"ParentId":320506,"CustomerId":320367,"Name":"room.update.other","Code":"c7dd2a7d-dcd9-4a39-95ca-c024fe9f0676","Type":3}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;除配电室名称外，其他为空&lt;/td&gt;
+		&lt;td&gt;api/room/update&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"Level":null,"TransformerVoltage":null,"ParentId":320506,"Administrators":[],"Tickets":[],"PropertyGroups":[{"Id":1,"HierarchyId":"","Order":1,"Name":"安装信息","Properties":[{"Id":14239,"GroupId":4645,"Order":1,"Name":"安装公司","Value":""},{"Id":14240,"GroupId":4645,"Order":2,"Name":"安装日期","Value":""},{"Id":14241,"GroupId":4645,"Order":3,"Name":"运行日期","Value":""},{"Id":14242,"GroupId":4645,"Order":4,"Name":"改造日期","Value":""}]},{"Id":2,"HierarchyId":"","Order":2,"Name":"归属信息","Properties":[{"Id":14243,"GroupId":4646,"Order":1,"Name":"所属部门","Value":""},{"Id":14244,"GroupId":4646,"Order":2,"Name":"负责人","Value":""}]}],"Logo":null,"Name":"room.update.namenoempty","Code":"95b02b39-6b7c-4009-b7a8-1ea980bc735d","Gateways":[],"Location":"","EnvData":null,"CustomerId":320367,"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"能耗统计","Value":"0","Unit":"kWh"}]},"SubType":3,"Type":3,"SceneLogs":[],"Id":320510,"SingleLineDiagrams":[],"Description":null}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":3,"Location":"","Level":null,"TransformerVoltage":null,"Description":null,"Logo":null,"EnvData":null,"Administrators":[],"SingleLineDiagrams":[],"Gateways":[],"SceneLogs":[],"PropertyGroups":[{"Id":4665,"HierarchyId":320510,"Order":1,"Name":"????","Properties":[{"Id":14311,"GroupId":4665,"Order":1,"Name":"????","Value":""},{"Id":14312,"GroupId":4665,"Order":2,"Name":"????","Value":""},{"Id":14313,"GroupId":4665,"Order":3,"Name":"????","Value":""},{"Id":14314,"GroupId":4665,"Order":4,"Name":"????","Value":""}]},{"Id":4666,"HierarchyId":320510,"Order":2,"Name":"????","Properties":[{"Id":14315,"GroupId":4666,"Order":1,"Name":"????","Value":""},{"Id":14316,"GroupId":4666,"Order":2,"Name":"???","Value":""}]}],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"}]},"Tickets":[],"Id":320510,"ParentId":320506,"CustomerId":320367,"Name":"room.update.namenoempty","Code":"95b02b39-6b7c-4009-b7a8-1ea980bc735d","Type":3}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;配电室名称也为空&lt;/td&gt;
+		&lt;td&gt;api/room/update&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"Level":null,"TransformerVoltage":null,"ParentId":320506,"Administrators":[],"Tickets":[],"PropertyGroups":[{"Id":4647,"HierarchyId":320511,"Order":1,"Name":"安装信息","Properties":[{"Id":14245,"GroupId":4647,"Order":1,"Name":"安装公司","Value":"dv"},{"Id":14246,"GroupId":4647,"Order":2,"Name":"安装日期","Value":"2017-07-19"},{"Id":14247,"GroupId":4647,"Order":3,"Name":"运行日期","Value":""},{"Id":14248,"GroupId":4647,"Order":4,"Name":"改造日期","Value":""}]},{"Id":4648,"HierarchyId":320511,"Order":2,"Name":"归属信息","Properties":[{"Id":14249,"GroupId":4648,"Order":1,"Name":"所属部门","Value":"bj"},{"Id":14250,"GroupId":4648,"Order":2,"Name":"负责人","Value":"ts"}]}],"Logo":null,"Name":"","Code":"3093754b-13da-40d1-b321-590f316f1143","Gateways":[],"Location":null,"EnvData":null,"CustomerId":320367,"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"能耗统计","Value":"0","Unit":"kWh"}]},"SubType":4,"Type":3,"SceneLogs":[],"Id":320511,"SingleLineDiagrams":[],"Description":null}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":4,"Location":null,"Level":null,"TransformerVoltage":null,"Description":null,"Logo":null,"EnvData":null,"Administrators":[],"SingleLineDiagrams":[],"Gateways":[],"SceneLogs":[],"PropertyGroups":[{"Id":4667,"HierarchyId":320511,"Order":1,"Name":"????","Properties":[{"Id":14317,"GroupId":4667,"Order":1,"Name":"????","Value":"dv"},{"Id":14318,"GroupId":4667,"Order":2,"Name":"????","Value":"2017-07-19"},{"Id":14319,"GroupId":4667,"Order":3,"Name":"????","Value":""},{"Id":14320,"GroupId":4667,"Order":4,"Name":"????","Value":""}]},{"Id":4668,"HierarchyId":320511,"Order":2,"Name":"????","Properties":[{"Id":14321,"GroupId":4668,"Order":1,"Name":"????","Value":"bj"},{"Id":14322,"GroupId":4668,"Order":2,"Name":"???","Value":"ts"}]}],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"}]},"Tickets":[],"Id":320511,"ParentId":320506,"CustomerId":320367,"Name":"","Code":"3093754b-13da-40d1-b321-590f316f1143","Type":3}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>UpdateRoom</relativePageName>
+        <tags>update, room</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='UpdateRoom', args=[]}</instruction>
+        <slimResult>pass(update room)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>update room</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/room/update]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"Level":1,"TransformerVoltage":"5000","ParentId":320506,"Administrators":[],"Tickets":[],"PropertyGroups":[],"Logo":null,"Name":"room.update.name.new","Code":"9ddf75ab-318b-410f-b730-e059162cb32e","Gateways":[],"Location":"8","EnvData":null,"CustomerId":320367,"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"能耗统计","Value":"0","Unit":"kWh"}]},"SubType":1,"Type":3,"SceneLogs":[],"Id":320508,"SingleLineDiagrams":[],"Description":null}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_7</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_9', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":1,"Location":"8","Level":1,"TransformerVoltage":"5000","Description":null,"Logo":null,"EnvData":null,"Administrators":[],"SingleLineDiagrams":[],"Gateways":[],"SceneLogs":[],"PropertyGroups":[],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"}]},"Tickets":[],"Id":320508,"ParentId":320506,"CustomerId":320367,"Name":"room.update.name.new","Code":"9ddf75ab-318b-410f-b730-e059162cb32e","Type":3}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_9</instructionId>
+                    <col>5</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":1,"Location":"8","Level":1,"TransformerVoltage":"5000","Description":null,"Logo":null,"EnvData":null,"Administrators":[],"SingleLineDiagrams":[],"Gateways":[],"SceneLogs":[],"PropertyGroups":[],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"}]},"Tickets":[],"Id":320508,"ParentId":320506,"CustomerId":320367,"Name":"room.update.name.new","Code":"9ddf75ab-318b-410f-b730-e059162cb32e","Type":3}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/room/update]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_12</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_13', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_13</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"Level":null,"TransformerVoltage":null,"ParentId":320506,"Administrators":[],"Tickets":[],"PropertyGroups":[{"Id":1,"HierarchyId":"","Order":1,"Name":"安装信息","Properties":[{"Id":14227,"GroupId":4641,"Order":1,"Name":"安装公司","Value":"da"},{"Id":14228,"GroupId":4641,"Order":2,"Name":"安装日期","Value":"2017-07-01","DataInvalid":false},{"Id":14229,"GroupId":4641,"Order":3,"Name":"运行日期","Value":""},{"Id":14230,"GroupId":4641,"Order":4,"Name":"改造日期","Value":""}]},{"Id":2,"HierarchyId":"","Order":2,"Name":"归属信息","Properties":[{"Id":14231,"GroupId":4642,"Order":1,"Name":"所属部门","Value":"ds"},{"Id":14232,"GroupId":4642,"Order":2,"Name":"负责人","Value":"zy"}]}],"Logo":null,"Name":"room.update.other","Code":"c7dd2a7d-dcd9-4a39-95ca-c024fe9f0676","Gateways":[],"Location":"12","EnvData":null,"CustomerId":320367,"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"能耗统计","Value":"0","Unit":"kWh"}]},"SubType":2,"Type":3,"SceneLogs":[],"Id":320509,"SingleLineDiagrams":[],"Description":null}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_14</instructionId>
+                    <col>4</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":2,"Location":"12","Level":null,"TransformerVoltage":null,"Description":null,"Logo":null,"EnvData":null,"Administrators":[],"SingleLineDiagrams":[],"Gateways":[],"SceneLogs":[],"PropertyGroups":[{"Id":4663,"HierarchyId":320509,"Order":1,"Name":"????","Properties":[{"Id":14305,"GroupId":4663,"Order":1,"Name":"????","Value":"da"},{"Id":14306,"GroupId":4663,"Order":2,"Name":"????","Value":"2017-07-01"},{"Id":14307,"GroupId":4663,"Order":3,"Name":"????","Value":""},{"Id":14308,"GroupId":4663,"Order":4,"Name":"????","Value":""}]},{"Id":4664,"HierarchyId":320509,"Order":2,"Name":"????","Properties":[{"Id":14309,"GroupId":4664,"Order":1,"Name":"????","Value":"ds"},{"Id":14310,"GroupId":4664,"Order":2,"Name":"???","Value":"zy"}]}],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"}]},"Tickets":[],"Id":320509,"ParentId":320506,"CustomerId":320367,"Name":"room.update.other","Code":"c7dd2a7d-dcd9-4a39-95ca-c024fe9f0676","Type":3}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>5</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":2,"Location":"12","Level":null,"TransformerVoltage":null,"Description":null,"Logo":null,"EnvData":null,"Administrators":[],"SingleLineDiagrams":[],"Gateways":[],"SceneLogs":[],"PropertyGroups":[{"Id":4663,"HierarchyId":320509,"Order":1,"Name":"????","Properties":[{"Id":14305,"GroupId":4663,"Order":1,"Name":"????","Value":"da"},{"Id":14306,"GroupId":4663,"Order":2,"Name":"????","Value":"2017-07-01"},{"Id":14307,"GroupId":4663,"Order":3,"Name":"????","Value":""},{"Id":14308,"GroupId":4663,"Order":4,"Name":"????","Value":""}]},{"Id":4664,"HierarchyId":320509,"Order":2,"Name":"????","Properties":[{"Id":14309,"GroupId":4664,"Order":1,"Name":"????","Value":"ds"},{"Id":14310,"GroupId":4664,"Order":2,"Name":"???","Value":"zy"}]}],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"}]},"Tickets":[],"Id":320509,"ParentId":320506,"CustomerId":320367,"Name":"room.update.other","Code":"c7dd2a7d-dcd9-4a39-95ca-c024fe9f0676","Type":3}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/room/update]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_18</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_19', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_19</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_20</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_21', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"Level":null,"TransformerVoltage":null,"ParentId":320506,"Administrators":[],"Tickets":[],"PropertyGroups":[{"Id":1,"HierarchyId":"","Order":1,"Name":"安装信息","Properties":[{"Id":14239,"GroupId":4645,"Order":1,"Name":"安装公司","Value":""},{"Id":14240,"GroupId":4645,"Order":2,"Name":"安装日期","Value":""},{"Id":14241,"GroupId":4645,"Order":3,"Name":"运行日期","Value":""},{"Id":14242,"GroupId":4645,"Order":4,"Name":"改造日期","Value":""}]},{"Id":2,"HierarchyId":"","Order":2,"Name":"归属信息","Properties":[{"Id":14243,"GroupId":4646,"Order":1,"Name":"所属部门","Value":""},{"Id":14244,"GroupId":4646,"Order":2,"Name":"负责人","Value":""}]}],"Logo":null,"Name":"room.update.namenoempty","Code":"95b02b39-6b7c-4009-b7a8-1ea980bc735d","Gateways":[],"Location":"","EnvData":null,"CustomerId":320367,"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"能耗统计","Value":"0","Unit":"kWh"}]},"SubType":3,"Type":3,"SceneLogs":[],"Id":320510,"SingleLineDiagrams":[],"Description":null}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_21</instructionId>
+                    <col>4</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_23', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":3,"Location":"","Level":null,"TransformerVoltage":null,"Description":null,"Logo":null,"EnvData":null,"Administrators":[],"SingleLineDiagrams":[],"Gateways":[],"SceneLogs":[],"PropertyGroups":[{"Id":4665,"HierarchyId":320510,"Order":1,"Name":"????","Properties":[{"Id":14311,"GroupId":4665,"Order":1,"Name":"????","Value":""},{"Id":14312,"GroupId":4665,"Order":2,"Name":"????","Value":""},{"Id":14313,"GroupId":4665,"Order":3,"Name":"????","Value":""},{"Id":14314,"GroupId":4665,"Order":4,"Name":"????","Value":""}]},{"Id":4666,"HierarchyId":320510,"Order":2,"Name":"????","Properties":[{"Id":14315,"GroupId":4666,"Order":1,"Name":"????","Value":""},{"Id":14316,"GroupId":4666,"Order":2,"Name":"???","Value":""}]}],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"}]},"Tickets":[],"Id":320510,"ParentId":320506,"CustomerId":320367,"Name":"room.update.namenoempty","Code":"95b02b39-6b7c-4009-b7a8-1ea980bc735d","Type":3}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_23</instructionId>
+                    <col>5</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":3,"Location":"","Level":null,"TransformerVoltage":null,"Description":null,"Logo":null,"EnvData":null,"Administrators":[],"SingleLineDiagrams":[],"Gateways":[],"SceneLogs":[],"PropertyGroups":[{"Id":4665,"HierarchyId":320510,"Order":1,"Name":"????","Properties":[{"Id":14311,"GroupId":4665,"Order":1,"Name":"????","Value":""},{"Id":14312,"GroupId":4665,"Order":2,"Name":"????","Value":""},{"Id":14313,"GroupId":4665,"Order":3,"Name":"????","Value":""},{"Id":14314,"GroupId":4665,"Order":4,"Name":"????","Value":""}]},{"Id":4666,"HierarchyId":320510,"Order":2,"Name":"????","Properties":[{"Id":14315,"GroupId":4666,"Order":1,"Name":"????","Value":""},{"Id":14316,"GroupId":4666,"Order":2,"Name":"???","Value":""}]}],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"}]},"Tickets":[],"Id":320510,"ParentId":320506,"CustomerId":320367,"Name":"room.update.namenoempty","Code":"95b02b39-6b7c-4009-b7a8-1ea980bc735d","Type":3}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_25', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/room/update]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_25</instructionId>
+                    <col>1</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_26', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_26</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_27', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_27</instructionId>
+                    <col>3</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_28', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"Level":null,"TransformerVoltage":null,"ParentId":320506,"Administrators":[],"Tickets":[],"PropertyGroups":[{"Id":4647,"HierarchyId":320511,"Order":1,"Name":"安装信息","Properties":[{"Id":14245,"GroupId":4647,"Order":1,"Name":"安装公司","Value":"dv"},{"Id":14246,"GroupId":4647,"Order":2,"Name":"安装日期","Value":"2017-07-19"},{"Id":14247,"GroupId":4647,"Order":3,"Name":"运行日期","Value":""},{"Id":14248,"GroupId":4647,"Order":4,"Name":"改造日期","Value":""}]},{"Id":4648,"HierarchyId":320511,"Order":2,"Name":"归属信息","Properties":[{"Id":14249,"GroupId":4648,"Order":1,"Name":"所属部门","Value":"bj"},{"Id":14250,"GroupId":4648,"Order":2,"Name":"负责人","Value":"ts"}]}],"Logo":null,"Name":"","Code":"3093754b-13da-40d1-b321-590f316f1143","Gateways":[],"Location":null,"EnvData":null,"CustomerId":320367,"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"能耗统计","Value":"0","Unit":"kWh"}]},"SubType":4,"Type":3,"SceneLogs":[],"Id":320511,"SingleLineDiagrams":[],"Description":null}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_28</instructionId>
+                    <col>4</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_30', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":4,"Location":null,"Level":null,"TransformerVoltage":null,"Description":null,"Logo":null,"EnvData":null,"Administrators":[],"SingleLineDiagrams":[],"Gateways":[],"SceneLogs":[],"PropertyGroups":[{"Id":4667,"HierarchyId":320511,"Order":1,"Name":"????","Properties":[{"Id":14317,"GroupId":4667,"Order":1,"Name":"????","Value":"dv"},{"Id":14318,"GroupId":4667,"Order":2,"Name":"????","Value":"2017-07-19"},{"Id":14319,"GroupId":4667,"Order":3,"Name":"????","Value":""},{"Id":14320,"GroupId":4667,"Order":4,"Name":"????","Value":""}]},{"Id":4668,"HierarchyId":320511,"Order":2,"Name":"????","Properties":[{"Id":14321,"GroupId":4668,"Order":1,"Name":"????","Value":"bj"},{"Id":14322,"GroupId":4668,"Order":2,"Name":"???","Value":"ts"}]}],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"}]},"Tickets":[],"Id":320511,"ParentId":320506,"CustomerId":320367,"Name":"","Code":"3093754b-13da-40d1-b321-590f316f1143","Type":3}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_30</instructionId>
+                    <col>5</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":4,"Location":null,"Level":null,"TransformerVoltage":null,"Description":null,"Logo":null,"EnvData":null,"Administrators":[],"SingleLineDiagrams":[],"Gateways":[],"SceneLogs":[],"PropertyGroups":[{"Id":4667,"HierarchyId":320511,"Order":1,"Name":"????","Properties":[{"Id":14317,"GroupId":4667,"Order":1,"Name":"????","Value":"dv"},{"Id":14318,"GroupId":4667,"Order":2,"Name":"????","Value":"2017-07-19"},{"Id":14319,"GroupId":4667,"Order":3,"Name":"????","Value":""},{"Id":14320,"GroupId":4667,"Order":4,"Name":"????","Value":""}]},{"Id":4668,"HierarchyId":320511,"Order":2,"Name":"????","Properties":[{"Id":14321,"GroupId":4668,"Order":1,"Name":"????","Value":"bj"},{"Id":14322,"GroupId":4668,"Order":2,"Name":"???","Value":"ts"}]}],"StatisticData":{"BasicStatistic":[],"DeviceStatistic":[{"Key":"????","Value":"0","Unit":"kWh"}]},"Tickets":[],"Id":320511,"ParentId":320506,"CustomerId":320367,"Name":"","Code":"3093754b-13da-40d1-b321-590f316f1143","Type":3}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>2613</totalRunTimeInMillis>
+</testResults>
+

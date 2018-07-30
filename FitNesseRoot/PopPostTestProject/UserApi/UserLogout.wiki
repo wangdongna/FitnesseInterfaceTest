@@ -1,0 +1,39 @@
+---
+Help: user logout
+Suites: user, logout
+Test
+---
+
+!define TEST_SYSTEM {slim} 
+!path D:\Emma\fitnesse\FitnessTest\bin 
+!path D:\Emma\fitnesse\GatCommon\bin 
+!path D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar 
+
+|import| 
+|fitnesse.slim.test| 
+|import| 
+|gat.http.helper| 
+|import| 
+|gat.common.jsonhelper| 
+|import| 
+|gat.common.excelservice| 
+
+|user logout|
+|#comment|path|username|password|requestbody|responsebody?|
+|服务商初始管理员退出|api/user/logout|apiauto|123456Qq|{"username":"apiauto","password":"123456Qq"}|$NULL|
+|自定义功能权限用户退出，用户名为中文|api/user/logout|api.user中文.login|123456Qq|{"username":"api.user中文.login","password":"123456Qq"}|$NULL|
+|有全部客户权限用户退出，用户名有特殊字符|api/user/logout|api.user#$%&.login|123456Qq|{"username":"api.user#$%&.login","password":"123456Qq"}|$NULL|
+|只有一个客户权限用户退出|api/user/logout|onecustomer|123456Qq|{"username":"onecustomer","password":"123456Qq"}|$NULL|
+|有客户部分层级数据权限用户退出|api/user/logout|twopartcustomer|123456Qq|{"username":"twopartcustomer","password":"123456Qq"}|$NULL|
+|有一个客户部分层级数据权限用户退出|api/user/logout|onepartcustomer2|123456Qq|{"username":"onepartcustomer2","password":"123456Qq"}|$NULL|
+|没有客户数据权限用户退出|api/user/logout|api.user.none.login|123456Qq|{"username":"api.user.none.login","password":"123456Qq"}|$NULL|

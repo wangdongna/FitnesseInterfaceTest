@@ -1,0 +1,408 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopGetTestProject.MaintainPlanApi.GetMaintainplanId</rootPath>
+    <result>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-11T09:34:52+08:00</date>
+    <runTimeInMillis>3194</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;get maintainplan id&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;responsebody?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;单次计划ID&lt;/td&gt;
+		&lt;td&gt;api/maintainplan/898&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":898,"CustomerId":320359,"Title":"17年3月到12月计划","Intervals":5,"StartDateTime":"2017-03-01T00:00:00","EndDateTime":"2017-12-31T00:00:00","PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"2017-03-01T11:29:17.343","MaintainTasks":[{"Id":11810,"MaintainPlanId":898,"PlanDateTime":"2017-03-01T00:00:00","TicketId":2498,"Status":2,"MaintainUser":null,"MaintainDateTime":null},{"Id":11811,"MaintainPlanId":898,"PlanDateTime":"2017-05-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":11812,"MaintainPlanId":898,"PlanDateTime":"2017-07-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":11813,"MaintainPlanId":898,"PlanDateTime":"2017-09-01T00:00:00","TicketId":2508,"Status":2,"MaintainUser":null,"MaintainDateTime":null},{"Id":11814,"MaintainPlanId":898,"PlanDateTime":"2017-11-01T00:00:00","TicketId":2512,"Status":2,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320394,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"变压器柜-新建设备2*"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["有盒子的建筑"],"AssetNames":["变压器柜-新建设备2*"]}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;每周计划ID&lt;/td&gt;
+		&lt;td&gt;api/maintainplan/899&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":899,"CustomerId":320359,"Title":"17年到18年 每季度计划","Intervals":8,"StartDateTime":"2017-03-01T00:00:00","EndDateTime":"2018-12-31T00:00:00","PlanType":2,"SysClass":3,"Content":"for api test 1","CreateUser":301312,"CreateDateTime":"2017-03-01T11:30:08.11","MaintainTasks":[{"Id":11815,"MaintainPlanId":899,"PlanDateTime":"2017-03-01T00:00:00","TicketId":2502,"Status":3,"MaintainUser":null,"MaintainDateTime":null},{"Id":11816,"MaintainPlanId":899,"PlanDateTime":"2017-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":11817,"MaintainPlanId":899,"PlanDateTime":"2018-03-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":11818,"MaintainPlanId":899,"PlanDateTime":"2018-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320396,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置-新建设备2*"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["有盒子的建筑"],"AssetNames":["系统装置-新建设备2*"]}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;每半年计划ID&lt;/td&gt;
+		&lt;td&gt;api/maintainplan/897&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":null}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;不存在的计划ID&lt;/td&gt;
+		&lt;td&gt;api/maintainplan/258&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":null}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;无效的计划ID&lt;/td&gt;
+		&lt;td&gt;api/maintainplan/2&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":null}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>GetMaintainplanId</relativePageName>
+        <tags>get, maintainplan</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='GetMaintainplanId', args=[]}</instruction>
+        <slimResult>pass(get maintainplan id)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>get maintainplan id</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/maintainplan/898]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":898,"CustomerId":320359,"Title":"17年3月到12月计划","Intervals":5,"StartDateTime":"2017-03-01T00:00:00","EndDateTime":"2017-12-31T00:00:00","PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"2017-03-01T11:29:17.343","MaintainTasks":[{"Id":11810,"MaintainPlanId":898,"PlanDateTime":"2017-03-01T00:00:00","TicketId":2498,"Status":2,"MaintainUser":null,"MaintainDateTime":null},{"Id":11811,"MaintainPlanId":898,"PlanDateTime":"2017-05-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":11812,"MaintainPlanId":898,"PlanDateTime":"2017-07-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":11813,"MaintainPlanId":898,"PlanDateTime":"2017-09-01T00:00:00","TicketId":2508,"Status":2,"MaintainUser":null,"MaintainDateTime":null},{"Id":11814,"MaintainPlanId":898,"PlanDateTime":"2017-11-01T00:00:00","TicketId":2512,"Status":2,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320394,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"变压器柜-新建设备2*"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["有盒子的建筑"],"AssetNames":["变压器柜-新建设备2*"]}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":898,"CustomerId":320359,"Title":"17年3月到12月计划","Intervals":5,"StartDateTime":"2017-03-01T00:00:00","EndDateTime":"2017-12-31T00:00:00","PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"2017-03-01T11:29:17.343","MaintainTasks":[{"Id":11810,"MaintainPlanId":898,"PlanDateTime":"2017-03-01T00:00:00","TicketId":2498,"Status":2,"MaintainUser":null,"MaintainDateTime":null},{"Id":11811,"MaintainPlanId":898,"PlanDateTime":"2017-05-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":11812,"MaintainPlanId":898,"PlanDateTime":"2017-07-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":11813,"MaintainPlanId":898,"PlanDateTime":"2017-09-01T00:00:00","TicketId":2508,"Status":2,"MaintainUser":null,"MaintainDateTime":null},{"Id":11814,"MaintainPlanId":898,"PlanDateTime":"2017-11-01T00:00:00","TicketId":2512,"Status":2,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320394,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"变压器柜-新建设备2*"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["有盒子的建筑"],"AssetNames":["变压器柜-新建设备2*"]}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_10', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/maintainplan/899]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_10</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_12</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":899,"CustomerId":320359,"Title":"17年到18年 每季度计划","Intervals":8,"StartDateTime":"2017-03-01T00:00:00","EndDateTime":"2018-12-31T00:00:00","PlanType":2,"SysClass":3,"Content":"for api test 1","CreateUser":301312,"CreateDateTime":"2017-03-01T11:30:08.11","MaintainTasks":[{"Id":11815,"MaintainPlanId":899,"PlanDateTime":"2017-03-01T00:00:00","TicketId":2502,"Status":3,"MaintainUser":null,"MaintainDateTime":null},{"Id":11816,"MaintainPlanId":899,"PlanDateTime":"2017-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":11817,"MaintainPlanId":899,"PlanDateTime":"2018-03-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":11818,"MaintainPlanId":899,"PlanDateTime":"2018-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320396,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置-新建设备2*"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["有盒子的建筑"],"AssetNames":["系统装置-新建设备2*"]}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_14</instructionId>
+                    <col>4</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":899,"CustomerId":320359,"Title":"17年到18年 每季度计划","Intervals":8,"StartDateTime":"2017-03-01T00:00:00","EndDateTime":"2018-12-31T00:00:00","PlanType":2,"SysClass":3,"Content":"for api test 1","CreateUser":301312,"CreateDateTime":"2017-03-01T11:30:08.11","MaintainTasks":[{"Id":11815,"MaintainPlanId":899,"PlanDateTime":"2017-03-01T00:00:00","TicketId":2502,"Status":3,"MaintainUser":null,"MaintainDateTime":null},{"Id":11816,"MaintainPlanId":899,"PlanDateTime":"2017-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":11817,"MaintainPlanId":899,"PlanDateTime":"2018-03-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":11818,"MaintainPlanId":899,"PlanDateTime":"2018-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320396,"BuildingId":320360,"BuildingName":"有盒子的建筑","HierarchyName":"系统装置-新建设备2*"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["有盒子的建筑"],"AssetNames":["系统装置-新建设备2*"]}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/maintainplan/897]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_17', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_17</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_18</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":null})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_20</instructionId>
+                    <col>4</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":null}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_22', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/maintainplan/258]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_22</instructionId>
+                    <col>1</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_23', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_23</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_24', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_24</instructionId>
+                    <col>3</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_26', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":null})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_26</instructionId>
+                    <col>4</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":null}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_28', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/maintainplan/2]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_28</instructionId>
+                    <col>1</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_29', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_29</instructionId>
+                    <col>2</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_30', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_30</instructionId>
+                    <col>3</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_32', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":null})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_32</instructionId>
+                    <col>4</col>
+                              <row>6</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":null}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>3194</totalRunTimeInMillis>
+</testResults>
+

@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopGetTestProject.DeviceLedgerPropertyApi.GetDeviceledgersummary</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-10T17:01:10+08:00</date>
+    <runTimeInMillis>662</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;get deviceledgersummary&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;responsebody?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;获取本SP下设备的ledger summary&lt;/td&gt;
+		&lt;td&gt;/api/deviceledgersummary&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"DeviceClasses":["ABB塑壳断路器","ABB微型断路器","Acti9终端配电产品","Easy9终端配电产品","GE真空断路器","IT资产设备","Magna永磁传动调速","Magna永磁柔性传动","Muti9终端配电产品","SIEMENS小型断路器","UPS","安科瑞电表","变频与驱动","变压器","发电机","环境监测","精密配电及空调","框架断路器及负荷开关","母线","塑壳断路器及负荷开关","伊顿（EATON）高压真空断路器","伊顿（EATON）空气断路器","伊顿（EATON）塑壳断路器","伊顿（EATON）微型断路器","智能电力仪表","智能网关","中压断路器和接触器","珠海派诺电表","自动电源转换系统"],"DeviceTypes":["Acti9 iEM导轨表","Acti9智能接口单元","APC Smart-UPS VT","APC Symmetra PX","ATMT自动电源转换","ATS自动电源转换","C65小型断路器","Compact INS INV负荷开关","Compact NSX塑壳断路器","Compact NS塑壳断路器","DM2300 series","DPN小型断路器","Easy9隔离开关","EasyPact CVS塑壳断路器","EasyPact EZD塑壳断路器","EVS框架断路器","iEM2000单项导轨表","iEM3000 series","I-LINE B高电流母线槽","I-LINE C高电流母线槽","INT隔离开关","IZM9系列","KBA照明及低电流母线","KBB照明及低电流母线","KDP照明及低电流母线","KSA中电流母线","KSC中电流母线","LV断路器以太网接口网关","M9剩余电流动作保护断路器","M9剩余电流动作保护附件","MGE Galaxy 300","MGE Galaxy 3500","MGE Galaxy 5000","MGE Galaxy 5500","MGE Galaxy 7000","MGE Galaxy 9000","MGE Galaxy VM","MT空气断路器","MVS框架断路器及负荷开关","M型断路器","NVU","NVU-12","NVY-12","NW直流空气断路器","NZM1系列","NZM2系列","NZM3系列","NZM4系列","PM1000/DM6000","PM3200 series","PM5000 series","PM700 series","PM800 series","PMAC720 series","PMAC725 series","Powerlogic通讯网关","PZ80 series","PZ96 series","S200M系列","S200系列","S280系列","Symmetra MW","Tmax（电动机保护用）","Tmax（配电用）","VB2 Plus-12","Xpole系列","标准小型断路器","标准型FGC系列","超高分断小型断路器","风冷型ASD立式系列","风冷型ASD卧式系列","服务器(Server)","高分断小型断路器","高压变频器","隔离开关","环境传感器","交换机(Switch)","交流断路器","接触器 脉冲继电器","经济型MGE系列","精密空调(行级空调)","精密配电(列头柜)","康明斯系列","科勒系列","剩余电流动作断路器","水冷型WSD立式系列","水冷型WSD卧式系列","无线热点(AP)","无载调压","限矩型MGTL系列","延迟型MGD系列","有载调压","阵列存储(Tape Library)","直流小型断路器","直流专用断路器","中压真空断路器","重载型小型断路器"],"DeviceSpecifications":["","5SJ4","5SJ6","5SJ7","5SJS","5SP4","5SY30","5SY60","690V高性能NSX配电保护断路器","ACH12.5RPM","ACH14.5RPM","ACH16.5RPM","ACH18.5RPM","ACH22.5RPM","ACH24.5RPM","ACH26.5RPM","ACH28.5RPM","ACH28.5RPM-II","ACV12.5RPM","ACV14.5RPM","ACV16.5RPM","ACV18.5RPM","ACV22.5RPM","ACV24.5RPM","ACV26.5RPM","ACV28.5RPM","ACV28.5RPM-II","C120 Vigi","C120小型断路器","C60海事断路器","C65-DC两段式保护","C65H断路器","C65N-K断路器","C65N断路器","Compact NS塑壳断路器","ComX200","CVS配电保护断路器","DM2355","DM6000","DM6200","DPN Vigi","DPN Vigi+","DPNa Vigi-K","EA9A45","EA9A47","EA9A57","EA9A65","EA9A67","EA9AH小型断路器","EA9ANG过压保护断路器","EA9AN小型断路器","EA9B","EA9B-G","EA9C","EA9R","EGX100","EGX300","Evolis","EZD配电保护断路器","FGC25.0S","HVX","iC60LAM断路器","iC65","iC65 Vigi","IC65N-K","iCTm手动控制型接触器","iCT普通型接触器","iDPK2 Vigi","iDPN","iDPN Vigi+（18mm宽度）","iDPN Vigi+（36mm宽度）","iDPNa Vigi","iDPNa-K","iDPNK2断路器","iEM2000","iEM2000T","iEM2010","iEM3100","iEM3110","iEM3115","iEM3150","iEM3155","iEM3200","iEM3210","iEM3215","iEM3250","iEM3255","iEM3350","iEM3355","IFE","iID","iINT125隔离开关","iME1","iME1z","iME1zr","InRow","INS负荷开关","iTLc带集中控制脉冲继电器","iTLI带转换装置脉冲继电器","iTLm带锁存命令脉冲继电器","iTLs带远程指示脉冲继电器","iTL脉冲继电器","IZM99H3-U10W","IZM99H3-U16W","IZM99H3-U25W","IZM99H3-U50W","MGD24/1000","MGE24/1000","MGTL24/1000","MT框架断路器","MVS框架断路器","NG125 Vigi","NG125高分断小型断路器","NSX PV光伏专用断路器","NSX配电保护断路器","NSX直流保护断路器","NZMB1","NZMB2","NZMC1","NZMC2","NZMH1","NZMH2","NZMH3","NZMH4","NZMN1","NZMN2","NZMN3","NZMN4","NZMS1","NZMS2","NZMS3","PL10","PL9","PM1000","PM1200","PM3200","PM3210","PM3250","PM3255","PM5100","PM5110","PM5310","PM5320","PM5330","PM5340","PM5350","PM5560","PM5563","PM700","PM700P","PM710","PM750","PM810MG","PM820MG","PM850MG","PM870MG","PMAC720A-T-AI-V3","PMAC725A-H-V3","PMM","PZ80L-E4-HKC","PZ96L-E4-KMC","S201","S203M","S281","Smartlink Ethernet","Smartlink Modbus","T1600-25","T1600-31.5","T1600-40","T1600-50","Tmax T1","Tmax T2","Tmax T3","Tmax T4","Tmax T5","Tmax T6","Tmax T7","Vigi C65","Vigi CVS漏电保护断路器","Vigi DPN","Vigi EZD漏电保护断路器","Vigi NSX漏电保护断路器","WH1000","WH1500","WH2500","WH3000","WH4000","WV1000","WV1500","WV2500","WV3000","WV4000","康明斯","科勒"],"DeviceTripUnit":["","A:热磁式配电保护","AE:电子式配电保护","M:热磁式电动机保护","ME:电子式电动机保护","S:不含过载的配电保护","VE:电子式选择性配电保护","Digitrip 520 LI","Digitrip 520 LSI(G)","Digitrip 520MC LSI(G)","Digitrip 1150i LSI(G)","EVS Trip system 2.0","EVS Trip system 5.0","EVS Trip system 6.0","MA电磁脱扣单元","MP1:电子脱扣","MP2:电子脱扣","MP3:电子脱扣","TM-D热磁脱扣器","Micrologic1.3 M","Micrologic2.2","Micrologic2.2 M","Micrologic2.3","Micrologic2.3 M","Micrologic5.2 A","Micrologic5.2 E","Micrologic5.3 A","Micrologic5.3 E","Micrologic6.2 A","Micrologic6.2 E","Micrologic6.3 A","Micrologic6.3 E","Micrologic2.2 G","Micrologic6.2 E-M","Micrologic6.3 E-M","TM-G热磁脱扣器","MIC2.0","MIC2.0A","MIC2.0E","MIC5.0","MIC5.0A","MIC5.0D","MIC5.0E","MIC5.0H","MIC5.0P","MIC6.0","MIC6.0A","MIC6.0D","MIC6.0E","MIC6.0H","MIC6.0P","MIC7.0A","MIC7.0H","MIC7.0P","Micrologic2.0","Micrologic2.0 A","Micrologic2.0 E","Micrologic5.0","Micrologic5.0 A","Micrologic5.0 D","Micrologic5.0 E","Micrologic5.0 H","Micrologic5.0 P","Micrologic6.0","Micrologic6.0 A","Micrologic6.0 D","Micrologic6.0 E","Micrologic6.0 H","Micrologic6.0 P","Micrologic7.0 A","Micrologic7.0 H","Micrologic7.0 P","MTS2.0","MTS5.0","MTS5.0A","MTS5.0V","MTS6.0","MTS6.0A","MTS6.0V","MVS Trip system 2.0","MVS Trip system 5.0","MVS Trip system 6.0","MVS Trip system 5.0A","MVS Trip system 6.0A","MVS Trip system 5.0V","MVS Trip system 6.0V","负荷开关，无脱扣单元类型","PR221DS","PR222DS/P","PR222DS/PD","PR223DS","PR231/P","PR232/P","PR331/P","PR332/P","STR18 M","STR28 D","STR38 S","STR58 U","STR68 U","TM","Miclogic 2.2","Miclogic 2.3","ETS电子脱扣器","负荷开关","单磁脱扣器","PR221MP","PR222MP","PR221DS-I","PR231/P-I"]}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>GetDeviceledgersummary</relativePageName>
+        <tags>get, deviceledgersummary</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='GetDeviceledgersummary', args=[]}</instruction>
+        <slimResult>pass(get deviceledgersummary)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>get deviceledgersummary</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[/api/deviceledgersummary]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"DeviceClasses":["ABB塑壳断路器","ABB微型断路器","Acti9终端配电产品","Easy9终端配电产品","GE真空断路器","IT资产设备","Magna永磁传动调速","Magna永磁柔性传动","Muti9终端配电产品","SIEMENS小型断路器","UPS","安科瑞电表","变频与驱动","变压器","发电机","环境监测","精密配电及空调","框架断路器及负荷开关","母线","塑壳断路器及负荷开关","伊顿（EATON）高压真空断路器","伊顿（EATON）空气断路器","伊顿（EATON）塑壳断路器","伊顿（EATON）微型断路器","智能电力仪表","智能网关","中压断路器和接触器","珠海派诺电表","自动电源转换系统"],"DeviceTypes":["Acti9 iEM导轨表","Acti9智能接口单元","APC Smart-UPS VT","APC Symmetra PX","ATMT自动电源转换","ATS自动电源转换","C65小型断路器","Compact INS INV负荷开关","Compact NSX塑壳断路器","Compact NS塑壳断路器","DM2300 series","DPN小型断路器","Easy9隔离开关","EasyPact CVS塑壳断路器","EasyPact EZD塑壳断路器","EVS框架断路器","iEM2000单项导轨表","iEM3000 series","I-LINE B高电流母线槽","I-LINE C高电流母线槽","INT隔离开关","IZM9系列","KBA照明及低电流母线","KBB照明及低电流母线","KDP照明及低电流母线","KSA中电流母线","KSC中电流母线","LV断路器以太网接口网关","M9剩余电流动作保护断路器","M9剩余电流动作保护附件","MGE Galaxy 300","MGE Galaxy 3500","MGE Galaxy 5000","MGE Galaxy 5500","MGE Galaxy 7000","MGE Galaxy 9000","MGE Galaxy VM","MT空气断路器","MVS框架断路器及负荷开关","M型断路器","NVU","NVU-12","NVY-12","NW直流空气断路器","NZM1系列","NZM2系列","NZM3系列","NZM4系列","PM1000/DM6000","PM3200 series","PM5000 series","PM700 series","PM800 series","PMAC720 series","PMAC725 series","Powerlogic通讯网关","PZ80 series","PZ96 series","S200M系列","S200系列","S280系列","Symmetra MW","Tmax（电动机保护用）","Tmax（配电用）","VB2 Plus-12","Xpole系列","标准小型断路器","标准型FGC系列","超高分断小型断路器","风冷型ASD立式系列","风冷型ASD卧式系列","服务器(Server)","高分断小型断路器","高压变频器","隔离开关","环境传感器","交换机(Switch)","交流断路器","接触器 脉冲继电器","经济型MGE系列","精密空调(行级空调)","精密配电(列头柜)","康明斯系列","科勒系列","剩余电流动作断路器","水冷型WSD立式系列","水冷型WSD卧式系列","无线热点(AP)","无载调压","限矩型MGTL系列","延迟型MGD系列","有载调压","阵列存储(Tape Library)","直流小型断路器","直流专用断路器","中压真空断路器","重载型小型断路器"],"DeviceSpecifications":["","5SJ4","5SJ6","5SJ7","5SJS","5SP4","5SY30","5SY60","690V高性能NSX配电保护断路器","ACH12.5RPM","ACH14.5RPM","ACH16.5RPM","ACH18.5RPM","ACH22.5RPM","ACH24.5RPM","ACH26.5RPM","ACH28.5RPM","ACH28.5RPM-II","ACV12.5RPM","ACV14.5RPM","ACV16.5RPM","ACV18.5RPM","ACV22.5RPM","ACV24.5RPM","ACV26.5RPM","ACV28.5RPM","ACV28.5RPM-II","C120 Vigi","C120小型断路器","C60海事断路器","C65-DC两段式保护","C65H断路器","C65N-K断路器","C65N断路器","Compact NS塑壳断路器","ComX200","CVS配电保护断路器","DM2355","DM6000","DM6200","DPN Vigi","DPN Vigi+","DPNa Vigi-K","EA9A45","EA9A47","EA9A57","EA9A65","EA9A67","EA9AH小型断路器","EA9ANG过压保护断路器","EA9AN小型断路器","EA9B","EA9B-G","EA9C","EA9R","EGX100","EGX300","Evolis","EZD配电保护断路器","FGC25.0S","HVX","iC60LAM断路器","iC65","iC65 Vigi","IC65N-K","iCTm手动控制型接触器","iCT普通型接触器","iDPK2 Vigi","iDPN","iDPN Vigi+（18mm宽度）","iDPN Vigi+（36mm宽度）","iDPNa Vigi","iDPNa-K","iDPNK2断路器","iEM2000","iEM2000T","iEM2010","iEM3100","iEM3110","iEM3115","iEM3150","iEM3155","iEM3200","iEM3210","iEM3215","iEM3250","iEM3255","iEM3350","iEM3355","IFE","iID","iINT125隔离开关","iME1","iME1z","iME1zr","InRow","INS负荷开关","iTLc带集中控制脉冲继电器","iTLI带转换装置脉冲继电器","iTLm带锁存命令脉冲继电器","iTLs带远程指示脉冲继电器","iTL脉冲继电器","IZM99H3-U10W","IZM99H3-U16W","IZM99H3-U25W","IZM99H3-U50W","MGD24/1000","MGE24/1000","MGTL24/1000","MT框架断路器","MVS框架断路器","NG125 Vigi","NG125高分断小型断路器","NSX PV光伏专用断路器","NSX配电保护断路器","NSX直流保护断路器","NZMB1","NZMB2","NZMC1","NZMC2","NZMH1","NZMH2","NZMH3","NZMH4","NZMN1","NZMN2","NZMN3","NZMN4","NZMS1","NZMS2","NZMS3","PL10","PL9","PM1000","PM1200","PM3200","PM3210","PM3250","PM3255","PM5100","PM5110","PM5310","PM5320","PM5330","PM5340","PM5350","PM5560","PM5563","PM700","PM700P","PM710","PM750","PM810MG","PM820MG","PM850MG","PM870MG","PMAC720A-T-AI-V3","PMAC725A-H-V3","PMM","PZ80L-E4-HKC","PZ96L-E4-KMC","S201","S203M","S281","Smartlink Ethernet","Smartlink Modbus","T1600-25","T1600-31.5","T1600-40","T1600-50","Tmax T1","Tmax T2","Tmax T3","Tmax T4","Tmax T5","Tmax T6","Tmax T7","Vigi C65","Vigi CVS漏电保护断路器","Vigi DPN","Vigi EZD漏电保护断路器","Vigi NSX漏电保护断路器","WH1000","WH1500","WH2500","WH3000","WH4000","WV1000","WV1500","WV2500","WV3000","WV4000","康明斯","科勒"],"DeviceTripUnit":["","A:热磁式配电保护","AE:电子式配电保护","M:热磁式电动机保护","ME:电子式电动机保护","S:不含过载的配电保护","VE:电子式选择性配电保护","Digitrip 520 LI","Digitrip 520 LSI(G)","Digitrip 520MC LSI(G)","Digitrip 1150i LSI(G)","EVS Trip system 2.0","EVS Trip system 5.0","EVS Trip system 6.0","MA电磁脱扣单元","MP1:电子脱扣","MP2:电子脱扣","MP3:电子脱扣","TM-D热磁脱扣器","Micrologic1.3 M","Micrologic2.2","Micrologic2.2 M","Micrologic2.3","Micrologic2.3 M","Micrologic5.2 A","Micrologic5.2 E","Micrologic5.3 A","Micrologic5.3 E","Micrologic6.2 A","Micrologic6.2 E","Micrologic6.3 A","Micrologic6.3 E","Micrologic2.2 G","Micrologic6.2 E-M","Micrologic6.3 E-M","TM-G热磁脱扣器","MIC2.0","MIC2.0A","MIC2.0E","MIC5.0","MIC5.0A","MIC5.0D","MIC5.0E","MIC5.0H","MIC5.0P","MIC6.0","MIC6.0A","MIC6.0D","MIC6.0E","MIC6.0H","MIC6.0P","MIC7.0A","MIC7.0H","MIC7.0P","Micrologic2.0","Micrologic2.0 A","Micrologic2.0 E","Micrologic5.0","Micrologic5.0 A","Micrologic5.0 D","Micrologic5.0 E","Micrologic5.0 H","Micrologic5.0 P","Micrologic6.0","Micrologic6.0 A","Micrologic6.0 D","Micrologic6.0 E","Micrologic6.0 H","Micrologic6.0 P","Micrologic7.0 A","Micrologic7.0 H","Micrologic7.0 P","MTS2.0","MTS5.0","MTS5.0A","MTS5.0V","MTS6.0","MTS6.0A","MTS6.0V","MVS Trip system 2.0","MVS Trip system 5.0","MVS Trip system 6.0","MVS Trip system 5.0A","MVS Trip system 6.0A","MVS Trip system 5.0V","MVS Trip system 6.0V","负荷开关，无脱扣单元类型","PR221DS","PR222DS/P","PR222DS/PD","PR223DS","PR231/P","PR232/P","PR331/P","PR332/P","STR18 M","STR28 D","STR38 S","STR58 U","STR68 U","TM","Miclogic 2.2","Miclogic 2.3","ETS电子脱扣器","负荷开关","单磁脱扣器","PR221MP","PR222MP","PR221DS-I","PR231/P-I"]}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"DeviceClasses":["ABB塑壳断路器","ABB微型断路器","Acti9终端配电产品","Easy9终端配电产品","GE真空断路器","IT资产设备","Magna永磁传动调速","Magna永磁柔性传动","Muti9终端配电产品","SIEMENS小型断路器","UPS","安科瑞电表","变频与驱动","变压器","发电机","环境监测","精密配电及空调","框架断路器及负荷开关","母线","塑壳断路器及负荷开关","伊顿（EATON）高压真空断路器","伊顿（EATON）空气断路器","伊顿（EATON）塑壳断路器","伊顿（EATON）微型断路器","智能电力仪表","智能网关","中压断路器和接触器","珠海派诺电表","自动电源转换系统"],"DeviceTypes":["Acti9 iEM导轨表","Acti9智能接口单元","APC Smart-UPS VT","APC Symmetra PX","ATMT自动电源转换","ATS自动电源转换","C65小型断路器","Compact INS INV负荷开关","Compact NSX塑壳断路器","Compact NS塑壳断路器","DM2300 series","DPN小型断路器","Easy9隔离开关","EasyPact CVS塑壳断路器","EasyPact EZD塑壳断路器","EVS框架断路器","iEM2000单项导轨表","iEM3000 series","I-LINE B高电流母线槽","I-LINE C高电流母线槽","INT隔离开关","IZM9系列","KBA照明及低电流母线","KBB照明及低电流母线","KDP照明及低电流母线","KSA中电流母线","KSC中电流母线","LV断路器以太网接口网关","M9剩余电流动作保护断路器","M9剩余电流动作保护附件","MGE Galaxy 300","MGE Galaxy 3500","MGE Galaxy 5000","MGE Galaxy 5500","MGE Galaxy 7000","MGE Galaxy 9000","MGE Galaxy VM","MT空气断路器","MVS框架断路器及负荷开关","M型断路器","NVU","NVU-12","NVY-12","NW直流空气断路器","NZM1系列","NZM2系列","NZM3系列","NZM4系列","PM1000/DM6000","PM3200 series","PM5000 series","PM700 series","PM800 series","PMAC720 series","PMAC725 series","Powerlogic通讯网关","PZ80 series","PZ96 series","S200M系列","S200系列","S280系列","Symmetra MW","Tmax（电动机保护用）","Tmax（配电用）","VB2 Plus-12","Xpole系列","标准小型断路器","标准型FGC系列","超高分断小型断路器","风冷型ASD立式系列","风冷型ASD卧式系列","服务器(Server)","高分断小型断路器","高压变频器","隔离开关","环境传感器","交换机(Switch)","交流断路器","接触器 脉冲继电器","经济型MGE系列","精密空调(行级空调)","精密配电(列头柜)","康明斯系列","科勒系列","剩余电流动作断路器","水冷型WSD立式系列","水冷型WSD卧式系列","无线热点(AP)","无载调压","限矩型MGTL系列","延迟型MGD系列","有载调压","阵列存储(Tape Library)","直流小型断路器","直流专用断路器","中压真空断路器","重载型小型断路器"],"DeviceSpecifications":["","5SJ4","5SJ6","5SJ7","5SJS","5SP4","5SY30","5SY60","690V高性能NSX配电保护断路器","ACH12.5RPM","ACH14.5RPM","ACH16.5RPM","ACH18.5RPM","ACH22.5RPM","ACH24.5RPM","ACH26.5RPM","ACH28.5RPM","ACH28.5RPM-II","ACV12.5RPM","ACV14.5RPM","ACV16.5RPM","ACV18.5RPM","ACV22.5RPM","ACV24.5RPM","ACV26.5RPM","ACV28.5RPM","ACV28.5RPM-II","C120 Vigi","C120小型断路器","C60海事断路器","C65-DC两段式保护","C65H断路器","C65N-K断路器","C65N断路器","Compact NS塑壳断路器","ComX200","CVS配电保护断路器","DM2355","DM6000","DM6200","DPN Vigi","DPN Vigi+","DPNa Vigi-K","EA9A45","EA9A47","EA9A57","EA9A65","EA9A67","EA9AH小型断路器","EA9ANG过压保护断路器","EA9AN小型断路器","EA9B","EA9B-G","EA9C","EA9R","EGX100","EGX300","Evolis","EZD配电保护断路器","FGC25.0S","HVX","iC60LAM断路器","iC65","iC65 Vigi","IC65N-K","iCTm手动控制型接触器","iCT普通型接触器","iDPK2 Vigi","iDPN","iDPN Vigi+（18mm宽度）","iDPN Vigi+（36mm宽度）","iDPNa Vigi","iDPNa-K","iDPNK2断路器","iEM2000","iEM2000T","iEM2010","iEM3100","iEM3110","iEM3115","iEM3150","iEM3155","iEM3200","iEM3210","iEM3215","iEM3250","iEM3255","iEM3350","iEM3355","IFE","iID","iINT125隔离开关","iME1","iME1z","iME1zr","InRow","INS负荷开关","iTLc带集中控制脉冲继电器","iTLI带转换装置脉冲继电器","iTLm带锁存命令脉冲继电器","iTLs带远程指示脉冲继电器","iTL脉冲继电器","IZM99H3-U10W","IZM99H3-U16W","IZM99H3-U25W","IZM99H3-U50W","MGD24/1000","MGE24/1000","MGTL24/1000","MT框架断路器","MVS框架断路器","NG125 Vigi","NG125高分断小型断路器","NSX PV光伏专用断路器","NSX配电保护断路器","NSX直流保护断路器","NZMB1","NZMB2","NZMC1","NZMC2","NZMH1","NZMH2","NZMH3","NZMH4","NZMN1","NZMN2","NZMN3","NZMN4","NZMS1","NZMS2","NZMS3","PL10","PL9","PM1000","PM1200","PM3200","PM3210","PM3250","PM3255","PM5100","PM5110","PM5310","PM5320","PM5330","PM5340","PM5350","PM5560","PM5563","PM700","PM700P","PM710","PM750","PM810MG","PM820MG","PM850MG","PM870MG","PMAC720A-T-AI-V3","PMAC725A-H-V3","PMM","PZ80L-E4-HKC","PZ96L-E4-KMC","S201","S203M","S281","Smartlink Ethernet","Smartlink Modbus","T1600-25","T1600-31.5","T1600-40","T1600-50","Tmax T1","Tmax T2","Tmax T3","Tmax T4","Tmax T5","Tmax T6","Tmax T7","Vigi C65","Vigi CVS漏电保护断路器","Vigi DPN","Vigi EZD漏电保护断路器","Vigi NSX漏电保护断路器","WH1000","WH1500","WH2500","WH3000","WH4000","WV1000","WV1500","WV2500","WV3000","WV4000","康明斯","科勒"],"DeviceTripUnit":["","A:热磁式配电保护","AE:电子式配电保护","M:热磁式电动机保护","ME:电子式电动机保护","S:不含过载的配电保护","VE:电子式选择性配电保护","Digitrip 520 LI","Digitrip 520 LSI(G)","Digitrip 520MC LSI(G)","Digitrip 1150i LSI(G)","EVS Trip system 2.0","EVS Trip system 5.0","EVS Trip system 6.0","MA电磁脱扣单元","MP1:电子脱扣","MP2:电子脱扣","MP3:电子脱扣","TM-D热磁脱扣器","Micrologic1.3 M","Micrologic2.2","Micrologic2.2 M","Micrologic2.3","Micrologic2.3 M","Micrologic5.2 A","Micrologic5.2 E","Micrologic5.3 A","Micrologic5.3 E","Micrologic6.2 A","Micrologic6.2 E","Micrologic6.3 A","Micrologic6.3 E","Micrologic2.2 G","Micrologic6.2 E-M","Micrologic6.3 E-M","TM-G热磁脱扣器","MIC2.0","MIC2.0A","MIC2.0E","MIC5.0","MIC5.0A","MIC5.0D","MIC5.0E","MIC5.0H","MIC5.0P","MIC6.0","MIC6.0A","MIC6.0D","MIC6.0E","MIC6.0H","MIC6.0P","MIC7.0A","MIC7.0H","MIC7.0P","Micrologic2.0","Micrologic2.0 A","Micrologic2.0 E","Micrologic5.0","Micrologic5.0 A","Micrologic5.0 D","Micrologic5.0 E","Micrologic5.0 H","Micrologic5.0 P","Micrologic6.0","Micrologic6.0 A","Micrologic6.0 D","Micrologic6.0 E","Micrologic6.0 H","Micrologic6.0 P","Micrologic7.0 A","Micrologic7.0 H","Micrologic7.0 P","MTS2.0","MTS5.0","MTS5.0A","MTS5.0V","MTS6.0","MTS6.0A","MTS6.0V","MVS Trip system 2.0","MVS Trip system 5.0","MVS Trip system 6.0","MVS Trip system 5.0A","MVS Trip system 6.0A","MVS Trip system 5.0V","MVS Trip system 6.0V","负荷开关，无脱扣单元类型","PR221DS","PR222DS/P","PR222DS/PD","PR223DS","PR231/P","PR232/P","PR331/P","PR332/P","STR18 M","STR28 D","STR38 S","STR58 U","STR68 U","TM","Miclogic 2.2","Miclogic 2.3","ETS电子脱扣器","负荷开关","单磁脱扣器","PR221MP","PR222MP","PR221DS-I","PR231/P-I"]}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>662</totalRunTimeInMillis>
+</testResults>
+

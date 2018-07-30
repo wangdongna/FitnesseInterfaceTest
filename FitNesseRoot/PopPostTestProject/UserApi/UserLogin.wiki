@@ -1,0 +1,44 @@
+---
+Help: user login
+Suites: user, login
+Test
+---
+
+!define TEST_SYSTEM {slim} 
+!path D:\Emma\fitnesse\FitnessTest\bin 
+!path D:\Emma\fitnesse\GatCommon\bin 
+!path D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar 
+!path D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar 
+
+|import| 
+|fitnesse.slim.test| 
+|import| 
+|gat.http.helper| 
+|import| 
+|gat.common.jsonhelper| 
+|import| 
+|gat.common.excelservice| 
+
+|user login|
+|#comment|username|password|responsebody?|
+|服务商初始管理员登录|apiauto|123456Qq|{"Error":"0","Message":[""],"RequestId":null,"Result":301312}|
+|自定义功能权限用户登录，用户名为中文|api.user中文.login|123456Qq|{"Error":"0","Message":[""],"RequestId":null,"Result":301345}|
+|有全部客户权限用户登录，用户名有特殊字符|api.user#$%&.login|123456Qq|{"Error":"0","Message":[""],"RequestId":null,"Result":301359}|
+|只有一个客户权限用户登录|onecustomer|123456Qq|{"Error":"0","Message":[""],"RequestId":null,"Result":301329}|
+|有客户部分层级数据权限用户登录|twopartcustomer|123456Qq|{"Error":"0","Message":[""],"RequestId":null,"Result":301320}|
+|有一个客户部分层级数据权限用户登录|onepartcustomer2|123456Qq|{"Error":"0","Message":[""],"RequestId":null,"Result":301330}|
+|没有客户数据权限用户登录|api.user.none.login|123456Qq|{"Error":"0","Message":[""],"RequestId":null,"Result":301346}|
+|用户名不存在|api.user.notexisted|123456Qq|{"Error":"050001212008","Message":null,"RequestId":null,"Result":null}|
+|密码不正确|apiauto|12345|{"Error":"050001212003","Message":null,"RequestId":null,"Result":null}|
+|用户名为空||12345|{"Error":"050001212008","Message":null,"RequestId":null,"Result":null}|
+|密码为空|apiauto||{"Error":"-1","Message":["String reference not set to an instance of a String.\r\nParameter name: s"],"RequestId":null,"Result":null}|
+|用户名属于其他SP|uiauto|123456Qq|{"Error":"050001212008","Message":null,"RequestId":null,"Result":null}|

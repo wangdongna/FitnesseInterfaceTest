@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopPostTestProject.AlarmApi.AlarmGet</rootPath>
+    <result>
+    <counts>
+      <right>3</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-09T17:16:16+08:00</date>
+    <runTimeInMillis>6958</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;&lt;span class="pass"&gt;alarm get&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;requestbody&lt;/td&gt;
+		&lt;td&gt;responsebody?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;获取某个客户某页的报警信息&lt;/td&gt;
+		&lt;td&gt;api/alarm/get&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320359,"CurrentPage":7,"ItemsPerPage":20,"BeginTime":null,"EndTime":null,"IsSecure":null,"Level":[],"AlarmCode":null,"Parameter":null,"Hierarchies":[],"SortMode":{"Field":"AlarmTime","IsDesc":true}}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":7,"TotalItemsCount":139,"Items":[{"Id":720425,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"578.123","ResetValue":"168.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:27:33","SecureTime":"2017-01-20T11:27:35","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:578.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720423,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"583.123","ResetValue":"75.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:27:02","SecureTime":"2017-01-20T11:27:05","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:583.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720422,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"589.123","ResetValue":"324.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:26:51","SecureTime":"2017-01-20T11:26:53","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:589.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720421,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"592.123","ResetValue":"177.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:26:31","SecureTime":"2017-01-20T11:26:34","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:592.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720420,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"566.123","ResetValue":"223.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:25:58","SecureTime":"2017-01-20T11:26:01","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:566.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720419,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"566.123","ResetValue":"133.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:24:50","SecureTime":"2017-01-20T11:24:52","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:566.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720418,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"568.123","ResetValue":"160.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:23:55","SecureTime":"2017-01-20T11:23:57","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:568.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720417,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"596.123","ResetValue":"381.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:23:51","SecureTime":"2017-01-20T11:23:53","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:596.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720416,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"575.123","ResetValue":"10.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:23:26","SecureTime":"2017-01-20T11:23:28","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:575.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720415,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"563.123","ResetValue":"52.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:23:20","SecureTime":"2017-01-20T11:23:22","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:563.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720414,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"561.123","ResetValue":"48.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:22:31","SecureTime":"2017-01-20T11:22:33","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:561.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720413,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"568.123","ResetValue":"413.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:22:18","SecureTime":"2017-01-20T11:22:20","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:568.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720412,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"572.123","ResetValue":"491.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:20:25","SecureTime":"2017-01-20T11:20:30","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:572.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720411,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"592.123","ResetValue":"55.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:19:52","SecureTime":"2017-01-20T11:19:57","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:592.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720410,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"596.123","ResetValue":"10.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:19:11","SecureTime":"2017-01-20T11:19:13","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:596.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720409,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高高限","Parameter":"三相最大电流","ActualValue":"572.123","ResetValue":"15.123","ThresholdValue":"350","SecureUser":null,"AlarmTime":"2017-01-20T11:18:37","SecureTime":"2017-01-20T11:18:42","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":2,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高高报警 当前值:572.123A 设定值:350A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720408,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"573.123","ResetValue":"525.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:18:20","SecureTime":"2017-01-20T11:18:24","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:573.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720407,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"584.123","ResetValue":"376.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:18:00","SecureTime":"2017-01-20T11:18:04","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:584.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720406,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"575.123","ResetValue":"300.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:17:40","SecureTime":"2017-01-20T11:17:42","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:575.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null}]}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;获取某个客户超出最大页数的报警信息&lt;/td&gt;
+		&lt;td&gt;api/alarm/get&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320359,"CurrentPage":8,"ItemsPerPage":20,"BeginTime":null,"EndTime":null,"IsSecure":null,"Level":[],"AlarmCode":null,"Parameter":null,"Hierarchies":[],"SortMode":{"Field":"AlarmTime","IsDesc":true}}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":7,"TotalItemsCount":139,"Items":[]}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;客户下没有报警&lt;/td&gt;
+		&lt;td&gt;api/alarm/get&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;{"CustomerId":320366,"CurrentPage":1,"ItemsPerPage":20,"BeginTime":null,"EndTime":null,"IsSecure":null,"Level":[],"AlarmCode":null,"Parameter":null,"Hierarchies":[],"SortMode":{"Field":"AlarmTime","IsDesc":true}}&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[]}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>AlarmGet</relativePageName>
+        <tags>alarm, get</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='AlarmGet', args=[]}</instruction>
+        <slimResult>pass(alarm get)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>alarm get</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/alarm/get]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320359,"CurrentPage":7,"ItemsPerPage":20,"BeginTime":null,"EndTime":null,"IsSecure":null,"Level":[],"AlarmCode":null,"Parameter":null,"Hierarchies":[],"SortMode":{"Field":"AlarmTime","IsDesc":true}}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_7</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_9', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":7,"TotalItemsCount":139,"Items":[{"Id":720425,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"578.123","ResetValue":"168.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:27:33","SecureTime":"2017-01-20T11:27:35","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:578.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720423,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"583.123","ResetValue":"75.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:27:02","SecureTime":"2017-01-20T11:27:05","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:583.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720422,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"589.123","ResetValue":"324.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:26:51","SecureTime":"2017-01-20T11:26:53","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:589.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720421,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"592.123","ResetValue":"177.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:26:31","SecureTime":"2017-01-20T11:26:34","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:592.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720420,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"566.123","ResetValue":"223.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:25:58","SecureTime":"2017-01-20T11:26:01","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:566.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720419,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"566.123","ResetValue":"133.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:24:50","SecureTime":"2017-01-20T11:24:52","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:566.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720418,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"568.123","ResetValue":"160.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:23:55","SecureTime":"2017-01-20T11:23:57","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:568.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720417,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"596.123","ResetValue":"381.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:23:51","SecureTime":"2017-01-20T11:23:53","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:596.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720416,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"575.123","ResetValue":"10.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:23:26","SecureTime":"2017-01-20T11:23:28","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:575.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720415,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"563.123","ResetValue":"52.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:23:20","SecureTime":"2017-01-20T11:23:22","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:563.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720414,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"561.123","ResetValue":"48.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:22:31","SecureTime":"2017-01-20T11:22:33","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:561.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720413,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"568.123","ResetValue":"413.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:22:18","SecureTime":"2017-01-20T11:22:20","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:568.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720412,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"572.123","ResetValue":"491.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:20:25","SecureTime":"2017-01-20T11:20:30","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:572.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720411,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"592.123","ResetValue":"55.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:19:52","SecureTime":"2017-01-20T11:19:57","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:592.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720410,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"596.123","ResetValue":"10.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:19:11","SecureTime":"2017-01-20T11:19:13","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:596.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720409,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高高限","Parameter":"三相最大电流","ActualValue":"572.123","ResetValue":"15.123","ThresholdValue":"350","SecureUser":null,"AlarmTime":"2017-01-20T11:18:37","SecureTime":"2017-01-20T11:18:42","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":2,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高高报警 当前值:572.123A 设定值:350A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720408,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"573.123","ResetValue":"525.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:18:20","SecureTime":"2017-01-20T11:18:24","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:573.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720407,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"584.123","ResetValue":"376.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:18:00","SecureTime":"2017-01-20T11:18:04","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:584.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720406,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"575.123","ResetValue":"300.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:17:40","SecureTime":"2017-01-20T11:17:42","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:575.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null}]}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_9</instructionId>
+                    <col>5</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":7,"TotalItemsCount":139,"Items":[{"Id":720425,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"578.123","ResetValue":"168.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:27:33","SecureTime":"2017-01-20T11:27:35","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:578.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720423,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"583.123","ResetValue":"75.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:27:02","SecureTime":"2017-01-20T11:27:05","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:583.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720422,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"589.123","ResetValue":"324.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:26:51","SecureTime":"2017-01-20T11:26:53","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:589.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720421,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"592.123","ResetValue":"177.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:26:31","SecureTime":"2017-01-20T11:26:34","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:592.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720420,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"566.123","ResetValue":"223.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:25:58","SecureTime":"2017-01-20T11:26:01","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:566.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720419,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"566.123","ResetValue":"133.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:24:50","SecureTime":"2017-01-20T11:24:52","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:566.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720418,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"568.123","ResetValue":"160.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:23:55","SecureTime":"2017-01-20T11:23:57","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:568.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720417,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"596.123","ResetValue":"381.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:23:51","SecureTime":"2017-01-20T11:23:53","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:596.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720416,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"575.123","ResetValue":"10.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:23:26","SecureTime":"2017-01-20T11:23:28","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:575.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720415,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"563.123","ResetValue":"52.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:23:20","SecureTime":"2017-01-20T11:23:22","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:563.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720414,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"561.123","ResetValue":"48.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:22:31","SecureTime":"2017-01-20T11:22:33","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:561.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720413,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"568.123","ResetValue":"413.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:22:18","SecureTime":"2017-01-20T11:22:20","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:568.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720412,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"572.123","ResetValue":"491.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:20:25","SecureTime":"2017-01-20T11:20:30","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:572.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720411,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"592.123","ResetValue":"55.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:19:52","SecureTime":"2017-01-20T11:19:57","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:592.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720410,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"596.123","ResetValue":"10.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:19:11","SecureTime":"2017-01-20T11:19:13","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:596.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720409,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高高限","Parameter":"三相最大电流","ActualValue":"572.123","ResetValue":"15.123","ThresholdValue":"350","SecureUser":null,"AlarmTime":"2017-01-20T11:18:37","SecureTime":"2017-01-20T11:18:42","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":2,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高高报警 当前值:572.123A 设定值:350A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720408,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"573.123","ResetValue":"525.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:18:20","SecureTime":"2017-01-20T11:18:24","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:573.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720407,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"584.123","ResetValue":"376.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:18:00","SecureTime":"2017-01-20T11:18:04","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:584.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null},{"Id":720406,"DeviceFullName":"有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","DeviceName":"机柜-新建设备1*","Code":"超高限","Parameter":"电流 A","ActualValue":"575.123","ResetValue":"300.123","ThresholdValue":"560","SecureUser":null,"AlarmTime":"2017-01-20T11:17:40","SecureTime":"2017-01-20T11:17:42","ProcessTime":null,"Comment":"现场数据已正常，报警自动解除","Level":3,"Status":[],"HierarchyId":320373,"TicketId":null,"Description":"高报警 当前值:575.123A 设定值:560A","Uom":"A","Paths":["有盒子的建筑","有虚拟盒子的配电室","新建机柜1*"],"AlarmUser":null,"SecureType":2,"TripDetails":[],"TicketNum":null}]}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/alarm/get]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_12</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_13', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_13</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320359,"CurrentPage":8,"ItemsPerPage":20,"BeginTime":null,"EndTime":null,"IsSecure":null,"Level":[],"AlarmCode":null,"Parameter":null,"Hierarchies":[],"SortMode":{"Field":"AlarmTime","IsDesc":true}}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_14</instructionId>
+                    <col>4</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":7,"TotalItemsCount":139,"Items":[]}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>5</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":7,"TotalItemsCount":139,"Items":[]}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/alarm/get]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_18</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_19', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_19</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_20</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_21', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"CustomerId":320366,"CurrentPage":1,"ItemsPerPage":20,"BeginTime":null,"EndTime":null,"IsSecure":null,"Level":[],"AlarmCode":null,"Parameter":null,"Hierarchies":[],"SortMode":{"Field":"AlarmTime","IsDesc":true}}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_21</instructionId>
+                    <col>4</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_23', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[]}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_23</instructionId>
+                    <col>5</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"PageCount":0,"TotalItemsCount":0,"Items":[]}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>6958</totalRunTimeInMillis>
+</testResults>
+

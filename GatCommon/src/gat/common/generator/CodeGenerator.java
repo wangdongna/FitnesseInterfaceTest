@@ -1,0 +1,202 @@
+package gat.common.generator;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import gat.common.dbservice.Sqlserver;
+import gat.http.helper.httpService;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+
+public class CodeGenerator {
+	
+	private static final Log log = LogFactory.getLog(CodeGenerator.class);
+	private String codeFilePath = "D:\\Emma\\fitnesse\\FitnessTest\\src\\fitnesse\\slim\\test";
+	public static String commonHeader = "package fitnesse.slim.test;\n" +  "import gat.common.generator.Converter;\n" + "import java.util.Map;\n" + "import gat.common.jsonhelper.jsonservice;\n" + "import gat.http.helper.httpService;\n\nimport gat.common.dbservice.Sqlserver;\n\n";
+			
+	/**
+	    * 创建单个文件
+	    * @param destFileName 文件名
+	    * @return 创建成功返回true，否则返回false
+	    */
+	    public static File createFile(String destFileName) {
+	        File file = new File(destFileName);
+	        if (file.exists()) {
+	        	file.delete();
+	        }
+	        if (destFileName.endsWith(File.separator)) {
+	            log.info("创建单个文件" + destFileName + "失败，目标不能是目录！");
+	            return null;
+	        }
+	        if (!file.getParentFile().exists()) {
+	            log.info("目标文件所在路径不存在，准备创建。。。");
+	            if (!file.getParentFile().mkdirs()) {
+	                log.info("创建目录文件所在的目录失败！");
+	                return null;
+	            }
+	        }
+	        // ´´½¨Ä¿±êÎÄ¼þ
+	        try {
+	            if (file.createNewFile()) {
+	                log.info("创建单个文件" + destFileName + "成功！");
+	                return file;
+	            } else {
+	                log.info("创建单个文件" + destFileName + "失败！");
+	                return null;
+	            }
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	            log.info("创建单个文件" + destFileName + "失败！");
+	            return null;
+	        }
+	    }
+	    
+	    public List<String> generateCode(String fileName, String sheetName)
+	    {
+	    	WikiGenerator genetatorTmp = new WikiGenerator();   
+	    	List<String> codeContent = new ArrayList<String>();
+	    	List<String> tableTitle = genetatorTmp.generateWikiTableTitle(fileName, sheetName);
+	    	String[] testPage = sheetName.split(" ");
+	    	String testName = "";
+	    	boolean isGet = true;
+	    	boolean isPost = true;
+	    	boolean isVersion = false;
+	    	boolean isId = false;
+	    	
+	    	if (testPage[0].equals("get"))
+			{	
+	    		isGet = true;
+	    		isPost = false;
+			}
+			else
+			{
+				isGet = false;
+	    		isPost = true;	
+			}
+				
+	    	
+			for (int i = 0; i < testPage.length; i++)
+			{			
+				testName = testName +  testPage[i].substring(0, 1).toUpperCase() + testPage[i].substring(1);
+			}
+	    	String classTitle = "public class " + testName + " {";
+	    	codeContent.add(commonHeader);
+	    	codeContent.add(classTitle);
+	    	
+	    	for (int i = 0; i < tableTitle.size(); i++)
+	    	{
+	    		String variableTmp = "\tprivate String ";
+	    		
+	    		if (tableTitle.get(i).contains("&"))
+	    		{
+	    			variableTmp = variableTmp + tableTitle.get(i).replace("&", "").toLowerCase() + ";";    
+	    			codeContent.add(variableTmp);    			
+	    		}   
+	    		
+	    		if (tableTitle.get(i).contains("$responsebody-id"))
+	    		{
+	    			isId = true;    			
+	    		}
+	    		
+	    		if (tableTitle.get(i).contains("&Id"))
+	    		{
+	    			isVersion = true;    			
+	    		}
+	    	}
+	    	
+	    	for (int i = 0; i < tableTitle.size(); i++)
+	    	{
+	    		String variableTmp = "";
+	    		String tmp = tableTitle.get(i);
+	    		
+	    		if (tmp.contains("&"))
+	    		{
+	    			variableTmp = setMethod("String", tmp.replace("&", ""));    
+	    			codeContent.add(variableTmp);    			
+	    		} 
+
+	    		if (tmp.contains("$responsebody") && isGet)
+	    		{
+	    			String responseTmp = "\tpublic String responsebody(){" + "\n\t\t" + "httpService newHttp = new httpService(username, password);" + "\n\t\t"
+	    		                          + "String responseStr = newHttp.newHttpGet(path);" + "\n\t\t" + "return responseStr.replaceAll(\",\\\"Version\\\":\\\\d{7}\",\"\");" + "\n\t}\n}";
+	    			codeContent.add(responseTmp);    			
+	    		} 
+	    		else if (tmp.contains("$responsebody") && isPost && !isVersion && !isId)
+	    		{
+	    			String responseTmp = "\tpublic String responsebody(){" + "\n\t\t" + "httpService newHttp = new httpService(username, password);" + "\n\t\t"
+	                          + "String requestBody = this.requestbody;" + "\n\t\t" + "String responseStr = newHttp.newHttpPost(path, requestBody);" + "\n\t\t" + "return responseStr.replaceAll(\",\\\"Version\\\":\\\\d{7}\",\"\");" + "\n\t}\n}";
+	    			codeContent.add(responseTmp);   			
+	    		}
+	    		else if (tmp.contains("$responsebody") && isPost && isVersion && !isId)
+	    		{
+	    			String responseTmp = "\tpublic String responsebody(){" + "\n\t\t" + "Sqlserver sql = new Sqlserver();" + "\n\t\t" + "String sqlvalue = \"SELECT Version FROM [Auto].[dbo].[##] where Id = #\";" + "\n\t\t"
+	    					  + "String rst = sql.GetSql(sqlvalue.replaceAll(\"##\",this.table).replaceAll(\"#\",this.id));" +"\n\t\t" + "String rs = Long.toString(Long.parseLong(rst, 16));" +"\n\t\t" + "httpService newHttp = new httpService(username, password);" + "\n\t\t"
+	                          + "String requestBody = this.requestbody.replaceAll(\",\\\"Version\\\":\\\\d{7}\",\", \\\"Version\\\":\"+ rs);" + "\n\t\t" + "String responseStr = newHttp.newHttpPost(this.path, requestBody);" + "\n\t\t" + "return responseStr.replaceAll(\",\\\"Version\\\":\\\\d{7}\",\"\");" + "\n\t}\n}";
+	    			codeContent.add(responseTmp);   			
+	    		}
+	    		else if (tmp.contains("$responsebody") && isPost && !isVersion && isId)
+	    		{
+	    			String responseTmp = "\tpublic String responsebodyId(){" + "\n\t\t" + "httpService newHttp = new httpService(username, password);" + "\n\t\t"
+	                          + "String requestBody = this.requestbody;" + "\n\t\t" + "String responseStr = newHttp.newHttpPost(path, requestBody);" + "\n\t\t" + "return responseStr.replaceAll(\",\\\"Version\\\":\\\\d{7}\",\"\").replaceAll(\"\\\"Id\\\":\\\\d{1,8}\",\"\\\"Id\\\":\").replaceAll(\",\\\"Password\\\":\\\"\\\\w{32}\\\"\",\",\\\"Password\\\":\\\"\\\"\");" + "\n\t}\n}";
+	    			codeContent.add(responseTmp);   			
+	    		}
+	    		else if (tmp.contains("$responsebody") && isPost && isVersion && isId)
+	    		{
+	    			String responseTmp = "\tpublic String responsebodyId(){" + "\n\t\t" + "Sqlserver sql = new Sqlserver();" + "\n\t\t" + "String sqlvalue = \"SELECT Version FROM [Auto].[dbo].[##] where Id = #\";" + "\n\t\t"
+	    					  + "String rst = sql.GetSql(sqlvalue.replaceAll(\"##\",this.table).replaceAll(\"#\",this.id));" +"\n\t\t" + "String rs = Long.toString(Long.parseLong(rst, 16));" +"\n\t\t" + "httpService newHttp = new httpService(username, password);" + "\n\t\t"
+	                          + "String requestBody = this.requestbody.replaceAll(\",\\\"Version\\\":\\\\d{7}\",\", \\\"Version\\\":\"+ rs);" + "\n\t\t" + "String responseStr = newHttp.newHttpPost(this.path, requestBody);" + "\n\t\t" + "return responseStr.replaceAll(\",\\\"Version\\\":\\\\d{7}\",\"\").replaceAll(\"\\\"Id\\\":\\\\d{1,8}\",\"\\\"Id\\\":\").replaceAll(\",\\\"Password\\\":\\\"\\\\w{32}\\\"\",\",\\\"Password\\\":\\\"\\\"\");" + "\n\t}\n}";
+	    			codeContent.add(responseTmp);   			
+	    		}
+	    	}
+	    	
+	    	String testDestFileName = codeFilePath + "/" + testName + ".java";
+	    	
+	    	WriteListToFile(testDestFileName, codeContent);
+	    	return codeContent;
+	    }
+
+	    /**
+	     * »ñÈ¡set·½·¨;
+	     * @param tableForm
+	     * @param fieldName
+	     * @return
+	     */
+	    private String setMethod(String filedType, String fieldName){
+	        StringBuffer sb = new StringBuffer();
+	        sb.append("\tpublic void set"+fieldName+"("+filedType+" "+fieldName.toLowerCase()+"){\r\n");
+	        sb.append("\t\t this."+fieldName.toLowerCase()+ " = "+ "Converter.convert(" + fieldName.toLowerCase()+");\r\n");
+	        sb.append("\t}\r\n \r\n");
+	        return sb.toString();
+	    }
+	    
+	    public void WriteListToFile(String destFileName, List<String> content)
+	    {	    
+	    	
+	    	try{
+	    		
+	    		File file = createFile(destFileName);
+	    	
+	    		// get the content in bytes
+	    		OutputStreamWriter write = new OutputStreamWriter(new FileOutputStream(file),"utf-8");   
+	    		BufferedWriter bw = new BufferedWriter(write);
+	    	
+	    		for (int i = 0; i < content.size(); i++)
+	    		{
+	    			bw.write(content.get(i));	
+	    			bw.write("\n");	
+	    		} 	
+
+	    		bw.close();
+	    	}
+	    	catch (IOException e) {
+	    		   e.printStackTrace();
+	    		  }
+	    }
+	
+}

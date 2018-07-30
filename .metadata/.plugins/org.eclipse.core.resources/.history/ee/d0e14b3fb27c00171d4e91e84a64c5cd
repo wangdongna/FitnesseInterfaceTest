@@ -1,0 +1,118 @@
+package gat.common.dbservice;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class Sqlserver {
+	
+	/**
+	 * @param args
+	 */
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String url = "jdbc:sqlserver://10.31.131.7:1433;databaseName=Auto;user=cnrem;password=P@ssw0rd";//saÉí·ÝÁ¬½Ó  
+
+		// Declare the JDBC objects.    
+        Connection con = null;    
+        Statement stmt = null;    
+        ResultSet rs = null; 
+        
+        try {    
+            // Establish the connection.    
+            System.out.println("begin.");    
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");    
+            con = DriverManager.getConnection(url);    
+            System.out.println("end.");    
+    
+            // Create and execute an SQL statement that returns some data.    
+            String SQL = "SELECT Version FROM [REMInformation_AutoTest].[dbo].[Role] where Id = 100031";    
+            stmt = con.createStatement();    
+            rs = stmt.executeQuery(SQL);  
+            rs.next();
+            String value = rs.getString(1);
+
+            System.out.println("value:" + rs.getString(1));      
+            
+            long l = Long.parseLong(value, 16);
+            System.out.println("value:" + l);  
+        }    
+    
+        // Handle any errors that may have occurred.    
+        catch (Exception e) {    
+            e.printStackTrace();    
+        }    
+    
+        finally {    
+            if (rs != null)    
+                try {    
+                    rs.close();    
+                } catch (Exception e) {    
+                }    
+            if (stmt != null)    
+                try {    
+                    stmt.close();    
+                } catch (Exception e) {    
+                }    
+            if (con != null)    
+                try {    
+                    con.close();    
+                } catch (Exception e) {    
+                }    
+        }   
+	}
+
+	
+	public String GetSql(String SQL)
+	{
+		// TODO Auto-generated method stub
+				String url = "jdbc:sqlserver://10.31.131.7:1433;databaseName=Auto;user=cnrem;password=P@ssw0rd";//连接到数据库 
+
+				// Declare the JDBC objects.    
+		        Connection con = null;    
+		        Statement stmt = null;    
+		        ResultSet rs = null; 
+		        try {    
+		            // Establish the connection.    
+		            System.out.println("begin.");    
+		            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");    
+		            con = DriverManager.getConnection(url);    
+		            System.out.println("end.");    
+		    
+		            // Create and execute an SQL statement that returns some data.     
+		            stmt = con.createStatement();    
+		            rs = stmt.executeQuery(SQL);  
+		            rs.next();
+					String value = rs.getString(1);
+					return value;
+		        }    
+		    
+		        // Handle any errors that may have occurred.    
+		        catch (Exception e) {  
+		        	return e.getMessage();
+		            //e.printStackTrace();    
+		        }    
+		    
+		        finally {   
+		        	
+		            if (rs != null)    
+		                try {    
+		                    rs.close();    
+		                } catch (Exception e) {    
+		                }    
+		            if (stmt != null)    
+		                try {    
+		                    stmt.close();    
+		                } catch (Exception e) {    
+		                }    
+		            if (con != null)    
+		                try {    
+		                    con.close();    
+		                } catch (Exception e) {    
+		                }    
+		        } 	
+	}
+
+}

@@ -1,0 +1,457 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopGetTestProject.DeviceApi.GetDeviceId</rootPath>
+    <result>
+    <counts>
+      <right>6</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-10T16:33:53+08:00</date>
+    <runTimeInMillis>5213</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;get device id&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;responsebody?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;用户没有设备ID所属楼宇数据权限&lt;/td&gt;
+		&lt;td&gt;api/device/320373&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"Factory":null,"Description":"test","Class":"框架断路器及负荷开关","DeviceType":"MT空气断路器","Specification":"","TemplateId":4792,"GatewayId":429,"HardwareId":1,"IsAsset":false,"IsStatistic":null,"GatewayName":"apiauto.GatewayCustomer.BoxEmmaAPI15","HasRuntimeSettingParameter":true,"PhysicalStatus":1,"AliveTime":"2017-01-20T10:55:04.77","Logo":{"Id":null,"HierarchyId":320373,"Logo":"","ImageId":"DeviceImage-40e556e1510dacd17c55bbfcdbe963d0"},"AgingCalParam":null,"AppliedDevices":[],"IsShowAgingCalParam":true,"SceneLogs":[],"PropertyGroups":[],"LedgerParameters":[{"Id":459244,"DeviceId":320373,"Name":"额定电流","IsUploaded":true,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459245,"DeviceId":320373,"Name":"额定电压","IsUploaded":true,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459246,"DeviceId":320373,"Name":"断路器本体","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459247,"DeviceId":320373,"Name":"分断等级","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459248,"DeviceId":320373,"Name":"脱扣单元类型","IsUploaded":true,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459249,"DeviceId":320373,"Name":"断路器极数","IsUploaded":true,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459250,"DeviceId":320373,"Name":"安装方式","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459251,"DeviceId":320373,"Name":"电气附件","IsUploaded":false,"ValueType":1,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459252,"DeviceId":320373,"Name":"生产日期","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461954,"DeviceId":320373,"Name":"生产日期","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":[""]},{"Id":461957,"DeviceId":320373,"Name":"脱扣单元类型","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":["Micrologic5.0 E"]},{"Id":461958,"DeviceId":320373,"Name":"额定电流","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"A","Values":["400A"]},{"Id":461959,"DeviceId":320373,"Name":"额定电压","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"V","Values":[""]},{"Id":461960,"DeviceId":320373,"Name":"断路器极数","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":[""]},{"Id":461961,"DeviceId":320373,"Name":"Modbus地址","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":[""]}],"Tickets":[{"Id":2503,"TicketNum":"GatewayCustomer-BJ170316001","SeqNum":1,"TicketType":2,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-05T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":"2017-03-16T00:00:00","Content":"finished\n时间: 2017年1月20日 12:32:18;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 572.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-16T10:09:35.947","TicketStatus":30,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"]}],"SerialNumber":null,"FactoryDate":null,"JoinType":1,"Id":320373,"ParentId":320372,"CustomerId":320359,"Name":"机柜-新建设备1*","Code":"BoxEmmaAPI15.1.1","Type":5}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;设备是自定义的&lt;/td&gt;
+		&lt;td&gt;api/device/320403&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"Factory":"施耐德电气","Description":"断路器","Class":"塑壳断路器及负荷开关","DeviceType":"Compact NSX塑壳断路器","Specification":"690V高性能NSX配电保护断路器","TemplateId":null,"GatewayId":null,"HardwareId":null,"IsAsset":true,"IsStatistic":false,"GatewayName":null,"HasRuntimeSettingParameter":false,"PhysicalStatus":1,"AliveTime":"2017-03-01T12:33:36.947","Logo":{"Id":null,"HierarchyId":320403,"Logo":"","ImageId":"DeviceImage-2ac63e7c689b63cc72b345d5216e3095"},"AgingCalParam":null,"AppliedDevices":[],"IsShowAgingCalParam":false,"SceneLogs":[{"Id":1982,"HierarchyId":320403,"Content":"For test api.customer1","UpdateTime":"2017-03-01T12:34:11.013","CreateUserId":301312,"CreateUserName":"ServiceProviderAdmin","CreateTime":"2017-03-01T12:34:11.013","UpdateUser":301312,"ScenePictures":[]}],"PropertyGroups":[{"Id":4624,"HierarchyId":320403,"Order":3,"Name":"财务信息","Properties":[{"Id":14171,"GroupId":4624,"Order":1,"Name":"设备成本","Value":"200000"},{"Id":14172,"GroupId":4624,"Order":2,"Name":"设备寿命","Value":"15"}]}],"LedgerParameters":[{"Id":461329,"DeviceId":320403,"Name":"额定电流","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":["100A"]},{"Id":461330,"DeviceId":320403,"Name":"额定电压","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[""]},{"Id":461331,"DeviceId":320403,"Name":"分断等级","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":["HB1:75kA"]},{"Id":461332,"DeviceId":320403,"Name":"脱扣单元类型","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":["MA电磁脱扣单元"]},{"Id":461333,"DeviceId":320403,"Name":"断路器极数","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":["3P"]},{"Id":461334,"DeviceId":320403,"Name":"安装方式","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":["固定式"]},{"Id":461335,"DeviceId":320403,"Name":"电气附件","IsUploaded":false,"ValueType":1,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461336,"DeviceId":320403,"Name":"生产日期","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[""]}],"Tickets":[],"SerialNumber":"SECI10098654","FactoryDate":null,"JoinType":1,"Id":320403,"ParentId":320402,"CustomerId":320366,"Name":"SECI Device","Code":"22162d2f-1eea-4b77-ba2a-60bcecb6df01","Type":5}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;用户有设备ID所属楼宇数据权限&lt;/td&gt;
+		&lt;td&gt;api/device/320373&lt;/td&gt;
+		&lt;td&gt;api.shareuserd&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"050001251009","Message":null,"RequestId":null,"Result":null}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;设备是从BOX同步来的&lt;/td&gt;
+		&lt;td&gt;api/device/320455&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"Factory":null,"Description":"报告用","Class":"变频与驱动","DeviceType":"高压变频器","Specification":"","TemplateId":4856,"GatewayId":429,"HardwareId":2,"IsAsset":false,"IsStatistic":null,"GatewayName":"apiauto.GatewayCustomer.BoxEmmaAPI15","HasRuntimeSettingParameter":true,"PhysicalStatus":1,"AliveTime":"2017-03-16T10:07:42.073","Logo":null,"AgingCalParam":null,"AppliedDevices":[],"IsShowAgingCalParam":false,"SceneLogs":[{"Id":1988,"HierarchyId":320455,"Content":"scenelogs.delete.pic","UpdateTime":"2017-07-28T11:29:52.503","CreateUserId":301312,"CreateUserName":"ServiceProviderAdmin","CreateTime":"2017-07-28T11:29:52.503","UpdateUser":301312,"ScenePictures":[{"Id":3075,"HierarchyId":0,"Description":"scenelogs.delete.pic","CreateUserId":301312,"CreateTime":"2017-07-28T11:29:52.503","SceneLogId":1988,"ScenePictureId":"file-scene-log-320455-636368381914958265","FileName":"CustomerLogo.PNG"}]}],"PropertyGroups":[],"LedgerParameters":[{"Id":461689,"DeviceId":320455,"Name":"设备型号","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461690,"DeviceId":320455,"Name":"输入电压等级","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461691,"DeviceId":320455,"Name":"输出电压等级","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461692,"DeviceId":320455,"Name":"额定容量","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461693,"DeviceId":320455,"Name":"电机额定功率","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461694,"DeviceId":320455,"Name":"旁路方案","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461695,"DeviceId":320455,"Name":"负载类型","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461696,"DeviceId":320455,"Name":"中性点接头位置","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461697,"DeviceId":320455,"Name":"控制方式","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461698,"DeviceId":320455,"Name":"控制信号类型","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461699,"DeviceId":320455,"Name":"监控软件版本","IsUploaded":true,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461700,"DeviceId":320455,"Name":"主控软件版本","IsUploaded":true,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461701,"DeviceId":320455,"Name":"设备序列号","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461702,"DeviceId":320455,"Name":"电气附件","IsUploaded":false,"ValueType":1,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461703,"DeviceId":320455,"Name":"监控软件版本","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":[""]},{"Id":461704,"DeviceId":320455,"Name":"主控软件版本","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":[""]}],"Tickets":[],"SerialNumber":null,"FactoryDate":null,"JoinType":1,"Id":320455,"ParentId":320453,"CustomerId":320359,"Name":"变频器","Code":"BoxEmmaAPI15.5.2","Type":5}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;设备ID是不存在的&lt;/td&gt;
+		&lt;td&gt;api/device/456123&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"050001201010","Message":null,"RequestId":null,"Result":null}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;设备ID是无效的&lt;/td&gt;
+		&lt;td&gt;api/device/112&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"050001201010","Message":null,"RequestId":null,"Result":null}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>GetDeviceId</relativePageName>
+        <tags>get, device</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='GetDeviceId', args=[]}</instruction>
+        <slimResult>pass(get device id)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>get device id</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/320373]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"Factory":null,"Description":"test","Class":"框架断路器及负荷开关","DeviceType":"MT空气断路器","Specification":"","TemplateId":4792,"GatewayId":429,"HardwareId":1,"IsAsset":false,"IsStatistic":null,"GatewayName":"apiauto.GatewayCustomer.BoxEmmaAPI15","HasRuntimeSettingParameter":true,"PhysicalStatus":1,"AliveTime":"2017-01-20T10:55:04.77","Logo":{"Id":null,"HierarchyId":320373,"Logo":"","ImageId":"DeviceImage-40e556e1510dacd17c55bbfcdbe963d0"},"AgingCalParam":null,"AppliedDevices":[],"IsShowAgingCalParam":true,"SceneLogs":[],"PropertyGroups":[],"LedgerParameters":[{"Id":459244,"DeviceId":320373,"Name":"额定电流","IsUploaded":true,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459245,"DeviceId":320373,"Name":"额定电压","IsUploaded":true,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459246,"DeviceId":320373,"Name":"断路器本体","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459247,"DeviceId":320373,"Name":"分断等级","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459248,"DeviceId":320373,"Name":"脱扣单元类型","IsUploaded":true,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459249,"DeviceId":320373,"Name":"断路器极数","IsUploaded":true,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459250,"DeviceId":320373,"Name":"安装方式","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459251,"DeviceId":320373,"Name":"电气附件","IsUploaded":false,"ValueType":1,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459252,"DeviceId":320373,"Name":"生产日期","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461954,"DeviceId":320373,"Name":"生产日期","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":[""]},{"Id":461957,"DeviceId":320373,"Name":"脱扣单元类型","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":["Micrologic5.0 E"]},{"Id":461958,"DeviceId":320373,"Name":"额定电流","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"A","Values":["400A"]},{"Id":461959,"DeviceId":320373,"Name":"额定电压","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"V","Values":[""]},{"Id":461960,"DeviceId":320373,"Name":"断路器极数","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":[""]},{"Id":461961,"DeviceId":320373,"Name":"Modbus地址","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":[""]}],"Tickets":[{"Id":2503,"TicketNum":"GatewayCustomer-BJ170316001","SeqNum":1,"TicketType":2,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-05T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":"2017-03-16T00:00:00","Content":"finished\n时间: 2017年1月20日 12:32:18;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 572.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-16T10:09:35.947","TicketStatus":30,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"]}],"SerialNumber":null,"FactoryDate":null,"JoinType":1,"Id":320373,"ParentId":320372,"CustomerId":320359,"Name":"机柜-新建设备1*","Code":"BoxEmmaAPI15.1.1","Type":5}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Factory":null,"Description":"test","Class":"框架断路器及负荷开关","DeviceType":"MT空气断路器","Specification":"","TemplateId":4792,"GatewayId":429,"HardwareId":1,"IsAsset":false,"IsStatistic":null,"GatewayName":"apiauto.GatewayCustomer.BoxEmmaAPI15","HasRuntimeSettingParameter":true,"PhysicalStatus":1,"AliveTime":"2017-01-20T10:55:04.77","Logo":{"Id":null,"HierarchyId":320373,"Logo":"","ImageId":"DeviceImage-40e556e1510dacd17c55bbfcdbe963d0"},"AgingCalParam":null,"AppliedDevices":[],"IsShowAgingCalParam":true,"SceneLogs":[],"PropertyGroups":[],"LedgerParameters":[{"Id":459244,"DeviceId":320373,"Name":"额定电流","IsUploaded":true,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459245,"DeviceId":320373,"Name":"额定电压","IsUploaded":true,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459246,"DeviceId":320373,"Name":"断路器本体","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459247,"DeviceId":320373,"Name":"分断等级","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459248,"DeviceId":320373,"Name":"脱扣单元类型","IsUploaded":true,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459249,"DeviceId":320373,"Name":"断路器极数","IsUploaded":true,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459250,"DeviceId":320373,"Name":"安装方式","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459251,"DeviceId":320373,"Name":"电气附件","IsUploaded":false,"ValueType":1,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":459252,"DeviceId":320373,"Name":"生产日期","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461954,"DeviceId":320373,"Name":"生产日期","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":[""]},{"Id":461957,"DeviceId":320373,"Name":"脱扣单元类型","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":["Micrologic5.0 E"]},{"Id":461958,"DeviceId":320373,"Name":"额定电流","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"A","Values":["400A"]},{"Id":461959,"DeviceId":320373,"Name":"额定电压","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"V","Values":[""]},{"Id":461960,"DeviceId":320373,"Name":"断路器极数","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":[""]},{"Id":461961,"DeviceId":320373,"Name":"Modbus地址","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":[""]}],"Tickets":[{"Id":2503,"TicketNum":"GatewayCustomer-BJ170316001","SeqNum":1,"TicketType":2,"StartTime":"2017-03-15T00:00:00","EndTime":"2019-03-05T00:00:00","ActualStartTime":"2017-03-15T00:00:00","ActualEndTime":"2017-03-16T00:00:00","Content":"finished\n时间: 2017年1月20日 12:32:18;\n级别: 高级;\n类别: 超高限;\n点位: 电流 A;\n实际值: 572.1A;\n设定值: 560A;\n位置: 有盒子的建筑-有虚拟盒子的配电室-新建机柜1*","CreateUser":301312,"CreateUserName":"apiauto","CreateTime":"2017-03-16T10:09:35.947","TicketStatus":30,"AssetNames":["机柜-新建设备1*"],"BuildingNames":["有盒子的建筑"],"ExecutorNames":["b","ServiceProviderAdmin"]}],"SerialNumber":null,"FactoryDate":null,"JoinType":1,"Id":320373,"ParentId":320372,"CustomerId":320359,"Name":"机柜-新建设备1*","Code":"BoxEmmaAPI15.1.1","Type":5}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_10', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/320403]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_10</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_12</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"Factory":"施耐德电气","Description":"断路器","Class":"塑壳断路器及负荷开关","DeviceType":"Compact NSX塑壳断路器","Specification":"690V高性能NSX配电保护断路器","TemplateId":null,"GatewayId":null,"HardwareId":null,"IsAsset":true,"IsStatistic":false,"GatewayName":null,"HasRuntimeSettingParameter":false,"PhysicalStatus":1,"AliveTime":"2017-03-01T12:33:36.947","Logo":{"Id":null,"HierarchyId":320403,"Logo":"","ImageId":"DeviceImage-2ac63e7c689b63cc72b345d5216e3095"},"AgingCalParam":null,"AppliedDevices":[],"IsShowAgingCalParam":false,"SceneLogs":[{"Id":1982,"HierarchyId":320403,"Content":"For test api.customer1","UpdateTime":"2017-03-01T12:34:11.013","CreateUserId":301312,"CreateUserName":"ServiceProviderAdmin","CreateTime":"2017-03-01T12:34:11.013","UpdateUser":301312,"ScenePictures":[]}],"PropertyGroups":[{"Id":4624,"HierarchyId":320403,"Order":3,"Name":"财务信息","Properties":[{"Id":14171,"GroupId":4624,"Order":1,"Name":"设备成本","Value":"200000"},{"Id":14172,"GroupId":4624,"Order":2,"Name":"设备寿命","Value":"15"}]}],"LedgerParameters":[{"Id":461329,"DeviceId":320403,"Name":"额定电流","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":["100A"]},{"Id":461330,"DeviceId":320403,"Name":"额定电压","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[""]},{"Id":461331,"DeviceId":320403,"Name":"分断等级","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":["HB1:75kA"]},{"Id":461332,"DeviceId":320403,"Name":"脱扣单元类型","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":["MA电磁脱扣单元"]},{"Id":461333,"DeviceId":320403,"Name":"断路器极数","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":["3P"]},{"Id":461334,"DeviceId":320403,"Name":"安装方式","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":["固定式"]},{"Id":461335,"DeviceId":320403,"Name":"电气附件","IsUploaded":false,"ValueType":1,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461336,"DeviceId":320403,"Name":"生产日期","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[""]}],"Tickets":[],"SerialNumber":"SECI10098654","FactoryDate":null,"JoinType":1,"Id":320403,"ParentId":320402,"CustomerId":320366,"Name":"SECI Device","Code":"22162d2f-1eea-4b77-ba2a-60bcecb6df01","Type":5}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_14</instructionId>
+                    <col>4</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Factory":"施耐德电气","Description":"断路器","Class":"塑壳断路器及负荷开关","DeviceType":"Compact NSX塑壳断路器","Specification":"690V高性能NSX配电保护断路器","TemplateId":null,"GatewayId":null,"HardwareId":null,"IsAsset":true,"IsStatistic":false,"GatewayName":null,"HasRuntimeSettingParameter":false,"PhysicalStatus":1,"AliveTime":"2017-03-01T12:33:36.947","Logo":{"Id":null,"HierarchyId":320403,"Logo":"","ImageId":"DeviceImage-2ac63e7c689b63cc72b345d5216e3095"},"AgingCalParam":null,"AppliedDevices":[],"IsShowAgingCalParam":false,"SceneLogs":[{"Id":1982,"HierarchyId":320403,"Content":"For test api.customer1","UpdateTime":"2017-03-01T12:34:11.013","CreateUserId":301312,"CreateUserName":"ServiceProviderAdmin","CreateTime":"2017-03-01T12:34:11.013","UpdateUser":301312,"ScenePictures":[]}],"PropertyGroups":[{"Id":4624,"HierarchyId":320403,"Order":3,"Name":"财务信息","Properties":[{"Id":14171,"GroupId":4624,"Order":1,"Name":"设备成本","Value":"200000"},{"Id":14172,"GroupId":4624,"Order":2,"Name":"设备寿命","Value":"15"}]}],"LedgerParameters":[{"Id":461329,"DeviceId":320403,"Name":"额定电流","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":["100A"]},{"Id":461330,"DeviceId":320403,"Name":"额定电压","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[""]},{"Id":461331,"DeviceId":320403,"Name":"分断等级","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":["HB1:75kA"]},{"Id":461332,"DeviceId":320403,"Name":"脱扣单元类型","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":["MA电磁脱扣单元"]},{"Id":461333,"DeviceId":320403,"Name":"断路器极数","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":["3P"]},{"Id":461334,"DeviceId":320403,"Name":"安装方式","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":["固定式"]},{"Id":461335,"DeviceId":320403,"Name":"电气附件","IsUploaded":false,"ValueType":1,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461336,"DeviceId":320403,"Name":"生产日期","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[""]}],"Tickets":[],"SerialNumber":"SECI10098654","FactoryDate":null,"JoinType":1,"Id":320403,"ParentId":320402,"CustomerId":320366,"Name":"SECI Device","Code":"22162d2f-1eea-4b77-ba2a-60bcecb6df01","Type":5}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/320373]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_17', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[api.shareuserd]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_17</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_18</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"050001251009","Message":null,"RequestId":null,"Result":null})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_20</instructionId>
+                    <col>4</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"050001251009","Message":null,"RequestId":null,"Result":null}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_22', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/320455]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_22</instructionId>
+                    <col>1</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_23', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_23</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_24', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_24</instructionId>
+                    <col>3</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_26', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"Factory":null,"Description":"报告用","Class":"变频与驱动","DeviceType":"高压变频器","Specification":"","TemplateId":4856,"GatewayId":429,"HardwareId":2,"IsAsset":false,"IsStatistic":null,"GatewayName":"apiauto.GatewayCustomer.BoxEmmaAPI15","HasRuntimeSettingParameter":true,"PhysicalStatus":1,"AliveTime":"2017-03-16T10:07:42.073","Logo":null,"AgingCalParam":null,"AppliedDevices":[],"IsShowAgingCalParam":false,"SceneLogs":[{"Id":1988,"HierarchyId":320455,"Content":"scenelogs.delete.pic","UpdateTime":"2017-07-28T11:29:52.503","CreateUserId":301312,"CreateUserName":"ServiceProviderAdmin","CreateTime":"2017-07-28T11:29:52.503","UpdateUser":301312,"ScenePictures":[{"Id":3075,"HierarchyId":0,"Description":"scenelogs.delete.pic","CreateUserId":301312,"CreateTime":"2017-07-28T11:29:52.503","SceneLogId":1988,"ScenePictureId":"file-scene-log-320455-636368381914958265","FileName":"CustomerLogo.PNG"}]}],"PropertyGroups":[],"LedgerParameters":[{"Id":461689,"DeviceId":320455,"Name":"设备型号","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461690,"DeviceId":320455,"Name":"输入电压等级","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461691,"DeviceId":320455,"Name":"输出电压等级","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461692,"DeviceId":320455,"Name":"额定容量","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461693,"DeviceId":320455,"Name":"电机额定功率","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461694,"DeviceId":320455,"Name":"旁路方案","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461695,"DeviceId":320455,"Name":"负载类型","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461696,"DeviceId":320455,"Name":"中性点接头位置","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461697,"DeviceId":320455,"Name":"控制方式","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461698,"DeviceId":320455,"Name":"控制信号类型","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461699,"DeviceId":320455,"Name":"监控软件版本","IsUploaded":true,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461700,"DeviceId":320455,"Name":"主控软件版本","IsUploaded":true,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461701,"DeviceId":320455,"Name":"设备序列号","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461702,"DeviceId":320455,"Name":"电气附件","IsUploaded":false,"ValueType":1,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461703,"DeviceId":320455,"Name":"监控软件版本","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":[""]},{"Id":461704,"DeviceId":320455,"Name":"主控软件版本","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":[""]}],"Tickets":[],"SerialNumber":null,"FactoryDate":null,"JoinType":1,"Id":320455,"ParentId":320453,"CustomerId":320359,"Name":"变频器","Code":"BoxEmmaAPI15.5.2","Type":5}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_26</instructionId>
+                    <col>4</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Factory":null,"Description":"报告用","Class":"变频与驱动","DeviceType":"高压变频器","Specification":"","TemplateId":4856,"GatewayId":429,"HardwareId":2,"IsAsset":false,"IsStatistic":null,"GatewayName":"apiauto.GatewayCustomer.BoxEmmaAPI15","HasRuntimeSettingParameter":true,"PhysicalStatus":1,"AliveTime":"2017-03-16T10:07:42.073","Logo":null,"AgingCalParam":null,"AppliedDevices":[],"IsShowAgingCalParam":false,"SceneLogs":[{"Id":1988,"HierarchyId":320455,"Content":"scenelogs.delete.pic","UpdateTime":"2017-07-28T11:29:52.503","CreateUserId":301312,"CreateUserName":"ServiceProviderAdmin","CreateTime":"2017-07-28T11:29:52.503","UpdateUser":301312,"ScenePictures":[{"Id":3075,"HierarchyId":0,"Description":"scenelogs.delete.pic","CreateUserId":301312,"CreateTime":"2017-07-28T11:29:52.503","SceneLogId":1988,"ScenePictureId":"file-scene-log-320455-636368381914958265","FileName":"CustomerLogo.PNG"}]}],"PropertyGroups":[],"LedgerParameters":[{"Id":461689,"DeviceId":320455,"Name":"设备型号","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461690,"DeviceId":320455,"Name":"输入电压等级","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461691,"DeviceId":320455,"Name":"输出电压等级","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461692,"DeviceId":320455,"Name":"额定容量","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461693,"DeviceId":320455,"Name":"电机额定功率","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461694,"DeviceId":320455,"Name":"旁路方案","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461695,"DeviceId":320455,"Name":"负载类型","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461696,"DeviceId":320455,"Name":"中性点接头位置","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461697,"DeviceId":320455,"Name":"控制方式","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461698,"DeviceId":320455,"Name":"控制信号类型","IsUploaded":false,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461699,"DeviceId":320455,"Name":"监控软件版本","IsUploaded":true,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461700,"DeviceId":320455,"Name":"主控软件版本","IsUploaded":true,"ValueType":2,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461701,"DeviceId":320455,"Name":"设备序列号","IsUploaded":false,"ValueType":0,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461702,"DeviceId":320455,"Name":"电气附件","IsUploaded":false,"ValueType":1,"ParameterType":0,"InputType":null,"Unit":null,"Values":[]},{"Id":461703,"DeviceId":320455,"Name":"监控软件版本","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":[""]},{"Id":461704,"DeviceId":320455,"Name":"主控软件版本","IsUploaded":true,"ValueType":0,"ParameterType":1,"InputType":null,"Unit":"","Values":[""]}],"Tickets":[],"SerialNumber":null,"FactoryDate":null,"JoinType":1,"Id":320455,"ParentId":320453,"CustomerId":320359,"Name":"变频器","Code":"BoxEmmaAPI15.5.2","Type":5}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_28', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/456123]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_28</instructionId>
+                    <col>1</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_29', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_29</instructionId>
+                    <col>2</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_30', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_30</instructionId>
+                    <col>3</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_32', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"050001201010","Message":null,"RequestId":null,"Result":null})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_32</instructionId>
+                    <col>4</col>
+                              <row>6</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"050001201010","Message":null,"RequestId":null,"Result":null}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_34', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/112]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_34</instructionId>
+                    <col>1</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_35', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_35</instructionId>
+                    <col>2</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_36', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_36</instructionId>
+                    <col>3</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_38', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"050001201010","Message":null,"RequestId":null,"Result":null})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_38</instructionId>
+                    <col>4</col>
+                              <row>7</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"050001201010","Message":null,"RequestId":null,"Result":null}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>5213</totalRunTimeInMillis>
+</testResults>
+

@@ -1,0 +1,506 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopGetTestProject.PanelApi.GetPanels</rootPath>
+    <result>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-10T16:44:01+08:00</date>
+    <runTimeInMillis>4790</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;get panels&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;responsebody?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;用户有配电柜ID所属楼宇数据权限&lt;/td&gt;
+		&lt;td&gt;api/panel/320372&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":0,"SerialNumber":null,"PanelType":null,"Factory":null,"HardwareId":1,"GatewayId":429,"ManufactureTime":null,"IsAsset":false,"GatewayName":"apiauto.GatewayCustomer.BoxEmmaAPI15","EnvData":null,"EnvironmentParam":{"Temperature":null,"Humidity":null,"VibrationLevel":1,"DustDegree":1,"SalinityLevel":1,"CorrosiveLevel":1,"ProtectionLevel":1},"AppliedPanels":[],"AppliedParams":[],"Logo":null,"SingleLineDiagrams":[{"Id":1060,"HierarchyId":320372,"Description":"device jigui","Order":0,"CreateTime":"2017-03-16T11:46:35.637","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"Content":"","IsActive":true,"ImageId":"img-sld-1060"}],"SceneLogs":[],"PropertyGroups":[],"StatisticData":{"BasicStatistic":[{"Key":"框架断路器及负荷开关","Value":"1","Unit":"个"}],"DeviceStatistic":[]},"Tickets":[],"Id":320372,"ParentId":320361,"CustomerId":320359,"Name":"新建机柜1*","Code":"BoxEmmaAPI15.1","Type":4}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;用户没有配电柜ID所属楼宇数据权限(用户没有数据权限也可以返回数据)&lt;/td&gt;
+		&lt;td&gt;api/panel/320372&lt;/td&gt;
+		&lt;td&gt;api.shareuserd&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":0,"SerialNumber":null,"PanelType":null,"Factory":null,"HardwareId":1,"GatewayId":429,"ManufactureTime":null,"IsAsset":false,"GatewayName":"apiauto.GatewayCustomer.BoxEmmaAPI15","EnvData":null,"EnvironmentParam":{"Temperature":null,"Humidity":null,"VibrationLevel":1,"DustDegree":1,"SalinityLevel":1,"CorrosiveLevel":1,"ProtectionLevel":1},"AppliedPanels":[],"AppliedParams":[],"Logo":null,"SingleLineDiagrams":[{"Id":1060,"HierarchyId":320372,"Description":"device jigui","Order":0,"CreateTime":"2017-03-16T11:46:35.637","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"Content":"","IsActive":true,"ImageId":"img-sld-1060"}],"SceneLogs":[],"PropertyGroups":[],"StatisticData":{"BasicStatistic":[{"Key":"框架断路器及负荷开关","Value":"1","Unit":"个"}],"DeviceStatistic":[]},"Tickets":[],"Id":320372,"ParentId":320361,"CustomerId":320359,"Name":"新建机柜1*","Code":"BoxEmmaAPI15.1","Type":4}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;配电柜是自定义的&lt;/td&gt;
+		&lt;td&gt;api/panel/320402&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":0,"SerialNumber":"SECI100681","PanelType":"SECI100681-SN8214","Factory":"施耐德电气","HardwareId":null,"GatewayId":null,"ManufactureTime":null,"IsAsset":true,"GatewayName":null,"EnvData":null,"EnvironmentParam":null,"AppliedPanels":[],"AppliedParams":[],"Logo":null,"SingleLineDiagrams":[],"SceneLogs":[{"Id":1983,"HierarchyId":320402,"Content":"只有这一个现场日志","UpdateTime":"2017-07-11T17:01:10.647","CreateUserId":301312,"CreateUserName":"ServiceProviderAdmin","CreateTime":"2017-07-11T17:01:10.647","UpdateUser":301312,"ScenePictures":[]}],"PropertyGroups":[{"Id":4640,"HierarchyId":320402,"Order":1,"Name":"安装信息","Properties":[{"Id":14223,"GroupId":4640,"Order":1,"Name":"安装公司","Value":""},{"Id":14224,"GroupId":4640,"Order":2,"Name":"生产日期","Value":""},{"Id":14225,"GroupId":4640,"Order":3,"Name":"运行日期","Value":""},{"Id":14226,"GroupId":4640,"Order":4,"Name":"改造日期","Value":""}]}],"StatisticData":{"BasicStatistic":[{"Key":"塑壳断路器及负荷开关","Value":"1","Unit":"个"}],"DeviceStatistic":[]},"Tickets":[],"Id":320402,"ParentId":320401,"CustomerId":320366,"Name":"SECI Panel","Code":"19e34f5a-02ad-4d01-b5f7-0ec0e3957dfe","Type":4}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;配电柜是从BOX同步来的&lt;/td&gt;
+		&lt;td&gt;api/panel/320391&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":10,"SerialNumber":null,"PanelType":null,"Factory":null,"HardwareId":2,"GatewayId":429,"ManufactureTime":null,"IsAsset":false,"GatewayName":"apiauto.GatewayCustomer.BoxEmmaAPI15","EnvData":null,"EnvironmentParam":null,"AppliedPanels":[],"AppliedParams":[],"Logo":null,"SingleLineDiagrams":[],"SceneLogs":[],"PropertyGroups":[],"StatisticData":{"BasicStatistic":[{"Key":"框架断路器及负荷开关","Value":"1","Unit":"个"}],"DeviceStatistic":[]},"Tickets":[],"Id":320391,"ParentId":320361,"CustomerId":320359,"Name":"数据机柜*1","Code":"BoxEmmaAPI15.2","Type":4}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ID不是配电柜的，是其他层级类型&lt;/td&gt;
+		&lt;td&gt;api/panel/320361&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"-1","Message":["Object reference not set to an instance of an object."],"RequestId":null,"Result":null}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;配电柜ID是不存在的&lt;/td&gt;
+		&lt;td&gt;api/panel/320984&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"050001201010","Message":null,"RequestId":null,"Result":null}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;配电柜ID是无效的&lt;/td&gt;
+		&lt;td&gt;api/panel/320&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"050001201010","Message":null,"RequestId":null,"Result":null}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>GetPanels</relativePageName>
+        <tags>get, panels</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='GetPanels', args=[]}</instruction>
+        <slimResult>pass(get panels)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>get panels</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/panel/320372]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":0,"SerialNumber":null,"PanelType":null,"Factory":null,"HardwareId":1,"GatewayId":429,"ManufactureTime":null,"IsAsset":false,"GatewayName":"apiauto.GatewayCustomer.BoxEmmaAPI15","EnvData":null,"EnvironmentParam":{"Temperature":null,"Humidity":null,"VibrationLevel":1,"DustDegree":1,"SalinityLevel":1,"CorrosiveLevel":1,"ProtectionLevel":1},"AppliedPanels":[],"AppliedParams":[],"Logo":null,"SingleLineDiagrams":[{"Id":1060,"HierarchyId":320372,"Description":"device jigui","Order":0,"CreateTime":"2017-03-16T11:46:35.637","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"Content":"","IsActive":true,"ImageId":"img-sld-1060"}],"SceneLogs":[],"PropertyGroups":[],"StatisticData":{"BasicStatistic":[{"Key":"框架断路器及负荷开关","Value":"1","Unit":"个"}],"DeviceStatistic":[]},"Tickets":[],"Id":320372,"ParentId":320361,"CustomerId":320359,"Name":"新建机柜1*","Code":"BoxEmmaAPI15.1","Type":4}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":0,"SerialNumber":null,"PanelType":null,"Factory":null,"HardwareId":1,"GatewayId":429,"ManufactureTime":null,"IsAsset":false,"GatewayName":"apiauto.GatewayCustomer.BoxEmmaAPI15","EnvData":null,"EnvironmentParam":{"Temperature":null,"Humidity":null,"VibrationLevel":1,"DustDegree":1,"SalinityLevel":1,"CorrosiveLevel":1,"ProtectionLevel":1},"AppliedPanels":[],"AppliedParams":[],"Logo":null,"SingleLineDiagrams":[{"Id":1060,"HierarchyId":320372,"Description":"device jigui","Order":0,"CreateTime":"2017-03-16T11:46:35.637","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"Content":"","IsActive":true,"ImageId":"img-sld-1060"}],"SceneLogs":[],"PropertyGroups":[],"StatisticData":{"BasicStatistic":[{"Key":"框架断路器及负荷开关","Value":"1","Unit":"个"}],"DeviceStatistic":[]},"Tickets":[],"Id":320372,"ParentId":320361,"CustomerId":320359,"Name":"新建机柜1*","Code":"BoxEmmaAPI15.1","Type":4}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_10', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/panel/320372]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_10</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[api.shareuserd]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_12</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":0,"SerialNumber":null,"PanelType":null,"Factory":null,"HardwareId":1,"GatewayId":429,"ManufactureTime":null,"IsAsset":false,"GatewayName":"apiauto.GatewayCustomer.BoxEmmaAPI15","EnvData":null,"EnvironmentParam":{"Temperature":null,"Humidity":null,"VibrationLevel":1,"DustDegree":1,"SalinityLevel":1,"CorrosiveLevel":1,"ProtectionLevel":1},"AppliedPanels":[],"AppliedParams":[],"Logo":null,"SingleLineDiagrams":[{"Id":1060,"HierarchyId":320372,"Description":"device jigui","Order":0,"CreateTime":"2017-03-16T11:46:35.637","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"Content":"","IsActive":true,"ImageId":"img-sld-1060"}],"SceneLogs":[],"PropertyGroups":[],"StatisticData":{"BasicStatistic":[{"Key":"框架断路器及负荷开关","Value":"1","Unit":"个"}],"DeviceStatistic":[]},"Tickets":[],"Id":320372,"ParentId":320361,"CustomerId":320359,"Name":"新建机柜1*","Code":"BoxEmmaAPI15.1","Type":4}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_14</instructionId>
+                    <col>4</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":0,"SerialNumber":null,"PanelType":null,"Factory":null,"HardwareId":1,"GatewayId":429,"ManufactureTime":null,"IsAsset":false,"GatewayName":"apiauto.GatewayCustomer.BoxEmmaAPI15","EnvData":null,"EnvironmentParam":{"Temperature":null,"Humidity":null,"VibrationLevel":1,"DustDegree":1,"SalinityLevel":1,"CorrosiveLevel":1,"ProtectionLevel":1},"AppliedPanels":[],"AppliedParams":[],"Logo":null,"SingleLineDiagrams":[{"Id":1060,"HierarchyId":320372,"Description":"device jigui","Order":0,"CreateTime":"2017-03-16T11:46:35.637","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"Content":"","IsActive":true,"ImageId":"img-sld-1060"}],"SceneLogs":[],"PropertyGroups":[],"StatisticData":{"BasicStatistic":[{"Key":"框架断路器及负荷开关","Value":"1","Unit":"个"}],"DeviceStatistic":[]},"Tickets":[],"Id":320372,"ParentId":320361,"CustomerId":320359,"Name":"新建机柜1*","Code":"BoxEmmaAPI15.1","Type":4}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/panel/320402]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_17', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_17</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_18</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":0,"SerialNumber":"SECI100681","PanelType":"SECI100681-SN8214","Factory":"施耐德电气","HardwareId":null,"GatewayId":null,"ManufactureTime":null,"IsAsset":true,"GatewayName":null,"EnvData":null,"EnvironmentParam":null,"AppliedPanels":[],"AppliedParams":[],"Logo":null,"SingleLineDiagrams":[],"SceneLogs":[{"Id":1983,"HierarchyId":320402,"Content":"只有这一个现场日志","UpdateTime":"2017-07-11T17:01:10.647","CreateUserId":301312,"CreateUserName":"ServiceProviderAdmin","CreateTime":"2017-07-11T17:01:10.647","UpdateUser":301312,"ScenePictures":[]}],"PropertyGroups":[{"Id":4640,"HierarchyId":320402,"Order":1,"Name":"安装信息","Properties":[{"Id":14223,"GroupId":4640,"Order":1,"Name":"安装公司","Value":""},{"Id":14224,"GroupId":4640,"Order":2,"Name":"生产日期","Value":""},{"Id":14225,"GroupId":4640,"Order":3,"Name":"运行日期","Value":""},{"Id":14226,"GroupId":4640,"Order":4,"Name":"改造日期","Value":""}]}],"StatisticData":{"BasicStatistic":[{"Key":"塑壳断路器及负荷开关","Value":"1","Unit":"个"}],"DeviceStatistic":[]},"Tickets":[],"Id":320402,"ParentId":320401,"CustomerId":320366,"Name":"SECI Panel","Code":"19e34f5a-02ad-4d01-b5f7-0ec0e3957dfe","Type":4}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_20</instructionId>
+                    <col>4</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":0,"SerialNumber":"SECI100681","PanelType":"SECI100681-SN8214","Factory":"施耐德电气","HardwareId":null,"GatewayId":null,"ManufactureTime":null,"IsAsset":true,"GatewayName":null,"EnvData":null,"EnvironmentParam":null,"AppliedPanels":[],"AppliedParams":[],"Logo":null,"SingleLineDiagrams":[],"SceneLogs":[{"Id":1983,"HierarchyId":320402,"Content":"只有这一个现场日志","UpdateTime":"2017-07-11T17:01:10.647","CreateUserId":301312,"CreateUserName":"ServiceProviderAdmin","CreateTime":"2017-07-11T17:01:10.647","UpdateUser":301312,"ScenePictures":[]}],"PropertyGroups":[{"Id":4640,"HierarchyId":320402,"Order":1,"Name":"安装信息","Properties":[{"Id":14223,"GroupId":4640,"Order":1,"Name":"安装公司","Value":""},{"Id":14224,"GroupId":4640,"Order":2,"Name":"生产日期","Value":""},{"Id":14225,"GroupId":4640,"Order":3,"Name":"运行日期","Value":""},{"Id":14226,"GroupId":4640,"Order":4,"Name":"改造日期","Value":""}]}],"StatisticData":{"BasicStatistic":[{"Key":"塑壳断路器及负荷开关","Value":"1","Unit":"个"}],"DeviceStatistic":[]},"Tickets":[],"Id":320402,"ParentId":320401,"CustomerId":320366,"Name":"SECI Panel","Code":"19e34f5a-02ad-4d01-b5f7-0ec0e3957dfe","Type":4}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_22', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/panel/320391]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_22</instructionId>
+                    <col>1</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_23', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_23</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_24', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_24</instructionId>
+                    <col>3</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_26', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":10,"SerialNumber":null,"PanelType":null,"Factory":null,"HardwareId":2,"GatewayId":429,"ManufactureTime":null,"IsAsset":false,"GatewayName":"apiauto.GatewayCustomer.BoxEmmaAPI15","EnvData":null,"EnvironmentParam":null,"AppliedPanels":[],"AppliedParams":[],"Logo":null,"SingleLineDiagrams":[],"SceneLogs":[],"PropertyGroups":[],"StatisticData":{"BasicStatistic":[{"Key":"框架断路器及负荷开关","Value":"1","Unit":"个"}],"DeviceStatistic":[]},"Tickets":[],"Id":320391,"ParentId":320361,"CustomerId":320359,"Name":"数据机柜*1","Code":"BoxEmmaAPI15.2","Type":4}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_26</instructionId>
+                    <col>4</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"SubType":10,"SerialNumber":null,"PanelType":null,"Factory":null,"HardwareId":2,"GatewayId":429,"ManufactureTime":null,"IsAsset":false,"GatewayName":"apiauto.GatewayCustomer.BoxEmmaAPI15","EnvData":null,"EnvironmentParam":null,"AppliedPanels":[],"AppliedParams":[],"Logo":null,"SingleLineDiagrams":[],"SceneLogs":[],"PropertyGroups":[],"StatisticData":{"BasicStatistic":[{"Key":"框架断路器及负荷开关","Value":"1","Unit":"个"}],"DeviceStatistic":[]},"Tickets":[],"Id":320391,"ParentId":320361,"CustomerId":320359,"Name":"数据机柜*1","Code":"BoxEmmaAPI15.2","Type":4}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_28', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/panel/320361]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_28</instructionId>
+                    <col>1</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_29', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_29</instructionId>
+                    <col>2</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_30', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_30</instructionId>
+                    <col>3</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_32', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"-1","Message":["Object reference not set to an instance of an object."],"RequestId":null,"Result":null})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_32</instructionId>
+                    <col>4</col>
+                              <row>6</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"-1","Message":["Object reference not set to an instance of an object."],"RequestId":null,"Result":null}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_34', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/panel/320984]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_34</instructionId>
+                    <col>1</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_35', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_35</instructionId>
+                    <col>2</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_36', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_36</instructionId>
+                    <col>3</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_38', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"050001201010","Message":null,"RequestId":null,"Result":null})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_38</instructionId>
+                    <col>4</col>
+                              <row>7</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"050001201010","Message":null,"RequestId":null,"Result":null}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_40', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/panel/320]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_40</instructionId>
+                    <col>1</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_41', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_41</instructionId>
+                    <col>2</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_42', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_42</instructionId>
+                    <col>3</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_44', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"050001201010","Message":null,"RequestId":null,"Result":null})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_44</instructionId>
+                    <col>4</col>
+                              <row>8</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"050001201010","Message":null,"RequestId":null,"Result":null}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>4790</totalRunTimeInMillis>
+</testResults>
+

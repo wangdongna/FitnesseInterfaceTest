@@ -1,0 +1,457 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopGetTestProject.BuildingApi.GetBuildingDirectories</rootPath>
+    <result>
+    <counts>
+      <right>6</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-10T16:54:24+08:00</date>
+    <runTimeInMillis>4512</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;get building directories&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;responsebody?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;输入用户有数据权限的楼宇ID&lt;/td&gt;
+		&lt;td&gt;api/building/320400/directories&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":[{"Id":502,"ParentId":null,"HierarchyId":320400,"Name":"SECI Build folder1","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:18:51.523","Files":[{"Id":1622,"DirectoryId":502,"HierarchyId":320400,"Name":"Alarm.xlsx","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:19:13.353","Content":null}],"Children":[]},{"Id":503,"ParentId":null,"HierarchyId":320400,"Name":"SECI Build folder2","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:18:56.69","Files":[{"Id":1623,"DirectoryId":503,"HierarchyId":320400,"Name":"p1run.py","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:19:25.983","Content":null}],"Children":[]}]}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;输入用户没有数据权限的楼宇ID&lt;/td&gt;
+		&lt;td&gt;api/building/320360/directories&lt;/td&gt;
+		&lt;td&gt;api.shareuserd&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":[{"Id":501,"ParentId":null,"HierarchyId":320360,"Name":"folder 2","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:17:58.54","Files":[{"Id":1621,"DirectoryId":501,"HierarchyId":320360,"Name":"GatewayCustomer.png","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:18:12.457","Content":null}],"Children":[]},{"Id":500,"ParentId":null,"HierarchyId":320360,"Name":"有盒子的建筑-folder1","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:17:29.413","Files":[{"Id":1620,"DirectoryId":500,"HierarchyId":320360,"Name":"LICENSE","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:17:44.563","Content":null},{"Id":1619,"DirectoryId":500,"HierarchyId":320360,"Name":"README.md","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:17:39.903","Content":null}],"Children":[]}]}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;楼宇有多于5个文件夹&lt;/td&gt;
+		&lt;td&gt;api/building/320359/directories&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":[{"Id":499,"ParentId":498,"HierarchyId":320359,"Name":"2017年3月1日","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-01T11:33:00.487","Files":[{"Id":1617,"DirectoryId":499,"HierarchyId":320359,"Name":"logo.PNG","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-01T11:33:06.107","Content":null}],"Children":[]},{"Id":504,"ParentId":498,"HierarchyId":320359,"Name":"dir.delete.nofile","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T11:32:18.71","Files":[],"Children":[]},{"Id":505,"ParentId":498,"HierarchyId":320359,"Name":"dir.delete.withfile","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T11:32:37.12","Files":[{"Id":1624,"DirectoryId":505,"HierarchyId":320359,"Name":"CustomerLogo_Modify.PNG","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T11:32:42.49","Content":null}],"Children":[]},{"Id":506,"ParentId":498,"HierarchyId":320359,"Name":"dir.delete.withsubdir","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T11:33:25.8","Files":[],"Children":[]},{"Id":507,"ParentId":506,"HierarchyId":320359,"Name":"dir.delete.withsubdir123","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T11:33:37.237","Files":[],"Children":[]},{"Id":512,"ParentId":511,"HierarchyId":320359,"Name":"dir.update.name","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:14:49.34","Files":[{"Id":1627,"DirectoryId":512,"HierarchyId":320359,"Name":"http.txt","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:19:24.31","Content":null}],"Children":[]},{"Id":514,"ParentId":511,"HierarchyId":320359,"Name":"dir.update.name.spec","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:21:07.66","Files":[{"Id":1628,"DirectoryId":514,"HierarchyId":320359,"Name":"Appium配置文档.pdf","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:21:22.773","Content":null}],"Children":[]},{"Id":510,"ParentId":498,"HierarchyId":320359,"Name":"dir.update.root","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:07:00.34","Files":[],"Children":[]},{"Id":511,"ParentId":498,"HierarchyId":320359,"Name":"dir.update.rootname","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:14:38.787","Files":[],"Children":[]},{"Id":508,"ParentId":498,"HierarchyId":320359,"Name":"file.delete.dir1","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:05:16.367","Files":[],"Children":[]},{"Id":509,"ParentId":508,"HierarchyId":320359,"Name":"file.delete.dir2","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:05:23.353","Files":[{"Id":1626,"DirectoryId":509,"HierarchyId":320359,"Name":"http.txt","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:05:52.163","Content":null}],"Children":[]},{"Id":515,"ParentId":498,"HierarchyId":320359,"Name":"file.existed.dir","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:32:57.297","Files":[{"Id":1630,"DirectoryId":515,"HierarchyId":320359,"Name":"Interface.html","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:33:04.32","Content":null}],"Children":[]},{"Id":513,"ParentId":512,"HierarchyId":320359,"Name":"test","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:19:11.733","Files":[],"Children":[]},{"Id":498,"ParentId":null,"HierarchyId":320359,"Name":"全部文件","CreateUser":0,"UserInfo":{"Id":0,"Name":null,"RealName":null,"Title":null,"Phone":null,"Email":null,"Status":0},"CreateTime":"2017-03-01T11:33:00.47","Files":[{"Id":1629,"DirectoryId":498,"HierarchyId":320359,"Name":"index.html","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:29:00.723","Content":null},{"Id":1618,"DirectoryId":498,"HierarchyId":320359,"Name":"Video.xml","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-01T11:33:24.9","Content":null},{"Id":1625,"DirectoryId":498,"HierarchyId":320359,"Name":"接口测试实现.docx","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:03:16.257","Content":null}],"Children":[]}]}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;楼宇没有文件夹&lt;/td&gt;
+		&lt;td&gt;api/building/320366/directories&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":[]}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;组织ID或者园区ID，不是楼宇ID&lt;/td&gt;
+		&lt;td&gt;api/building/320398/directories&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":[]}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;无效楼宇ID&lt;/td&gt;
+		&lt;td&gt;api/building/121/directories&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":[]}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>GetBuildingDirectories</relativePageName>
+        <tags>get, building</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='GetBuildingDirectories', args=[]}</instruction>
+        <slimResult>pass(get building directories)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>get building directories</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/building/320400/directories]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":[{"Id":502,"ParentId":null,"HierarchyId":320400,"Name":"SECI Build folder1","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:18:51.523","Files":[{"Id":1622,"DirectoryId":502,"HierarchyId":320400,"Name":"Alarm.xlsx","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:19:13.353","Content":null}],"Children":[]},{"Id":503,"ParentId":null,"HierarchyId":320400,"Name":"SECI Build folder2","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:18:56.69","Files":[{"Id":1623,"DirectoryId":503,"HierarchyId":320400,"Name":"p1run.py","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:19:25.983","Content":null}],"Children":[]}]})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":[{"Id":502,"ParentId":null,"HierarchyId":320400,"Name":"SECI Build folder1","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:18:51.523","Files":[{"Id":1622,"DirectoryId":502,"HierarchyId":320400,"Name":"Alarm.xlsx","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:19:13.353","Content":null}],"Children":[]},{"Id":503,"ParentId":null,"HierarchyId":320400,"Name":"SECI Build folder2","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:18:56.69","Files":[{"Id":1623,"DirectoryId":503,"HierarchyId":320400,"Name":"p1run.py","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:19:25.983","Content":null}],"Children":[]}]}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_10', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/building/320360/directories]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_10</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[api.shareuserd]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_12</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":[{"Id":501,"ParentId":null,"HierarchyId":320360,"Name":"folder 2","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:17:58.54","Files":[{"Id":1621,"DirectoryId":501,"HierarchyId":320360,"Name":"GatewayCustomer.png","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:18:12.457","Content":null}],"Children":[]},{"Id":500,"ParentId":null,"HierarchyId":320360,"Name":"有盒子的建筑-folder1","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:17:29.413","Files":[{"Id":1620,"DirectoryId":500,"HierarchyId":320360,"Name":"LICENSE","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:17:44.563","Content":null},{"Id":1619,"DirectoryId":500,"HierarchyId":320360,"Name":"README.md","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:17:39.903","Content":null}],"Children":[]}]})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_14</instructionId>
+                    <col>4</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":[{"Id":501,"ParentId":null,"HierarchyId":320360,"Name":"folder 2","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:17:58.54","Files":[{"Id":1621,"DirectoryId":501,"HierarchyId":320360,"Name":"GatewayCustomer.png","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:18:12.457","Content":null}],"Children":[]},{"Id":500,"ParentId":null,"HierarchyId":320360,"Name":"有盒子的建筑-folder1","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:17:29.413","Files":[{"Id":1620,"DirectoryId":500,"HierarchyId":320360,"Name":"LICENSE","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:17:44.563","Content":null},{"Id":1619,"DirectoryId":500,"HierarchyId":320360,"Name":"README.md","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-16T11:17:39.903","Content":null}],"Children":[]}]}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/building/320359/directories]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_17', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_17</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_18</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":[{"Id":499,"ParentId":498,"HierarchyId":320359,"Name":"2017年3月1日","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-01T11:33:00.487","Files":[{"Id":1617,"DirectoryId":499,"HierarchyId":320359,"Name":"logo.PNG","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-01T11:33:06.107","Content":null}],"Children":[]},{"Id":504,"ParentId":498,"HierarchyId":320359,"Name":"dir.delete.nofile","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T11:32:18.71","Files":[],"Children":[]},{"Id":505,"ParentId":498,"HierarchyId":320359,"Name":"dir.delete.withfile","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T11:32:37.12","Files":[{"Id":1624,"DirectoryId":505,"HierarchyId":320359,"Name":"CustomerLogo_Modify.PNG","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T11:32:42.49","Content":null}],"Children":[]},{"Id":506,"ParentId":498,"HierarchyId":320359,"Name":"dir.delete.withsubdir","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T11:33:25.8","Files":[],"Children":[]},{"Id":507,"ParentId":506,"HierarchyId":320359,"Name":"dir.delete.withsubdir123","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T11:33:37.237","Files":[],"Children":[]},{"Id":512,"ParentId":511,"HierarchyId":320359,"Name":"dir.update.name","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:14:49.34","Files":[{"Id":1627,"DirectoryId":512,"HierarchyId":320359,"Name":"http.txt","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:19:24.31","Content":null}],"Children":[]},{"Id":514,"ParentId":511,"HierarchyId":320359,"Name":"dir.update.name.spec","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:21:07.66","Files":[{"Id":1628,"DirectoryId":514,"HierarchyId":320359,"Name":"Appium配置文档.pdf","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:21:22.773","Content":null}],"Children":[]},{"Id":510,"ParentId":498,"HierarchyId":320359,"Name":"dir.update.root","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:07:00.34","Files":[],"Children":[]},{"Id":511,"ParentId":498,"HierarchyId":320359,"Name":"dir.update.rootname","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:14:38.787","Files":[],"Children":[]},{"Id":508,"ParentId":498,"HierarchyId":320359,"Name":"file.delete.dir1","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:05:16.367","Files":[],"Children":[]},{"Id":509,"ParentId":508,"HierarchyId":320359,"Name":"file.delete.dir2","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:05:23.353","Files":[{"Id":1626,"DirectoryId":509,"HierarchyId":320359,"Name":"http.txt","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:05:52.163","Content":null}],"Children":[]},{"Id":515,"ParentId":498,"HierarchyId":320359,"Name":"file.existed.dir","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:32:57.297","Files":[{"Id":1630,"DirectoryId":515,"HierarchyId":320359,"Name":"Interface.html","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:33:04.32","Content":null}],"Children":[]},{"Id":513,"ParentId":512,"HierarchyId":320359,"Name":"test","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:19:11.733","Files":[],"Children":[]},{"Id":498,"ParentId":null,"HierarchyId":320359,"Name":"全部文件","CreateUser":0,"UserInfo":{"Id":0,"Name":null,"RealName":null,"Title":null,"Phone":null,"Email":null,"Status":0},"CreateTime":"2017-03-01T11:33:00.47","Files":[{"Id":1629,"DirectoryId":498,"HierarchyId":320359,"Name":"index.html","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:29:00.723","Content":null},{"Id":1618,"DirectoryId":498,"HierarchyId":320359,"Name":"Video.xml","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-01T11:33:24.9","Content":null},{"Id":1625,"DirectoryId":498,"HierarchyId":320359,"Name":"接口测试实现.docx","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:03:16.257","Content":null}],"Children":[]}]})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_20</instructionId>
+                    <col>4</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":[{"Id":499,"ParentId":498,"HierarchyId":320359,"Name":"2017年3月1日","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-01T11:33:00.487","Files":[{"Id":1617,"DirectoryId":499,"HierarchyId":320359,"Name":"logo.PNG","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-01T11:33:06.107","Content":null}],"Children":[]},{"Id":504,"ParentId":498,"HierarchyId":320359,"Name":"dir.delete.nofile","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T11:32:18.71","Files":[],"Children":[]},{"Id":505,"ParentId":498,"HierarchyId":320359,"Name":"dir.delete.withfile","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T11:32:37.12","Files":[{"Id":1624,"DirectoryId":505,"HierarchyId":320359,"Name":"CustomerLogo_Modify.PNG","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T11:32:42.49","Content":null}],"Children":[]},{"Id":506,"ParentId":498,"HierarchyId":320359,"Name":"dir.delete.withsubdir","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T11:33:25.8","Files":[],"Children":[]},{"Id":507,"ParentId":506,"HierarchyId":320359,"Name":"dir.delete.withsubdir123","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T11:33:37.237","Files":[],"Children":[]},{"Id":512,"ParentId":511,"HierarchyId":320359,"Name":"dir.update.name","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:14:49.34","Files":[{"Id":1627,"DirectoryId":512,"HierarchyId":320359,"Name":"http.txt","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:19:24.31","Content":null}],"Children":[]},{"Id":514,"ParentId":511,"HierarchyId":320359,"Name":"dir.update.name.spec","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:21:07.66","Files":[{"Id":1628,"DirectoryId":514,"HierarchyId":320359,"Name":"Appium配置文档.pdf","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:21:22.773","Content":null}],"Children":[]},{"Id":510,"ParentId":498,"HierarchyId":320359,"Name":"dir.update.root","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:07:00.34","Files":[],"Children":[]},{"Id":511,"ParentId":498,"HierarchyId":320359,"Name":"dir.update.rootname","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:14:38.787","Files":[],"Children":[]},{"Id":508,"ParentId":498,"HierarchyId":320359,"Name":"file.delete.dir1","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:05:16.367","Files":[],"Children":[]},{"Id":509,"ParentId":508,"HierarchyId":320359,"Name":"file.delete.dir2","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:05:23.353","Files":[{"Id":1626,"DirectoryId":509,"HierarchyId":320359,"Name":"http.txt","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:05:52.163","Content":null}],"Children":[]},{"Id":515,"ParentId":498,"HierarchyId":320359,"Name":"file.existed.dir","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:32:57.297","Files":[{"Id":1630,"DirectoryId":515,"HierarchyId":320359,"Name":"Interface.html","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:33:04.32","Content":null}],"Children":[]},{"Id":513,"ParentId":512,"HierarchyId":320359,"Name":"test","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:19:11.733","Files":[],"Children":[]},{"Id":498,"ParentId":null,"HierarchyId":320359,"Name":"全部文件","CreateUser":0,"UserInfo":{"Id":0,"Name":null,"RealName":null,"Title":null,"Phone":null,"Email":null,"Status":0},"CreateTime":"2017-03-01T11:33:00.47","Files":[{"Id":1629,"DirectoryId":498,"HierarchyId":320359,"Name":"index.html","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:29:00.723","Content":null},{"Id":1618,"DirectoryId":498,"HierarchyId":320359,"Name":"Video.xml","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-03-01T11:33:24.9","Content":null},{"Id":1625,"DirectoryId":498,"HierarchyId":320359,"Name":"接口测试实现.docx","CreateUser":301312,"UserInfo":{"Id":301312,"Name":"apiauto","RealName":"ServiceProviderAdmin","Title":"服务商管理员","Phone":null,"Email":"dongna-emma.wang@schneider-electric.com","Status":1},"CreateTime":"2017-07-28T13:03:16.257","Content":null}],"Children":[]}]}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_22', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/building/320366/directories]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_22</instructionId>
+                    <col>1</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_23', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_23</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_24', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_24</instructionId>
+                    <col>3</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_26', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":[]})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_26</instructionId>
+                    <col>4</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":[]}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_28', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/building/320398/directories]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_28</instructionId>
+                    <col>1</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_29', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_29</instructionId>
+                    <col>2</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_30', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_30</instructionId>
+                    <col>3</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_32', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":[]})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_32</instructionId>
+                    <col>4</col>
+                              <row>6</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":[]}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_34', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/building/121/directories]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_34</instructionId>
+                    <col>1</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_35', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_35</instructionId>
+                    <col>2</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_36', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_36</instructionId>
+                    <col>3</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_38', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":[]})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_38</instructionId>
+                    <col>4</col>
+                              <row>7</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":[]}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>4512</totalRunTimeInMillis>
+</testResults>
+

@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopPostTestProject.MaintainPlanApi.MaintainplanAdd</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>3</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-10T13:45:17+08:00</date>
+    <runTimeInMillis>3944</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="8"&gt;&lt;span class="pass"&gt;maintainplan add&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;id&lt;/td&gt;
+		&lt;td&gt;table&lt;/td&gt;
+		&lt;td&gt;requestbody&lt;/td&gt;
+		&lt;td&gt;responsebody?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;计划名称有特殊字符，作业文档为空&lt;/td&gt;
+		&lt;td&gt;api/maintainplan/add&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;320536&lt;/td&gt;
+		&lt;td&gt;Hierarchy&lt;/td&gt;
+		&lt;td&gt;{"PlanType":1,"SysClass":1,"Intervals":1,"startDateErr":false,"EndDateTime":"","Title":"plan.create.spec.QA#","Documents":[],"AssetMaintains":[{"Path":"/13/2/","ParentId":320359,"IsStatistic":null,"IsAsset":true,"ZoneId":0,"Name":"工单建筑","HasDataPrivilege":true,"Code":"b9bf1b7c-cd6a-4876-a9c5-a3447ac84072","BuildingId":320536,"HierarchyId":320536,"SpId":316,"Version":9764395,"CustomerId":320359,"IndustryId":0,"SubType":1,"Type":2,"IsOnline":null,"hasCheckBox":true,"Children":[],"Comment":null}],"Content":"","CustomerId":320359,"StartDateTime":"2017-08-01"}&lt;/td&gt;
+		&lt;td&gt;[{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":9&lt;span class="diff"&gt;20&lt;/span&gt;,"CustomerId":320359,"Title":"plan.create.spec.QA#","Intervals":1,"StartDateTime":"2017-08-01T00:00:00","EndDateTime":null,"PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":120&lt;span class="diff"&gt;91&lt;/span&gt;,"MaintainPlanId":9&lt;span class="diff"&gt;20&lt;/span&gt;,"PlanDateTime":"2017-08-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}}] &lt;span class="fail"&gt;expected [{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":9&lt;/span&gt;&lt;span class="diff"&gt;19&lt;/span&gt;&lt;span class="fail"&gt;,"CustomerId":320359,"Title":"plan.create.spec.QA#","Intervals":1,"StartDateTime":"2017-08-01T00:00:00","EndDateTime":null,"PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":120&lt;/span&gt;&lt;span class="diff"&gt;78&lt;/span&gt;&lt;span class="fail"&gt;,"MaintainPlanId":9&lt;/span&gt;&lt;span class="diff"&gt;19&lt;/span&gt;&lt;span class="fail"&gt;,"PlanDateTime":"2017-08-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}}]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;单次维护计划，维护内容为空&lt;/td&gt;
+		&lt;td&gt;api/maintainplan/add&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;320536&lt;/td&gt;
+		&lt;td&gt;Hierarchy&lt;/td&gt;
+		&lt;td&gt;{"PlanType":1,"SysClass":1,"Intervals":1,"startDateErr":false,"EndDateTime":"","Title":"plan.create.emptycontent","Documents":[],"AssetMaintains":[{"Path":"/13/2/","ParentId":320359,"IsStatistic":null,"IsAsset":true,"ZoneId":0,"Name":"工单建筑","HasDataPrivilege":true,"Code":"b9bf1b7c-cd6a-4876-a9c5-a3447ac84072","BuildingId":320536,"HierarchyId":320536,"SpId":316,"Version":9764395,"CustomerId":320359,"IndustryId":0,"SubType":1,"Type":2,"IsOnline":null,"hasCheckBox":true,"Children":[],"Comment":null}],"Content":"","CustomerId":320359,"StartDateTime":"2017-09-01"}&lt;/td&gt;
+		&lt;td&gt;[{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":92&lt;span class="diff"&gt;1&lt;/span&gt;,"CustomerId":320359,"Title":"plan.create.emptycontent","Intervals":1,"StartDateTime":"2017-09-01T00:00:00","EndDateTime":null,"PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":1209&lt;span class="diff"&gt;2&lt;/span&gt;,"MaintainPlanId":92&lt;span class="diff"&gt;1&lt;/span&gt;,"PlanDateTime":"2017-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}}] &lt;span class="fail"&gt;expected [{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":92&lt;/span&gt;&lt;span class="diff"&gt;0&lt;/span&gt;&lt;span class="fail"&gt;,"CustomerId":320359,"Title":"plan.create.emptycontent","Intervals":1,"StartDateTime":"2017-09-01T00:00:00","EndDateTime":null,"PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":120&lt;/span&gt;&lt;span class="diff"&gt;7&lt;/span&gt;&lt;span class="fail"&gt;9,"MaintainPlanId":92&lt;/span&gt;&lt;span class="diff"&gt;0&lt;/span&gt;&lt;span class="fail"&gt;,"PlanDateTime":"2017-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}}]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;每月维护计划&lt;/td&gt;
+		&lt;td&gt;api/maintainplan/add&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;320536&lt;/td&gt;
+		&lt;td&gt;Hierarchy&lt;/td&gt;
+		&lt;td&gt;{"PlanType":1,"SysClass":1,"Intervals":4,"startDateErr":false,"EndDateTime":"2017-10-01","Title":"plan.create.monthly","Documents":[],"AssetMaintains":[{"Path":"/13/2/","ParentId":320359,"IsStatistic":null,"IsAsset":true,"ZoneId":0,"Name":"工单建筑","HasDataPrivilege":true,"Code":"b9bf1b7c-cd6a-4876-a9c5-a3447ac84072","BuildingId":320536,"HierarchyId":320536,"SpId":316,"Version":9764395,"CustomerId":320359,"IndustryId":0,"SubType":1,"Type":2,"IsOnline":null,"hasCheckBox":true,"Children":[],"Comment":null}],"Content":"","CustomerId":320359,"endDateErr":false,"StartDateTime":"2017-08-01"}&lt;/td&gt;
+		&lt;td&gt;[{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":92&lt;span class="diff"&gt;2&lt;/span&gt;,"CustomerId":320359,"Title":"plan.create.monthly","Intervals":4,"StartDateTime":"2017-08-01T00:00:00","EndDateTime":"2017-10-01T00:00:00","PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":120&lt;span class="diff"&gt;93&lt;/span&gt;,"MaintainPlanId":92&lt;span class="diff"&gt;2&lt;/span&gt;,"PlanDateTime":"2017-08-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":120&lt;span class="diff"&gt;94&lt;/span&gt;,"MaintainPlanId":92&lt;span class="diff"&gt;2&lt;/span&gt;,"PlanDateTime":"2017-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":120&lt;span class="diff"&gt;95&lt;/span&gt;,"MaintainPlanId":92&lt;span class="diff"&gt;2&lt;/span&gt;,"PlanDateTime":"2017-10-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}}] &lt;span class="fail"&gt;expected [{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":92&lt;/span&gt;&lt;span class="diff"&gt;1&lt;/span&gt;&lt;span class="fail"&gt;,"CustomerId":320359,"Title":"plan.create.monthly","Intervals":4,"StartDateTime":"2017-08-01T00:00:00","EndDateTime":"2017-10-01T00:00:00","PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":120&lt;/span&gt;&lt;span class="diff"&gt;80&lt;/span&gt;&lt;span class="fail"&gt;,"MaintainPlanId":92&lt;/span&gt;&lt;span class="diff"&gt;1&lt;/span&gt;&lt;span class="fail"&gt;,"PlanDateTime":"2017-08-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":120&lt;/span&gt;&lt;span class="diff"&gt;81&lt;/span&gt;&lt;span class="fail"&gt;,"MaintainPlanId":92&lt;/span&gt;&lt;span class="diff"&gt;1&lt;/span&gt;&lt;span class="fail"&gt;,"PlanDateTime":"2017-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":120&lt;/span&gt;&lt;span class="diff"&gt;82&lt;/span&gt;&lt;span class="fail"&gt;,"MaintainPlanId":92&lt;/span&gt;&lt;span class="diff"&gt;1&lt;/span&gt;&lt;span class="fail"&gt;,"PlanDateTime":"2017-10-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}}]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>MaintainplanAdd</relativePageName>
+        <tags>maintainplan, add</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='MaintainplanAdd', args=[]}</instruction>
+        <slimResult>pass(maintainplan add)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>maintainplan add</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/maintainplan/add]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='setId', args=[320536]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_7</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='setTable', args=[Hierarchy]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>5</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_9', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"PlanType":1,"SysClass":1,"Intervals":1,"startDateErr":false,"EndDateTime":"","Title":"plan.create.spec.QA#","Documents":[],"AssetMaintains":[{"Path":"/13/2/","ParentId":320359,"IsStatistic":null,"IsAsset":true,"ZoneId":0,"Name":"工单建筑","HasDataPrivilege":true,"Code":"b9bf1b7c-cd6a-4876-a9c5-a3447ac84072","BuildingId":320536,"HierarchyId":320536,"SpId":316,"Version":9764395,"CustomerId":320359,"IndustryId":0,"SubType":1,"Type":2,"IsOnline":null,"hasCheckBox":true,"Children":[],"Comment":null}],"Content":"","CustomerId":320359,"StartDateTime":"2017-08-01"}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_9</instructionId>
+                    <col>6</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>fail(a={"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":920,"CustomerId":320359,"Title":"plan.create.spec.QA#","Intervals":1,"StartDateTime":"2017-08-01T00:00:00","EndDateTime":null,"PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":12091,"MaintainPlanId":920,"PlanDateTime":"2017-08-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}};e={"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":919,"CustomerId":320359,"Title":"plan.create.spec.QA#","Intervals":1,"StartDateTime":"2017-08-01T00:00:00","EndDateTime":null,"PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":12078,"MaintainPlanId":919,"PlanDateTime":"2017-08-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}})</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>7</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":920,"CustomerId":320359,"Title":"plan.create.spec.QA#","Intervals":1,"StartDateTime":"2017-08-01T00:00:00","EndDateTime":null,"PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":12091,"MaintainPlanId":920,"PlanDateTime":"2017-08-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}}</actual>
+                              <expected>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":919,"CustomerId":320359,"Title":"plan.create.spec.QA#","Intervals":1,"StartDateTime":"2017-08-01T00:00:00","EndDateTime":null,"PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":12078,"MaintainPlanId":919,"PlanDateTime":"2017-08-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}}</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_13', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/maintainplan/add]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_13</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_14</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_15', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_15</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='setId', args=[320536]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>4</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_17', instruction='call', instanceName='decisionTable_1', methodName='setTable', args=[Hierarchy]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_17</instructionId>
+                    <col>5</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"PlanType":1,"SysClass":1,"Intervals":1,"startDateErr":false,"EndDateTime":"","Title":"plan.create.emptycontent","Documents":[],"AssetMaintains":[{"Path":"/13/2/","ParentId":320359,"IsStatistic":null,"IsAsset":true,"ZoneId":0,"Name":"工单建筑","HasDataPrivilege":true,"Code":"b9bf1b7c-cd6a-4876-a9c5-a3447ac84072","BuildingId":320536,"HierarchyId":320536,"SpId":316,"Version":9764395,"CustomerId":320359,"IndustryId":0,"SubType":1,"Type":2,"IsOnline":null,"hasCheckBox":true,"Children":[],"Comment":null}],"Content":"","CustomerId":320359,"StartDateTime":"2017-09-01"}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_18</instructionId>
+                    <col>6</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>fail(a={"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":921,"CustomerId":320359,"Title":"plan.create.emptycontent","Intervals":1,"StartDateTime":"2017-09-01T00:00:00","EndDateTime":null,"PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":12092,"MaintainPlanId":921,"PlanDateTime":"2017-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}};e={"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":920,"CustomerId":320359,"Title":"plan.create.emptycontent","Intervals":1,"StartDateTime":"2017-09-01T00:00:00","EndDateTime":null,"PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":12079,"MaintainPlanId":920,"PlanDateTime":"2017-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}})</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_1_20</instructionId>
+                    <col>7</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":921,"CustomerId":320359,"Title":"plan.create.emptycontent","Intervals":1,"StartDateTime":"2017-09-01T00:00:00","EndDateTime":null,"PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":12092,"MaintainPlanId":921,"PlanDateTime":"2017-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}}</actual>
+                              <expected>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":920,"CustomerId":320359,"Title":"plan.create.emptycontent","Intervals":1,"StartDateTime":"2017-09-01T00:00:00","EndDateTime":null,"PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":12079,"MaintainPlanId":920,"PlanDateTime":"2017-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}}</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_22', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/maintainplan/add]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_22</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_23', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_23</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_24', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_24</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_25', instruction='call', instanceName='decisionTable_1', methodName='setId', args=[320536]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_25</instructionId>
+                    <col>4</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_26', instruction='call', instanceName='decisionTable_1', methodName='setTable', args=[Hierarchy]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_26</instructionId>
+                    <col>5</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_27', instruction='call', instanceName='decisionTable_1', methodName='setRequestbody', args=[{"PlanType":1,"SysClass":1,"Intervals":4,"startDateErr":false,"EndDateTime":"2017-10-01","Title":"plan.create.monthly","Documents":[],"AssetMaintains":[{"Path":"/13/2/","ParentId":320359,"IsStatistic":null,"IsAsset":true,"ZoneId":0,"Name":"工单建筑","HasDataPrivilege":true,"Code":"b9bf1b7c-cd6a-4876-a9c5-a3447ac84072","BuildingId":320536,"HierarchyId":320536,"SpId":316,"Version":9764395,"CustomerId":320359,"IndustryId":0,"SubType":1,"Type":2,"IsOnline":null,"hasCheckBox":true,"Children":[],"Comment":null}],"Content":"","CustomerId":320359,"endDateErr":false,"StartDateTime":"2017-08-01"}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_27</instructionId>
+                    <col>6</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_29', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>fail(a={"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":922,"CustomerId":320359,"Title":"plan.create.monthly","Intervals":4,"StartDateTime":"2017-08-01T00:00:00","EndDateTime":"2017-10-01T00:00:00","PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":12093,"MaintainPlanId":922,"PlanDateTime":"2017-08-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":12094,"MaintainPlanId":922,"PlanDateTime":"2017-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":12095,"MaintainPlanId":922,"PlanDateTime":"2017-10-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}};e={"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":921,"CustomerId":320359,"Title":"plan.create.monthly","Intervals":4,"StartDateTime":"2017-08-01T00:00:00","EndDateTime":"2017-10-01T00:00:00","PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":12080,"MaintainPlanId":921,"PlanDateTime":"2017-08-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":12081,"MaintainPlanId":921,"PlanDateTime":"2017-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":12082,"MaintainPlanId":921,"PlanDateTime":"2017-10-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}})</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_1_29</instructionId>
+                    <col>7</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":922,"CustomerId":320359,"Title":"plan.create.monthly","Intervals":4,"StartDateTime":"2017-08-01T00:00:00","EndDateTime":"2017-10-01T00:00:00","PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":12093,"MaintainPlanId":922,"PlanDateTime":"2017-08-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":12094,"MaintainPlanId":922,"PlanDateTime":"2017-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":12095,"MaintainPlanId":922,"PlanDateTime":"2017-10-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}}</actual>
+                              <expected>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Id":921,"CustomerId":320359,"Title":"plan.create.monthly","Intervals":4,"StartDateTime":"2017-08-01T00:00:00","EndDateTime":"2017-10-01T00:00:00","PlanType":1,"SysClass":1,"Content":"","CreateUser":301312,"CreateDateTime":"","MaintainTasks":[{"Id":12080,"MaintainPlanId":921,"PlanDateTime":"2017-08-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":12081,"MaintainPlanId":921,"PlanDateTime":"2017-09-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null},{"Id":12082,"MaintainPlanId":921,"PlanDateTime":"2017-10-01T00:00:00","TicketId":null,"Status":1,"MaintainUser":null,"MaintainDateTime":null}],"AssetMaintains":[{"HierarchyId":320536,"BuildingId":320536,"BuildingName":"工单建筑","HierarchyName":"工单建筑"}],"Documents":[],"CreateUserName":"ServiceProviderAdmin","BuildingNames":["工单建筑"],"AssetNames":["工单建筑"]}}</expected>
+                            </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem></testSystem>
+    <command></command>
+    <exitCode>0</exitCode>
+    <stdOut>begin.
+end.
+begin.
+end.
+begin.
+end.
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>3944</totalRunTimeInMillis>
+</testResults>
+

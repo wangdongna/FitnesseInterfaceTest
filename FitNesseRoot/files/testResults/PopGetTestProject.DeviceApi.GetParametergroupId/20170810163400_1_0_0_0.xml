@@ -1,0 +1,506 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopGetTestProject.DeviceApi.GetParametergroupId</rootPath>
+    <result>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-10T16:34:00+08:00</date>
+    <runTimeInMillis>5560</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;get parametergroup id&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;responsebody?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;用户有设备ID所属楼宇数据权限&lt;/td&gt;
+		&lt;td&gt;api/device/320396/monitorparametergroups&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":[{"Name":"数据监视","GroupOrder":0,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":462146,"DeviceId":320396,"UniqueId":7197688085,"HardwareId":21,"Name":"功率因数","Unit":"","CalculationType":"Non","IconType":"PF","MaxValue":null,"GroupParameterOrder":0},{"Id":462151,"DeviceId":320396,"UniqueId":7197688090,"HardwareId":26,"Name":"有功电度","Unit":"kWh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":1},{"Id":462152,"DeviceId":320396,"UniqueId":7197688091,"HardwareId":27,"Name":"无功电度","Unit":"kVArh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":2},{"Id":462153,"DeviceId":320396,"UniqueId":7197688092,"HardwareId":28,"Name":"有功功率","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":3},{"Id":462154,"DeviceId":320396,"UniqueId":7197688093,"HardwareId":29,"Name":"无功功率","Unit":"kVAr","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":4},{"Id":462155,"DeviceId":320396,"UniqueId":7197688113,"HardwareId":49,"Name":"A相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":5},{"Id":462156,"DeviceId":320396,"UniqueId":7197688114,"HardwareId":50,"Name":"B相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":6},{"Id":462157,"DeviceId":320396,"UniqueId":7197688115,"HardwareId":51,"Name":"C相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":7},{"Id":462158,"DeviceId":320396,"UniqueId":7197688116,"HardwareId":52,"Name":"总有功功率需量","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":8}]},{"Name":"电压和电流","GroupOrder":1,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":462139,"DeviceId":320396,"UniqueId":7197688078,"HardwareId":14,"Name":"电流 A","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":0},{"Id":462137,"DeviceId":320396,"UniqueId":7197688076,"HardwareId":12,"Name":"相电压 B-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":1},{"Id":462136,"DeviceId":320396,"UniqueId":7197688075,"HardwareId":11,"Name":"相电压 A-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":2},{"Id":462138,"DeviceId":320396,"UniqueId":7197688077,"HardwareId":13,"Name":"相电压 C-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":3},{"Id":462140,"DeviceId":320396,"UniqueId":7197688079,"HardwareId":15,"Name":"电流 B","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":4},{"Id":462141,"DeviceId":320396,"UniqueId":7197688080,"HardwareId":16,"Name":"电流 C","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":5},{"Id":462143,"DeviceId":320396,"UniqueId":7197688082,"HardwareId":18,"Name":"线电压VAB","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":6},{"Id":462145,"DeviceId":320396,"UniqueId":7197688084,"HardwareId":20,"Name":"线电压VCA","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":7},{"Id":462144,"DeviceId":320396,"UniqueId":7197688083,"HardwareId":19,"Name":"线电压VBC","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":8},{"Id":462142,"DeviceId":320396,"UniqueId":7197688081,"HardwareId":17,"Name":"三相最大电流","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":9}]},{"Name":"谐波","GroupOrder":2,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":462147,"DeviceId":320396,"UniqueId":7197688086,"HardwareId":22,"Name":"电流A谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":0},{"Id":462148,"DeviceId":320396,"UniqueId":7197688087,"HardwareId":23,"Name":"电流B谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":1},{"Id":462149,"DeviceId":320396,"UniqueId":7197688088,"HardwareId":24,"Name":"电流C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":2},{"Id":462150,"DeviceId":320396,"UniqueId":7197688089,"HardwareId":25,"Name":"电压B-C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":3}]}]}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;用户没有设备ID所属楼宇数据权限(也可以返回数据)&lt;/td&gt;
+		&lt;td&gt;api/device/320373/monitorparametergroups&lt;/td&gt;
+		&lt;td&gt;api.shareuserd&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":[{"Name":"数据监视","GroupOrder":0,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461972,"DeviceId":320373,"UniqueId":7197491477,"HardwareId":21,"Name":"功率因数","Unit":"","CalculationType":"Non","IconType":"PF","MaxValue":null,"GroupParameterOrder":0},{"Id":461973,"DeviceId":320373,"UniqueId":7197491478,"HardwareId":22,"Name":"电流A谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":1},{"Id":461974,"DeviceId":320373,"UniqueId":7197491479,"HardwareId":23,"Name":"电流B谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":2},{"Id":461975,"DeviceId":320373,"UniqueId":7197491480,"HardwareId":24,"Name":"电流C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":3},{"Id":461976,"DeviceId":320373,"UniqueId":7197491481,"HardwareId":25,"Name":"电压B-C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":4},{"Id":461977,"DeviceId":320373,"UniqueId":7197491482,"HardwareId":26,"Name":"有功电度","Unit":"kWh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":5},{"Id":461978,"DeviceId":320373,"UniqueId":7197491483,"HardwareId":27,"Name":"无功电度","Unit":"kVArh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":6}]},{"Name":"电压","GroupOrder":1,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461962,"DeviceId":320373,"UniqueId":7197491467,"HardwareId":11,"Name":"相电压 A-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":0},{"Id":461964,"DeviceId":320373,"UniqueId":7197491469,"HardwareId":13,"Name":"相电压 C-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":1},{"Id":461963,"DeviceId":320373,"UniqueId":7197491468,"HardwareId":12,"Name":"相电压 B-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":2},{"Id":461969,"DeviceId":320373,"UniqueId":7197491474,"HardwareId":18,"Name":"线电压VAB","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":3},{"Id":461970,"DeviceId":320373,"UniqueId":7197491475,"HardwareId":19,"Name":"线电压VBC","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":4},{"Id":461971,"DeviceId":320373,"UniqueId":7197491476,"HardwareId":20,"Name":"线电压VCA","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":5}]},{"Name":"电流","GroupOrder":2,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461967,"DeviceId":320373,"UniqueId":7197491472,"HardwareId":16,"Name":"电流 C","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":0},{"Id":461968,"DeviceId":320373,"UniqueId":7197491473,"HardwareId":17,"Name":"三相最大电流","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":1},{"Id":461965,"DeviceId":320373,"UniqueId":7197491470,"HardwareId":14,"Name":"电流 A","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":2},{"Id":461966,"DeviceId":320373,"UniqueId":7197491471,"HardwareId":15,"Name":"电流 B","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":3}]},{"Name":"功率","GroupOrder":3,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461979,"DeviceId":320373,"UniqueId":7197491484,"HardwareId":28,"Name":"有功功率","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":0},{"Id":461980,"DeviceId":320373,"UniqueId":7197491485,"HardwareId":29,"Name":"无功功率","Unit":"kVAr","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":1},{"Id":461984,"DeviceId":320373,"UniqueId":7197491508,"HardwareId":52,"Name":"总有功功率需量","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":2}]},{"Name":"需量","GroupOrder":4,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461981,"DeviceId":320373,"UniqueId":7197491505,"HardwareId":49,"Name":"A相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":0},{"Id":461982,"DeviceId":320373,"UniqueId":7197491506,"HardwareId":50,"Name":"B相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":1},{"Id":461983,"DeviceId":320373,"UniqueId":7197491507,"HardwareId":51,"Name":"C相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":2}]}]}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;设备是自定义的&lt;/td&gt;
+		&lt;td&gt;api/device/320403/monitorparametergroups&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":[]}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;设备是从BOX同步来的&lt;/td&gt;
+		&lt;td&gt;api/device/320373/monitorparametergroups&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":[{"Name":"数据监视","GroupOrder":0,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461972,"DeviceId":320373,"UniqueId":7197491477,"HardwareId":21,"Name":"功率因数","Unit":"","CalculationType":"Non","IconType":"PF","MaxValue":null,"GroupParameterOrder":0},{"Id":461973,"DeviceId":320373,"UniqueId":7197491478,"HardwareId":22,"Name":"电流A谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":1},{"Id":461974,"DeviceId":320373,"UniqueId":7197491479,"HardwareId":23,"Name":"电流B谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":2},{"Id":461975,"DeviceId":320373,"UniqueId":7197491480,"HardwareId":24,"Name":"电流C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":3},{"Id":461976,"DeviceId":320373,"UniqueId":7197491481,"HardwareId":25,"Name":"电压B-C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":4},{"Id":461977,"DeviceId":320373,"UniqueId":7197491482,"HardwareId":26,"Name":"有功电度","Unit":"kWh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":5},{"Id":461978,"DeviceId":320373,"UniqueId":7197491483,"HardwareId":27,"Name":"无功电度","Unit":"kVArh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":6}]},{"Name":"电压","GroupOrder":1,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461962,"DeviceId":320373,"UniqueId":7197491467,"HardwareId":11,"Name":"相电压 A-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":0},{"Id":461964,"DeviceId":320373,"UniqueId":7197491469,"HardwareId":13,"Name":"相电压 C-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":1},{"Id":461963,"DeviceId":320373,"UniqueId":7197491468,"HardwareId":12,"Name":"相电压 B-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":2},{"Id":461969,"DeviceId":320373,"UniqueId":7197491474,"HardwareId":18,"Name":"线电压VAB","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":3},{"Id":461970,"DeviceId":320373,"UniqueId":7197491475,"HardwareId":19,"Name":"线电压VBC","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":4},{"Id":461971,"DeviceId":320373,"UniqueId":7197491476,"HardwareId":20,"Name":"线电压VCA","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":5}]},{"Name":"电流","GroupOrder":2,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461967,"DeviceId":320373,"UniqueId":7197491472,"HardwareId":16,"Name":"电流 C","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":0},{"Id":461968,"DeviceId":320373,"UniqueId":7197491473,"HardwareId":17,"Name":"三相最大电流","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":1},{"Id":461965,"DeviceId":320373,"UniqueId":7197491470,"HardwareId":14,"Name":"电流 A","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":2},{"Id":461966,"DeviceId":320373,"UniqueId":7197491471,"HardwareId":15,"Name":"电流 B","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":3}]},{"Name":"功率","GroupOrder":3,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461979,"DeviceId":320373,"UniqueId":7197491484,"HardwareId":28,"Name":"有功功率","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":0},{"Id":461980,"DeviceId":320373,"UniqueId":7197491485,"HardwareId":29,"Name":"无功功率","Unit":"kVAr","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":1},{"Id":461984,"DeviceId":320373,"UniqueId":7197491508,"HardwareId":52,"Name":"总有功功率需量","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":2}]},{"Name":"需量","GroupOrder":4,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461981,"DeviceId":320373,"UniqueId":7197491505,"HardwareId":49,"Name":"A相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":0},{"Id":461982,"DeviceId":320373,"UniqueId":7197491506,"HardwareId":50,"Name":"B相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":1},{"Id":461983,"DeviceId":320373,"UniqueId":7197491507,"HardwareId":51,"Name":"C相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":2}]}]}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;设备没有参数组&lt;/td&gt;
+		&lt;td&gt;api/device/320403/monitorparametergroups&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":[]}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;设备ID是不存在的&lt;/td&gt;
+		&lt;td&gt;api/device/320984/monitorparametergroups&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":[]}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;设备ID是无效的&lt;/td&gt;
+		&lt;td&gt;api/device/235/monitorparametergroups&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":[]}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>GetParametergroupId</relativePageName>
+        <tags>get, parametergroup</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='GetParametergroupId', args=[]}</instruction>
+        <slimResult>pass(get parametergroup id)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>get parametergroup id</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/320396/monitorparametergroups]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":[{"Name":"数据监视","GroupOrder":0,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":462146,"DeviceId":320396,"UniqueId":7197688085,"HardwareId":21,"Name":"功率因数","Unit":"","CalculationType":"Non","IconType":"PF","MaxValue":null,"GroupParameterOrder":0},{"Id":462151,"DeviceId":320396,"UniqueId":7197688090,"HardwareId":26,"Name":"有功电度","Unit":"kWh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":1},{"Id":462152,"DeviceId":320396,"UniqueId":7197688091,"HardwareId":27,"Name":"无功电度","Unit":"kVArh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":2},{"Id":462153,"DeviceId":320396,"UniqueId":7197688092,"HardwareId":28,"Name":"有功功率","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":3},{"Id":462154,"DeviceId":320396,"UniqueId":7197688093,"HardwareId":29,"Name":"无功功率","Unit":"kVAr","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":4},{"Id":462155,"DeviceId":320396,"UniqueId":7197688113,"HardwareId":49,"Name":"A相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":5},{"Id":462156,"DeviceId":320396,"UniqueId":7197688114,"HardwareId":50,"Name":"B相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":6},{"Id":462157,"DeviceId":320396,"UniqueId":7197688115,"HardwareId":51,"Name":"C相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":7},{"Id":462158,"DeviceId":320396,"UniqueId":7197688116,"HardwareId":52,"Name":"总有功功率需量","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":8}]},{"Name":"电压和电流","GroupOrder":1,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":462139,"DeviceId":320396,"UniqueId":7197688078,"HardwareId":14,"Name":"电流 A","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":0},{"Id":462137,"DeviceId":320396,"UniqueId":7197688076,"HardwareId":12,"Name":"相电压 B-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":1},{"Id":462136,"DeviceId":320396,"UniqueId":7197688075,"HardwareId":11,"Name":"相电压 A-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":2},{"Id":462138,"DeviceId":320396,"UniqueId":7197688077,"HardwareId":13,"Name":"相电压 C-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":3},{"Id":462140,"DeviceId":320396,"UniqueId":7197688079,"HardwareId":15,"Name":"电流 B","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":4},{"Id":462141,"DeviceId":320396,"UniqueId":7197688080,"HardwareId":16,"Name":"电流 C","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":5},{"Id":462143,"DeviceId":320396,"UniqueId":7197688082,"HardwareId":18,"Name":"线电压VAB","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":6},{"Id":462145,"DeviceId":320396,"UniqueId":7197688084,"HardwareId":20,"Name":"线电压VCA","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":7},{"Id":462144,"DeviceId":320396,"UniqueId":7197688083,"HardwareId":19,"Name":"线电压VBC","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":8},{"Id":462142,"DeviceId":320396,"UniqueId":7197688081,"HardwareId":17,"Name":"三相最大电流","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":9}]},{"Name":"谐波","GroupOrder":2,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":462147,"DeviceId":320396,"UniqueId":7197688086,"HardwareId":22,"Name":"电流A谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":0},{"Id":462148,"DeviceId":320396,"UniqueId":7197688087,"HardwareId":23,"Name":"电流B谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":1},{"Id":462149,"DeviceId":320396,"UniqueId":7197688088,"HardwareId":24,"Name":"电流C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":2},{"Id":462150,"DeviceId":320396,"UniqueId":7197688089,"HardwareId":25,"Name":"电压B-C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":3}]}]})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":[{"Name":"数据监视","GroupOrder":0,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":462146,"DeviceId":320396,"UniqueId":7197688085,"HardwareId":21,"Name":"功率因数","Unit":"","CalculationType":"Non","IconType":"PF","MaxValue":null,"GroupParameterOrder":0},{"Id":462151,"DeviceId":320396,"UniqueId":7197688090,"HardwareId":26,"Name":"有功电度","Unit":"kWh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":1},{"Id":462152,"DeviceId":320396,"UniqueId":7197688091,"HardwareId":27,"Name":"无功电度","Unit":"kVArh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":2},{"Id":462153,"DeviceId":320396,"UniqueId":7197688092,"HardwareId":28,"Name":"有功功率","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":3},{"Id":462154,"DeviceId":320396,"UniqueId":7197688093,"HardwareId":29,"Name":"无功功率","Unit":"kVAr","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":4},{"Id":462155,"DeviceId":320396,"UniqueId":7197688113,"HardwareId":49,"Name":"A相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":5},{"Id":462156,"DeviceId":320396,"UniqueId":7197688114,"HardwareId":50,"Name":"B相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":6},{"Id":462157,"DeviceId":320396,"UniqueId":7197688115,"HardwareId":51,"Name":"C相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":7},{"Id":462158,"DeviceId":320396,"UniqueId":7197688116,"HardwareId":52,"Name":"总有功功率需量","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":8}]},{"Name":"电压和电流","GroupOrder":1,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":462139,"DeviceId":320396,"UniqueId":7197688078,"HardwareId":14,"Name":"电流 A","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":0},{"Id":462137,"DeviceId":320396,"UniqueId":7197688076,"HardwareId":12,"Name":"相电压 B-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":1},{"Id":462136,"DeviceId":320396,"UniqueId":7197688075,"HardwareId":11,"Name":"相电压 A-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":2},{"Id":462138,"DeviceId":320396,"UniqueId":7197688077,"HardwareId":13,"Name":"相电压 C-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":3},{"Id":462140,"DeviceId":320396,"UniqueId":7197688079,"HardwareId":15,"Name":"电流 B","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":4},{"Id":462141,"DeviceId":320396,"UniqueId":7197688080,"HardwareId":16,"Name":"电流 C","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":5},{"Id":462143,"DeviceId":320396,"UniqueId":7197688082,"HardwareId":18,"Name":"线电压VAB","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":6},{"Id":462145,"DeviceId":320396,"UniqueId":7197688084,"HardwareId":20,"Name":"线电压VCA","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":7},{"Id":462144,"DeviceId":320396,"UniqueId":7197688083,"HardwareId":19,"Name":"线电压VBC","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":8},{"Id":462142,"DeviceId":320396,"UniqueId":7197688081,"HardwareId":17,"Name":"三相最大电流","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":9}]},{"Name":"谐波","GroupOrder":2,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":462147,"DeviceId":320396,"UniqueId":7197688086,"HardwareId":22,"Name":"电流A谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":0},{"Id":462148,"DeviceId":320396,"UniqueId":7197688087,"HardwareId":23,"Name":"电流B谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":1},{"Id":462149,"DeviceId":320396,"UniqueId":7197688088,"HardwareId":24,"Name":"电流C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":2},{"Id":462150,"DeviceId":320396,"UniqueId":7197688089,"HardwareId":25,"Name":"电压B-C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":3}]}]}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_10', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/320373/monitorparametergroups]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_10</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[api.shareuserd]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_12</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":[{"Name":"数据监视","GroupOrder":0,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461972,"DeviceId":320373,"UniqueId":7197491477,"HardwareId":21,"Name":"功率因数","Unit":"","CalculationType":"Non","IconType":"PF","MaxValue":null,"GroupParameterOrder":0},{"Id":461973,"DeviceId":320373,"UniqueId":7197491478,"HardwareId":22,"Name":"电流A谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":1},{"Id":461974,"DeviceId":320373,"UniqueId":7197491479,"HardwareId":23,"Name":"电流B谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":2},{"Id":461975,"DeviceId":320373,"UniqueId":7197491480,"HardwareId":24,"Name":"电流C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":3},{"Id":461976,"DeviceId":320373,"UniqueId":7197491481,"HardwareId":25,"Name":"电压B-C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":4},{"Id":461977,"DeviceId":320373,"UniqueId":7197491482,"HardwareId":26,"Name":"有功电度","Unit":"kWh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":5},{"Id":461978,"DeviceId":320373,"UniqueId":7197491483,"HardwareId":27,"Name":"无功电度","Unit":"kVArh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":6}]},{"Name":"电压","GroupOrder":1,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461962,"DeviceId":320373,"UniqueId":7197491467,"HardwareId":11,"Name":"相电压 A-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":0},{"Id":461964,"DeviceId":320373,"UniqueId":7197491469,"HardwareId":13,"Name":"相电压 C-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":1},{"Id":461963,"DeviceId":320373,"UniqueId":7197491468,"HardwareId":12,"Name":"相电压 B-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":2},{"Id":461969,"DeviceId":320373,"UniqueId":7197491474,"HardwareId":18,"Name":"线电压VAB","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":3},{"Id":461970,"DeviceId":320373,"UniqueId":7197491475,"HardwareId":19,"Name":"线电压VBC","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":4},{"Id":461971,"DeviceId":320373,"UniqueId":7197491476,"HardwareId":20,"Name":"线电压VCA","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":5}]},{"Name":"电流","GroupOrder":2,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461967,"DeviceId":320373,"UniqueId":7197491472,"HardwareId":16,"Name":"电流 C","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":0},{"Id":461968,"DeviceId":320373,"UniqueId":7197491473,"HardwareId":17,"Name":"三相最大电流","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":1},{"Id":461965,"DeviceId":320373,"UniqueId":7197491470,"HardwareId":14,"Name":"电流 A","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":2},{"Id":461966,"DeviceId":320373,"UniqueId":7197491471,"HardwareId":15,"Name":"电流 B","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":3}]},{"Name":"功率","GroupOrder":3,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461979,"DeviceId":320373,"UniqueId":7197491484,"HardwareId":28,"Name":"有功功率","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":0},{"Id":461980,"DeviceId":320373,"UniqueId":7197491485,"HardwareId":29,"Name":"无功功率","Unit":"kVAr","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":1},{"Id":461984,"DeviceId":320373,"UniqueId":7197491508,"HardwareId":52,"Name":"总有功功率需量","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":2}]},{"Name":"需量","GroupOrder":4,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461981,"DeviceId":320373,"UniqueId":7197491505,"HardwareId":49,"Name":"A相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":0},{"Id":461982,"DeviceId":320373,"UniqueId":7197491506,"HardwareId":50,"Name":"B相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":1},{"Id":461983,"DeviceId":320373,"UniqueId":7197491507,"HardwareId":51,"Name":"C相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":2}]}]})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_14</instructionId>
+                    <col>4</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":[{"Name":"数据监视","GroupOrder":0,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461972,"DeviceId":320373,"UniqueId":7197491477,"HardwareId":21,"Name":"功率因数","Unit":"","CalculationType":"Non","IconType":"PF","MaxValue":null,"GroupParameterOrder":0},{"Id":461973,"DeviceId":320373,"UniqueId":7197491478,"HardwareId":22,"Name":"电流A谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":1},{"Id":461974,"DeviceId":320373,"UniqueId":7197491479,"HardwareId":23,"Name":"电流B谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":2},{"Id":461975,"DeviceId":320373,"UniqueId":7197491480,"HardwareId":24,"Name":"电流C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":3},{"Id":461976,"DeviceId":320373,"UniqueId":7197491481,"HardwareId":25,"Name":"电压B-C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":4},{"Id":461977,"DeviceId":320373,"UniqueId":7197491482,"HardwareId":26,"Name":"有功电度","Unit":"kWh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":5},{"Id":461978,"DeviceId":320373,"UniqueId":7197491483,"HardwareId":27,"Name":"无功电度","Unit":"kVArh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":6}]},{"Name":"电压","GroupOrder":1,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461962,"DeviceId":320373,"UniqueId":7197491467,"HardwareId":11,"Name":"相电压 A-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":0},{"Id":461964,"DeviceId":320373,"UniqueId":7197491469,"HardwareId":13,"Name":"相电压 C-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":1},{"Id":461963,"DeviceId":320373,"UniqueId":7197491468,"HardwareId":12,"Name":"相电压 B-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":2},{"Id":461969,"DeviceId":320373,"UniqueId":7197491474,"HardwareId":18,"Name":"线电压VAB","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":3},{"Id":461970,"DeviceId":320373,"UniqueId":7197491475,"HardwareId":19,"Name":"线电压VBC","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":4},{"Id":461971,"DeviceId":320373,"UniqueId":7197491476,"HardwareId":20,"Name":"线电压VCA","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":5}]},{"Name":"电流","GroupOrder":2,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461967,"DeviceId":320373,"UniqueId":7197491472,"HardwareId":16,"Name":"电流 C","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":0},{"Id":461968,"DeviceId":320373,"UniqueId":7197491473,"HardwareId":17,"Name":"三相最大电流","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":1},{"Id":461965,"DeviceId":320373,"UniqueId":7197491470,"HardwareId":14,"Name":"电流 A","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":2},{"Id":461966,"DeviceId":320373,"UniqueId":7197491471,"HardwareId":15,"Name":"电流 B","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":3}]},{"Name":"功率","GroupOrder":3,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461979,"DeviceId":320373,"UniqueId":7197491484,"HardwareId":28,"Name":"有功功率","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":0},{"Id":461980,"DeviceId":320373,"UniqueId":7197491485,"HardwareId":29,"Name":"无功功率","Unit":"kVAr","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":1},{"Id":461984,"DeviceId":320373,"UniqueId":7197491508,"HardwareId":52,"Name":"总有功功率需量","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":2}]},{"Name":"需量","GroupOrder":4,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461981,"DeviceId":320373,"UniqueId":7197491505,"HardwareId":49,"Name":"A相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":0},{"Id":461982,"DeviceId":320373,"UniqueId":7197491506,"HardwareId":50,"Name":"B相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":1},{"Id":461983,"DeviceId":320373,"UniqueId":7197491507,"HardwareId":51,"Name":"C相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":2}]}]}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/320403/monitorparametergroups]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_17', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_17</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_18</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":[]})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_20</instructionId>
+                    <col>4</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":[]}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_22', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/320373/monitorparametergroups]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_22</instructionId>
+                    <col>1</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_23', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_23</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_24', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_24</instructionId>
+                    <col>3</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_26', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":[{"Name":"数据监视","GroupOrder":0,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461972,"DeviceId":320373,"UniqueId":7197491477,"HardwareId":21,"Name":"功率因数","Unit":"","CalculationType":"Non","IconType":"PF","MaxValue":null,"GroupParameterOrder":0},{"Id":461973,"DeviceId":320373,"UniqueId":7197491478,"HardwareId":22,"Name":"电流A谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":1},{"Id":461974,"DeviceId":320373,"UniqueId":7197491479,"HardwareId":23,"Name":"电流B谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":2},{"Id":461975,"DeviceId":320373,"UniqueId":7197491480,"HardwareId":24,"Name":"电流C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":3},{"Id":461976,"DeviceId":320373,"UniqueId":7197491481,"HardwareId":25,"Name":"电压B-C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":4},{"Id":461977,"DeviceId":320373,"UniqueId":7197491482,"HardwareId":26,"Name":"有功电度","Unit":"kWh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":5},{"Id":461978,"DeviceId":320373,"UniqueId":7197491483,"HardwareId":27,"Name":"无功电度","Unit":"kVArh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":6}]},{"Name":"电压","GroupOrder":1,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461962,"DeviceId":320373,"UniqueId":7197491467,"HardwareId":11,"Name":"相电压 A-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":0},{"Id":461964,"DeviceId":320373,"UniqueId":7197491469,"HardwareId":13,"Name":"相电压 C-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":1},{"Id":461963,"DeviceId":320373,"UniqueId":7197491468,"HardwareId":12,"Name":"相电压 B-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":2},{"Id":461969,"DeviceId":320373,"UniqueId":7197491474,"HardwareId":18,"Name":"线电压VAB","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":3},{"Id":461970,"DeviceId":320373,"UniqueId":7197491475,"HardwareId":19,"Name":"线电压VBC","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":4},{"Id":461971,"DeviceId":320373,"UniqueId":7197491476,"HardwareId":20,"Name":"线电压VCA","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":5}]},{"Name":"电流","GroupOrder":2,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461967,"DeviceId":320373,"UniqueId":7197491472,"HardwareId":16,"Name":"电流 C","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":0},{"Id":461968,"DeviceId":320373,"UniqueId":7197491473,"HardwareId":17,"Name":"三相最大电流","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":1},{"Id":461965,"DeviceId":320373,"UniqueId":7197491470,"HardwareId":14,"Name":"电流 A","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":2},{"Id":461966,"DeviceId":320373,"UniqueId":7197491471,"HardwareId":15,"Name":"电流 B","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":3}]},{"Name":"功率","GroupOrder":3,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461979,"DeviceId":320373,"UniqueId":7197491484,"HardwareId":28,"Name":"有功功率","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":0},{"Id":461980,"DeviceId":320373,"UniqueId":7197491485,"HardwareId":29,"Name":"无功功率","Unit":"kVAr","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":1},{"Id":461984,"DeviceId":320373,"UniqueId":7197491508,"HardwareId":52,"Name":"总有功功率需量","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":2}]},{"Name":"需量","GroupOrder":4,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461981,"DeviceId":320373,"UniqueId":7197491505,"HardwareId":49,"Name":"A相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":0},{"Id":461982,"DeviceId":320373,"UniqueId":7197491506,"HardwareId":50,"Name":"B相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":1},{"Id":461983,"DeviceId":320373,"UniqueId":7197491507,"HardwareId":51,"Name":"C相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":2}]}]})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_26</instructionId>
+                    <col>4</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":[{"Name":"数据监视","GroupOrder":0,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461972,"DeviceId":320373,"UniqueId":7197491477,"HardwareId":21,"Name":"功率因数","Unit":"","CalculationType":"Non","IconType":"PF","MaxValue":null,"GroupParameterOrder":0},{"Id":461973,"DeviceId":320373,"UniqueId":7197491478,"HardwareId":22,"Name":"电流A谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":1},{"Id":461974,"DeviceId":320373,"UniqueId":7197491479,"HardwareId":23,"Name":"电流B谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":2},{"Id":461975,"DeviceId":320373,"UniqueId":7197491480,"HardwareId":24,"Name":"电流C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":3},{"Id":461976,"DeviceId":320373,"UniqueId":7197491481,"HardwareId":25,"Name":"电压B-C谐波畸变率Thd","Unit":"%","CalculationType":"Non","IconType":"THD","MaxValue":null,"GroupParameterOrder":4},{"Id":461977,"DeviceId":320373,"UniqueId":7197491482,"HardwareId":26,"Name":"有功电度","Unit":"kWh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":5},{"Id":461978,"DeviceId":320373,"UniqueId":7197491483,"HardwareId":27,"Name":"无功电度","Unit":"kVArh","CalculationType":"Sum","IconType":"ENG","MaxValue":null,"GroupParameterOrder":6}]},{"Name":"电压","GroupOrder":1,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461962,"DeviceId":320373,"UniqueId":7197491467,"HardwareId":11,"Name":"相电压 A-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":0},{"Id":461964,"DeviceId":320373,"UniqueId":7197491469,"HardwareId":13,"Name":"相电压 C-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":1},{"Id":461963,"DeviceId":320373,"UniqueId":7197491468,"HardwareId":12,"Name":"相电压 B-N","Unit":"V","CalculationType":"Non","IconType":"VOL","MaxValue":null,"GroupParameterOrder":2},{"Id":461969,"DeviceId":320373,"UniqueId":7197491474,"HardwareId":18,"Name":"线电压VAB","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":3},{"Id":461970,"DeviceId":320373,"UniqueId":7197491475,"HardwareId":19,"Name":"线电压VBC","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":4},{"Id":461971,"DeviceId":320373,"UniqueId":7197491476,"HardwareId":20,"Name":"线电压VCA","Unit":"V","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":5}]},{"Name":"电流","GroupOrder":2,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461967,"DeviceId":320373,"UniqueId":7197491472,"HardwareId":16,"Name":"电流 C","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":0},{"Id":461968,"DeviceId":320373,"UniqueId":7197491473,"HardwareId":17,"Name":"三相最大电流","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":1},{"Id":461965,"DeviceId":320373,"UniqueId":7197491470,"HardwareId":14,"Name":"电流 A","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":2},{"Id":461966,"DeviceId":320373,"UniqueId":7197491471,"HardwareId":15,"Name":"电流 B","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":3}]},{"Name":"功率","GroupOrder":3,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461979,"DeviceId":320373,"UniqueId":7197491484,"HardwareId":28,"Name":"有功功率","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":0},{"Id":461980,"DeviceId":320373,"UniqueId":7197491485,"HardwareId":29,"Name":"无功功率","Unit":"kVAr","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":1},{"Id":461984,"DeviceId":320373,"UniqueId":7197491508,"HardwareId":52,"Name":"总有功功率需量","Unit":"kW","CalculationType":"Non","IconType":"POW","MaxValue":null,"GroupParameterOrder":2}]},{"Name":"需量","GroupOrder":4,"IsDisplayChart":false,"ChartMaxValue":null,"IsAutoCalc":true,"MonitorParameters":[{"Id":461981,"DeviceId":320373,"UniqueId":7197491505,"HardwareId":49,"Name":"A相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":0},{"Id":461982,"DeviceId":320373,"UniqueId":7197491506,"HardwareId":50,"Name":"B相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":1},{"Id":461983,"DeviceId":320373,"UniqueId":7197491507,"HardwareId":51,"Name":"C相电流需量","Unit":"A","CalculationType":"Non","IconType":"CUR","MaxValue":null,"GroupParameterOrder":2}]}]}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_28', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/320403/monitorparametergroups]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_28</instructionId>
+                    <col>1</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_29', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_29</instructionId>
+                    <col>2</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_30', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_30</instructionId>
+                    <col>3</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_32', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":[]})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_32</instructionId>
+                    <col>4</col>
+                              <row>6</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":[]}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_34', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/320984/monitorparametergroups]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_34</instructionId>
+                    <col>1</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_35', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_35</instructionId>
+                    <col>2</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_36', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_36</instructionId>
+                    <col>3</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_38', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":[]})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_38</instructionId>
+                    <col>4</col>
+                              <row>7</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":[]}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_40', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/235/monitorparametergroups]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_40</instructionId>
+                    <col>1</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_41', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_41</instructionId>
+                    <col>2</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_42', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_42</instructionId>
+                    <col>3</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_44', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":[]})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_44</instructionId>
+                    <col>4</col>
+                              <row>8</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":[]}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>5560</totalRunTimeInMillis>
+</testResults>
+

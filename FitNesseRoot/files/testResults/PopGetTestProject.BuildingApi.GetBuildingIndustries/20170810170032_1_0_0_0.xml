@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopGetTestProject.BuildingApi.GetBuildingIndustries</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-10T17:00:32+08:00</date>
+    <runTimeInMillis>645</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;get building industries&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;responsebody?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;获取本SP下所有的楼宇行业信息&lt;/td&gt;
+		&lt;td&gt;api/building/industries&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":[{"IndustryId":22,"ChildrenIndustries":[{"IndustryId":36,"ChildrenIndustries":[],"IndustryName":"甲级写字楼"},{"IndustryId":37,"ChildrenIndustries":[],"IndustryName":"乙级写字楼"},{"IndustryId":38,"ChildrenIndustries":[],"IndustryName":"丙级写字楼"}],"IndustryName":"办公建筑"},{"IndustryId":23,"ChildrenIndustries":[{"IndustryId":39,"ChildrenIndustries":[],"IndustryName":"五星级酒店"},{"IndustryId":40,"ChildrenIndustries":[],"IndustryName":"四星级酒店"},{"IndustryId":41,"ChildrenIndustries":[],"IndustryName":"三星级酒店"},{"IndustryId":42,"ChildrenIndustries":[],"IndustryName":"二星级及以下酒店"}],"IndustryName":"酒店"},{"IndustryId":24,"ChildrenIndustries":[{"IndustryId":43,"ChildrenIndustries":[],"IndustryName":"三级特等医院"},{"IndustryId":44,"ChildrenIndustries":[],"IndustryName":"三级甲等医院"},{"IndustryId":45,"ChildrenIndustries":[],"IndustryName":"三级乙等医院"},{"IndustryId":46,"ChildrenIndustries":[],"IndustryName":"三级丙等医院"},{"IndustryId":47,"ChildrenIndustries":[],"IndustryName":"二级甲等医院"},{"IndustryId":48,"ChildrenIndustries":[],"IndustryName":"二级乙等医院"},{"IndustryId":49,"ChildrenIndustries":[],"IndustryName":"二级丙等医院"},{"IndustryId":50,"ChildrenIndustries":[],"IndustryName":"一级医院"}],"IndustryName":"医院"},{"IndustryId":25,"ChildrenIndustries":[{"IndustryId":51,"ChildrenIndustries":[],"IndustryName":"高等学校"},{"IndustryId":52,"ChildrenIndustries":[],"IndustryName":"职业学校"},{"IndustryId":53,"ChildrenIndustries":[],"IndustryName":"培训机构"},{"IndustryId":54,"ChildrenIndustries":[],"IndustryName":"中学"},{"IndustryId":55,"ChildrenIndustries":[],"IndustryName":"小学"},{"IndustryId":56,"ChildrenIndustries":[],"IndustryName":"学前教育"}],"IndustryName":"学校"},{"IndustryId":26,"ChildrenIndustries":[{"IndustryId":57,"ChildrenIndustries":[],"IndustryName":"购物中心"},{"IndustryId":58,"ChildrenIndustries":[],"IndustryName":"超市"},{"IndustryId":59,"ChildrenIndustries":[],"IndustryName":"大型超市"},{"IndustryId":60,"ChildrenIndustries":[],"IndustryName":"百货商场"},{"IndustryId":61,"ChildrenIndustries":[],"IndustryName":"服装零售"},{"IndustryId":62,"ChildrenIndustries":[],"IndustryName":"专卖店"},{"IndustryId":63,"ChildrenIndustries":[],"IndustryName":"便利店"}],"IndustryName":"零售业"},{"IndustryId":27,"ChildrenIndustries":[{"IndustryId":64,"ChildrenIndustries":[],"IndustryName":"一级数据中心"},{"IndustryId":65,"ChildrenIndustries":[],"IndustryName":"二级数据中心"},{"IndustryId":66,"ChildrenIndustries":[],"IndustryName":"三级数据中心"},{"IndustryId":67,"ChildrenIndustries":[],"IndustryName":"四级数据中心"}],"IndustryName":"数据中心"},{"IndustryId":28,"ChildrenIndustries":[{"IndustryId":68,"ChildrenIndustries":[],"IndustryName":"通讯基站"},{"IndustryId":69,"ChildrenIndustries":[],"IndustryName":"通信营业厅"},{"IndustryId":70,"ChildrenIndustries":[],"IndustryName":"机房"}],"IndustryName":"通信行业"},{"IndustryId":29,"ChildrenIndustries":[{"IndustryId":71,"ChildrenIndustries":[],"IndustryName":"地铁站"},{"IndustryId":72,"ChildrenIndustries":[],"IndustryName":"轻轨站"},{"IndustryId":73,"ChildrenIndustries":[],"IndustryName":"高铁站"},{"IndustryId":74,"ChildrenIndustries":[],"IndustryName":"火车站"}],"IndustryName":"轨道交通"},{"IndustryId":30,"ChildrenIndustries":[{"IndustryId":75,"ChildrenIndustries":[],"IndustryName":"一类通用机场"},{"IndustryId":76,"ChildrenIndustries":[],"IndustryName":"二类通用机场"},{"IndustryId":77,"ChildrenIndustries":[],"IndustryName":"三类通用机场"},{"IndustryId":78,"ChildrenIndustries":[],"IndustryName":"运输机场"}],"IndustryName":"机场"},{"IndustryId":31,"ChildrenIndustries":[{"IndustryId":79,"ChildrenIndustries":[],"IndustryName":"火力发电站"},{"IndustryId":80,"ChildrenIndustries":[],"IndustryName":"水力发电站"},{"IndustryId":81,"ChildrenIndustries":[],"IndustryName":"核力发电站"},{"IndustryId":82,"ChildrenIndustries":[],"IndustryName":"新能源发电站"},{"IndustryId":83,"ChildrenIndustries":[],"IndustryName":"变电站"}],"IndustryName":"电力生产和供应业"},{"IndustryId":32,"ChildrenIndustries":[{"IndustryId":84,"ChildrenIndustries":[],"IndustryName":"食品制造厂"},{"IndustryId":85,"ChildrenIndustries":[],"IndustryName":"饮料制造厂"},{"IndustryId":86,"ChildrenIndustries":[],"IndustryName":"水泥制造厂"},{"IndustryId":87,"ChildrenIndustries":[],"IndustryName":"医药制造厂"},{"IndustryId":88,"ChildrenIndustries":[],"IndustryName":"电子设备制造厂"},{"IndustryId":89,"ChildrenIndustries":[],"IndustryName":"仪器仪表制造厂"},{"IndustryId":90,"ChildrenIndustries":[],"IndustryName":"石油化工厂"},{"IndustryId":91,"ChildrenIndustries":[],"IndustryName":"橡胶塑料制造厂"},{"IndustryId":92,"ChildrenIndustries":[],"IndustryName":"化学原料制造厂"},{"IndustryId":93,"ChildrenIndustries":[],"IndustryName":"化学纤维制造厂"},{"IndustryId":94,"ChildrenIndustries":[],"IndustryName":"金属冶炼及加工厂"},{"IndustryId":95,"ChildrenIndustries":[],"IndustryName":"汽车制造厂"},{"IndustryId":96,"ChildrenIndustries":[],"IndustryName":"造纸印刷厂"},{"IndustryId":97,"ChildrenIndustries":[],"IndustryName":"烟草制品厂"},{"IndustryId":98,"ChildrenIndustries":[],"IndustryName":"纺织服装厂"},{"IndustryId":99,"ChildrenIndustries":[],"IndustryName":"家具制造厂"},{"IndustryId":100,"ChildrenIndustries":[],"IndustryName":"输配电设备制造厂"}],"IndustryName":"制造业"},{"IndustryId":33,"ChildrenIndustries":[{"IndustryId":101,"ChildrenIndustries":[],"IndustryName":"国有商业银行"},{"IndustryId":102,"ChildrenIndustries":[],"IndustryName":"城市商业银行"},{"IndustryId":103,"ChildrenIndustries":[],"IndustryName":"农村商业银行"},{"IndustryId":104,"ChildrenIndustries":[],"IndustryName":"邮政储蓄银行"},{"IndustryId":105,"ChildrenIndustries":[],"IndustryName":"农村信用社"},{"IndustryId":106,"ChildrenIndustries":[],"IndustryName":"外资银行"},{"IndustryId":107,"ChildrenIndustries":[],"IndustryName":"信托公司"},{"IndustryId":108,"ChildrenIndustries":[],"IndustryName":"金融租赁公司"}],"IndustryName":"金融业"},{"IndustryId":34,"ChildrenIndustries":[{"IndustryId":109,"ChildrenIndustries":[],"IndustryName":"自来水厂"},{"IndustryId":110,"ChildrenIndustries":[],"IndustryName":"污水处理厂"},{"IndustryId":111,"ChildrenIndustries":[],"IndustryName":"中水处理厂"}],"IndustryName":"水生产和供应业"},{"IndustryId":35,"ChildrenIndustries":[{"IndustryId":112,"ChildrenIndustries":[],"IndustryName":"石油天然气田"},{"IndustryId":113,"ChildrenIndustries":[],"IndustryName":"黑色金属矿"},{"IndustryId":114,"ChildrenIndustries":[],"IndustryName":"有色金属矿"},{"IndustryId":115,"ChildrenIndustries":[],"IndustryName":"贵金属矿"},{"IndustryId":116,"ChildrenIndustries":[],"IndustryName":"稀有金属矿"},{"IndustryId":117,"ChildrenIndustries":[],"IndustryName":"非金属矿"},{"IndustryId":118,"ChildrenIndustries":[],"IndustryName":"煤矿"}],"IndustryName":"采矿业"}]}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>GetBuildingIndustries</relativePageName>
+        <tags>get, building</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='GetBuildingIndustries', args=[]}</instruction>
+        <slimResult>pass(get building industries)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>get building industries</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/building/industries]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":[{"IndustryId":22,"ChildrenIndustries":[{"IndustryId":36,"ChildrenIndustries":[],"IndustryName":"甲级写字楼"},{"IndustryId":37,"ChildrenIndustries":[],"IndustryName":"乙级写字楼"},{"IndustryId":38,"ChildrenIndustries":[],"IndustryName":"丙级写字楼"}],"IndustryName":"办公建筑"},{"IndustryId":23,"ChildrenIndustries":[{"IndustryId":39,"ChildrenIndustries":[],"IndustryName":"五星级酒店"},{"IndustryId":40,"ChildrenIndustries":[],"IndustryName":"四星级酒店"},{"IndustryId":41,"ChildrenIndustries":[],"IndustryName":"三星级酒店"},{"IndustryId":42,"ChildrenIndustries":[],"IndustryName":"二星级及以下酒店"}],"IndustryName":"酒店"},{"IndustryId":24,"ChildrenIndustries":[{"IndustryId":43,"ChildrenIndustries":[],"IndustryName":"三级特等医院"},{"IndustryId":44,"ChildrenIndustries":[],"IndustryName":"三级甲等医院"},{"IndustryId":45,"ChildrenIndustries":[],"IndustryName":"三级乙等医院"},{"IndustryId":46,"ChildrenIndustries":[],"IndustryName":"三级丙等医院"},{"IndustryId":47,"ChildrenIndustries":[],"IndustryName":"二级甲等医院"},{"IndustryId":48,"ChildrenIndustries":[],"IndustryName":"二级乙等医院"},{"IndustryId":49,"ChildrenIndustries":[],"IndustryName":"二级丙等医院"},{"IndustryId":50,"ChildrenIndustries":[],"IndustryName":"一级医院"}],"IndustryName":"医院"},{"IndustryId":25,"ChildrenIndustries":[{"IndustryId":51,"ChildrenIndustries":[],"IndustryName":"高等学校"},{"IndustryId":52,"ChildrenIndustries":[],"IndustryName":"职业学校"},{"IndustryId":53,"ChildrenIndustries":[],"IndustryName":"培训机构"},{"IndustryId":54,"ChildrenIndustries":[],"IndustryName":"中学"},{"IndustryId":55,"ChildrenIndustries":[],"IndustryName":"小学"},{"IndustryId":56,"ChildrenIndustries":[],"IndustryName":"学前教育"}],"IndustryName":"学校"},{"IndustryId":26,"ChildrenIndustries":[{"IndustryId":57,"ChildrenIndustries":[],"IndustryName":"购物中心"},{"IndustryId":58,"ChildrenIndustries":[],"IndustryName":"超市"},{"IndustryId":59,"ChildrenIndustries":[],"IndustryName":"大型超市"},{"IndustryId":60,"ChildrenIndustries":[],"IndustryName":"百货商场"},{"IndustryId":61,"ChildrenIndustries":[],"IndustryName":"服装零售"},{"IndustryId":62,"ChildrenIndustries":[],"IndustryName":"专卖店"},{"IndustryId":63,"ChildrenIndustries":[],"IndustryName":"便利店"}],"IndustryName":"零售业"},{"IndustryId":27,"ChildrenIndustries":[{"IndustryId":64,"ChildrenIndustries":[],"IndustryName":"一级数据中心"},{"IndustryId":65,"ChildrenIndustries":[],"IndustryName":"二级数据中心"},{"IndustryId":66,"ChildrenIndustries":[],"IndustryName":"三级数据中心"},{"IndustryId":67,"ChildrenIndustries":[],"IndustryName":"四级数据中心"}],"IndustryName":"数据中心"},{"IndustryId":28,"ChildrenIndustries":[{"IndustryId":68,"ChildrenIndustries":[],"IndustryName":"通讯基站"},{"IndustryId":69,"ChildrenIndustries":[],"IndustryName":"通信营业厅"},{"IndustryId":70,"ChildrenIndustries":[],"IndustryName":"机房"}],"IndustryName":"通信行业"},{"IndustryId":29,"ChildrenIndustries":[{"IndustryId":71,"ChildrenIndustries":[],"IndustryName":"地铁站"},{"IndustryId":72,"ChildrenIndustries":[],"IndustryName":"轻轨站"},{"IndustryId":73,"ChildrenIndustries":[],"IndustryName":"高铁站"},{"IndustryId":74,"ChildrenIndustries":[],"IndustryName":"火车站"}],"IndustryName":"轨道交通"},{"IndustryId":30,"ChildrenIndustries":[{"IndustryId":75,"ChildrenIndustries":[],"IndustryName":"一类通用机场"},{"IndustryId":76,"ChildrenIndustries":[],"IndustryName":"二类通用机场"},{"IndustryId":77,"ChildrenIndustries":[],"IndustryName":"三类通用机场"},{"IndustryId":78,"ChildrenIndustries":[],"IndustryName":"运输机场"}],"IndustryName":"机场"},{"IndustryId":31,"ChildrenIndustries":[{"IndustryId":79,"ChildrenIndustries":[],"IndustryName":"火力发电站"},{"IndustryId":80,"ChildrenIndustries":[],"IndustryName":"水力发电站"},{"IndustryId":81,"ChildrenIndustries":[],"IndustryName":"核力发电站"},{"IndustryId":82,"ChildrenIndustries":[],"IndustryName":"新能源发电站"},{"IndustryId":83,"ChildrenIndustries":[],"IndustryName":"变电站"}],"IndustryName":"电力生产和供应业"},{"IndustryId":32,"ChildrenIndustries":[{"IndustryId":84,"ChildrenIndustries":[],"IndustryName":"食品制造厂"},{"IndustryId":85,"ChildrenIndustries":[],"IndustryName":"饮料制造厂"},{"IndustryId":86,"ChildrenIndustries":[],"IndustryName":"水泥制造厂"},{"IndustryId":87,"ChildrenIndustries":[],"IndustryName":"医药制造厂"},{"IndustryId":88,"ChildrenIndustries":[],"IndustryName":"电子设备制造厂"},{"IndustryId":89,"ChildrenIndustries":[],"IndustryName":"仪器仪表制造厂"},{"IndustryId":90,"ChildrenIndustries":[],"IndustryName":"石油化工厂"},{"IndustryId":91,"ChildrenIndustries":[],"IndustryName":"橡胶塑料制造厂"},{"IndustryId":92,"ChildrenIndustries":[],"IndustryName":"化学原料制造厂"},{"IndustryId":93,"ChildrenIndustries":[],"IndustryName":"化学纤维制造厂"},{"IndustryId":94,"ChildrenIndustries":[],"IndustryName":"金属冶炼及加工厂"},{"IndustryId":95,"ChildrenIndustries":[],"IndustryName":"汽车制造厂"},{"IndustryId":96,"ChildrenIndustries":[],"IndustryName":"造纸印刷厂"},{"IndustryId":97,"ChildrenIndustries":[],"IndustryName":"烟草制品厂"},{"IndustryId":98,"ChildrenIndustries":[],"IndustryName":"纺织服装厂"},{"IndustryId":99,"ChildrenIndustries":[],"IndustryName":"家具制造厂"},{"IndustryId":100,"ChildrenIndustries":[],"IndustryName":"输配电设备制造厂"}],"IndustryName":"制造业"},{"IndustryId":33,"ChildrenIndustries":[{"IndustryId":101,"ChildrenIndustries":[],"IndustryName":"国有商业银行"},{"IndustryId":102,"ChildrenIndustries":[],"IndustryName":"城市商业银行"},{"IndustryId":103,"ChildrenIndustries":[],"IndustryName":"农村商业银行"},{"IndustryId":104,"ChildrenIndustries":[],"IndustryName":"邮政储蓄银行"},{"IndustryId":105,"ChildrenIndustries":[],"IndustryName":"农村信用社"},{"IndustryId":106,"ChildrenIndustries":[],"IndustryName":"外资银行"},{"IndustryId":107,"ChildrenIndustries":[],"IndustryName":"信托公司"},{"IndustryId":108,"ChildrenIndustries":[],"IndustryName":"金融租赁公司"}],"IndustryName":"金融业"},{"IndustryId":34,"ChildrenIndustries":[{"IndustryId":109,"ChildrenIndustries":[],"IndustryName":"自来水厂"},{"IndustryId":110,"ChildrenIndustries":[],"IndustryName":"污水处理厂"},{"IndustryId":111,"ChildrenIndustries":[],"IndustryName":"中水处理厂"}],"IndustryName":"水生产和供应业"},{"IndustryId":35,"ChildrenIndustries":[{"IndustryId":112,"ChildrenIndustries":[],"IndustryName":"石油天然气田"},{"IndustryId":113,"ChildrenIndustries":[],"IndustryName":"黑色金属矿"},{"IndustryId":114,"ChildrenIndustries":[],"IndustryName":"有色金属矿"},{"IndustryId":115,"ChildrenIndustries":[],"IndustryName":"贵金属矿"},{"IndustryId":116,"ChildrenIndustries":[],"IndustryName":"稀有金属矿"},{"IndustryId":117,"ChildrenIndustries":[],"IndustryName":"非金属矿"},{"IndustryId":118,"ChildrenIndustries":[],"IndustryName":"煤矿"}],"IndustryName":"采矿业"}]})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":[{"IndustryId":22,"ChildrenIndustries":[{"IndustryId":36,"ChildrenIndustries":[],"IndustryName":"甲级写字楼"},{"IndustryId":37,"ChildrenIndustries":[],"IndustryName":"乙级写字楼"},{"IndustryId":38,"ChildrenIndustries":[],"IndustryName":"丙级写字楼"}],"IndustryName":"办公建筑"},{"IndustryId":23,"ChildrenIndustries":[{"IndustryId":39,"ChildrenIndustries":[],"IndustryName":"五星级酒店"},{"IndustryId":40,"ChildrenIndustries":[],"IndustryName":"四星级酒店"},{"IndustryId":41,"ChildrenIndustries":[],"IndustryName":"三星级酒店"},{"IndustryId":42,"ChildrenIndustries":[],"IndustryName":"二星级及以下酒店"}],"IndustryName":"酒店"},{"IndustryId":24,"ChildrenIndustries":[{"IndustryId":43,"ChildrenIndustries":[],"IndustryName":"三级特等医院"},{"IndustryId":44,"ChildrenIndustries":[],"IndustryName":"三级甲等医院"},{"IndustryId":45,"ChildrenIndustries":[],"IndustryName":"三级乙等医院"},{"IndustryId":46,"ChildrenIndustries":[],"IndustryName":"三级丙等医院"},{"IndustryId":47,"ChildrenIndustries":[],"IndustryName":"二级甲等医院"},{"IndustryId":48,"ChildrenIndustries":[],"IndustryName":"二级乙等医院"},{"IndustryId":49,"ChildrenIndustries":[],"IndustryName":"二级丙等医院"},{"IndustryId":50,"ChildrenIndustries":[],"IndustryName":"一级医院"}],"IndustryName":"医院"},{"IndustryId":25,"ChildrenIndustries":[{"IndustryId":51,"ChildrenIndustries":[],"IndustryName":"高等学校"},{"IndustryId":52,"ChildrenIndustries":[],"IndustryName":"职业学校"},{"IndustryId":53,"ChildrenIndustries":[],"IndustryName":"培训机构"},{"IndustryId":54,"ChildrenIndustries":[],"IndustryName":"中学"},{"IndustryId":55,"ChildrenIndustries":[],"IndustryName":"小学"},{"IndustryId":56,"ChildrenIndustries":[],"IndustryName":"学前教育"}],"IndustryName":"学校"},{"IndustryId":26,"ChildrenIndustries":[{"IndustryId":57,"ChildrenIndustries":[],"IndustryName":"购物中心"},{"IndustryId":58,"ChildrenIndustries":[],"IndustryName":"超市"},{"IndustryId":59,"ChildrenIndustries":[],"IndustryName":"大型超市"},{"IndustryId":60,"ChildrenIndustries":[],"IndustryName":"百货商场"},{"IndustryId":61,"ChildrenIndustries":[],"IndustryName":"服装零售"},{"IndustryId":62,"ChildrenIndustries":[],"IndustryName":"专卖店"},{"IndustryId":63,"ChildrenIndustries":[],"IndustryName":"便利店"}],"IndustryName":"零售业"},{"IndustryId":27,"ChildrenIndustries":[{"IndustryId":64,"ChildrenIndustries":[],"IndustryName":"一级数据中心"},{"IndustryId":65,"ChildrenIndustries":[],"IndustryName":"二级数据中心"},{"IndustryId":66,"ChildrenIndustries":[],"IndustryName":"三级数据中心"},{"IndustryId":67,"ChildrenIndustries":[],"IndustryName":"四级数据中心"}],"IndustryName":"数据中心"},{"IndustryId":28,"ChildrenIndustries":[{"IndustryId":68,"ChildrenIndustries":[],"IndustryName":"通讯基站"},{"IndustryId":69,"ChildrenIndustries":[],"IndustryName":"通信营业厅"},{"IndustryId":70,"ChildrenIndustries":[],"IndustryName":"机房"}],"IndustryName":"通信行业"},{"IndustryId":29,"ChildrenIndustries":[{"IndustryId":71,"ChildrenIndustries":[],"IndustryName":"地铁站"},{"IndustryId":72,"ChildrenIndustries":[],"IndustryName":"轻轨站"},{"IndustryId":73,"ChildrenIndustries":[],"IndustryName":"高铁站"},{"IndustryId":74,"ChildrenIndustries":[],"IndustryName":"火车站"}],"IndustryName":"轨道交通"},{"IndustryId":30,"ChildrenIndustries":[{"IndustryId":75,"ChildrenIndustries":[],"IndustryName":"一类通用机场"},{"IndustryId":76,"ChildrenIndustries":[],"IndustryName":"二类通用机场"},{"IndustryId":77,"ChildrenIndustries":[],"IndustryName":"三类通用机场"},{"IndustryId":78,"ChildrenIndustries":[],"IndustryName":"运输机场"}],"IndustryName":"机场"},{"IndustryId":31,"ChildrenIndustries":[{"IndustryId":79,"ChildrenIndustries":[],"IndustryName":"火力发电站"},{"IndustryId":80,"ChildrenIndustries":[],"IndustryName":"水力发电站"},{"IndustryId":81,"ChildrenIndustries":[],"IndustryName":"核力发电站"},{"IndustryId":82,"ChildrenIndustries":[],"IndustryName":"新能源发电站"},{"IndustryId":83,"ChildrenIndustries":[],"IndustryName":"变电站"}],"IndustryName":"电力生产和供应业"},{"IndustryId":32,"ChildrenIndustries":[{"IndustryId":84,"ChildrenIndustries":[],"IndustryName":"食品制造厂"},{"IndustryId":85,"ChildrenIndustries":[],"IndustryName":"饮料制造厂"},{"IndustryId":86,"ChildrenIndustries":[],"IndustryName":"水泥制造厂"},{"IndustryId":87,"ChildrenIndustries":[],"IndustryName":"医药制造厂"},{"IndustryId":88,"ChildrenIndustries":[],"IndustryName":"电子设备制造厂"},{"IndustryId":89,"ChildrenIndustries":[],"IndustryName":"仪器仪表制造厂"},{"IndustryId":90,"ChildrenIndustries":[],"IndustryName":"石油化工厂"},{"IndustryId":91,"ChildrenIndustries":[],"IndustryName":"橡胶塑料制造厂"},{"IndustryId":92,"ChildrenIndustries":[],"IndustryName":"化学原料制造厂"},{"IndustryId":93,"ChildrenIndustries":[],"IndustryName":"化学纤维制造厂"},{"IndustryId":94,"ChildrenIndustries":[],"IndustryName":"金属冶炼及加工厂"},{"IndustryId":95,"ChildrenIndustries":[],"IndustryName":"汽车制造厂"},{"IndustryId":96,"ChildrenIndustries":[],"IndustryName":"造纸印刷厂"},{"IndustryId":97,"ChildrenIndustries":[],"IndustryName":"烟草制品厂"},{"IndustryId":98,"ChildrenIndustries":[],"IndustryName":"纺织服装厂"},{"IndustryId":99,"ChildrenIndustries":[],"IndustryName":"家具制造厂"},{"IndustryId":100,"ChildrenIndustries":[],"IndustryName":"输配电设备制造厂"}],"IndustryName":"制造业"},{"IndustryId":33,"ChildrenIndustries":[{"IndustryId":101,"ChildrenIndustries":[],"IndustryName":"国有商业银行"},{"IndustryId":102,"ChildrenIndustries":[],"IndustryName":"城市商业银行"},{"IndustryId":103,"ChildrenIndustries":[],"IndustryName":"农村商业银行"},{"IndustryId":104,"ChildrenIndustries":[],"IndustryName":"邮政储蓄银行"},{"IndustryId":105,"ChildrenIndustries":[],"IndustryName":"农村信用社"},{"IndustryId":106,"ChildrenIndustries":[],"IndustryName":"外资银行"},{"IndustryId":107,"ChildrenIndustries":[],"IndustryName":"信托公司"},{"IndustryId":108,"ChildrenIndustries":[],"IndustryName":"金融租赁公司"}],"IndustryName":"金融业"},{"IndustryId":34,"ChildrenIndustries":[{"IndustryId":109,"ChildrenIndustries":[],"IndustryName":"自来水厂"},{"IndustryId":110,"ChildrenIndustries":[],"IndustryName":"污水处理厂"},{"IndustryId":111,"ChildrenIndustries":[],"IndustryName":"中水处理厂"}],"IndustryName":"水生产和供应业"},{"IndustryId":35,"ChildrenIndustries":[{"IndustryId":112,"ChildrenIndustries":[],"IndustryName":"石油天然气田"},{"IndustryId":113,"ChildrenIndustries":[],"IndustryName":"黑色金属矿"},{"IndustryId":114,"ChildrenIndustries":[],"IndustryName":"有色金属矿"},{"IndustryId":115,"ChildrenIndustries":[],"IndustryName":"贵金属矿"},{"IndustryId":116,"ChildrenIndustries":[],"IndustryName":"稀有金属矿"},{"IndustryId":117,"ChildrenIndustries":[],"IndustryName":"非金属矿"},{"IndustryId":118,"ChildrenIndustries":[],"IndustryName":"煤矿"}],"IndustryName":"采矿业"}]}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>645</totalRunTimeInMillis>
+</testResults>
+

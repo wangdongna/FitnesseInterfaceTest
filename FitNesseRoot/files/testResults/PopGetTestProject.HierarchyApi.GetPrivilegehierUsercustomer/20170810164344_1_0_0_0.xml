@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopGetTestProject.HierarchyApi.GetPrivilegehierUsercustomer</rootPath>
+    <result>
+    <counts>
+      <right>3</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-10T16:43:44+08:00</date>
+    <runTimeInMillis>2223</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;get privilegehier usercustomer&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;responsebody?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;不知道什么功能&lt;/td&gt;
+		&lt;td&gt;api/301312/320366/privilegedhierarchy&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"Children":[{"Children":[],"Comment":null,"CustomerId":320366,"SpId":316,"Type":0,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/14/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320398,"ParentId":320366,"Name":"SECI Global Org","Code":"e0e09d06-a0c4-4931-8cb0-e460f69f5049"},{"Children":[],"Comment":null,"CustomerId":320366,"SpId":316,"Type":1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/14/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320399,"ParentId":320366,"Name":"SECI Site","Code":"30d6c6e9-f67c-4c09-85be-5d12c3b0b81e"},{"Children":[{"Children":[{"Children":[{"Children":[],"Comment":null,"CustomerId":320366,"SpId":316,"Type":5,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/14/3/1/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":false,"IsOnline":true,"Id":320403,"ParentId":320402,"Name":"SECI Device","Code":"22162d2f-1eea-4b77-ba2a-60bcecb6df01"}],"Comment":null,"CustomerId":320366,"SpId":316,"Type":4,"SubType":0,"IndustryId":0,"ZoneId":0,"Path":"/14/3/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320402,"ParentId":320401,"Name":"SECI Panel","Code":"19e34f5a-02ad-4d01-b5f7-0ec0e3957dfe"}],"Comment":null,"CustomerId":320366,"SpId":316,"Type":3,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/14/3/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320401,"ParentId":320400,"Name":"SECI Room","Code":"d659db96-c417-491d-93a6-db9b216280e0"}],"Comment":null,"CustomerId":320366,"SpId":316,"Type":2,"SubType":1,"IndustryId":36,"ZoneId":0,"Path":"/14/3/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320400,"ParentId":320366,"Name":"SECI Build","Code":"7783393c-0b18-4f7d-b07c-a4eebf115cb3"}],"Comment":null,"CustomerId":320366,"SpId":316,"Type":-1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/14/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320366,"ParentId":null,"Name":"api.cutomer1","Code":"api.cutomer1"}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;不知道什么功能&lt;/td&gt;
+		&lt;td&gt;api/301316/320367/privilegedhierarchy&lt;/td&gt;
+		&lt;td&gt;api.shareuserd&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"Children":[{"Children":[{"Children":[{"Children":[{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":20,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320462,"ParentId":320461,"Name":"panel1","Code":"81dff827-f883-4785-880d-d2c6b5798fef"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":3,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320461,"ParentId":320460,"Name":"room1","Code":"24fe8135-a94a-483f-825b-1ec8ab2af236"},{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":0,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320516,"ParentId":320515,"Name":"panel.update.name","Code":"d79b5a00-607e-49e4-a257-1155247ba6ac"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":10,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320517,"ParentId":320515,"Name":"panel.update.other","Code":"d8e81405-a80f-4633-becb-5d13ce975e83"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":20,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/3/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320518,"ParentId":320515,"Name":"panel.update.namenoempty","Code":"ea7436ee-6006-433e-86d4-78deb8e6bea9"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":30,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/4/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320519,"ParentId":320515,"Name":"panel.update.nameempty","Code":"5486f555-5e06-425b-b87b-de62e3bae34a"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":10,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/5/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320520,"ParentId":320515,"Name":"panel.delete.nochild","Code":"7f969ee8-bfdd-4c71-9149-ef3c63225d2c"},{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":5,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/6/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":false,"IsOnline":true,"Id":320522,"ParentId":320521,"Name":"新建设备","Code":"04e4b715-1a9a-47dc-b94f-3be3328fb6a7"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":0,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/6/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320521,"ParentId":320515,"Name":"panel.delete.withchild","Code":"21dd4da1-c15c-450b-801a-3824837ecdba"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320515,"ParentId":320460,"Name":"room","Code":"3bdcc48b-b66a-4b29-9f44-1b0b2a2f8093"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":2,"SubType":1,"IndustryId":51,"ZoneId":0,"Path":"/15/1/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320460,"ParentId":320457,"Name":"api2-site1-build1","Code":"3312bdd2-bd4c-4837-88e4-c195cda63765"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320457,"ParentId":320456,"Name":"api2-site-1","Code":"d0f12b02-2b04-4150-8300-449d4a2ab15a"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/1/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320458,"ParentId":320456,"Name":"api-site-2","Code":"77902180-b2f7-482e-8399-41b21ce6f068"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":2,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/1/3/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320459,"ParentId":320456,"Name":"api2-build-1","Code":"63e3c3c8-8a85-4819-987e-7d5cb7c662cc"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":0,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320456,"ParentId":320367,"Name":"api2-org-1","Code":"0f7ede92-5e7e-4ddb-aec2-534ecbacaf95"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":2,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320505,"ParentId":320367,"Name":"CreateRoom","Code":"3b3ad979-ff1d-4850-ac2c-39904ff1bba4"},{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/3/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320508,"ParentId":320506,"Name":"room.update.name","Code":"9ddf75ab-318b-410f-b730-e059162cb32e"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":2,"IndustryId":0,"ZoneId":0,"Path":"/15/3/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320509,"ParentId":320506,"Name":"room.update.other","Code":"c7dd2a7d-dcd9-4a39-95ca-c024fe9f0676"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":3,"IndustryId":0,"ZoneId":0,"Path":"/15/3/3/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320510,"ParentId":320506,"Name":"room.update.namenoempty","Code":"95b02b39-6b7c-4009-b7a8-1ea980bc735d"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":4,"IndustryId":0,"ZoneId":0,"Path":"/15/3/4/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320511,"ParentId":320506,"Name":"room.update.nameempty","Code":"3093754b-13da-40d1-b321-590f316f1143"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":2,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/3/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320506,"ParentId":320367,"Name":"UpdateRoom","Code":"61a380ab-1876-45bf-a7f3-1ad3d0cbd190"},{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/4/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320512,"ParentId":320507,"Name":"room.delete.nochild","Code":"7e3602ea-6c71-47ef-8bc4-9764d8a90e84"},{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":20,"IndustryId":0,"ZoneId":0,"Path":"/15/4/2/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320514,"ParentId":320513,"Name":"新建变压器柜","Code":"fd062532-5035-4700-979f-472dde17959f"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":4,"IndustryId":0,"ZoneId":0,"Path":"/15/4/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320513,"ParentId":320507,"Name":"room.delete.withchild","Code":"4b1cc707-a387-4087-8ac1-b034420a9b0b"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":2,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/4/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320507,"ParentId":320367,"Name":"DeleteRoom","Code":"a3a1f0f0-046b-49c1-9e77-fa39b6108242"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":-1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320367,"ParentId":null,"Name":"api.customer2","Code":"api.customer2"}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;不知道什么功能&lt;/td&gt;
+		&lt;td&gt;api/301314/320367/privilegedhierarchy&lt;/td&gt;
+		&lt;td&gt;api.shareusera&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":-1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/","HasDataPrivilege":false,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320367,"ParentId":null,"Name":"api.customer2","Code":"api.customer2"}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>GetPrivilegehierUsercustomer</relativePageName>
+        <tags>get, privilegehier</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='GetPrivilegehierUsercustomer', args=[]}</instruction>
+        <slimResult>pass(get privilegehier usercustomer)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>get privilegehier usercustomer</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/301312/320366/privilegedhierarchy]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"Children":[{"Children":[],"Comment":null,"CustomerId":320366,"SpId":316,"Type":0,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/14/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320398,"ParentId":320366,"Name":"SECI Global Org","Code":"e0e09d06-a0c4-4931-8cb0-e460f69f5049"},{"Children":[],"Comment":null,"CustomerId":320366,"SpId":316,"Type":1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/14/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320399,"ParentId":320366,"Name":"SECI Site","Code":"30d6c6e9-f67c-4c09-85be-5d12c3b0b81e"},{"Children":[{"Children":[{"Children":[{"Children":[],"Comment":null,"CustomerId":320366,"SpId":316,"Type":5,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/14/3/1/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":false,"IsOnline":true,"Id":320403,"ParentId":320402,"Name":"SECI Device","Code":"22162d2f-1eea-4b77-ba2a-60bcecb6df01"}],"Comment":null,"CustomerId":320366,"SpId":316,"Type":4,"SubType":0,"IndustryId":0,"ZoneId":0,"Path":"/14/3/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320402,"ParentId":320401,"Name":"SECI Panel","Code":"19e34f5a-02ad-4d01-b5f7-0ec0e3957dfe"}],"Comment":null,"CustomerId":320366,"SpId":316,"Type":3,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/14/3/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320401,"ParentId":320400,"Name":"SECI Room","Code":"d659db96-c417-491d-93a6-db9b216280e0"}],"Comment":null,"CustomerId":320366,"SpId":316,"Type":2,"SubType":1,"IndustryId":36,"ZoneId":0,"Path":"/14/3/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320400,"ParentId":320366,"Name":"SECI Build","Code":"7783393c-0b18-4f7d-b07c-a4eebf115cb3"}],"Comment":null,"CustomerId":320366,"SpId":316,"Type":-1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/14/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320366,"ParentId":null,"Name":"api.cutomer1","Code":"api.cutomer1"}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Children":[{"Children":[],"Comment":null,"CustomerId":320366,"SpId":316,"Type":0,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/14/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320398,"ParentId":320366,"Name":"SECI Global Org","Code":"e0e09d06-a0c4-4931-8cb0-e460f69f5049"},{"Children":[],"Comment":null,"CustomerId":320366,"SpId":316,"Type":1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/14/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320399,"ParentId":320366,"Name":"SECI Site","Code":"30d6c6e9-f67c-4c09-85be-5d12c3b0b81e"},{"Children":[{"Children":[{"Children":[{"Children":[],"Comment":null,"CustomerId":320366,"SpId":316,"Type":5,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/14/3/1/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":false,"IsOnline":true,"Id":320403,"ParentId":320402,"Name":"SECI Device","Code":"22162d2f-1eea-4b77-ba2a-60bcecb6df01"}],"Comment":null,"CustomerId":320366,"SpId":316,"Type":4,"SubType":0,"IndustryId":0,"ZoneId":0,"Path":"/14/3/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320402,"ParentId":320401,"Name":"SECI Panel","Code":"19e34f5a-02ad-4d01-b5f7-0ec0e3957dfe"}],"Comment":null,"CustomerId":320366,"SpId":316,"Type":3,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/14/3/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320401,"ParentId":320400,"Name":"SECI Room","Code":"d659db96-c417-491d-93a6-db9b216280e0"}],"Comment":null,"CustomerId":320366,"SpId":316,"Type":2,"SubType":1,"IndustryId":36,"ZoneId":0,"Path":"/14/3/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320400,"ParentId":320366,"Name":"SECI Build","Code":"7783393c-0b18-4f7d-b07c-a4eebf115cb3"}],"Comment":null,"CustomerId":320366,"SpId":316,"Type":-1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/14/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320366,"ParentId":null,"Name":"api.cutomer1","Code":"api.cutomer1"}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_10', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/301316/320367/privilegedhierarchy]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_10</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[api.shareuserd]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_12</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"Children":[{"Children":[{"Children":[{"Children":[{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":20,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320462,"ParentId":320461,"Name":"panel1","Code":"81dff827-f883-4785-880d-d2c6b5798fef"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":3,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320461,"ParentId":320460,"Name":"room1","Code":"24fe8135-a94a-483f-825b-1ec8ab2af236"},{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":0,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320516,"ParentId":320515,"Name":"panel.update.name","Code":"d79b5a00-607e-49e4-a257-1155247ba6ac"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":10,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320517,"ParentId":320515,"Name":"panel.update.other","Code":"d8e81405-a80f-4633-becb-5d13ce975e83"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":20,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/3/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320518,"ParentId":320515,"Name":"panel.update.namenoempty","Code":"ea7436ee-6006-433e-86d4-78deb8e6bea9"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":30,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/4/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320519,"ParentId":320515,"Name":"panel.update.nameempty","Code":"5486f555-5e06-425b-b87b-de62e3bae34a"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":10,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/5/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320520,"ParentId":320515,"Name":"panel.delete.nochild","Code":"7f969ee8-bfdd-4c71-9149-ef3c63225d2c"},{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":5,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/6/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":false,"IsOnline":true,"Id":320522,"ParentId":320521,"Name":"新建设备","Code":"04e4b715-1a9a-47dc-b94f-3be3328fb6a7"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":0,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/6/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320521,"ParentId":320515,"Name":"panel.delete.withchild","Code":"21dd4da1-c15c-450b-801a-3824837ecdba"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320515,"ParentId":320460,"Name":"room","Code":"3bdcc48b-b66a-4b29-9f44-1b0b2a2f8093"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":2,"SubType":1,"IndustryId":51,"ZoneId":0,"Path":"/15/1/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320460,"ParentId":320457,"Name":"api2-site1-build1","Code":"3312bdd2-bd4c-4837-88e4-c195cda63765"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320457,"ParentId":320456,"Name":"api2-site-1","Code":"d0f12b02-2b04-4150-8300-449d4a2ab15a"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/1/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320458,"ParentId":320456,"Name":"api-site-2","Code":"77902180-b2f7-482e-8399-41b21ce6f068"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":2,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/1/3/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320459,"ParentId":320456,"Name":"api2-build-1","Code":"63e3c3c8-8a85-4819-987e-7d5cb7c662cc"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":0,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320456,"ParentId":320367,"Name":"api2-org-1","Code":"0f7ede92-5e7e-4ddb-aec2-534ecbacaf95"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":2,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320505,"ParentId":320367,"Name":"CreateRoom","Code":"3b3ad979-ff1d-4850-ac2c-39904ff1bba4"},{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/3/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320508,"ParentId":320506,"Name":"room.update.name","Code":"9ddf75ab-318b-410f-b730-e059162cb32e"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":2,"IndustryId":0,"ZoneId":0,"Path":"/15/3/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320509,"ParentId":320506,"Name":"room.update.other","Code":"c7dd2a7d-dcd9-4a39-95ca-c024fe9f0676"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":3,"IndustryId":0,"ZoneId":0,"Path":"/15/3/3/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320510,"ParentId":320506,"Name":"room.update.namenoempty","Code":"95b02b39-6b7c-4009-b7a8-1ea980bc735d"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":4,"IndustryId":0,"ZoneId":0,"Path":"/15/3/4/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320511,"ParentId":320506,"Name":"room.update.nameempty","Code":"3093754b-13da-40d1-b321-590f316f1143"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":2,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/3/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320506,"ParentId":320367,"Name":"UpdateRoom","Code":"61a380ab-1876-45bf-a7f3-1ad3d0cbd190"},{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/4/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320512,"ParentId":320507,"Name":"room.delete.nochild","Code":"7e3602ea-6c71-47ef-8bc4-9764d8a90e84"},{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":20,"IndustryId":0,"ZoneId":0,"Path":"/15/4/2/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320514,"ParentId":320513,"Name":"新建变压器柜","Code":"fd062532-5035-4700-979f-472dde17959f"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":4,"IndustryId":0,"ZoneId":0,"Path":"/15/4/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320513,"ParentId":320507,"Name":"room.delete.withchild","Code":"4b1cc707-a387-4087-8ac1-b034420a9b0b"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":2,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/4/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320507,"ParentId":320367,"Name":"DeleteRoom","Code":"a3a1f0f0-046b-49c1-9e77-fa39b6108242"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":-1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320367,"ParentId":null,"Name":"api.customer2","Code":"api.customer2"}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_14</instructionId>
+                    <col>4</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Children":[{"Children":[{"Children":[{"Children":[{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":20,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320462,"ParentId":320461,"Name":"panel1","Code":"81dff827-f883-4785-880d-d2c6b5798fef"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":3,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320461,"ParentId":320460,"Name":"room1","Code":"24fe8135-a94a-483f-825b-1ec8ab2af236"},{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":0,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320516,"ParentId":320515,"Name":"panel.update.name","Code":"d79b5a00-607e-49e4-a257-1155247ba6ac"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":10,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320517,"ParentId":320515,"Name":"panel.update.other","Code":"d8e81405-a80f-4633-becb-5d13ce975e83"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":20,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/3/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320518,"ParentId":320515,"Name":"panel.update.namenoempty","Code":"ea7436ee-6006-433e-86d4-78deb8e6bea9"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":30,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/4/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320519,"ParentId":320515,"Name":"panel.update.nameempty","Code":"5486f555-5e06-425b-b87b-de62e3bae34a"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":10,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/5/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320520,"ParentId":320515,"Name":"panel.delete.nochild","Code":"7f969ee8-bfdd-4c71-9149-ef3c63225d2c"},{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":5,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/6/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":false,"IsOnline":true,"Id":320522,"ParentId":320521,"Name":"新建设备","Code":"04e4b715-1a9a-47dc-b94f-3be3328fb6a7"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":0,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/6/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320521,"ParentId":320515,"Name":"panel.delete.withchild","Code":"21dd4da1-c15c-450b-801a-3824837ecdba"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/1/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320515,"ParentId":320460,"Name":"room","Code":"3bdcc48b-b66a-4b29-9f44-1b0b2a2f8093"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":2,"SubType":1,"IndustryId":51,"ZoneId":0,"Path":"/15/1/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320460,"ParentId":320457,"Name":"api2-site1-build1","Code":"3312bdd2-bd4c-4837-88e4-c195cda63765"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/1/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320457,"ParentId":320456,"Name":"api2-site-1","Code":"d0f12b02-2b04-4150-8300-449d4a2ab15a"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/1/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320458,"ParentId":320456,"Name":"api-site-2","Code":"77902180-b2f7-482e-8399-41b21ce6f068"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":2,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/1/3/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320459,"ParentId":320456,"Name":"api2-build-1","Code":"63e3c3c8-8a85-4819-987e-7d5cb7c662cc"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":0,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320456,"ParentId":320367,"Name":"api2-org-1","Code":"0f7ede92-5e7e-4ddb-aec2-534ecbacaf95"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":2,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320505,"ParentId":320367,"Name":"CreateRoom","Code":"3b3ad979-ff1d-4850-ac2c-39904ff1bba4"},{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/3/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320508,"ParentId":320506,"Name":"room.update.name","Code":"9ddf75ab-318b-410f-b730-e059162cb32e"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":2,"IndustryId":0,"ZoneId":0,"Path":"/15/3/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320509,"ParentId":320506,"Name":"room.update.other","Code":"c7dd2a7d-dcd9-4a39-95ca-c024fe9f0676"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":3,"IndustryId":0,"ZoneId":0,"Path":"/15/3/3/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320510,"ParentId":320506,"Name":"room.update.namenoempty","Code":"95b02b39-6b7c-4009-b7a8-1ea980bc735d"},{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":4,"IndustryId":0,"ZoneId":0,"Path":"/15/3/4/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320511,"ParentId":320506,"Name":"room.update.nameempty","Code":"3093754b-13da-40d1-b321-590f316f1143"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":2,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/3/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320506,"ParentId":320367,"Name":"UpdateRoom","Code":"61a380ab-1876-45bf-a7f3-1ad3d0cbd190"},{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/4/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320512,"ParentId":320507,"Name":"room.delete.nochild","Code":"7e3602ea-6c71-47ef-8bc4-9764d8a90e84"},{"Children":[{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":4,"SubType":20,"IndustryId":0,"ZoneId":0,"Path":"/15/4/2/1/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320514,"ParentId":320513,"Name":"新建变压器柜","Code":"fd062532-5035-4700-979f-472dde17959f"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":3,"SubType":4,"IndustryId":0,"ZoneId":0,"Path":"/15/4/2/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320513,"ParentId":320507,"Name":"room.delete.withchild","Code":"4b1cc707-a387-4087-8ac1-b034420a9b0b"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":2,"SubType":1,"IndustryId":0,"ZoneId":0,"Path":"/15/4/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320507,"ParentId":320367,"Name":"DeleteRoom","Code":"a3a1f0f0-046b-49c1-9e77-fa39b6108242"}],"Comment":null,"CustomerId":320367,"SpId":316,"Type":-1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/","HasDataPrivilege":true,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320367,"ParentId":null,"Name":"api.customer2","Code":"api.customer2"}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/301314/320367/privilegedhierarchy]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_17', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[api.shareusera]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_17</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_18</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":-1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/","HasDataPrivilege":false,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320367,"ParentId":null,"Name":"api.customer2","Code":"api.customer2"}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_20</instructionId>
+                    <col>4</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"Children":[],"Comment":null,"CustomerId":320367,"SpId":316,"Type":-1,"SubType":null,"IndustryId":0,"ZoneId":0,"Path":"/15/","HasDataPrivilege":false,"IsAsset":true,"IsStatistic":null,"IsOnline":null,"Id":320367,"ParentId":null,"Name":"api.customer2","Code":"api.customer2"}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>2223</totalRunTimeInMillis>
+</testResults>
+

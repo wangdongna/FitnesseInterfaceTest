@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopPostTestProject</rootPath>
+  <pageHistoryReference>
+    <name>PopPostTestProject.AlarmApi.AlarmCommentUpdate</name>
+    <date>2017-08-09T15:19:15+08:00</date>
+    <pageHistoryLink>PopPostTestProject.AlarmApi.AlarmCommentUpdate?pageHistory&amp;resultDate=20170809151915</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>2</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>1905</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>PopPostTestProject.AlarmApi.AlarmGet</name>
+    <date>2017-08-09T15:19:17+08:00</date>
+    <pageHistoryLink>PopPostTestProject.AlarmApi.AlarmGet?pageHistory&amp;resultDate=20170809151917</pageHistoryLink>
+    <counts>
+      <right>3</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>2848</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>PopPostTestProject.BuildingApi.BuidlingDelete</name>
+    <date>2017-08-09T15:19:20+08:00</date>
+    <pageHistoryLink>PopPostTestProject.BuildingApi.BuidlingDelete?pageHistory&amp;resultDate=20170809151920</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>2592</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>PopPostTestProject.BuildingApi.BuidlingDeleteFile</name>
+    <date>2017-08-09T15:19:22+08:00</date>
+    <pageHistoryLink>PopPostTestProject.BuildingApi.BuidlingDeleteFile?pageHistory&amp;resultDate=20170809151922</pageHistoryLink>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>702</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>"C:\Program Files\Java\jdk1.8.0_111\bin\java" -cp "D:\Emma\fitnesse\fitnesse-standalone.jar;D:\Emma\fitnesse\FitnessTest\bin ;D:\Emma\fitnesse\GatCommon\bin ;D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar ;D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar ;D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar ;D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar ;D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar ;D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar ;D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar ;D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar ;D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar ;D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar ;D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar " fitnesse.slim.SlimService 1</command>
+    <exitCode>1</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+    <exception>Could not send/receive data with SUT</exception>
+    <exception>fitnesse.testsystems.slim.SlimCommunicationException: Could not send/receive data with SUT</exception>
+  </executionLog>
+  <finalCounts>
+    <right>3</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>11642</totalRunTimeInMillis>
+</suiteResults>
+

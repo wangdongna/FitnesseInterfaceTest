@@ -1,0 +1,506 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>PopGetTestProject.DeviceApi.GetRuntimeparamgroupId</rootPath>
+    <result>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-08-10T15:57:54+08:00</date>
+    <runTimeInMillis>5411</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\GatCommon\bin &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpclient-4.3.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\httpcore-4.3.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\commons-logging-1.1.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-all-1.9.5.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-annotations-2.8.0.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-core-2.8.1.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\jackson-databind-2.6.7.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\poi-ooxml-schemas-3.12.jar &lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:\Emma\fitnesse\FitnessTest\lib\xmlbeans-2.3.0.jar &lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.http.helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.jsonhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;import&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;gat.common.excelservice&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;get runtimeparamgroup id&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;#comment&lt;/td&gt;
+		&lt;td&gt;path&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;responsebody?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;用户有设备ID所属楼宇数据权限&lt;/td&gt;
+		&lt;td&gt;api/device/320394/runtimesettinggroupparameters&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[{"GroupId":"维护参数","GroupName":"维护参数","GroupOrder":0,"MaintenanceParameters":[{"Id":462101,"UniqueId":7197622558,"HardwareId":30,"GroupParameterOrder":0,"Name":"断路器状态","Unit":"","Value":"1","IconType":"STA","Desc":"闭合","Alm":0,"FinVal":"闭合","IsEnum":false,"DataType":"INT16"},{"Id":462102,"UniqueId":7197622559,"HardwareId":31,"GroupParameterOrder":1,"Name":"分合闸次数","Unit":"次","Value":"300.123","IconType":"TIS","Desc":"","Alm":0,"FinVal":"300.123","IsEnum":true,"DataType":"INT32"},{"Id":462103,"UniqueId":7197622560,"HardwareId":32,"GroupParameterOrder":2,"Name":"故障跳闸次数","Unit":"次","Value":"521.123","IconType":"TIS","Desc":"","Alm":0,"FinVal":"521.123","IsEnum":true,"DataType":"INT16"},{"Id":462104,"UniqueId":7197622561,"HardwareId":33,"GroupParameterOrder":3,"Name":"触头磨损率","Unit":"%","Value":"269.123","IconType":"WEA","Desc":"","Alm":0,"FinVal":"269.123","IsEnum":true,"DataType":"INT16"},{"Id":462108,"UniqueId":7197622584,"HardwareId":56,"GroupParameterOrder":4,"Name":"C相电流最大需量","Unit":"A","Value":"418.123","IconType":"CUR","Desc":"","Alm":0,"FinVal":"418.123","IsEnum":true,"DataType":"UINT"},{"Id":462111,"UniqueId":7197622587,"HardwareId":59,"GroupParameterOrder":5,"Name":"负载率运行时间（80-89%）","Unit":"小时","Value":"570.123","IconType":"TIM","Desc":"","Alm":0,"FinVal":"570.123","IsEnum":true,"DataType":"INT32"}]},{"GroupId":"负载率","GroupName":"负载率","GroupOrder":1,"MaintenanceParameters":[{"Id":462110,"UniqueId":7197622586,"HardwareId":58,"GroupParameterOrder":0,"Name":"负载率运行时间（50-79%）","Unit":"小时","Value":"158.123","IconType":"TIM","Desc":"","Alm":0,"FinVal":"158.123","IsEnum":true,"DataType":"INT32"},{"Id":462109,"UniqueId":7197622585,"HardwareId":57,"GroupParameterOrder":1,"Name":"负载率运行时间（0-49%）","Unit":"小时","Value":"43.123","IconType":"TIM","Desc":"","Alm":0,"FinVal":"43.123","IsEnum":true,"DataType":"INT32"},{"Id":462112,"UniqueId":7197622588,"HardwareId":60,"GroupParameterOrder":2,"Name":"负载率运行时间（90-100%）","Unit":"小时","Value":"313.123","IconType":"TIM","Desc":"","Alm":0,"FinVal":"313.123","IsEnum":true,"DataType":"INT32"}]},{"GroupId":"需量","GroupName":"需量","GroupOrder":2,"MaintenanceParameters":[{"Id":462107,"UniqueId":7197622583,"HardwareId":55,"GroupParameterOrder":0,"Name":"B相电流最大需量","Unit":"A","Value":"67.123","IconType":"CUR","Desc":"","Alm":0,"FinVal":"67.123","IsEnum":true,"DataType":"UINT"},{"Id":462105,"UniqueId":7197622581,"HardwareId":53,"GroupParameterOrder":1,"Name":"总有功功率最大需量","Unit":"kW","Value":"55.91229858398437","IconType":"POW","Desc":"","Alm":0,"FinVal":"55.91229858398437","IsEnum":true,"DataType":"INT"},{"Id":462106,"UniqueId":7197622582,"HardwareId":54,"GroupParameterOrder":2,"Name":"A相电流最大需量","Unit":"A","Value":"250.123","IconType":"CUR","Desc":"","Alm":0,"FinVal":"250.123","IsEnum":true,"DataType":"UINT"}]}],"SettingParameters":[{"Id":462120,"UniqueId":7197622571,"Name":"长延时保护电流（Ir）","Unit":"A","Value":"322.123","TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":"322.123","DataType":"UINT"},{"Id":462121,"UniqueId":7197622572,"Name":"长延时保护延时（tr）","Unit":"s","Value":"0.1531230010986328","TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":"0.1531230010986328","DataType":"UINT"},{"Id":462122,"UniqueId":7197622573,"Name":"短延时保护电流（Isd）","Unit":"A","Value":"267.123","TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":"267.123","DataType":"UINT"},{"Id":462123,"UniqueId":7197622574,"Name":"短延时保护延时（tsd）","Unit":"s","Value":"0.5781229858398438","TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":"0.5781229858398438","DataType":"UINT"},{"Id":462124,"UniqueId":7197622575,"Name":"瞬时保护电流（Ii）","Unit":"A","Value":"449.123","TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":"449.123","DataType":"UINT"}],"DeviceTripUnit":"Micrologic5.0 E","DemandRequestRatio":"1.30","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":-1}}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;设备是自定义的&lt;/td&gt;
+		&lt;td&gt;api/device/320403/runtimesettinggroupparameters&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[],"SettingParameters":[],"DeviceTripUnit":"MA电磁脱扣单元","DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":0}}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;用户没有设备ID所属楼宇数据权限(用户没有数据权限也可以返回数据)&lt;/td&gt;
+		&lt;td&gt;api/device/320373/runtimesettinggroupparameters&lt;/td&gt;
+		&lt;td&gt;api.shareuserd&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[{"GroupId":"维护参数","GroupName":"维护参数","GroupOrder":0,"MaintenanceParameters":[{"Id":461985,"UniqueId":7197491486,"HardwareId":30,"GroupParameterOrder":0,"Name":"断路器状态","Unit":"","Value":null,"IconType":"STA","Desc":null,"Alm":null,"FinVal":null,"IsEnum":false,"DataType":"INT16"},{"Id":461986,"UniqueId":7197491487,"HardwareId":31,"GroupParameterOrder":1,"Name":"分合闸次数","Unit":"次","Value":null,"IconType":"TIS","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461987,"UniqueId":7197491488,"HardwareId":32,"GroupParameterOrder":2,"Name":"故障跳闸次数","Unit":"次","Value":null,"IconType":"TIS","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT16"},{"Id":461988,"UniqueId":7197491489,"HardwareId":33,"GroupParameterOrder":3,"Name":"触头磨损率","Unit":"%","Value":null,"IconType":"WEA","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT16"},{"Id":461992,"UniqueId":7197491512,"HardwareId":56,"GroupParameterOrder":4,"Name":"C相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"},{"Id":461995,"UniqueId":7197491515,"HardwareId":59,"GroupParameterOrder":5,"Name":"负载率运行时间（80-89%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"}]},{"GroupId":"负载率","GroupName":"负载率","GroupOrder":1,"MaintenanceParameters":[{"Id":461994,"UniqueId":7197491514,"HardwareId":58,"GroupParameterOrder":0,"Name":"负载率运行时间（50-79%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461993,"UniqueId":7197491513,"HardwareId":57,"GroupParameterOrder":1,"Name":"负载率运行时间（0-49%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461996,"UniqueId":7197491516,"HardwareId":60,"GroupParameterOrder":2,"Name":"负载率运行时间（90-100%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"}]},{"GroupId":"需量","GroupName":"需量","GroupOrder":2,"MaintenanceParameters":[{"Id":461991,"UniqueId":7197491511,"HardwareId":55,"GroupParameterOrder":0,"Name":"B相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"},{"Id":461989,"UniqueId":7197491509,"HardwareId":53,"GroupParameterOrder":1,"Name":"总有功功率最大需量","Unit":"kW","Value":null,"IconType":"POW","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT"},{"Id":461990,"UniqueId":7197491510,"HardwareId":54,"GroupParameterOrder":2,"Name":"A相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"}]}],"SettingParameters":[{"Id":462004,"UniqueId":7197491499,"Name":"长延时保护电流（Ir）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"},{"Id":462005,"UniqueId":7197491500,"Name":"长延时保护延时（tr）","Unit":"s","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":null,"DataType":"UINT"},{"Id":462006,"UniqueId":7197491501,"Name":"短延时保护电流（Isd）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"},{"Id":462007,"UniqueId":7197491502,"Name":"短延时保护延时（tsd）","Unit":"s","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":null,"DataType":"UINT"},{"Id":462008,"UniqueId":7197491503,"Name":"瞬时保护电流（Ii）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"}],"DeviceTripUnit":"Micrologic5.0 E","DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":-2}}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;设备是从BOX同步来的&lt;/td&gt;
+		&lt;td&gt;api/device/320373/runtimesettinggroupparameters&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[{"GroupId":"维护参数","GroupName":"维护参数","GroupOrder":0,"MaintenanceParameters":[{"Id":461985,"UniqueId":7197491486,"HardwareId":30,"GroupParameterOrder":0,"Name":"断路器状态","Unit":"","Value":null,"IconType":"STA","Desc":null,"Alm":null,"FinVal":null,"IsEnum":false,"DataType":"INT16"},{"Id":461986,"UniqueId":7197491487,"HardwareId":31,"GroupParameterOrder":1,"Name":"分合闸次数","Unit":"次","Value":null,"IconType":"TIS","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461987,"UniqueId":7197491488,"HardwareId":32,"GroupParameterOrder":2,"Name":"故障跳闸次数","Unit":"次","Value":null,"IconType":"TIS","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT16"},{"Id":461988,"UniqueId":7197491489,"HardwareId":33,"GroupParameterOrder":3,"Name":"触头磨损率","Unit":"%","Value":null,"IconType":"WEA","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT16"},{"Id":461992,"UniqueId":7197491512,"HardwareId":56,"GroupParameterOrder":4,"Name":"C相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"},{"Id":461995,"UniqueId":7197491515,"HardwareId":59,"GroupParameterOrder":5,"Name":"负载率运行时间（80-89%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"}]},{"GroupId":"负载率","GroupName":"负载率","GroupOrder":1,"MaintenanceParameters":[{"Id":461994,"UniqueId":7197491514,"HardwareId":58,"GroupParameterOrder":0,"Name":"负载率运行时间（50-79%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461993,"UniqueId":7197491513,"HardwareId":57,"GroupParameterOrder":1,"Name":"负载率运行时间（0-49%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461996,"UniqueId":7197491516,"HardwareId":60,"GroupParameterOrder":2,"Name":"负载率运行时间（90-100%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"}]},{"GroupId":"需量","GroupName":"需量","GroupOrder":2,"MaintenanceParameters":[{"Id":461991,"UniqueId":7197491511,"HardwareId":55,"GroupParameterOrder":0,"Name":"B相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"},{"Id":461989,"UniqueId":7197491509,"HardwareId":53,"GroupParameterOrder":1,"Name":"总有功功率最大需量","Unit":"kW","Value":null,"IconType":"POW","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT"},{"Id":461990,"UniqueId":7197491510,"HardwareId":54,"GroupParameterOrder":2,"Name":"A相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"}]}],"SettingParameters":[{"Id":462004,"UniqueId":7197491499,"Name":"长延时保护电流（Ir）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"},{"Id":462005,"UniqueId":7197491500,"Name":"长延时保护延时（tr）","Unit":"s","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":null,"DataType":"UINT"},{"Id":462006,"UniqueId":7197491501,"Name":"短延时保护电流（Isd）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"},{"Id":462007,"UniqueId":7197491502,"Name":"短延时保护延时（tsd）","Unit":"s","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":null,"DataType":"UINT"},{"Id":462008,"UniqueId":7197491503,"Name":"瞬时保护电流（Ii）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"}],"DeviceTripUnit":"Micrologic5.0 E","DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":-2}}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;设备没有运行时参数组&lt;/td&gt;
+		&lt;td&gt;api/device/320403/runtimesettinggroupparameters&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[],"SettingParameters":[],"DeviceTripUnit":"MA电磁脱扣单元","DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":0}}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;设备ID是不存在的&lt;/td&gt;
+		&lt;td&gt;api/device/320984/runtimesettinggroupparameters&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[],"SettingParameters":[],"DeviceTripUnit":null,"DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":0}}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;设备ID是无效的&lt;/td&gt;
+		&lt;td&gt;api/device/45/runtimesettinggroupparameters&lt;/td&gt;
+		&lt;td&gt;apiauto&lt;/td&gt;
+		&lt;td&gt;123456Qq&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;{"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[],"SettingParameters":[],"DeviceTripUnit":null,"DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":0}}}&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>GetRuntimeparamgroupId</relativePageName>
+        <tags>get, runtimeparamgroup</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='gat.http.helper'}</instruction>
+        <slimResult>pass(gat.http.helper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.http.helper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_4', instruction='import', path='gat.common.jsonhelper'}</instruction>
+        <slimResult>pass(gat.common.jsonhelper)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.jsonhelper</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_5', instruction='import', path='import'}</instruction>
+        <slimResult>pass(import)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>import</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_6', instruction='import', path='gat.common.excelservice'}</instruction>
+        <slimResult>pass(gat.common.excelservice)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>gat.common.excelservice</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='GetRuntimeparamgroupId', args=[]}</instruction>
+        <slimResult>pass(get runtimeparamgroup id)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>get runtimeparamgroup id</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/320394/runtimesettinggroupparameters]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[{"GroupId":"维护参数","GroupName":"维护参数","GroupOrder":0,"MaintenanceParameters":[{"Id":462101,"UniqueId":7197622558,"HardwareId":30,"GroupParameterOrder":0,"Name":"断路器状态","Unit":"","Value":"1","IconType":"STA","Desc":"闭合","Alm":0,"FinVal":"闭合","IsEnum":false,"DataType":"INT16"},{"Id":462102,"UniqueId":7197622559,"HardwareId":31,"GroupParameterOrder":1,"Name":"分合闸次数","Unit":"次","Value":"300.123","IconType":"TIS","Desc":"","Alm":0,"FinVal":"300.123","IsEnum":true,"DataType":"INT32"},{"Id":462103,"UniqueId":7197622560,"HardwareId":32,"GroupParameterOrder":2,"Name":"故障跳闸次数","Unit":"次","Value":"521.123","IconType":"TIS","Desc":"","Alm":0,"FinVal":"521.123","IsEnum":true,"DataType":"INT16"},{"Id":462104,"UniqueId":7197622561,"HardwareId":33,"GroupParameterOrder":3,"Name":"触头磨损率","Unit":"%","Value":"269.123","IconType":"WEA","Desc":"","Alm":0,"FinVal":"269.123","IsEnum":true,"DataType":"INT16"},{"Id":462108,"UniqueId":7197622584,"HardwareId":56,"GroupParameterOrder":4,"Name":"C相电流最大需量","Unit":"A","Value":"418.123","IconType":"CUR","Desc":"","Alm":0,"FinVal":"418.123","IsEnum":true,"DataType":"UINT"},{"Id":462111,"UniqueId":7197622587,"HardwareId":59,"GroupParameterOrder":5,"Name":"负载率运行时间（80-89%）","Unit":"小时","Value":"570.123","IconType":"TIM","Desc":"","Alm":0,"FinVal":"570.123","IsEnum":true,"DataType":"INT32"}]},{"GroupId":"负载率","GroupName":"负载率","GroupOrder":1,"MaintenanceParameters":[{"Id":462110,"UniqueId":7197622586,"HardwareId":58,"GroupParameterOrder":0,"Name":"负载率运行时间（50-79%）","Unit":"小时","Value":"158.123","IconType":"TIM","Desc":"","Alm":0,"FinVal":"158.123","IsEnum":true,"DataType":"INT32"},{"Id":462109,"UniqueId":7197622585,"HardwareId":57,"GroupParameterOrder":1,"Name":"负载率运行时间（0-49%）","Unit":"小时","Value":"43.123","IconType":"TIM","Desc":"","Alm":0,"FinVal":"43.123","IsEnum":true,"DataType":"INT32"},{"Id":462112,"UniqueId":7197622588,"HardwareId":60,"GroupParameterOrder":2,"Name":"负载率运行时间（90-100%）","Unit":"小时","Value":"313.123","IconType":"TIM","Desc":"","Alm":0,"FinVal":"313.123","IsEnum":true,"DataType":"INT32"}]},{"GroupId":"需量","GroupName":"需量","GroupOrder":2,"MaintenanceParameters":[{"Id":462107,"UniqueId":7197622583,"HardwareId":55,"GroupParameterOrder":0,"Name":"B相电流最大需量","Unit":"A","Value":"67.123","IconType":"CUR","Desc":"","Alm":0,"FinVal":"67.123","IsEnum":true,"DataType":"UINT"},{"Id":462105,"UniqueId":7197622581,"HardwareId":53,"GroupParameterOrder":1,"Name":"总有功功率最大需量","Unit":"kW","Value":"55.91229858398437","IconType":"POW","Desc":"","Alm":0,"FinVal":"55.91229858398437","IsEnum":true,"DataType":"INT"},{"Id":462106,"UniqueId":7197622582,"HardwareId":54,"GroupParameterOrder":2,"Name":"A相电流最大需量","Unit":"A","Value":"250.123","IconType":"CUR","Desc":"","Alm":0,"FinVal":"250.123","IsEnum":true,"DataType":"UINT"}]}],"SettingParameters":[{"Id":462120,"UniqueId":7197622571,"Name":"长延时保护电流（Ir）","Unit":"A","Value":"322.123","TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":"322.123","DataType":"UINT"},{"Id":462121,"UniqueId":7197622572,"Name":"长延时保护延时（tr）","Unit":"s","Value":"0.1531230010986328","TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":"0.1531230010986328","DataType":"UINT"},{"Id":462122,"UniqueId":7197622573,"Name":"短延时保护电流（Isd）","Unit":"A","Value":"267.123","TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":"267.123","DataType":"UINT"},{"Id":462123,"UniqueId":7197622574,"Name":"短延时保护延时（tsd）","Unit":"s","Value":"0.5781229858398438","TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":"0.5781229858398438","DataType":"UINT"},{"Id":462124,"UniqueId":7197622575,"Name":"瞬时保护电流（Ii）","Unit":"A","Value":"449.123","TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":"449.123","DataType":"UINT"}],"DeviceTripUnit":"Micrologic5.0 E","DemandRequestRatio":"1.30","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":-1}}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[{"GroupId":"维护参数","GroupName":"维护参数","GroupOrder":0,"MaintenanceParameters":[{"Id":462101,"UniqueId":7197622558,"HardwareId":30,"GroupParameterOrder":0,"Name":"断路器状态","Unit":"","Value":"1","IconType":"STA","Desc":"闭合","Alm":0,"FinVal":"闭合","IsEnum":false,"DataType":"INT16"},{"Id":462102,"UniqueId":7197622559,"HardwareId":31,"GroupParameterOrder":1,"Name":"分合闸次数","Unit":"次","Value":"300.123","IconType":"TIS","Desc":"","Alm":0,"FinVal":"300.123","IsEnum":true,"DataType":"INT32"},{"Id":462103,"UniqueId":7197622560,"HardwareId":32,"GroupParameterOrder":2,"Name":"故障跳闸次数","Unit":"次","Value":"521.123","IconType":"TIS","Desc":"","Alm":0,"FinVal":"521.123","IsEnum":true,"DataType":"INT16"},{"Id":462104,"UniqueId":7197622561,"HardwareId":33,"GroupParameterOrder":3,"Name":"触头磨损率","Unit":"%","Value":"269.123","IconType":"WEA","Desc":"","Alm":0,"FinVal":"269.123","IsEnum":true,"DataType":"INT16"},{"Id":462108,"UniqueId":7197622584,"HardwareId":56,"GroupParameterOrder":4,"Name":"C相电流最大需量","Unit":"A","Value":"418.123","IconType":"CUR","Desc":"","Alm":0,"FinVal":"418.123","IsEnum":true,"DataType":"UINT"},{"Id":462111,"UniqueId":7197622587,"HardwareId":59,"GroupParameterOrder":5,"Name":"负载率运行时间（80-89%）","Unit":"小时","Value":"570.123","IconType":"TIM","Desc":"","Alm":0,"FinVal":"570.123","IsEnum":true,"DataType":"INT32"}]},{"GroupId":"负载率","GroupName":"负载率","GroupOrder":1,"MaintenanceParameters":[{"Id":462110,"UniqueId":7197622586,"HardwareId":58,"GroupParameterOrder":0,"Name":"负载率运行时间（50-79%）","Unit":"小时","Value":"158.123","IconType":"TIM","Desc":"","Alm":0,"FinVal":"158.123","IsEnum":true,"DataType":"INT32"},{"Id":462109,"UniqueId":7197622585,"HardwareId":57,"GroupParameterOrder":1,"Name":"负载率运行时间（0-49%）","Unit":"小时","Value":"43.123","IconType":"TIM","Desc":"","Alm":0,"FinVal":"43.123","IsEnum":true,"DataType":"INT32"},{"Id":462112,"UniqueId":7197622588,"HardwareId":60,"GroupParameterOrder":2,"Name":"负载率运行时间（90-100%）","Unit":"小时","Value":"313.123","IconType":"TIM","Desc":"","Alm":0,"FinVal":"313.123","IsEnum":true,"DataType":"INT32"}]},{"GroupId":"需量","GroupName":"需量","GroupOrder":2,"MaintenanceParameters":[{"Id":462107,"UniqueId":7197622583,"HardwareId":55,"GroupParameterOrder":0,"Name":"B相电流最大需量","Unit":"A","Value":"67.123","IconType":"CUR","Desc":"","Alm":0,"FinVal":"67.123","IsEnum":true,"DataType":"UINT"},{"Id":462105,"UniqueId":7197622581,"HardwareId":53,"GroupParameterOrder":1,"Name":"总有功功率最大需量","Unit":"kW","Value":"55.91229858398437","IconType":"POW","Desc":"","Alm":0,"FinVal":"55.91229858398437","IsEnum":true,"DataType":"INT"},{"Id":462106,"UniqueId":7197622582,"HardwareId":54,"GroupParameterOrder":2,"Name":"A相电流最大需量","Unit":"A","Value":"250.123","IconType":"CUR","Desc":"","Alm":0,"FinVal":"250.123","IsEnum":true,"DataType":"UINT"}]}],"SettingParameters":[{"Id":462120,"UniqueId":7197622571,"Name":"长延时保护电流（Ir）","Unit":"A","Value":"322.123","TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":"322.123","DataType":"UINT"},{"Id":462121,"UniqueId":7197622572,"Name":"长延时保护延时（tr）","Unit":"s","Value":"0.1531230010986328","TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":"0.1531230010986328","DataType":"UINT"},{"Id":462122,"UniqueId":7197622573,"Name":"短延时保护电流（Isd）","Unit":"A","Value":"267.123","TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":"267.123","DataType":"UINT"},{"Id":462123,"UniqueId":7197622574,"Name":"短延时保护延时（tsd）","Unit":"s","Value":"0.5781229858398438","TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":"0.5781229858398438","DataType":"UINT"},{"Id":462124,"UniqueId":7197622575,"Name":"瞬时保护电流（Ii）","Unit":"A","Value":"449.123","TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":"449.123","DataType":"UINT"}],"DeviceTripUnit":"Micrologic5.0 E","DemandRequestRatio":"1.30","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":-1}}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_10', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/320403/runtimesettinggroupparameters]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_10</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_12</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[],"SettingParameters":[],"DeviceTripUnit":"MA电磁脱扣单元","DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":0}}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_14</instructionId>
+                    <col>4</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[],"SettingParameters":[],"DeviceTripUnit":"MA电磁脱扣单元","DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":0}}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/320373/runtimesettinggroupparameters]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_17', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[api.shareuserd]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_17</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_18</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[{"GroupId":"维护参数","GroupName":"维护参数","GroupOrder":0,"MaintenanceParameters":[{"Id":461985,"UniqueId":7197491486,"HardwareId":30,"GroupParameterOrder":0,"Name":"断路器状态","Unit":"","Value":null,"IconType":"STA","Desc":null,"Alm":null,"FinVal":null,"IsEnum":false,"DataType":"INT16"},{"Id":461986,"UniqueId":7197491487,"HardwareId":31,"GroupParameterOrder":1,"Name":"分合闸次数","Unit":"次","Value":null,"IconType":"TIS","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461987,"UniqueId":7197491488,"HardwareId":32,"GroupParameterOrder":2,"Name":"故障跳闸次数","Unit":"次","Value":null,"IconType":"TIS","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT16"},{"Id":461988,"UniqueId":7197491489,"HardwareId":33,"GroupParameterOrder":3,"Name":"触头磨损率","Unit":"%","Value":null,"IconType":"WEA","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT16"},{"Id":461992,"UniqueId":7197491512,"HardwareId":56,"GroupParameterOrder":4,"Name":"C相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"},{"Id":461995,"UniqueId":7197491515,"HardwareId":59,"GroupParameterOrder":5,"Name":"负载率运行时间（80-89%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"}]},{"GroupId":"负载率","GroupName":"负载率","GroupOrder":1,"MaintenanceParameters":[{"Id":461994,"UniqueId":7197491514,"HardwareId":58,"GroupParameterOrder":0,"Name":"负载率运行时间（50-79%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461993,"UniqueId":7197491513,"HardwareId":57,"GroupParameterOrder":1,"Name":"负载率运行时间（0-49%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461996,"UniqueId":7197491516,"HardwareId":60,"GroupParameterOrder":2,"Name":"负载率运行时间（90-100%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"}]},{"GroupId":"需量","GroupName":"需量","GroupOrder":2,"MaintenanceParameters":[{"Id":461991,"UniqueId":7197491511,"HardwareId":55,"GroupParameterOrder":0,"Name":"B相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"},{"Id":461989,"UniqueId":7197491509,"HardwareId":53,"GroupParameterOrder":1,"Name":"总有功功率最大需量","Unit":"kW","Value":null,"IconType":"POW","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT"},{"Id":461990,"UniqueId":7197491510,"HardwareId":54,"GroupParameterOrder":2,"Name":"A相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"}]}],"SettingParameters":[{"Id":462004,"UniqueId":7197491499,"Name":"长延时保护电流（Ir）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"},{"Id":462005,"UniqueId":7197491500,"Name":"长延时保护延时（tr）","Unit":"s","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":null,"DataType":"UINT"},{"Id":462006,"UniqueId":7197491501,"Name":"短延时保护电流（Isd）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"},{"Id":462007,"UniqueId":7197491502,"Name":"短延时保护延时（tsd）","Unit":"s","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":null,"DataType":"UINT"},{"Id":462008,"UniqueId":7197491503,"Name":"瞬时保护电流（Ii）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"}],"DeviceTripUnit":"Micrologic5.0 E","DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":-2}}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_20</instructionId>
+                    <col>4</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[{"GroupId":"维护参数","GroupName":"维护参数","GroupOrder":0,"MaintenanceParameters":[{"Id":461985,"UniqueId":7197491486,"HardwareId":30,"GroupParameterOrder":0,"Name":"断路器状态","Unit":"","Value":null,"IconType":"STA","Desc":null,"Alm":null,"FinVal":null,"IsEnum":false,"DataType":"INT16"},{"Id":461986,"UniqueId":7197491487,"HardwareId":31,"GroupParameterOrder":1,"Name":"分合闸次数","Unit":"次","Value":null,"IconType":"TIS","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461987,"UniqueId":7197491488,"HardwareId":32,"GroupParameterOrder":2,"Name":"故障跳闸次数","Unit":"次","Value":null,"IconType":"TIS","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT16"},{"Id":461988,"UniqueId":7197491489,"HardwareId":33,"GroupParameterOrder":3,"Name":"触头磨损率","Unit":"%","Value":null,"IconType":"WEA","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT16"},{"Id":461992,"UniqueId":7197491512,"HardwareId":56,"GroupParameterOrder":4,"Name":"C相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"},{"Id":461995,"UniqueId":7197491515,"HardwareId":59,"GroupParameterOrder":5,"Name":"负载率运行时间（80-89%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"}]},{"GroupId":"负载率","GroupName":"负载率","GroupOrder":1,"MaintenanceParameters":[{"Id":461994,"UniqueId":7197491514,"HardwareId":58,"GroupParameterOrder":0,"Name":"负载率运行时间（50-79%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461993,"UniqueId":7197491513,"HardwareId":57,"GroupParameterOrder":1,"Name":"负载率运行时间（0-49%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461996,"UniqueId":7197491516,"HardwareId":60,"GroupParameterOrder":2,"Name":"负载率运行时间（90-100%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"}]},{"GroupId":"需量","GroupName":"需量","GroupOrder":2,"MaintenanceParameters":[{"Id":461991,"UniqueId":7197491511,"HardwareId":55,"GroupParameterOrder":0,"Name":"B相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"},{"Id":461989,"UniqueId":7197491509,"HardwareId":53,"GroupParameterOrder":1,"Name":"总有功功率最大需量","Unit":"kW","Value":null,"IconType":"POW","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT"},{"Id":461990,"UniqueId":7197491510,"HardwareId":54,"GroupParameterOrder":2,"Name":"A相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"}]}],"SettingParameters":[{"Id":462004,"UniqueId":7197491499,"Name":"长延时保护电流（Ir）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"},{"Id":462005,"UniqueId":7197491500,"Name":"长延时保护延时（tr）","Unit":"s","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":null,"DataType":"UINT"},{"Id":462006,"UniqueId":7197491501,"Name":"短延时保护电流（Isd）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"},{"Id":462007,"UniqueId":7197491502,"Name":"短延时保护延时（tsd）","Unit":"s","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":null,"DataType":"UINT"},{"Id":462008,"UniqueId":7197491503,"Name":"瞬时保护电流（Ii）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"}],"DeviceTripUnit":"Micrologic5.0 E","DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":-2}}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_22', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/320373/runtimesettinggroupparameters]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_22</instructionId>
+                    <col>1</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_23', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_23</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_24', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_24</instructionId>
+                    <col>3</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_26', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[{"GroupId":"维护参数","GroupName":"维护参数","GroupOrder":0,"MaintenanceParameters":[{"Id":461985,"UniqueId":7197491486,"HardwareId":30,"GroupParameterOrder":0,"Name":"断路器状态","Unit":"","Value":null,"IconType":"STA","Desc":null,"Alm":null,"FinVal":null,"IsEnum":false,"DataType":"INT16"},{"Id":461986,"UniqueId":7197491487,"HardwareId":31,"GroupParameterOrder":1,"Name":"分合闸次数","Unit":"次","Value":null,"IconType":"TIS","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461987,"UniqueId":7197491488,"HardwareId":32,"GroupParameterOrder":2,"Name":"故障跳闸次数","Unit":"次","Value":null,"IconType":"TIS","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT16"},{"Id":461988,"UniqueId":7197491489,"HardwareId":33,"GroupParameterOrder":3,"Name":"触头磨损率","Unit":"%","Value":null,"IconType":"WEA","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT16"},{"Id":461992,"UniqueId":7197491512,"HardwareId":56,"GroupParameterOrder":4,"Name":"C相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"},{"Id":461995,"UniqueId":7197491515,"HardwareId":59,"GroupParameterOrder":5,"Name":"负载率运行时间（80-89%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"}]},{"GroupId":"负载率","GroupName":"负载率","GroupOrder":1,"MaintenanceParameters":[{"Id":461994,"UniqueId":7197491514,"HardwareId":58,"GroupParameterOrder":0,"Name":"负载率运行时间（50-79%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461993,"UniqueId":7197491513,"HardwareId":57,"GroupParameterOrder":1,"Name":"负载率运行时间（0-49%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461996,"UniqueId":7197491516,"HardwareId":60,"GroupParameterOrder":2,"Name":"负载率运行时间（90-100%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"}]},{"GroupId":"需量","GroupName":"需量","GroupOrder":2,"MaintenanceParameters":[{"Id":461991,"UniqueId":7197491511,"HardwareId":55,"GroupParameterOrder":0,"Name":"B相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"},{"Id":461989,"UniqueId":7197491509,"HardwareId":53,"GroupParameterOrder":1,"Name":"总有功功率最大需量","Unit":"kW","Value":null,"IconType":"POW","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT"},{"Id":461990,"UniqueId":7197491510,"HardwareId":54,"GroupParameterOrder":2,"Name":"A相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"}]}],"SettingParameters":[{"Id":462004,"UniqueId":7197491499,"Name":"长延时保护电流（Ir）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"},{"Id":462005,"UniqueId":7197491500,"Name":"长延时保护延时（tr）","Unit":"s","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":null,"DataType":"UINT"},{"Id":462006,"UniqueId":7197491501,"Name":"短延时保护电流（Isd）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"},{"Id":462007,"UniqueId":7197491502,"Name":"短延时保护延时（tsd）","Unit":"s","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":null,"DataType":"UINT"},{"Id":462008,"UniqueId":7197491503,"Name":"瞬时保护电流（Ii）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"}],"DeviceTripUnit":"Micrologic5.0 E","DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":-2}}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_26</instructionId>
+                    <col>4</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[{"GroupId":"维护参数","GroupName":"维护参数","GroupOrder":0,"MaintenanceParameters":[{"Id":461985,"UniqueId":7197491486,"HardwareId":30,"GroupParameterOrder":0,"Name":"断路器状态","Unit":"","Value":null,"IconType":"STA","Desc":null,"Alm":null,"FinVal":null,"IsEnum":false,"DataType":"INT16"},{"Id":461986,"UniqueId":7197491487,"HardwareId":31,"GroupParameterOrder":1,"Name":"分合闸次数","Unit":"次","Value":null,"IconType":"TIS","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461987,"UniqueId":7197491488,"HardwareId":32,"GroupParameterOrder":2,"Name":"故障跳闸次数","Unit":"次","Value":null,"IconType":"TIS","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT16"},{"Id":461988,"UniqueId":7197491489,"HardwareId":33,"GroupParameterOrder":3,"Name":"触头磨损率","Unit":"%","Value":null,"IconType":"WEA","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT16"},{"Id":461992,"UniqueId":7197491512,"HardwareId":56,"GroupParameterOrder":4,"Name":"C相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"},{"Id":461995,"UniqueId":7197491515,"HardwareId":59,"GroupParameterOrder":5,"Name":"负载率运行时间（80-89%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"}]},{"GroupId":"负载率","GroupName":"负载率","GroupOrder":1,"MaintenanceParameters":[{"Id":461994,"UniqueId":7197491514,"HardwareId":58,"GroupParameterOrder":0,"Name":"负载率运行时间（50-79%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461993,"UniqueId":7197491513,"HardwareId":57,"GroupParameterOrder":1,"Name":"负载率运行时间（0-49%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"},{"Id":461996,"UniqueId":7197491516,"HardwareId":60,"GroupParameterOrder":2,"Name":"负载率运行时间（90-100%）","Unit":"小时","Value":null,"IconType":"TIM","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT32"}]},{"GroupId":"需量","GroupName":"需量","GroupOrder":2,"MaintenanceParameters":[{"Id":461991,"UniqueId":7197491511,"HardwareId":55,"GroupParameterOrder":0,"Name":"B相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"},{"Id":461989,"UniqueId":7197491509,"HardwareId":53,"GroupParameterOrder":1,"Name":"总有功功率最大需量","Unit":"kW","Value":null,"IconType":"POW","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"INT"},{"Id":461990,"UniqueId":7197491510,"HardwareId":54,"GroupParameterOrder":2,"Name":"A相电流最大需量","Unit":"A","Value":null,"IconType":"CUR","Desc":null,"Alm":null,"FinVal":null,"IsEnum":true,"DataType":"UINT"}]}],"SettingParameters":[{"Id":462004,"UniqueId":7197491499,"Name":"长延时保护电流（Ir）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"},{"Id":462005,"UniqueId":7197491500,"Name":"长延时保护延时（tr）","Unit":"s","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":null,"DataType":"UINT"},{"Id":462006,"UniqueId":7197491501,"Name":"短延时保护电流（Isd）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"},{"Id":462007,"UniqueId":7197491502,"Name":"短延时保护延时（tsd）","Unit":"s","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"TIM","FinVal":null,"DataType":"UINT"},{"Id":462008,"UniqueId":7197491503,"Name":"瞬时保护电流（Ii）","Unit":"A","Value":null,"TrippingCurve":"LSINSX-52E","IconType":"CUR","FinVal":null,"DataType":"UINT"}],"DeviceTripUnit":"Micrologic5.0 E","DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":-2}}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_28', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/320403/runtimesettinggroupparameters]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_28</instructionId>
+                    <col>1</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_29', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_29</instructionId>
+                    <col>2</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_30', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_30</instructionId>
+                    <col>3</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_32', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[],"SettingParameters":[],"DeviceTripUnit":"MA电磁脱扣单元","DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":0}}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_32</instructionId>
+                    <col>4</col>
+                              <row>6</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[],"SettingParameters":[],"DeviceTripUnit":"MA电磁脱扣单元","DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":0}}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_34', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/320984/runtimesettinggroupparameters]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_34</instructionId>
+                    <col>1</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_35', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_35</instructionId>
+                    <col>2</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_36', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_36</instructionId>
+                    <col>3</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_38', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[],"SettingParameters":[],"DeviceTripUnit":null,"DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":0}}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_38</instructionId>
+                    <col>4</col>
+                              <row>7</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[],"SettingParameters":[],"DeviceTripUnit":null,"DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":0}}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_40', instruction='call', instanceName='decisionTable_1', methodName='setPath', args=[api/device/45/runtimesettinggroupparameters]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_40</instructionId>
+                    <col>1</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_41', instruction='call', instanceName='decisionTable_1', methodName='setUsername', args=[apiauto]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_41</instructionId>
+                    <col>2</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_42', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[123456Qq]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_42</instructionId>
+                    <col>3</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_44', instruction='call', instanceName='decisionTable_1', methodName='responsebody', args=[]}</instruction>
+        <slimResult>pass({"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[],"SettingParameters":[],"DeviceTripUnit":null,"DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":0}}})</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_44</instructionId>
+                    <col>4</col>
+                              <row>8</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>{"Error":"0","Message":[""],"RequestId":null,"Result":{"MaintenanceParameterGroups":[],"SettingParameters":[],"DeviceTripUnit":null,"DemandRequestRatio":"","AgingData":{"Aging":null,"DataDetail":null,"LastAgingTime":null,"LastWearTime":null,"State":0}}}</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>5411</totalRunTimeInMillis>
+</testResults>
+
